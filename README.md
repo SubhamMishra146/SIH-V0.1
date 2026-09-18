@@ -1,4 +1,3 @@
-# SIH-V1
+# SIH-V0.1
 
-Smart Community Health Monitoring and Early Warning System
-for Water-Borne Diseases in Rural Northeast India
+
