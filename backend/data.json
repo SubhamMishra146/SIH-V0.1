@@ -1,6 +1,151 @@
 {
   "scans": [
     {
+      "id": "975430a1-2d61-41ff-b814-f134f9b07472",
+      "productName": "MANORAMA NOTEBOOK SAMPLE 1",
+      "imagePath": "uploads/d0c958f4f3ad4ce19851a96d537c235d_WhatsApp Image 2026-09-18 at 13.18.07.jpeg",
+      "scannedAt": "2026-09-19T05:43:14.539035Z",
+      "status": "Non-Compliant",
+      "extractedText": "EExptore ThE World TIMe To OPEn Up ^ New ChaPER IN Life, AND To ExpLORe ^ Larger CENTRE Manorama Paper Products We are committed to providing high quality Notebook products that L are a result of deep understanding of our consumers thoughtful ideas_ innovative designs and superior craftsmanship, that have in turn helped us become one of India's leading Notebook Brands_ For India's students, these are brilliant times. With rapidly rising literacy; more schools, new colleges, globally famous IITs and IIMs; and vast spectrum of IT, media, and fashion institutes, life is radiant with new opportunities. You now have more on Ihe move: So g0 ahead gain   from   these   excellent fimos Build   your dreams, spread the enthusiasm and make India stronger and shine even brigh, A Premium Product By A-4 NOTc BOOK Manorama Paper Products 368 Bhubaneswar Odisha. Pages: With Cover manorama MRP?:220.00 SAVE Inclusive of GST film ,",
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mrp?:220.00 save inclusive of gst'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'premium product by ... paper products ... bhubaneswar'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "netQuantity",
+        "mfgDate",
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "16118407-4a05-4f06-9f1f-2ed10c05d55e",
+      "productName": "PACKAGE DRINKING WATER SAMPLE 1",
+      "imagePath": "uploads/5378b84661fa46b2927c66fd036f7695_metalized-water-bottle-label-500x500.jpg.webp",
+      "scannedAt": "2026-09-19T05:37:36.891830Z",
+      "status": "Non-Compliant",
+      "extractedText": "8guc 9001 The AZlLS Luanous Tremtum VTable Wattr AnIso [ certIfIcO :7015 COMPany L Tulsioaua L #ned Luxurious\" Premittm'\" Table Wattr certsoloc Iobot J01s conp ",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No MRP / price declaration found on the label."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No manufacturer/packer/importer declaration found on the label."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "netQuantity",
+        "mfgDate",
+        "manufacturerDetails",
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "f30d4430-9deb-41dd-9bb4-d8cae4c79393",
+      "productName": "Unknown Product",
+      "imagePath": "uploads/2592569d25064d818d8f26fdfe69b504_metalized-water-bottle-label-500x500.jpg.webp",
+      "scannedAt": "2026-09-19T05:36:43.328447Z",
+      "status": "Non-Compliant",
+      "extractedText": "8guc 9001 The AZlLS Luanous Tremtum VTable Wattr AnIso [ certIfIcO :7015 COMPany L Tulsioaua L #ned Luxurious\" Premittm'\" Table Wattr certsoloc Iobot J01s conp ",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No MRP / price declaration found on the label."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No manufacturer/packer/importer declaration found on the label."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "netQuantity",
+        "mfgDate",
+        "manufacturerDetails",
+        "consumerCare"
+      ]
+    },
+    {
       "id": "673c080d-e072-4901-bc6e-3510f7a4158f",
       "productName": "Classic Notebook 400p",
       "imagePath": "uploads/f68524deb67e4c8a8fd2ec6591b4f248_sample_label.png",
