@@ -1,2 +1,4 @@
 Flask==3.0.3
 Flask-Cors==4.0.0
+easyocr==1.7.2
+Pillow==10.4.0
