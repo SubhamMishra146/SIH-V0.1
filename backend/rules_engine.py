@@ -135,13 +135,13 @@ def check_net_quantity(cleaned, original):
 
     # Format 1: Unit keyword then optional colon then number
     unit_before = re.search(
-        r'((?:pages|page|pgs|leaves|sheets|pcs|pieces|units|nos|net\s*wt\.?|net\s*quantity|net\s*qty|net\s*content)\s*[:\-]?\s*(\d+[\.,]?\d*))',
+        r'((?:number\s*of\s*commodity|pages|page|pgs|leaves|sheets|pcs|pieces|units|nos|net\s*wt\.?|net\s*quantity|net\s*qty|net\s*content)\s*[:\-]?\s*(\d+[\.,]?\d*)\s*(?:n|pcs|units|nos)?)',
         cleaned
     )
 
-    # Format 2: Number then unit
+    # Format 2: Number then unit (including standard statutory count symbol 'N')
     num_before = re.search(
-        r'((\d+[\.,]?\d*)\s*(g|gm|gms|gram|grams|kg|kgs|mg|ml|mls|l|ltr|litre|liter|litres|liters|pcs|pieces|pages|page|pgs|leaves|sheets|units|nos)\b)',
+        r'((\d+[\.,]?\d*)\s*(g|gm|gms|gram|grams|kg|kgs|mg|ml|mls|l|ltr|litre|liter|litres|liters|pcs|pieces|pages|page|pgs|leaves|sheets|units|nos|n)\b)',
         cleaned
     )
 
