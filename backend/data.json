@@ -1,6 +1,51 @@
 {
   "scans": [
     {
+      "id": "673c080d-e072-4901-bc6e-3510f7a4158f",
+      "productName": "Classic Notebook 400p",
+      "imagePath": "uploads/f68524deb67e4c8a8fd2ec6591b4f248_sample_label.png",
+      "scannedAt": "2026-09-19T05:19:30.270158Z",
+      "status": "Non-Compliant",
+      "extractedText": "PREMIUM QUALITYCLASSIC NOTEBOOK MRP: Rs 185 - (Inclusive ofall taxesi NetOty: 400 Pages Mlg Date: 4\"2024 Manulactured by: Multi Pap Industries Pvt Ltd Plot 45, Industrial Estate, Sivakasi Tamil Nadu-828123 Customer Care: 1800 200 4587 | care@multipapcom",
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'rs 185'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 400 pages",
+          "remarks": "Net quantity '400 pages' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'manufactured by ... inc ... sivakasi'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Phone: 1800 200 4587",
+          "remarks": "Consumer care phone/helpline found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mfgDate"
+      ]
+    },
+    {
       "id": "51c5f9e3-f181-4c10-9868-fa8743bc4dc7",
       "productName": "scrub pad",
       "imagePath": "uploads/2992ae6a370e49dfb91429cce0fb127d_1.png",

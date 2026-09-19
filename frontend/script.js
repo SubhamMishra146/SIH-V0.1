@@ -1,4 +1,6 @@
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = (window.location.origin && window.location.origin.startsWith("http"))
+  ? `${window.location.origin}/api`
+  : "http://localhost:5001/api";
 let selectedFile = null;
 let currentScan = null;
 
@@ -112,33 +114,57 @@ function toggleOcrText() {
 }
 
 // ── Load History ────────────────────────────────────────────────────────────
+let allScans = [];
+
 async function loadHistory() {
-  const res = await fetch(`${API_BASE}/scans`);
-  const scans = await res.json();
+  try {
+    const res = await fetch(`${API_BASE}/scans`);
+    const scans = await res.json();
+    allScans = scans;
 
-  const tbody = document.getElementById('history-tbody');
-  tbody.innerHTML = '';
+    const tbody = document.getElementById('history-tbody');
+    tbody.innerHTML = '';
 
-  let compliant = 0;
-  scans.forEach(scan => {
-    if (scan.status === "Compliant") compliant++;
-    tbody.innerHTML += `
-      <tr>
-        <td class="align-middle">${scan.productName}</td>
-        <td class="align-middle">${new Date(scan.scannedAt).toLocaleString()}</td>
-        <td class="align-middle">${scan.status}</td>
-        <td class="text-end">
-          <button class="btn btn-sm btn-outline-danger" onclick="deleteScan('${scan.id}')" title="Delete Scan">
-            <i class="bi bi-trash"></i>
-          </button>
-        </td>
-      </tr>
-    `;
-  });
+    let compliant = 0;
+    scans.forEach(scan => {
+      if (scan.status === "Compliant") compliant++;
+      const isCompliant = scan.status === "Compliant";
+      const statusBadge = isCompliant
+        ? '<span class="badge bg-success">Compliant</span>'
+        : '<span class="badge bg-danger">Non-Compliant</span>';
 
-  document.getElementById('stat-total').innerText = scans.length;
-  document.getElementById('stat-compliant').innerText = compliant;
-  document.getElementById('stat-violations').innerText = scans.length - compliant;
+      tbody.innerHTML += `
+        <tr style="cursor: pointer;" onclick="viewScan('${scan.id}')">
+          <td class="align-middle fw-medium">${scan.productName}</td>
+          <td class="align-middle text-secondary small">${new Date(scan.scannedAt).toLocaleString()}</td>
+          <td class="align-middle">${statusBadge}</td>
+          <td class="text-end" onclick="event.stopPropagation()">
+            <button class="btn btn-sm btn-outline-primary me-1" onclick="viewScan('${scan.id}')" title="View Audit Report">
+              <i class="bi bi-eye"></i> View
+            </button>
+            <button class="btn btn-sm btn-outline-danger" onclick="deleteScan('${scan.id}')" title="Delete Scan">
+              <i class="bi bi-trash"></i>
+            </button>
+          </td>
+        </tr>
+      `;
+    });
+
+    document.getElementById('stat-total').innerText = scans.length;
+    document.getElementById('stat-compliant').innerText = compliant;
+    document.getElementById('stat-violations').innerText = scans.length - compliant;
+  } catch (e) {
+    console.error("Failed to load history", e);
+  }
+}
+
+function viewScan(id) {
+  const scan = allScans.find(s => s.id === id);
+  if (scan) {
+    currentScan = scan;
+    renderReportCard(scan);
+    document.getElementById('report-card').scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
 // ── Delete Scan ─────────────────────────────────────────────────────────────

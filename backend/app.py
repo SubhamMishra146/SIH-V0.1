@@ -132,4 +132,6 @@ def delete_scan(scan_id):
 
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    port = int(os.environ.get('PORT', 5001))
+    print(f"Starting server on http://localhost:{port}")
+    app.run(port=port, debug=True)
