@@ -222,25 +222,25 @@ def check_mfg_date(cleaned, original):
 
 def check_manufacturer(cleaned, original):
     """
-    Catches partial OCR matches like "manufactur" (without full word).
-    Also catches corporate suffixes and Indian locations.
+    Catches manufacturer/packer declarations including "Mfd. by", "Mfg by",
+    corporate names (Plastics, Industries, Pvt Ltd), and Indian addresses.
     """
 
-    # Keyword: partial match "manufactur" catches manufactured/manufacturing/etc.
+    # Keyword: "manufactured by", "mfd by", "mfg by", "packed by", "made by", etc.
     keyword_match = re.search(
-        r'(manufactur\w*\s*by|mfg\.?\s*by|marketed\s*by|packed\s*by|imported\s*by|product\s*by|premium\s*product\s*by|fssai\s*lic)',
+        r'(manufactur\w*\s*by|mfg\.?\s*by|mfd\.?\s*by|mfr\.?\s*by|marketed\s*by|packed\s*by|imported\s*by|product\s*by|premium\s*product\s*by|made\s*by|mfg\b|mfd\b|fssai\s*lic)',
         cleaned
     )
 
-    # Corporate suffixes
+    # Corporate suffixes & industry terms
     company_match = re.search(
-        r'(multi\s*pap|paper\s*products?|industries|enterprises|foods?\s|products?\s|pvt\.?\s*ltd\.?|limited|private|inc\.?|corp\.?|co\.?\s*ltd|llp|group)',
+        r'\b(multi\s*pap|paper\s*products?|industries|enterprises|foods?|products?|pvt\.?\s*ltd\.?|limited|private|inc\.?|corp\.?|co\.?\s*ltd|llp|group|plastics?|polymers?|works|mills|pharma|laboratories|chem\w*|trading)\b',
         cleaned
     )
 
-    # Indian locations (cities + states + pincodes)
+    # Indian locations (cities + states + pincodes + India)
     address_match = re.search(
-        r'(\b\d{6}\b|mumbai|delhi|bangalore|bengaluru|chennai|kolkata|hyderabad|pune|ahmedabad|jaipur|lucknow|bhubaneswar|odisha|orissa|chandigarh|noida|gurgaon|ghaziabad|kerala|tamil\s*nadu|karnataka|maharashtra|gujarat|rajasthan|uttar\s*pradesh|madhya\s*pradesh|west\s*bengal|andhra|telangana|assam|bihar|punjab|haryana|chhattisgarh|jharkhand|sivakasi)',
+        r'(\b\d{6}\b|mumbai|delhi|bangalore|bengaluru|chennai|kolkata|hyderabad|pune|ahmedabad|jaipur|lucknow|bhubaneswar|odisha|orissa|chandigarh|noida|gurgaon|ghaziabad|kerala|tamil\s*nadu|karnataka|maharashtra|gujarat|rajasthan|uttar\s*pradesh|madhya\s*pradesh|west\s*bengal|andhra|telangana|assam|bihar|punjab|haryana|chhattisgarh|jharkhand|sivakasi|\bindia\b)',
         cleaned
     )
 
