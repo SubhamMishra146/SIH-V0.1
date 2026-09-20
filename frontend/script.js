@@ -1,4 +1,5 @@
-const API_BASE = "http://localhost:5000/api";
+// Relative API path: automatically works on both localhost:5000 and Render cloud deployment
+const API_BASE = "/api";
 let selectedFile = null;
 let currentScan = null;
 
