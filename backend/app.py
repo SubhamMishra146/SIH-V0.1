@@ -36,9 +36,17 @@ import cv2
 import numpy as np
 from PIL import Image
 
-print("[OCR] Loading EasyOCR model...")
-ocr_reader = easyocr.Reader(['en'], gpu=False)
-print("[OCR] EasyOCR ready.")
+print("[OCR] EasyOCR will be loaded on first scan request (lazy init).")
+ocr_reader = None  # Loaded on first request to save startup RAM
+
+def get_ocr_reader():
+    """Lazy-initialize EasyOCR — only load it when first scan arrives."""
+    global ocr_reader
+    if ocr_reader is None:
+        print("[OCR] Loading EasyOCR model (first scan)...")
+        ocr_reader = easyocr.Reader(['en'], gpu=False)
+        print("[OCR] EasyOCR ready.")
+    return ocr_reader
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -94,7 +102,7 @@ def run_ocr_on_array(img_array):
     Run EasyOCR on a numpy RGB array.
     Returns list of dicts: [{text, confidence, box}, ...]
     """
-    raw_results = ocr_reader.readtext(img_array, detail=1)
+    raw_results = get_ocr_reader().readtext(img_array, detail=1)
     detections = []
     for i, (bbox, text, conf) in enumerate(raw_results):
         detections.append({
