@@ -113,28 +113,45 @@ def analyze_with_gemini_vision(image_path, api_key=None):
             "Return the transcription clearly as plain text containing all detected declarations."
         )
 
-        candidate_models = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-flash-latest', 'gemini-3.8-flash']
+        candidate_models = [
+            'gemini-2.5-flash',
+            'gemini-2.0-flash',
+            'gemini-2.0-flash-lite',
+            'gemini-1.5-flash',
+            'gemini-1.5-flash-8b',
+            'gemini-3.5-flash-lite',
+            'gemini-flash-latest',
+            'gemini-3.8-flash'
+        ]
         response = None
         used_model = None
         last_err = None
 
+        import time
         for model_name in candidate_models:
-            try:
-                print(f"[Gemini Vision] Trying model '{model_name}'...")
-                response = client.models.generate_content(
-                    model=model_name,
-                    contents=[pil_img, prompt]
-                )
-                if response and response.text:
-                    used_model = model_name
-                    print(f"[Gemini Vision] Model '{model_name}' succeeded!")
+            for attempt in range(2):
+                try:
+                    print(f"[Gemini Vision] Trying model '{model_name}' (attempt {attempt + 1})...")
+                    response = client.models.generate_content(
+                        model=model_name,
+                        contents=[pil_img, prompt]
+                    )
+                    if response and response.text:
+                        used_model = model_name
+                        print(f"[Gemini Vision] Model '{model_name}' succeeded!")
+                        break
+                except Exception as err:
+                    err_str = str(err)
+                    print(f"[Gemini Vision] Model '{model_name}' failed: {err}")
+                    last_err = err
+                    if ("503" in err_str or "UNAVAILABLE" in err_str or "high demand" in err_str.lower()) and attempt == 0:
+                        print("[Gemini Vision] 503 high demand detected. Retrying in 1.5s...")
+                        time.sleep(1.5)
+                        continue
                     break
-            except Exception as err:
-                print(f"[Gemini Vision] Model '{model_name}' failed: {err}")
-                last_err = err
 
-        if not response or not response.text:
-            return None, f"All candidate models failed. Last error: {last_err}"
+            if used_model:
+                break
 
         extracted_text = response.text or ""
         print(f"[Gemini Vision] Successfully extracted {len(extracted_text)} characters using {used_model}.")
