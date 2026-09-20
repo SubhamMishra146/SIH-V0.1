@@ -11,11 +11,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+function toggleGeminiSettings() {
+  const panel = document.getElementById('gemini-settings');
+  if (!panel) return;
+  if (panel.style.display === 'none' || !panel.style.display) {
+    panel.style.display = 'block';
+    const input = document.getElementById('gemini-api-key');
+    if (input) input.focus();
+  } else {
+    panel.style.display = 'none';
+  }
+}
+
 function saveGeminiKey() {
   const key = document.getElementById('gemini-api-key').value.trim();
   if (key) {
     localStorage.setItem('gemini_api_key', key);
     alert('Gemini API Key saved! Scans will now use Gemini 3.8 Flash Vision.');
+    toggleGeminiSettings();
   }
 }
 

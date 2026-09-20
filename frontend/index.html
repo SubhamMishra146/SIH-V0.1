@@ -18,7 +18,7 @@
       </div>
     </a>
     <div class="ms-auto d-flex align-items-center gap-2">
-      <button class="btn btn-sm btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#gemini-settings" aria-expanded="false" title="Configure Gemini Vision">
+      <button class="btn btn-sm btn-outline-info" type="button" onclick="toggleGeminiSettings()" title="Configure Gemini Vision">
         <i class="bi bi-stars"></i> Gemini Vision
       </button>
     </div>
@@ -26,7 +26,7 @@
 
   <div class="page-wrapper">
     <!-- ── Optional Gemini Vision Settings Bar ────────────────────────────── -->
-    <div class="collapse mb-3" id="gemini-settings">
+    <div class="mb-3" id="gemini-settings" style="display:none;">
       <div class="card card-body bg-dark border-info">
         <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
           <div>
@@ -197,6 +197,6 @@
 
   </div><!-- end page-wrapper -->
 
-  <script src="script.js?v=2.1"></script>
+  <script src="script.js?v=2.2"></script>
 </body>
 </html>
