@@ -1,4 +1,7 @@
-Flask==3.0.3
-Flask-Cors==4.0.0
+flask
+flask-cors
 easyocr==1.7.2
-Pillow==10.4.0
+Pillow
+opencv-python-headless
+numpy
+gunicorn

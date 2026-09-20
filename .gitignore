@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+backend/data.json
+backend/uploads/
+*.log
+
+# EasyOCR model cache (large, downloaded at runtime)
+.EasyOCR/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -20,7 +20,8 @@
   </nav>
 
   <div class="page-wrapper">
-    <!-- ── Stats Cards ───────────────────────────────────────────── -->
+
+    <!-- ── Stats Cards ───────────────────────────────────────────────────── -->
     <div class="stats-grid">
       <div class="stat-card">
         <div class="stat-icon blue"><i class="bi bi-upc-scan"></i></div>
@@ -36,13 +37,12 @@
       </div>
     </div>
 
-    <!-- ── Upload + Report ───────────────────────────────────────── -->
+    <!-- ── Upload + Report ───────────────────────────────────────────────── -->
     <div class="main-columns">
+
       <!-- Upload Card -->
       <div class="card" id="upload-card">
-        <div class="card-header d-flex justify-content-between align-items-center">
-          <span><i class="bi bi-cloud-upload text-primary"></i> Scan a Packaging Label</span>
-        </div>
+        <div class="card-header"><i class="bi bi-cloud-upload text-primary"></i> Scan a Packaging Label</div>
         <div class="card-body">
           <div class="mb-3">
             <label for="product-name" class="form-label fw-semibold small">Product Name <span class="text-danger">*</span></label>
@@ -53,12 +53,13 @@
             <p><strong>Click to browse</strong> or drag &amp; drop label image here</p>
           </div>
           <input type="file" id="file-input" accept="image/*" style="display:none;" />
-          
-          <div id="preview-container" style="display:none; text-align: center;">
-            <div id="image-wrapper">
-              <img id="preview-img" src="" alt="Label Preview" style="max-width:100%; max-height:200px; border-radius: 6px;" />
-            </div>
+
+          <!-- Image preview with bounding box canvas overlay -->
+          <div id="preview-container" style="display:none; position:relative; margin-top:10px;">
+            <img id="preview-img" src="" alt="Label Preview" style="width:100%; border-radius:6px; display:block;" />
+            <canvas id="bbox-canvas" style="position:absolute; top:0; left:0; pointer-events:none;"></canvas>
           </div>
+
           <button id="scan-btn" class="btn btn-primary mt-3 w-100" onclick="submitScan()" disabled>
             <i class="bi bi-search"></i> Run Compliance Check
           </button>
@@ -69,29 +70,42 @@
       <div class="card" id="report-card" style="display:none;">
         <div class="card-header"><i class="bi bi-clipboard-check text-primary"></i> Compliance Audit Report</div>
         <div class="card-body">
-          <div id="report-product-name" class="fw-bold mb-1 fs-5"></div>
-          <div id="report-timestamp" class="text-muted small mb-2"></div>
-          <div id="report-status-badge" class="mb-3"></div>
 
-          <!-- Audit Evidence Table -->
-          <div class="table-responsive">
-            <table class="table table-bordered table-sm mb-0" id="audit-table">
-              <thead class="table-dark">
-                <tr>
-                  <th>Mandatory Declaration</th>
-                  <th style="width:90px;">Status</th>
-                  <th>Detected Evidence</th>
-                  <th>Inspector Remarks</th>
-                </tr>
-              </thead>
-              <tbody id="audit-tbody"></tbody>
-            </table>
+          <!-- Skeleton loader (shown while OCR is running) -->
+          <div id="report-skeleton" style="display:none;">
+            <div class="skeleton-line wide mb-2"></div>
+            <div class="skeleton-line narrow mb-3"></div>
+            <div class="skeleton-line full mb-2"></div>
+            <div class="skeleton-line full mb-2"></div>
+            <div class="skeleton-line full mb-2"></div>
+          </div>
+
+          <!-- Actual report content -->
+          <div id="report-content">
+            <div id="report-product-name" class="fw-bold mb-1 fs-5"></div>
+            <div id="report-timestamp" class="text-muted small mb-2"></div>
+            <div id="report-status-badge" class="mb-3"></div>
+
+            <!-- 4-column Audit Evidence Table -->
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm mb-0" id="audit-table">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Mandatory Declaration</th>
+                    <th style="width:90px;">Status</th>
+                    <th>Detected Evidence</th>
+                    <th>Inspector Remarks</th>
+                  </tr>
+                </thead>
+                <tbody id="audit-tbody"></tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ── Raw OCR Text (collapsible) ────────────────────────────── -->
+    <!-- ── Raw OCR Text (collapsible) ───────────────────────────────────── -->
     <div id="ocr-section" class="card mt-4" style="display:none;">
       <div class="card-header d-flex justify-content-between align-items-center" style="cursor:pointer;" onclick="toggleOcrText()">
         <span><i class="bi bi-file-text text-primary"></i> Raw OCR Extracted Text</span>
@@ -102,7 +116,49 @@
       </div>
     </div>
 
-    <!-- ── History ───────────────────────────────────────────────── -->
+    <!-- ── Detection Results Table ───────────────────────────────────────── -->
+    <div id="detections-section" class="card mt-4" style="display:none;">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <span><i class="bi bi-grid-3x3 text-primary"></i> OCR Detections &amp; Confidence
+          <span id="det-count" class="badge bg-secondary ms-2">0</span>
+        </span>
+        <!-- Confidence Slider -->
+        <div class="d-flex align-items-center gap-2" style="min-width: 220px;">
+          <label class="small text-muted mb-0" style="white-space:nowrap;">Min confidence:</label>
+          <input type="range" id="conf-slider" min="0" max="100" value="0" class="form-range" oninput="filterByConfidence(this.value)" />
+          <span id="conf-value" class="small text-warning fw-bold" style="min-width:34px;">0%</span>
+        </div>
+      </div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-sm table-hover mb-0" id="det-table">
+            <thead class="table-dark">
+              <tr>
+                <th style="width:50px;">#</th>
+                <th>Detected Text <small class="text-muted">(double-click to edit)</small></th>
+                <th style="width:110px;">Confidence</th>
+                <th style="width:110px;">Rule Matched</th>
+              </tr>
+            </thead>
+            <tbody id="det-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Export Suite -->
+      <div class="card-footer d-flex gap-2 flex-wrap">
+        <button class="btn btn-sm btn-outline-light" onclick="copyFullText()">
+          <i class="bi bi-clipboard"></i> Copy Full Text
+        </button>
+        <button class="btn btn-sm btn-outline-info" onclick="downloadJSON()">
+          <i class="bi bi-download"></i> Download JSON
+        </button>
+        <button class="btn btn-sm btn-outline-success" onclick="downloadCSV()">
+          <i class="bi bi-filetype-csv"></i> Export CSV
+        </button>
+      </div>
+    </div>
+
+    <!-- ── Scan History ───────────────────────────────────────────────────── -->
     <div class="card history-section mt-4">
       <div class="card-header">Scan History</div>
       <div class="card-body p-0">
@@ -114,7 +170,8 @@
         </table>
       </div>
     </div>
-  </div>
+
+  </div><!-- end page-wrapper -->
 
   <script src="script.js"></script>
 </body>

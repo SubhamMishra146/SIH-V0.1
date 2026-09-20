@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: sih-legal-metrology
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    # Render free tier — upgrade to Starter for always-on
+    plan: free
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: PYTHONIOENCODING
+        value: utf-8
+      - key: PYTHONUNBUFFERED
+        value: "1"
+    # Health check — Render will restart the service if this fails
+    healthCheckPath: /health

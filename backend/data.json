@@ -1,3 +1,973 @@
 {
-  "scans": []
+  "scans": [
+    {
+      "id": "f4929bc7-60d2-4447-a155-dbde0b0e1f0c",
+      "productName": "scrub pad",
+      "imagePath": "uploads/a6ae3a44882a4b6b88b7592a473a37b7_1.png",
+      "scannedAt": "2026-09-20T05:15:06.798399+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "Cummodit t:SCRUB MANUFACTURED ON: 05/2024 'One-swipe MRP: 1e015.00 (lnclof alltaxes) Size NUMBER OF CORMODITy: MANUFACTURED 4 MARKETEDET FAEUDENBERG GALA HOUSEHDed PRODUCT PRIVATE UMITED 02 , GALLERIA 902/9036904, PLOT NO,23724,MINERVA INDUSTRI ESTATE, OFF LBS MAAG NEAR IshA MagaA  ESTI MUMBAL 400 0a0  MHARASHTRA : CASE OF COMSUMER COMPLNNT CONtact: Gdla FREUDENBERG GALA HOUSEHOLD PAQDUCT< PRNATE LIMITED ADDRESS SNEE AS ABOVE CUSTOMER CARE ID: T600 222009 MADE IM EMAL: INDIA  customercareindia@mhp-w com WWWgalaclean com Gala; FOLLOW U5 ON: FREUDENBERC L9) /GalaHomeCleariag Theoshnertinares umeaeena @Gala_Cleaning Htctrnn Tueeseoudand FemrhHan Ogala_homcceaniog  Perfect Clean 8 82 8 8 @ 1 [ 1 1 1 h H 3 # I 4 H Ii W Ik Ha Il 1 1",
+      "detections": [
+        {
+          "id": 1,
+          "text": "Cummodit t:SCRUB",
+          "confidence": 0.0356,
+          "box": [
+            [
+              93,
+              115
+            ],
+            [
+              203,
+              115
+            ],
+            [
+              203,
+              135
+            ],
+            [
+              93,
+              135
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "text": "MANUFACTURED ON: 05/2024",
+          "confidence": 0.7974,
+          "box": [
+            [
+              93,
+              137
+            ],
+            [
+              229,
+              137
+            ],
+            [
+              229,
+              157
+            ],
+            [
+              93,
+              157
+            ]
+          ]
+        },
+        {
+          "id": 3,
+          "text": "'One-swipe",
+          "confidence": 0.6536,
+          "box": [
+            [
+              258,
+              123
+            ],
+            [
+              335,
+              123
+            ],
+            [
+              335,
+              156
+            ],
+            [
+              258,
+              156
+            ]
+          ]
+        },
+        {
+          "id": 4,
+          "text": "MRP:",
+          "confidence": 0.4071,
+          "box": [
+            [
+              93,
+              161
+            ],
+            [
+              121,
+              161
+            ],
+            [
+              121,
+              177
+            ],
+            [
+              93,
+              177
+            ]
+          ]
+        },
+        {
+          "id": 5,
+          "text": "1e015.00 (lnclof alltaxes)",
+          "confidence": 0.0729,
+          "box": [
+            [
+              127,
+              161
+            ],
+            [
+              259,
+              161
+            ],
+            [
+              259,
+              177
+            ],
+            [
+              127,
+              177
+            ]
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Size",
+          "confidence": 0.9999,
+          "box": [
+            [
+              346,
+              148
+            ],
+            [
+              382,
+              148
+            ],
+            [
+              382,
+              172
+            ],
+            [
+              346,
+              172
+            ]
+          ]
+        },
+        {
+          "id": 7,
+          "text": "NUMBER OF CORMODITy:",
+          "confidence": 0.2755,
+          "box": [
+            [
+              95,
+              181
+            ],
+            [
+              211,
+              181
+            ],
+            [
+              211,
+              199
+            ],
+            [
+              95,
+              199
+            ]
+          ]
+        },
+        {
+          "id": 8,
+          "text": "MANUFACTURED 4 MARKETEDET",
+          "confidence": 0.1625,
+          "box": [
+            [
+              93,
+              207
+            ],
+            [
+              239,
+              207
+            ],
+            [
+              239,
+              223
+            ],
+            [
+              93,
+              223
+            ]
+          ]
+        },
+        {
+          "id": 9,
+          "text": "FAEUDENBERG GALA HOUSEHDed",
+          "confidence": 0.5507,
+          "box": [
+            [
+              93,
+              221
+            ],
+            [
+              237,
+              221
+            ],
+            [
+              237,
+              237
+            ],
+            [
+              93,
+              237
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "text": "PRODUCT PRIVATE UMITED 02 ,",
+          "confidence": 0.42,
+          "box": [
+            [
+              93,
+              237
+            ],
+            [
+              227,
+              237
+            ],
+            [
+              227,
+              253
+            ],
+            [
+              93,
+              253
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "text": "GALLERIA",
+          "confidence": 0.7689,
+          "box": [
+            [
+              95,
+              253
+            ],
+            [
+              141,
+              253
+            ],
+            [
+              141,
+              267
+            ],
+            [
+              95,
+              267
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "text": "902/9036904,",
+          "confidence": 0.1976,
+          "box": [
+            [
+              153,
+              253
+            ],
+            [
+              211,
+              253
+            ],
+            [
+              211,
+              267
+            ],
+            [
+              153,
+              267
+            ]
+          ]
+        },
+        {
+          "id": 13,
+          "text": "PLOT NO,23724,MINERVA INDUSTRI",
+          "confidence": 0.2461,
+          "box": [
+            [
+              93,
+              267
+            ],
+            [
+              249,
+              267
+            ],
+            [
+              249,
+              283
+            ],
+            [
+              93,
+              283
+            ]
+          ]
+        },
+        {
+          "id": 14,
+          "text": "ESTATE, OFF LBS MAAG NEAR",
+          "confidence": 0.7735,
+          "box": [
+            [
+              107,
+              283
+            ],
+            [
+              237,
+              283
+            ],
+            [
+              237,
+              299
+            ],
+            [
+              107,
+              299
+            ]
+          ]
+        },
+        {
+          "id": 15,
+          "text": "IshA MagaA ",
+          "confidence": 0.0461,
+          "box": [
+            [
+              95,
+              299
+            ],
+            [
+              151,
+              299
+            ],
+            [
+              151,
+              313
+            ],
+            [
+              95,
+              313
+            ]
+          ]
+        },
+        {
+          "id": 16,
+          "text": "ESTI",
+          "confidence": 0.4816,
+          "box": [
+            [
+              203,
+              299
+            ],
+            [
+              225,
+              299
+            ],
+            [
+              225,
+              315
+            ],
+            [
+              203,
+              315
+            ]
+          ]
+        },
+        {
+          "id": 17,
+          "text": "MUMBAL",
+          "confidence": 0.4682,
+          "box": [
+            [
+              95,
+              313
+            ],
+            [
+              133,
+              313
+            ],
+            [
+              133,
+              329
+            ],
+            [
+              95,
+              329
+            ]
+          ]
+        },
+        {
+          "id": 18,
+          "text": "400 0a0  MHARASHTRA :",
+          "confidence": 0.1537,
+          "box": [
+            [
+              137,
+              313
+            ],
+            [
+              245,
+              313
+            ],
+            [
+              245,
+              329
+            ],
+            [
+              137,
+              329
+            ]
+          ]
+        },
+        {
+          "id": 19,
+          "text": "CASE OF COMSUMER COMPLNNT CONtact:",
+          "confidence": 0.3247,
+          "box": [
+            [
+              103,
+              335
+            ],
+            [
+              285,
+              335
+            ],
+            [
+              285,
+              353
+            ],
+            [
+              103,
+              353
+            ]
+          ]
+        },
+        {
+          "id": 20,
+          "text": "Gdla",
+          "confidence": 0.2934,
+          "box": [
+            [
+              304,
+              336
+            ],
+            [
+              350,
+              336
+            ],
+            [
+              350,
+              362
+            ],
+            [
+              304,
+              362
+            ]
+          ]
+        },
+        {
+          "id": 21,
+          "text": "FREUDENBERG GALA HOUSEHOLD PAQDUCT<",
+          "confidence": 0.5574,
+          "box": [
+            [
+              93,
+              353
+            ],
+            [
+              275,
+              353
+            ],
+            [
+              275,
+              369
+            ],
+            [
+              93,
+              369
+            ]
+          ]
+        },
+        {
+          "id": 22,
+          "text": "PRNATE LIMITED ADDRESS SNEE AS ABOVE",
+          "confidence": 0.1865,
+          "box": [
+            [
+              93,
+              367
+            ],
+            [
+              279,
+              367
+            ],
+            [
+              279,
+              383
+            ],
+            [
+              93,
+              383
+            ]
+          ]
+        },
+        {
+          "id": 23,
+          "text": "CUSTOMER CARE ID: T600 222009",
+          "confidence": 0.2335,
+          "box": [
+            [
+              93,
+              381
+            ],
+            [
+              243,
+              381
+            ],
+            [
+              243,
+              399
+            ],
+            [
+              93,
+              399
+            ]
+          ]
+        },
+        {
+          "id": 24,
+          "text": "MADE IM",
+          "confidence": 0.7725,
+          "box": [
+            [
+              361,
+              381
+            ],
+            [
+              411,
+              381
+            ],
+            [
+              411,
+              401
+            ],
+            [
+              361,
+              401
+            ]
+          ]
+        },
+        {
+          "id": 25,
+          "text": "EMAL:",
+          "confidence": 0.6613,
+          "box": [
+            [
+              93,
+              407
+            ],
+            [
+              127,
+              407
+            ],
+            [
+              127,
+              423
+            ],
+            [
+              93,
+              423
+            ]
+          ]
+        },
+        {
+          "id": 26,
+          "text": "INDIA ",
+          "confidence": 0.6797,
+          "box": [
+            [
+              360,
+              398
+            ],
+            [
+              414,
+              398
+            ],
+            [
+              414,
+              426
+            ],
+            [
+              360,
+              426
+            ]
+          ]
+        },
+        {
+          "id": 27,
+          "text": "customercareindia@mhp-w com",
+          "confidence": 0.533,
+          "box": [
+            [
+              93,
+              419
+            ],
+            [
+              267,
+              419
+            ],
+            [
+              267,
+              439
+            ],
+            [
+              93,
+              439
+            ]
+          ]
+        },
+        {
+          "id": 28,
+          "text": "WWWgalaclean com",
+          "confidence": 0.7398,
+          "box": [
+            [
+              95,
+              437
+            ],
+            [
+              201,
+              437
+            ],
+            [
+              201,
+              457
+            ],
+            [
+              95,
+              457
+            ]
+          ]
+        },
+        {
+          "id": 29,
+          "text": "Gala;",
+          "confidence": 0.4052,
+          "box": [
+            [
+              296,
+              432
+            ],
+            [
+              340,
+              432
+            ],
+            [
+              340,
+              456
+            ],
+            [
+              296,
+              456
+            ]
+          ]
+        },
+        {
+          "id": 30,
+          "text": "FOLLOW U5 ON:",
+          "confidence": 0.5493,
+          "box": [
+            [
+              93,
+              467
+            ],
+            [
+              161,
+              467
+            ],
+            [
+              161,
+              483
+            ],
+            [
+              93,
+              483
+            ]
+          ]
+        },
+        {
+          "id": 31,
+          "text": "FREUDENBERC",
+          "confidence": 0.9897,
+          "box": [
+            [
+              233,
+              479
+            ],
+            [
+              303,
+              479
+            ],
+            [
+              303,
+              493
+            ],
+            [
+              233,
+              493
+            ]
+          ]
+        },
+        {
+          "id": 32,
+          "text": "L9) /GalaHomeCleariag",
+          "confidence": 0.1959,
+          "box": [
+            [
+              94,
+              483
+            ],
+            [
+              189,
+              483
+            ],
+            [
+              189,
+              503
+            ],
+            [
+              94,
+              503
+            ]
+          ]
+        },
+        {
+          "id": 33,
+          "text": "Theoshnertinares umeaeena",
+          "confidence": 0.0,
+          "box": [
+            [
+              198,
+              500
+            ],
+            [
+              310,
+              500
+            ],
+            [
+              310,
+              508
+            ],
+            [
+              198,
+              508
+            ]
+          ]
+        },
+        {
+          "id": 34,
+          "text": "@Gala_Cleaning",
+          "confidence": 0.8119,
+          "box": [
+            [
+              109,
+              503
+            ],
+            [
+              177,
+              503
+            ],
+            [
+              177,
+              519
+            ],
+            [
+              109,
+              519
+            ]
+          ]
+        },
+        {
+          "id": 35,
+          "text": "Htctrnn",
+          "confidence": 0.0011,
+          "box": [
+            [
+              196,
+              510
+            ],
+            [
+              238,
+              510
+            ],
+            [
+              238,
+              516
+            ],
+            [
+              196,
+              516
+            ]
+          ]
+        },
+        {
+          "id": 36,
+          "text": "Tueeseoudand",
+          "confidence": 0.0085,
+          "box": [
+            [
+              236,
+              508
+            ],
+            [
+              293,
+              508
+            ],
+            [
+              293,
+              520
+            ],
+            [
+              236,
+              520
+            ]
+          ]
+        },
+        {
+          "id": 37,
+          "text": "FemrhHan",
+          "confidence": 0.0003,
+          "box": [
+            [
+              218,
+              518
+            ],
+            [
+              270,
+              518
+            ],
+            [
+              270,
+              526
+            ],
+            [
+              218,
+              526
+            ]
+          ]
+        },
+        {
+          "id": 38,
+          "text": "Ogala_homcceaniog ",
+          "confidence": 0.1849,
+          "box": [
+            [
+              95,
+              521
+            ],
+            [
+              189,
+              521
+            ],
+            [
+              189,
+              537
+            ],
+            [
+              95,
+              537
+            ]
+          ]
+        },
+        {
+          "id": 39,
+          "text": "Perfect",
+          "confidence": 0.8561,
+          "box": [
+            [
+              341,
+              127
+            ],
+            [
+              393,
+              123
+            ],
+            [
+              394,
+              148
+            ],
+            [
+              343,
+              152
+            ]
+          ]
+        },
+        {
+          "id": 40,
+          "text": "Clean",
+          "confidence": 0.6467,
+          "box": [
+            [
+              264,
+              152
+            ],
+            [
+              306,
+              148
+            ],
+            [
+              308,
+              169
+            ],
+            [
+              266,
+              174
+            ]
+          ]
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "Found price: 'mrp: 1'",
+          "remarks": "Found price but MISSING mandatory 'inclusive of all taxes' or 'GST' clause."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'lot' with date '05/2024'",
+          "remarks": "Manufacturing / Packing date is declared."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'product ... 222009'",
+          "remarks": "Company name and location found (keyword like 'Mfg by' not explicit)."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "'Customer Care' keyword found but no phone/email detected",
+          "remarks": "Care keyword present but actual contact info not readable by OCR."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "netQuantity",
+        "consumerCare"
+      ]
+    }
+  ]
 }

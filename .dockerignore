@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Uploaded label images (large, shouldn't be in Docker image)
+backend/uploads/
+
+# Scan history (persisted at runtime, not baked in)
+backend/data.json
+
+# Dev/test scripts
+backend/ocr_test.py
+backend/test_rules.py
+
+# EasyOCR model cache (downloaded at build time via RUN command in Dockerfile)
+# .EasyOCR/
+
+# Git and IDE
+.git/
+.gitignore
+*.md
+
+# OS
+.DS_Store
+Thumbs.db
