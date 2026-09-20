@@ -69,7 +69,7 @@ async function submitScan() {
     loadHistory();
   } catch (e) {
     console.error("Scan error", e);
-    alert("Scan failed. Is the backend running on port 5000?");
+    alert("Scan failed: " + (e.message || "Network error. Please try again."));
   } finally {
     document.getElementById('report-skeleton').style.display = 'none';
     document.getElementById('report-content').style.opacity = '1';
