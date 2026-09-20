@@ -1,6 +1,51 @@
 {
   "scans": [
     {
+      "id": "9d90e6cc-bc4c-48fa-88f8-b1059a1d1d03",
+      "productName": "dettol sanitiser 1",
+      "imagePath": "uploads/c46436dd7da34b2985dd34b038f13909_20260920_214749.jpg",
+      "scannedAt": "2026-09-20T16:19:38.397019Z",
+      "status": "Non-Compliant",
+      "extractedText": "DISIAHCOHOHC SQENBTVRERIZER DETTOL INSTANT HAND SANIIZER Ingredients Akcohol IP Dettol Hand Sanitizer (Denatured) eq toabsolute killss9gbofgerms instantty akohol 72346VN; Water PEGi without watef; PPG-17/6 Copolme Eropvene Gycot Use anytime anywhere: @r;office; Agyates/C10 30AlkyAcryiate Fpodsecckaes youpaaseieaiet Coxspolmerterkdoeperune  {5e53 'Leavesyour E Tefreshed lenediamine Perfume I5often as required Howtouse: Takea Axenbae A brMs nilindHezdare Ungf; thumbnail size drop on palmandmub Pot [eaMasalo= 6305 your hands brsklyuntilz @3 Gauton Keep 219p0371725,2224763341785 EpP awayfrom fire or flame= dhildren Avoid Vilegedrostt TensilBaddi Distict-Solan onaround eyes; ears moutth; MHinmF Kaene8 brokenfimtated skin or largeareasofbcdy In  ADpii n SateBaseicinfomt-i94 aaseofcontactwith eye rinse thoroughlywith Kanetedeyra tonsuneoucaunogoonbd water In @aseofimtation; discontinueuse RedtnConsumer Careat Consutta doctorifimtationper_stsorproduct Redti Rendiser ndplezia DFFGpe Fan6u is swallowed FORETTERVLUSCNI 87u Foor ( Ch405B UayogVihar Phzsel; StorageConditon: Storeina Cool DryPlace Sector20 Gurugam-122016, For MRP (indof 3200698 TolFree Numbec 18001035012 all Kaeata7 Emait ConsumecHeakun_Indiaerbcom^ Mfdy No & Net Vol: 60ml See 5 8l96 5 g981384839 Rs. C0 45* #Fromo Price 01/2 BKA0720U9 12/23 genitalia, use (Tower C Exp: 'pack",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "MRP keyword found but price number not readable",
+          "remarks": "MRP text detected but price value and tax clause not clearly readable by OCR."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 60ml",
+          "remarks": "Net quantity '60ml' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mfd' with date '12/23'",
+          "remarks": "Manufacturing / Packing date is declared."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'product ... 122016'",
+          "remarks": "Company name and location found (keyword like 'Mfg by' not explicit)."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Phone: 18001035012",
+          "remarks": "Consumer care phone/helpline found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp"
+      ]
+    },
+    {
       "id": "9a86beb0-7373-4df8-bcb8-dfd6caee3d58",
       "productName": "room fragrance 1",
       "imagePath": "uploads/0011a3b7c4b84424b0fda2e66e94b11f_20260919_194834.jpg",
