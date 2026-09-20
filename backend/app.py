@@ -2,18 +2,20 @@
 app.py — Flask backend for SIH Legal Metrology Compliance Checker
 
 Hybrid Vision Engine:
-  1. Multimodal Gemini Vision (gemini-3.8-flash):
-     - Near-100% accuracy on complex packaging with glare, folds, and curved surfaces.
+  1. Multimodal Gemini Vision:
+     - Tries candidate models: gemini-2.5-flash, gemini-2.0-flash, gemini-2.0-flash-lite,
+       gemini-1.5-flash, gemini-1.5-flash-8b, gemini-3.5-flash-lite, gemini-flash-latest, gemini-3.8-flash
+     - High accuracy on complex packaging with glare, folds, and curved surfaces.
      - Naturally resolves OCR typos and letter-swaps.
   2. High-Resolution Local OCR (OpenCV CLAHE + EasyOCR at 2048px):
      - 100% offline fallback when no API key is provided.
-     - Eagerly loaded at startup for fast scans.
+     - Eagerly loaded at startup for fast responses.
      - Multi-angle rotation support for vertical/sideways labels.
 """
 
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
-import os, json, uuid, datetime, gc
+import os, json, uuid, datetime, gc, time
 from dotenv import load_dotenv
 from rules_engine import run_compliance_check
 
@@ -77,7 +79,8 @@ def preprocess_image(pil_img):
 def analyze_with_gemini_vision(image_path, api_key=None):
     """
     Multimodal Vision Analysis using Gemini:
-    Tries candidate models (gemini-2.5-flash, gemini-2.0-flash, gemini-1.5-flash, gemini-flash-latest, gemini-3.8-flash).
+    Tries candidate models (gemini-2.5-flash, gemini-2.0-flash, gemini-2.0-flash-lite,
+    gemini-1.5-flash, gemini-1.5-flash-8b, gemini-3.5-flash-lite, gemini-flash-latest, gemini-3.8-flash).
     Processes complex packaging with glare, folds, curved surfaces, and fine print.
     Naturally understands context and corrects OCR letter-swaps.
     """
@@ -127,7 +130,6 @@ def analyze_with_gemini_vision(image_path, api_key=None):
         used_model = None
         last_err = None
 
-        import time
         for model_name in candidate_models:
             for attempt in range(2):
                 try:
@@ -152,6 +154,9 @@ def analyze_with_gemini_vision(image_path, api_key=None):
 
             if used_model:
                 break
+
+        if not response or not response.text:
+            return None, f"All candidate models failed. Last error: {last_err}"
 
         extracted_text = response.text or ""
         print(f"[Gemini Vision] Successfully extracted {len(extracted_text)} characters using {used_model}.")
@@ -332,7 +337,6 @@ def scan():
             image_path = f"uploads/{filename}"
 
     # Step 2: Hybrid Vision Execution
-    # Try Gemini Vision first if API key is provided/configured
     ocr_result = None
     gemini_error = None
     if saved_path and os.path.exists(saved_path):
