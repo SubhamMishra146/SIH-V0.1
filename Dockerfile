@@ -1,8 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # SIH Legal Metrology Compliance Checker — Production Dockerfile
 # Base: python:3.10-slim (stable for EasyOCR + OpenCV on Linux)
-# NOTE: EasyOCR models are downloaded on first scan request (lazy init)
-#       to keep startup RAM usage low for Render free tier (512MB limit)
 # ─────────────────────────────────────────────────────────────────────────────
 
 FROM python:3.10-slim
@@ -21,8 +19,10 @@ WORKDIR /app
 COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Pre-download model weights at BUILD time so first scan has ZERO download delay
 ENV PYTHONIOENCODING=utf-8
 ENV PYTHONUNBUFFERED=1
+RUN python -c "import easyocr; print('[BUILD] Caching OCR models...'); easyocr.Reader(['en'], gpu=False); print('[BUILD] Done.')"
 
 # Copy application code
 COPY backend/ ./backend/
@@ -32,6 +32,5 @@ WORKDIR /app/backend
 
 EXPOSE 8000
 
-# Production server: gunicorn with 1 worker (RAM constrained on free tier)
-# timeout=300 allows EasyOCR to load on first request without timing out
-CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-8000} --timeout 300 --workers 1 app:app"]
+# Gunicorn with 1 worker and 120s timeout
+CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-8000} --timeout 120 --workers 1 app:app"]
