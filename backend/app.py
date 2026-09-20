@@ -76,13 +76,14 @@ def preprocess_image(pil_img):
 
 def analyze_with_gemini_vision(image_path, api_key=None):
     """
-    Multimodal Vision Analysis using Gemini 3.8 Flash:
+    Multimodal Vision Analysis using Gemini:
+    Tries candidate models (gemini-2.5-flash, gemini-2.0-flash, gemini-1.5-flash, gemini-flash-latest, gemini-3.8-flash).
     Processes complex packaging with glare, folds, curved surfaces, and fine print.
     Naturally understands context and corrects OCR letter-swaps.
     """
     key = api_key or os.environ.get("GEMINI_API_KEY")
     if not key:
-        return None
+        return None, "No API key provided."
 
     try:
         from google import genai
@@ -112,14 +113,31 @@ def analyze_with_gemini_vision(image_path, api_key=None):
             "Return the transcription clearly as plain text containing all detected declarations."
         )
 
-        print("[Gemini Vision] Sending image to gemini-3.8-flash...")
-        response = client.models.generate_content(
-            model='gemini-3.8-flash',
-            contents=[pil_img, prompt]
-        )
+        candidate_models = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-flash-latest', 'gemini-3.8-flash']
+        response = None
+        used_model = None
+        last_err = None
+
+        for model_name in candidate_models:
+            try:
+                print(f"[Gemini Vision] Trying model '{model_name}'...")
+                response = client.models.generate_content(
+                    model=model_name,
+                    contents=[pil_img, prompt]
+                )
+                if response and response.text:
+                    used_model = model_name
+                    print(f"[Gemini Vision] Model '{model_name}' succeeded!")
+                    break
+            except Exception as err:
+                print(f"[Gemini Vision] Model '{model_name}' failed: {err}")
+                last_err = err
+
+        if not response or not response.text:
+            return None, f"All candidate models failed. Last error: {last_err}"
 
         extracted_text = response.text or ""
-        print(f"[Gemini Vision] Successfully extracted {len(extracted_text)} characters.")
+        print(f"[Gemini Vision] Successfully extracted {len(extracted_text)} characters using {used_model}.")
 
         # Create structured detections per line for the UI data grid
         lines = [line.strip() for line in extracted_text.split('\n') if line.strip()]
@@ -134,13 +152,14 @@ def analyze_with_gemini_vision(image_path, api_key=None):
 
         return {
             "status": "success",
-            "engine": "Gemini 3.8 Flash (Vision)",
+            "engine": f"Gemini Vision ({used_model})",
             "detections": detections,
             "raw_text": extracted_text
-        }
+        }, None
+
     except Exception as e:
-        print(f"[Gemini Vision] Error: {e}. Falling back to local OCR.")
-        return None
+        print(f"[Gemini Vision] Top-level error: {e}. Falling back to local OCR.")
+        return None, str(e)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -298,11 +317,12 @@ def scan():
     # Step 2: Hybrid Vision Execution
     # Try Gemini Vision first if API key is provided/configured
     ocr_result = None
+    gemini_error = None
     if saved_path and os.path.exists(saved_path):
         print(f"\n[SCAN] ── Processing: {saved_path}")
         if api_key or os.environ.get("GEMINI_API_KEY"):
             print("[SCAN] Attempting Gemini Vision analysis...")
-            ocr_result = analyze_with_gemini_vision(saved_path, api_key=api_key)
+            ocr_result, gemini_error = analyze_with_gemini_vision(saved_path, api_key=api_key)
 
         # Fallback to local OCR if Gemini Vision was not used or failed
         if not ocr_result:
@@ -323,6 +343,7 @@ def scan():
         "id": str(uuid.uuid4()),
         "productName": product_name,
         "engine": ocr_result.get("engine", "Local OpenCV + EasyOCR"),
+        "geminiError": gemini_error,
         "imagePath": image_path,
         "scannedAt": datetime.datetime.now(datetime.UTC).isoformat(),
         "status": result["status"],

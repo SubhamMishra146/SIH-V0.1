@@ -121,6 +121,11 @@ async function submitScan() {
 
     renderReportCard(currentScan);
     loadHistory();
+
+    if (currentScan.geminiError && apiKey) {
+      console.warn("Gemini Vision notice:", currentScan.geminiError);
+      alert("Gemini Vision Notice: Could not connect to Gemini (" + currentScan.geminiError + ").\n\nFell back to Local OpenCV + EasyOCR.");
+    }
   } catch (e) {
     console.error("Scan error", e);
     alert("Scan failed: " + (e.message || "Network error. Please try again."));
