@@ -9,6 +9,9 @@ echo   High-Speed On-Device AI Engine + Public Tunnel for Phones & Teammates
 echo  ========================================================================
 echo.
 
+:: 0. Clean up any stale process holding port 5000
+for /f "tokens=5" %%a in ('netstat -aon ^| findstr :5000 ^| findstr LISTENING') do taskkill /f /pid %%a >nul 2>&1
+
 :: 1. Start the Flask Server in its own window
 echo  [1/2] Starting local AI backend on http://localhost:5000 ...
 start "SIH Local AI Backend [Port 5000]" /min cmd /c "cd /d "%~dp0backend" && set PYTHONIOENCODING=utf-8 && python app.py"
