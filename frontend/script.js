@@ -3,12 +3,27 @@ const API_BASE = "/api";
 let selectedFile = null;
 let currentScan = null;
 
+function updateGeminiBtnState() {
+  const btn = document.getElementById('gemini-toggle-btn');
+  const key = localStorage.getItem('gemini_api_key');
+  if (btn) {
+    if (key) {
+      btn.className = "btn btn-sm btn-info fw-semibold";
+      btn.innerHTML = `<i class="bi bi-stars"></i> Gemini Vision <span class="badge bg-success ms-1">ACTIVE</span>`;
+    } else {
+      btn.className = "btn btn-sm btn-outline-info";
+      btn.innerHTML = `<i class="bi bi-stars"></i> Gemini Vision`;
+    }
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   loadHistory();
   const savedKey = localStorage.getItem('gemini_api_key');
   if (savedKey && document.getElementById('gemini-api-key')) {
     document.getElementById('gemini-api-key').value = savedKey;
   }
+  updateGeminiBtnState();
 });
 
 function toggleGeminiSettings() {
@@ -27,6 +42,7 @@ function saveGeminiKey() {
   const key = document.getElementById('gemini-api-key').value.trim();
   if (key) {
     localStorage.setItem('gemini_api_key', key);
+    updateGeminiBtnState();
     alert('Gemini API Key saved! Scans will now use Gemini 3.8 Flash Vision.');
     toggleGeminiSettings();
   }
@@ -37,6 +53,7 @@ function clearGeminiKey() {
   if (document.getElementById('gemini-api-key')) {
     document.getElementById('gemini-api-key').value = '';
   }
+  updateGeminiBtnState();
   alert('Gemini API Key cleared. Scans will use local OpenCV + EasyOCR.');
 }
 
