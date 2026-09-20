@@ -1,6 +1,103 @@
 {
   "scans": [
     {
+      "id": "ec428ee2-5a06-424e-bc62-50bdaecc041d",
+      "productName": "deep work book 2",
+      "imagePath": "uploads/0ed5ce6265ce43d7a952ebda1db4368c_20260920_215156.jpg",
+      "scannedAt": "2026-09-20T16:26:41.456073Z",
+      "status": "Non-Compliant",
+      "extractedText": "WWW.CalNewport.com visi piatkus co.uk 24 hachette ISBN 978-0-3494-1368-6 H india 1 1 FSC www hachetteindia com YORRCVEMENT 0 8399 Uk [8.99 9117 8 0 3 4 911613686/> TAanu For sale only in India, Bangladesh, Nepal, Bhutan, 2 755 Sri Lanka and Pakistan ebook business also avallable",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No MRP / price declaration found on the label."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No manufacturer/packer/importer declaration found on the label."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "netQuantity",
+        "mfgDate",
+        "manufacturerDetails",
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "11b16ba2-6580-4c7b-ad90-19fa848f897b",
+      "productName": "deep work book 1",
+      "imagePath": "uploads/3d7a997c08414a85bda40109a17ca928_20260920_215156.jpg",
+      "scannedAt": "2026-09-20T16:23:22.346088Z",
+      "status": "Non-Compliant",
+      "extractedText": "One of the most valuable skills in our economy is becoming increasingly rare. 'Deep work' is the ability to focus without distraction on a cognitively demanding task. Coined by the author on his popular blog Study Hacks, deep work will make you better at what you do, let you achieve more in less time and provide the sense of true fulfilment that comcs from the mastery of a skill. In short, deep work is like a superpower in our increasingly competitive economy: And yet most people, whether knowledge workers in noisy open-plan offices or creatives struggling to sharpen their vision, have lost the ability to go deep spending their days instead in a frantic blur of email and social media, not even realising there's a better way: A mix of cultural criticism and actionable advice, Deep Work will point the way to anyone seeking focused success in a distracted world. 'Makes a compelling case for cultivating intense focus, and offers immediately actionable steps' Adam M. Grant, author of Originals WWW.CalNewport.com visit piatkus.couk 4 hachette ISBN 978-0-3494-1368-6 H india 1 L FSC www hachetteindia com YORRCVEMENT 8 399 UK [8.99 91l7 8 0 3 4 911413686 > JAnu For sale only in India, Bangladesh, Nepal, Bhutan, W \" Sri Lanka and Pakistan ebook business 4ls0 available",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No MRP / price declaration found on the label."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 1 l",
+          "remarks": "Net quantity '1 l' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No manufacturer/packer/importer declaration found on the label."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "mfgDate",
+        "manufacturerDetails",
+        "consumerCare"
+      ]
+    },
+    {
       "id": "9d90e6cc-bc4c-48fa-88f8-b1059a1d1d03",
       "productName": "dettol sanitiser 1",
       "imagePath": "uploads/c46436dd7da34b2985dd34b038f13909_20260920_214749.jpg",
