@@ -12,3 +12,8 @@ backend/uploads/
 # OS
 .DS_Store
 Thumbs.db
+
+# Tunnel binaries
+cloudflared.exe
+ngrok.exe
+
