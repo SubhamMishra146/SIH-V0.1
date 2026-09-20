@@ -4,4 +4,6 @@ easyocr==1.7.2
 Pillow
 opencv-python-headless
 numpy
-gunicorn
+pyngrok
+google-genai>=2.3.0
+python-dotenv

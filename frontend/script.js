@@ -3,7 +3,29 @@ const API_BASE = "/api";
 let selectedFile = null;
 let currentScan = null;
 
-document.addEventListener("DOMContentLoaded", loadHistory);
+document.addEventListener("DOMContentLoaded", () => {
+  loadHistory();
+  const savedKey = localStorage.getItem('gemini_api_key');
+  if (savedKey && document.getElementById('gemini-api-key')) {
+    document.getElementById('gemini-api-key').value = savedKey;
+  }
+});
+
+function saveGeminiKey() {
+  const key = document.getElementById('gemini-api-key').value.trim();
+  if (key) {
+    localStorage.setItem('gemini_api_key', key);
+    alert('Gemini API Key saved! Scans will now use Gemini 3.8 Flash Vision.');
+  }
+}
+
+function clearGeminiKey() {
+  localStorage.removeItem('gemini_api_key');
+  if (document.getElementById('gemini-api-key')) {
+    document.getElementById('gemini-api-key').value = '';
+  }
+  alert('Gemini API Key cleared. Scans will use local OpenCV + EasyOCR.');
+}
 
 // ── Drag-and-drop support ───────────────────────────────────────────────────
 const dropZone = document.getElementById('drop-zone');
@@ -58,6 +80,8 @@ async function submitScan() {
   const formData = new FormData();
   formData.append("labelImage", selectedFile);
   formData.append("productName", productName);
+  const apiKey = localStorage.getItem('gemini_api_key') || document.getElementById('gemini-api-key')?.value.trim() || '';
+  if (apiKey) formData.append("apiKey", apiKey);
 
   try {
     const res = await fetch(`${API_BASE}/scan`, { method: "POST", body: formData });
@@ -112,6 +136,15 @@ function renderReportCard(scan) {
   const isCompliant = scan.status === "Compliant";
   document.getElementById('report-status-badge').innerHTML =
     `<span class="compliance-status-badge ${isCompliant ? 'compliant' : 'non-compliant'}">${scan.status}</span>`;
+
+  const engine = scan.engine || "Local OpenCV + EasyOCR";
+  const isGemini = engine.includes("Gemini");
+  const engineBadge = document.getElementById('report-engine-badge');
+  if (engineBadge) {
+    engineBadge.innerHTML = isGemini
+      ? `<span class="badge bg-info text-dark fw-semibold" title="Processed by Gemini 3.8 Flash Vision"><i class="bi bi-stars"></i> ${engine}</span>`
+      : `<span class="badge bg-secondary" title="Processed by on-device EasyOCR"><i class="bi bi-cpu"></i> ${engine}</span>`;
+  }
 
   // Build audit table
   const tbody = document.getElementById('audit-tbody');

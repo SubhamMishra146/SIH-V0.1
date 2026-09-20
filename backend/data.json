@@ -1,6 +1,3924 @@
 {
   "scans": [
     {
+      "id": "9b42f180-1cda-4572-a989-9f6beb4225c6",
+      "productName": "perfume",
+      "imagePath": "uploads/b67ace57408c42b4be9af59c8a5a24a3_perfume.jpeg",
+      "scannedAt": "2026-09-20T08:45:05.241604+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "TO THep SMELLS Fun FOR GAEAT INC PROTECTION Foa ALL FRAGRANCE Well_twist THE CAP Hold  Shen nay FROM UNDERARM AND Gody 'On Tnscan s presgorised Keeose a coolplace an} sunlight   Do not expose 8C Do not 'puncture or burn can even Keep away from sources Emf) brokenlsore skin; irritalion ofigam Iad Ointernally; Use in well ventilated places a76 1 Uteen Does not contain CFC, Jc ] rtsna Alcohol Denat; (99.5% vlv) Content: tonium Benzoate) Butane Isobutene Poonac Kda denal Si Mynistate , Alpha-Isomethyl onone Geraniol, Hexyl Cinnamal, Isoeugenol; Jeohko B0 43 000.07 ARACHIOO4N-22, HiNUHThonas FTHEPACKAGING IS 300 MICRON, IVORAHt BODYSPRAY, MYQEASIA NETWORK INDIA PVI: LTD \u20ac.9 (PARI) EIREA KHAHIGAON; DIST, BULDHANA (MAH) : 444302 W MAde In INDIA   MKTd, By Lic, USER IiaunleveR Ltd. (HUL) @ HUL. 2019, #RSTQ NEW PACK  LeverCARE QUERY / FEEDBACK, TOLLFREE: 180010.22-221,PO BOX 14760 WuMbaI 400 099,Lever CARE@UNLEVERCON \"RP ? (Incl, ofall taxes), USP #MFD,B H d @Use Before ; See bottom ofthe can' NET CONTENT: 150 ml /969 WELCOME= SAMNIN Fortulat Fancaaels Oooua L Ovea tKot (INIceoC {CITRUS ShAKE [ ISKIN. EcILY  tempera ues Wnc. Fen Fddescent malerial L Occuts, Ptopin = Cinnanal Limonere,",
+      "detections": [
+        {
+          "id": 1,
+          "text": "TO THep",
+          "confidence": 0.3106,
+          "box": [
+            [
+              564,
+              90
+            ],
+            [
+              674,
+              90
+            ],
+            [
+              674,
+              164
+            ],
+            [
+              564,
+              164
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "text": "SMELLS",
+          "confidence": 0.9932,
+          "box": [
+            [
+              493,
+              139
+            ],
+            [
+              605,
+              139
+            ],
+            [
+              605,
+              183
+            ],
+            [
+              493,
+              183
+            ]
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Fun",
+          "confidence": 0.2816,
+          "box": [
+            [
+              661,
+              127
+            ],
+            [
+              703,
+              127
+            ],
+            [
+              703,
+              181
+            ],
+            [
+              661,
+              181
+            ]
+          ]
+        },
+        {
+          "id": 4,
+          "text": "FOR",
+          "confidence": 0.7791,
+          "box": [
+            [
+              507,
+              273
+            ],
+            [
+              529,
+              273
+            ],
+            [
+              529,
+              287
+            ],
+            [
+              507,
+              287
+            ]
+          ]
+        },
+        {
+          "id": 5,
+          "text": "GAEAT",
+          "confidence": 0.3884,
+          "box": [
+            [
+              569,
+              273
+            ],
+            [
+              601,
+              273
+            ],
+            [
+              601,
+              289
+            ],
+            [
+              569,
+              289
+            ]
+          ]
+        },
+        {
+          "id": 6,
+          "text": "INC",
+          "confidence": 0.0983,
+          "box": [
+            [
+              447,
+              279
+            ],
+            [
+              469,
+              279
+            ],
+            [
+              469,
+              297
+            ],
+            [
+              447,
+              297
+            ]
+          ]
+        },
+        {
+          "id": 7,
+          "text": "PROTECTION",
+          "confidence": 0.373,
+          "box": [
+            [
+              495,
+              287
+            ],
+            [
+              555,
+              287
+            ],
+            [
+              555,
+              303
+            ],
+            [
+              495,
+              303
+            ]
+          ]
+        },
+        {
+          "id": 8,
+          "text": "Foa ALL",
+          "confidence": 0.3597,
+          "box": [
+            [
+              561,
+              287
+            ],
+            [
+              599,
+              287
+            ],
+            [
+              599,
+              305
+            ],
+            [
+              561,
+              305
+            ]
+          ]
+        },
+        {
+          "id": 9,
+          "text": "FRAGRANCE",
+          "confidence": 0.999,
+          "box": [
+            [
+              477,
+              307
+            ],
+            [
+              574,
+              307
+            ],
+            [
+              574,
+              332
+            ],
+            [
+              477,
+              332
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "text": "Well_twist THE CAP Hold ",
+          "confidence": 0.1672,
+          "box": [
+            [
+              458,
+              338
+            ],
+            [
+              636,
+              338
+            ],
+            [
+              636,
+              366
+            ],
+            [
+              458,
+              366
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "text": "Shen nay FROM UNDERARM AND Gody",
+          "confidence": 0.0212,
+          "box": [
+            [
+              429,
+              351
+            ],
+            [
+              663,
+              351
+            ],
+            [
+              663,
+              389
+            ],
+            [
+              429,
+              389
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "text": "'On",
+          "confidence": 0.5264,
+          "box": [
+            [
+              445,
+              377
+            ],
+            [
+              467,
+              377
+            ],
+            [
+              467,
+              397
+            ],
+            [
+              445,
+              397
+            ]
+          ]
+        },
+        {
+          "id": 13,
+          "text": "Tnscan s presgorised Keeose a coolplace an}",
+          "confidence": 0.0771,
+          "box": [
+            [
+              409,
+              397
+            ],
+            [
+              663,
+              397
+            ],
+            [
+              663,
+              433
+            ],
+            [
+              409,
+              433
+            ]
+          ]
+        },
+        {
+          "id": 14,
+          "text": "sunlight   Do not expose",
+          "confidence": 0.3601,
+          "box": [
+            [
+              428,
+              418
+            ],
+            [
+              576,
+              418
+            ],
+            [
+              576,
+              442
+            ],
+            [
+              428,
+              442
+            ]
+          ]
+        },
+        {
+          "id": 15,
+          "text": "8C Do not",
+          "confidence": 0.2209,
+          "box": [
+            [
+              414,
+              428
+            ],
+            [
+              472,
+              428
+            ],
+            [
+              472,
+              456
+            ],
+            [
+              414,
+              456
+            ]
+          ]
+        },
+        {
+          "id": 16,
+          "text": "'puncture or burn can even",
+          "confidence": 0.6523,
+          "box": [
+            [
+              466,
+              429
+            ],
+            [
+              616,
+              429
+            ],
+            [
+              616,
+              454
+            ],
+            [
+              466,
+              454
+            ]
+          ]
+        },
+        {
+          "id": 17,
+          "text": "Keep away from sources",
+          "confidence": 0.7766,
+          "box": [
+            [
+              496,
+              446
+            ],
+            [
+              632,
+              446
+            ],
+            [
+              632,
+              470
+            ],
+            [
+              496,
+              470
+            ]
+          ]
+        },
+        {
+          "id": 18,
+          "text": "Emf)",
+          "confidence": 0.0641,
+          "box": [
+            [
+              639,
+              445
+            ],
+            [
+              667,
+              445
+            ],
+            [
+              667,
+              463
+            ],
+            [
+              639,
+              463
+            ]
+          ]
+        },
+        {
+          "id": 19,
+          "text": "brokenlsore skin;",
+          "confidence": 0.6447,
+          "box": [
+            [
+              442,
+              463
+            ],
+            [
+              537,
+              463
+            ],
+            [
+              537,
+              484
+            ],
+            [
+              442,
+              484
+            ]
+          ]
+        },
+        {
+          "id": 20,
+          "text": "irritalion",
+          "confidence": 0.4127,
+          "box": [
+            [
+              547,
+              465
+            ],
+            [
+              599,
+              465
+            ],
+            [
+              599,
+              481
+            ],
+            [
+              547,
+              481
+            ]
+          ]
+        },
+        {
+          "id": 21,
+          "text": "ofigam",
+          "confidence": 0.1964,
+          "box": [
+            [
+              629,
+              455
+            ],
+            [
+              663,
+              455
+            ],
+            [
+              663,
+              475
+            ],
+            [
+              629,
+              475
+            ]
+          ]
+        },
+        {
+          "id": 22,
+          "text": "Iad",
+          "confidence": 0.0964,
+          "box": [
+            [
+              401,
+              473
+            ],
+            [
+              431,
+              473
+            ],
+            [
+              431,
+              489
+            ],
+            [
+              401,
+              489
+            ]
+          ]
+        },
+        {
+          "id": 23,
+          "text": "Ointernally; Use in well ventilated places a76 1",
+          "confidence": 0.0854,
+          "box": [
+            [
+              431,
+              472
+            ],
+            [
+              666,
+              472
+            ],
+            [
+              666,
+              502
+            ],
+            [
+              431,
+              502
+            ]
+          ]
+        },
+        {
+          "id": 24,
+          "text": "Uteen Does not contain CFC,",
+          "confidence": 0.2369,
+          "box": [
+            [
+              410,
+              486
+            ],
+            [
+              560,
+              486
+            ],
+            [
+              560,
+              514
+            ],
+            [
+              410,
+              514
+            ]
+          ]
+        },
+        {
+          "id": 25,
+          "text": "Jc ]",
+          "confidence": 0.0165,
+          "box": [
+            [
+              641,
+              489
+            ],
+            [
+              665,
+              489
+            ],
+            [
+              665,
+              505
+            ],
+            [
+              641,
+              505
+            ]
+          ]
+        },
+        {
+          "id": 26,
+          "text": "rtsna",
+          "confidence": 0.0552,
+          "box": [
+            [
+              382,
+              500
+            ],
+            [
+              440,
+              500
+            ],
+            [
+              440,
+              532
+            ],
+            [
+              382,
+              532
+            ]
+          ]
+        },
+        {
+          "id": 27,
+          "text": "Alcohol Denat; (99.5% vlv) Content:",
+          "confidence": 0.7128,
+          "box": [
+            [
+              430,
+              506
+            ],
+            [
+              634,
+              506
+            ],
+            [
+              634,
+              531
+            ],
+            [
+              430,
+              531
+            ]
+          ]
+        },
+        {
+          "id": 28,
+          "text": "tonium Benzoate) Butane Isobutene Poonac",
+          "confidence": 0.1301,
+          "box": [
+            [
+              428,
+              516
+            ],
+            [
+              662,
+              516
+            ],
+            [
+              662,
+              547
+            ],
+            [
+              428,
+              547
+            ]
+          ]
+        },
+        {
+          "id": 29,
+          "text": "Kda denal",
+          "confidence": 0.0305,
+          "box": [
+            [
+              381,
+              531
+            ],
+            [
+              433,
+              531
+            ],
+            [
+              433,
+              549
+            ],
+            [
+              381,
+              549
+            ]
+          ]
+        },
+        {
+          "id": 30,
+          "text": "Si Mynistate , Alpha-Isomethyl",
+          "confidence": 0.0834,
+          "box": [
+            [
+              380,
+              537
+            ],
+            [
+              564,
+              537
+            ],
+            [
+              564,
+              564
+            ],
+            [
+              380,
+              564
+            ]
+          ]
+        },
+        {
+          "id": 31,
+          "text": "onone",
+          "confidence": 0.9963,
+          "box": [
+            [
+              571,
+              543
+            ],
+            [
+              609,
+              543
+            ],
+            [
+              609,
+              559
+            ],
+            [
+              571,
+              559
+            ]
+          ]
+        },
+        {
+          "id": 32,
+          "text": "Geraniol, Hexyl Cinnamal, Isoeugenol;",
+          "confidence": 0.6712,
+          "box": [
+            [
+              406,
+              555
+            ],
+            [
+              609,
+              555
+            ],
+            [
+              609,
+              575
+            ],
+            [
+              406,
+              575
+            ]
+          ]
+        },
+        {
+          "id": 33,
+          "text": "Jeohko B0 43 000.07 ARACHIOO4N-22, HiNUHThonas",
+          "confidence": 0.0017,
+          "box": [
+            [
+              380,
+              568
+            ],
+            [
+              685,
+              568
+            ],
+            [
+              685,
+              599
+            ],
+            [
+              380,
+              599
+            ]
+          ]
+        },
+        {
+          "id": 34,
+          "text": "FTHEPACKAGING IS 300 MICRON,",
+          "confidence": 0.1978,
+          "box": [
+            [
+              377,
+              584
+            ],
+            [
+              548,
+              584
+            ],
+            [
+              548,
+              610
+            ],
+            [
+              377,
+              610
+            ]
+          ]
+        },
+        {
+          "id": 35,
+          "text": "IVORAHt BODYSPRAY,",
+          "confidence": 0.054,
+          "box": [
+            [
+              376,
+              604
+            ],
+            [
+              496,
+              604
+            ],
+            [
+              496,
+              628
+            ],
+            [
+              376,
+              628
+            ]
+          ]
+        },
+        {
+          "id": 36,
+          "text": "MYQEASIA NETWORK INDIA PVI: LTD \u20ac.9 (PARI)",
+          "confidence": 0.0518,
+          "box": [
+            [
+              392,
+              620
+            ],
+            [
+              666,
+              620
+            ],
+            [
+              666,
+              650
+            ],
+            [
+              392,
+              650
+            ]
+          ]
+        },
+        {
+          "id": 37,
+          "text": "EIREA KHAHIGAON; DIST, BULDHANA (MAH) : 444302",
+          "confidence": 0.0887,
+          "box": [
+            [
+              376,
+              640
+            ],
+            [
+              664,
+              640
+            ],
+            [
+              664,
+              666
+            ],
+            [
+              376,
+              666
+            ]
+          ]
+        },
+        {
+          "id": 38,
+          "text": "W MAde In INDIA   MKTd, By Lic, USER",
+          "confidence": 0.0336,
+          "box": [
+            [
+              392,
+              656
+            ],
+            [
+              666,
+              656
+            ],
+            [
+              666,
+              684
+            ],
+            [
+              392,
+              684
+            ]
+          ]
+        },
+        {
+          "id": 39,
+          "text": "IiaunleveR Ltd. (HUL) @ HUL. 2019,",
+          "confidence": 0.0957,
+          "box": [
+            [
+              374,
+              674
+            ],
+            [
+              614,
+              674
+            ],
+            [
+              614,
+              700
+            ],
+            [
+              374,
+              700
+            ]
+          ]
+        },
+        {
+          "id": 40,
+          "text": "#RSTQ NEW PACK ",
+          "confidence": 0.198,
+          "box": [
+            [
+              376,
+              692
+            ],
+            [
+              478,
+              692
+            ],
+            [
+              478,
+              716
+            ],
+            [
+              376,
+              716
+            ]
+          ]
+        },
+        {
+          "id": 41,
+          "text": "LeverCARE QUERY / FEEDBACK,",
+          "confidence": 0.2708,
+          "box": [
+            [
+              405,
+              706
+            ],
+            [
+              588,
+              706
+            ],
+            [
+              588,
+              735
+            ],
+            [
+              405,
+              735
+            ]
+          ]
+        },
+        {
+          "id": 42,
+          "text": "TOLLFREE: 180010.22-221,PO BOX 14760",
+          "confidence": 0.4399,
+          "box": [
+            [
+              406,
+              724
+            ],
+            [
+              632,
+              724
+            ],
+            [
+              632,
+              750
+            ],
+            [
+              406,
+              750
+            ]
+          ]
+        },
+        {
+          "id": 43,
+          "text": "WuMbaI 400 099,Lever CARE@UNLEVERCON",
+          "confidence": 0.1009,
+          "box": [
+            [
+              406,
+              739
+            ],
+            [
+              656,
+              739
+            ],
+            [
+              656,
+              766
+            ],
+            [
+              406,
+              766
+            ]
+          ]
+        },
+        {
+          "id": 44,
+          "text": "\"RP ? (Incl, ofall taxes), USP #MFD,B H d",
+          "confidence": 0.1851,
+          "box": [
+            [
+              406,
+              756
+            ],
+            [
+              676,
+              756
+            ],
+            [
+              676,
+              788
+            ],
+            [
+              406,
+              788
+            ]
+          ]
+        },
+        {
+          "id": 45,
+          "text": "@Use Before ; See bottom ofthe can'",
+          "confidence": 0.5961,
+          "box": [
+            [
+              405,
+              773
+            ],
+            [
+              641,
+              773
+            ],
+            [
+              641,
+              809
+            ],
+            [
+              405,
+              809
+            ]
+          ]
+        },
+        {
+          "id": 46,
+          "text": "NET CONTENT:",
+          "confidence": 0.6159,
+          "box": [
+            [
+              403,
+              809
+            ],
+            [
+              529,
+              809
+            ],
+            [
+              529,
+              850
+            ],
+            [
+              403,
+              850
+            ]
+          ]
+        },
+        {
+          "id": 47,
+          "text": "150 ml /969",
+          "confidence": 0.9012,
+          "box": [
+            [
+              552,
+              818
+            ],
+            [
+              650,
+              818
+            ],
+            [
+              650,
+              846
+            ],
+            [
+              552,
+              846
+            ]
+          ]
+        },
+        {
+          "id": 48,
+          "text": "WELCOME=",
+          "confidence": 0.4686,
+          "box": [
+            [
+              414,
+              99
+            ],
+            [
+              573,
+              79
+            ],
+            [
+              577,
+              142
+            ],
+            [
+              418,
+              162
+            ]
+          ]
+        },
+        {
+          "id": 49,
+          "text": "SAMNIN",
+          "confidence": 0.0338,
+          "box": [
+            [
+              609,
+              134
+            ],
+            [
+              709,
+              181
+            ],
+            [
+              686,
+              225
+            ],
+            [
+              586,
+              178
+            ]
+          ]
+        },
+        {
+          "id": 50,
+          "text": "Fortulat",
+          "confidence": 0.0958,
+          "box": [
+            [
+              464,
+              275
+            ],
+            [
+              508,
+              272
+            ],
+            [
+              510,
+              288
+            ],
+            [
+              466,
+              292
+            ]
+          ]
+        },
+        {
+          "id": 51,
+          "text": "Fancaaels",
+          "confidence": 0.0029,
+          "box": [
+            [
+              599,
+              273
+            ],
+            [
+              653,
+              285
+            ],
+            [
+              649,
+              301
+            ],
+            [
+              595,
+              290
+            ]
+          ]
+        },
+        {
+          "id": 52,
+          "text": "Oooua L",
+          "confidence": 0.1026,
+          "box": [
+            [
+              464,
+              290
+            ],
+            [
+              496,
+              287
+            ],
+            [
+              498,
+              304
+            ],
+            [
+              466,
+              308
+            ]
+          ]
+        },
+        {
+          "id": 53,
+          "text": "Ovea tKot",
+          "confidence": 0.012,
+          "box": [
+            [
+              597,
+              288
+            ],
+            [
+              658,
+              301
+            ],
+            [
+              655,
+              318
+            ],
+            [
+              593,
+              305
+            ]
+          ]
+        },
+        {
+          "id": 54,
+          "text": "(INIceoC",
+          "confidence": 0.0035,
+          "box": [
+            [
+              423,
+              299
+            ],
+            [
+              468,
+              290
+            ],
+            [
+              471,
+              308
+            ],
+            [
+              426,
+              317
+            ]
+          ]
+        },
+        {
+          "id": 55,
+          "text": "{CITRUS",
+          "confidence": 0.3924,
+          "box": [
+            [
+              427,
+              319
+            ],
+            [
+              480,
+              312
+            ],
+            [
+              483,
+              332
+            ],
+            [
+              430,
+              339
+            ]
+          ]
+        },
+        {
+          "id": 56,
+          "text": "ShAKE [",
+          "confidence": 0.1544,
+          "box": [
+            [
+              420,
+              350
+            ],
+            [
+              464,
+              342
+            ],
+            [
+              468,
+              363
+            ],
+            [
+              424,
+              372
+            ]
+          ]
+        },
+        {
+          "id": 57,
+          "text": "ISKIN.",
+          "confidence": 0.3944,
+          "box": [
+            [
+              460,
+              374
+            ],
+            [
+              498,
+              370
+            ],
+            [
+              500,
+              392
+            ],
+            [
+              462,
+              396
+            ]
+          ]
+        },
+        {
+          "id": 58,
+          "text": "EcILY ",
+          "confidence": 0.1514,
+          "box": [
+            [
+              406,
+              387
+            ],
+            [
+              447,
+              377
+            ],
+            [
+              451,
+              396
+            ],
+            [
+              410,
+              406
+            ]
+          ]
+        },
+        {
+          "id": 59,
+          "text": "tempera ues",
+          "confidence": 0.1167,
+          "box": [
+            [
+              599,
+              420
+            ],
+            [
+              662,
+              428
+            ],
+            [
+              659,
+              446
+            ],
+            [
+              596,
+              437
+            ]
+          ]
+        },
+        {
+          "id": 60,
+          "text": "Wnc.",
+          "confidence": 0.0092,
+          "box": [
+            [
+              397,
+              445
+            ],
+            [
+              433,
+              435
+            ],
+            [
+              438,
+              455
+            ],
+            [
+              402,
+              465
+            ]
+          ]
+        },
+        {
+          "id": 61,
+          "text": "Fen",
+          "confidence": 0.0698,
+          "box": [
+            [
+              613,
+              438
+            ],
+            [
+              643,
+              443
+            ],
+            [
+              641,
+              456
+            ],
+            [
+              611,
+              452
+            ]
+          ]
+        },
+        {
+          "id": 62,
+          "text": "Fddescent malerial L",
+          "confidence": 0.1467,
+          "box": [
+            [
+              402,
+              458
+            ],
+            [
+              498,
+              447
+            ],
+            [
+              500,
+              463
+            ],
+            [
+              404,
+              474
+            ]
+          ]
+        },
+        {
+          "id": 63,
+          "text": "Occuts,",
+          "confidence": 0.3617,
+          "box": [
+            [
+              597,
+              465
+            ],
+            [
+              636,
+              471
+            ],
+            [
+              633,
+              488
+            ],
+            [
+              594,
+              481
+            ]
+          ]
+        },
+        {
+          "id": 64,
+          "text": "Ptopin =",
+          "confidence": 0.0387,
+          "box": [
+            [
+              633,
+              527
+            ],
+            [
+              671,
+              536
+            ],
+            [
+              667,
+              552
+            ],
+            [
+              629,
+              543
+            ]
+          ]
+        },
+        {
+          "id": 65,
+          "text": "Cinnanal",
+          "confidence": 0.3056,
+          "box": [
+            [
+              617,
+              541
+            ],
+            [
+              661,
+              547
+            ],
+            [
+              659,
+              564
+            ],
+            [
+              614,
+              557
+            ]
+          ]
+        },
+        {
+          "id": 66,
+          "text": "Limonere,",
+          "confidence": 0.4566,
+          "box": [
+            [
+              607,
+              554
+            ],
+            [
+              658,
+              562
+            ],
+            [
+              655,
+              579
+            ],
+            [
+              604,
+              571
+            ]
+          ]
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No MRP / price declaration found on the label."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: net content: 150",
+          "remarks": "Net quantity 'net content: 150' declared."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'inc ... 444302'",
+          "remarks": "Company name and location found (keyword like 'Mfg by' not explicit)."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "'Customer Care' keyword found but no phone/email detected",
+          "remarks": "Care keyword present but actual contact info not readable by OCR."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "mfgDate",
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "fd5fc8f6-f539-4ce8-a350-324be1584a0d",
+      "productName": "clips",
+      "imagePath": "uploads/b16766b499cd4a388c1504dcb31eb840_pegs.jpeg",
+      "scannedAt": "2026-09-20T08:37:07.737656+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "Megapixel Pegs KhUShi The MegaPixel Pegs KHUSH i Extra Strong, Extra Firm Miurbv: Heat Resistonce colour i.e No  SHIVA PLASTIC (INdiA) itis 0 Loundry series of fresh colour of cofour in sun. MRP & 105/- (Ind etall toxus) to imagine delicious frvits Rust proof; Chrome metal spcing fer conins V2Pus Lest hand loundry-outside hoppily no slain cloths Ultimate Ultimate The Grip: feding ` 2 8 M 8 1 I 1 5 [ 2 8 3 E203 ; 2 0 N P 1 # 1 8 [ 4 1 1 { 3 [ 1 ; 2 3 1",
+      "detections": [
+        {
+          "id": 1,
+          "text": "Megapixel",
+          "confidence": 0.7122,
+          "box": [
+            [
+              228,
+              88
+            ],
+            [
+              665,
+              88
+            ],
+            [
+              665,
+              223
+            ],
+            [
+              228,
+              223
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Pegs",
+          "confidence": 0.9669,
+          "box": [
+            [
+              587,
+              179
+            ],
+            [
+              643,
+              179
+            ],
+            [
+              643,
+              199
+            ],
+            [
+              587,
+              199
+            ]
+          ]
+        },
+        {
+          "id": 3,
+          "text": "KhUShi",
+          "confidence": 0.5892,
+          "box": [
+            [
+              676,
+              132
+            ],
+            [
+              946,
+              132
+            ],
+            [
+              946,
+              182
+            ],
+            [
+              676,
+              182
+            ]
+          ]
+        },
+        {
+          "id": 4,
+          "text": "The",
+          "confidence": 0.9977,
+          "box": [
+            [
+              424,
+              194
+            ],
+            [
+              476,
+              194
+            ],
+            [
+              476,
+              218
+            ],
+            [
+              424,
+              218
+            ]
+          ]
+        },
+        {
+          "id": 5,
+          "text": "MegaPixel",
+          "confidence": 0.6237,
+          "box": [
+            [
+              569,
+              271
+            ],
+            [
+              1198,
+              271
+            ],
+            [
+              1198,
+              465
+            ],
+            [
+              569,
+              465
+            ]
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Pegs",
+          "confidence": 0.9997,
+          "box": [
+            [
+              1089,
+              407
+            ],
+            [
+              1178,
+              407
+            ],
+            [
+              1178,
+              451
+            ],
+            [
+              1089,
+              451
+            ]
+          ]
+        },
+        {
+          "id": 7,
+          "text": "KHUSH i",
+          "confidence": 0.2644,
+          "box": [
+            [
+              822,
+              500
+            ],
+            [
+              1178,
+              500
+            ],
+            [
+              1178,
+              578
+            ],
+            [
+              822,
+              578
+            ]
+          ]
+        },
+        {
+          "id": 8,
+          "text": "Extra Strong, Extra Firm",
+          "confidence": 0.7418,
+          "box": [
+            [
+              692,
+              587
+            ],
+            [
+              878,
+              587
+            ],
+            [
+              878,
+              618
+            ],
+            [
+              692,
+              618
+            ]
+          ]
+        },
+        {
+          "id": 9,
+          "text": "Miurbv:",
+          "confidence": 0.1314,
+          "box": [
+            [
+              1074,
+              590
+            ],
+            [
+              1160,
+              590
+            ],
+            [
+              1160,
+              616
+            ],
+            [
+              1074,
+              616
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "text": "Heat Resistonce colour i.e No ",
+          "confidence": 0.4832,
+          "box": [
+            [
+              692,
+              618
+            ],
+            [
+              924,
+              618
+            ],
+            [
+              924,
+              644
+            ],
+            [
+              692,
+              644
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "text": "SHIVA PLASTIC (INdiA)",
+          "confidence": 0.5473,
+          "box": [
+            [
+              1001,
+              612
+            ],
+            [
+              1237,
+              612
+            ],
+            [
+              1237,
+              648
+            ],
+            [
+              1001,
+              648
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "text": "itis 0 Loundry series of fresh colour",
+          "confidence": 0.508,
+          "box": [
+            [
+              376,
+              640
+            ],
+            [
+              662,
+              640
+            ],
+            [
+              662,
+              672
+            ],
+            [
+              376,
+              672
+            ]
+          ]
+        },
+        {
+          "id": 13,
+          "text": "of cofour in sun.",
+          "confidence": 0.5418,
+          "box": [
+            [
+              694,
+              646
+            ],
+            [
+              822,
+              646
+            ],
+            [
+              822,
+              674
+            ],
+            [
+              694,
+              674
+            ]
+          ]
+        },
+        {
+          "id": 14,
+          "text": "MRP & 105/- (Ind etall toxus)",
+          "confidence": 0.0491,
+          "box": [
+            [
+              1006,
+              646
+            ],
+            [
+              1268,
+              646
+            ],
+            [
+              1268,
+              674
+            ],
+            [
+              1006,
+              674
+            ]
+          ]
+        },
+        {
+          "id": 15,
+          "text": "to imagine delicious frvits",
+          "confidence": 0.5226,
+          "box": [
+            [
+              378,
+              668
+            ],
+            [
+              584,
+              668
+            ],
+            [
+              584,
+              700
+            ],
+            [
+              378,
+              700
+            ]
+          ]
+        },
+        {
+          "id": 16,
+          "text": "Rust proof; Chrome metal spcing fer",
+          "confidence": 0.2637,
+          "box": [
+            [
+              692,
+              674
+            ],
+            [
+              968,
+              674
+            ],
+            [
+              968,
+              704
+            ],
+            [
+              692,
+              704
+            ]
+          ]
+        },
+        {
+          "id": 17,
+          "text": "conins",
+          "confidence": 0.5853,
+          "box": [
+            [
+              1006,
+              674
+            ],
+            [
+              1090,
+              674
+            ],
+            [
+              1090,
+              700
+            ],
+            [
+              1006,
+              700
+            ]
+          ]
+        },
+        {
+          "id": 18,
+          "text": "V2Pus",
+          "confidence": 0.0275,
+          "box": [
+            [
+              1100,
+              672
+            ],
+            [
+              1168,
+              672
+            ],
+            [
+              1168,
+              698
+            ],
+            [
+              1100,
+              698
+            ]
+          ]
+        },
+        {
+          "id": 19,
+          "text": "Lest hand loundry-outside hoppily",
+          "confidence": 0.7683,
+          "box": [
+            [
+              380,
+              697
+            ],
+            [
+              648,
+              697
+            ],
+            [
+              648,
+              730
+            ],
+            [
+              380,
+              730
+            ]
+          ]
+        },
+        {
+          "id": 20,
+          "text": "no slain cloths",
+          "confidence": 0.7033,
+          "box": [
+            [
+              694,
+              702
+            ],
+            [
+              810,
+              702
+            ],
+            [
+              810,
+              728
+            ],
+            [
+              694,
+              728
+            ]
+          ]
+        },
+        {
+          "id": 21,
+          "text": "Ultimate",
+          "confidence": 0.7197,
+          "box": [
+            [
+              474,
+              189
+            ],
+            [
+              584,
+              179
+            ],
+            [
+              586,
+              201
+            ],
+            [
+              476,
+              211
+            ]
+          ]
+        },
+        {
+          "id": 22,
+          "text": "Ultimate",
+          "confidence": 0.9998,
+          "box": [
+            [
+              932,
+              437
+            ],
+            [
+              1090,
+              414
+            ],
+            [
+              1095,
+              449
+            ],
+            [
+              937,
+              472
+            ]
+          ]
+        },
+        {
+          "id": 23,
+          "text": "The",
+          "confidence": 1.0,
+          "box": [
+            [
+              856,
+              446
+            ],
+            [
+              933,
+              437
+            ],
+            [
+              935,
+              475
+            ],
+            [
+              859,
+              484
+            ]
+          ]
+        },
+        {
+          "id": 24,
+          "text": "Grip:",
+          "confidence": 0.9186,
+          "box": [
+            [
+              879,
+              585
+            ],
+            [
+              921,
+              592
+            ],
+            [
+              915,
+              619
+            ],
+            [
+              873,
+              612
+            ]
+          ]
+        },
+        {
+          "id": 25,
+          "text": "feding `",
+          "confidence": 0.2562,
+          "box": [
+            [
+              922,
+              612
+            ],
+            [
+              980,
+              622
+            ],
+            [
+              975,
+              649
+            ],
+            [
+              916,
+              639
+            ]
+          ]
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "Found price: 'mrp & 105/-'",
+          "remarks": "Found price but MISSING mandatory 'inclusive of all taxes' or 'GST' clause."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 0 n",
+          "remarks": "Net quantity '0 n' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No manufacturer/packer/importer declaration found on the label."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "mfgDate",
+        "manufacturerDetails",
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "afbe3507-0c6a-4546-8400-c5645f4e3bbf",
+      "productName": "nb2",
+      "imagePath": "uploads/119267dbd691476ca960e7d7b43a2e67_nb2.jpg",
+      "scannedAt": "2026-09-20T08:33:53.701876+00:00",
+      "status": "Compliant",
+      "extractedText": "undaram SINCE: 1985 Manutactured by : SUNDARAM MULTI PAP LIMITED Pa  No 33 10 37 Sundaram Industnal Zone; Palgnar (WDistna - Palghar 401 404.Maharashtra: India. Fo Feedbadk_ Complaint Contact our Cuslome  Care Executive address as given above Cusbome Care No_ 91-22-67602200 0) 8369691119, Ena satese sndaramgroups in, websile W sundaramgroups in Code 5-14 8119022421725425 Safety Product : A/4 Book= Spiral Size 21 K 29.7 cm Pages 400 MRP: 185/- PKG DL (Inclusive of all taxes) APR 2020 Lock",
+      "detections": [
+        {
+          "id": 1,
+          "text": "undaram",
+          "confidence": 0.9958,
+          "box": [
+            [
+              173,
+              507
+            ],
+            [
+              319,
+              507
+            ],
+            [
+              319,
+              543
+            ],
+            [
+              173,
+              543
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "text": "SINCE: 1985",
+          "confidence": 0.9254,
+          "box": [
+            [
+              158,
+              566
+            ],
+            [
+              296,
+              566
+            ],
+            [
+              296,
+              592
+            ],
+            [
+              158,
+              592
+            ]
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Manutactured by : SUNDARAM MULTI PAP LIMITED",
+          "confidence": 0.669,
+          "box": [
+            [
+              36,
+              594
+            ],
+            [
+              424,
+              594
+            ],
+            [
+              424,
+              620
+            ],
+            [
+              36,
+              620
+            ]
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Pa  No 33 10 37",
+          "confidence": 0.1402,
+          "box": [
+            [
+              107,
+              619
+            ],
+            [
+              203,
+              619
+            ],
+            [
+              203,
+              635
+            ],
+            [
+              107,
+              635
+            ]
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Sundaram Industnal Zone;",
+          "confidence": 0.7425,
+          "box": [
+            [
+              207,
+              619
+            ],
+            [
+              353,
+              619
+            ],
+            [
+              353,
+              635
+            ],
+            [
+              207,
+              635
+            ]
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Palgnar (WDistna - Palghar",
+          "confidence": 0.3263,
+          "box": [
+            [
+              64,
+              632
+            ],
+            [
+              229,
+              632
+            ],
+            [
+              229,
+              652
+            ],
+            [
+              64,
+              652
+            ]
+          ]
+        },
+        {
+          "id": 7,
+          "text": "401 404.Maharashtra: India.",
+          "confidence": 0.6056,
+          "box": [
+            [
+              235,
+              633
+            ],
+            [
+              395,
+              633
+            ],
+            [
+              395,
+              647
+            ],
+            [
+              235,
+              647
+            ]
+          ]
+        },
+        {
+          "id": 8,
+          "text": "Fo Feedbadk_",
+          "confidence": 0.4004,
+          "box": [
+            [
+              125,
+              647
+            ],
+            [
+              205,
+              647
+            ],
+            [
+              205,
+              661
+            ],
+            [
+              125,
+              661
+            ]
+          ]
+        },
+        {
+          "id": 9,
+          "text": "Complaint Contact our",
+          "confidence": 0.9212,
+          "box": [
+            [
+              211,
+              647
+            ],
+            [
+              335,
+              647
+            ],
+            [
+              335,
+              663
+            ],
+            [
+              211,
+              663
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "text": "Cuslome  Care Executive address as given above",
+          "confidence": 0.3266,
+          "box": [
+            [
+              93,
+              661
+            ],
+            [
+              367,
+              661
+            ],
+            [
+              367,
+              677
+            ],
+            [
+              93,
+              677
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "text": "Cusbome Care No_ 91-22-67602200",
+          "confidence": 0.3119,
+          "box": [
+            [
+              77,
+              673
+            ],
+            [
+              285,
+              673
+            ],
+            [
+              285,
+              689
+            ],
+            [
+              77,
+              689
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "text": "0) 8369691119,",
+          "confidence": 0.9305,
+          "box": [
+            [
+              293,
+              673
+            ],
+            [
+              381,
+              673
+            ],
+            [
+              381,
+              689
+            ],
+            [
+              293,
+              689
+            ]
+          ]
+        },
+        {
+          "id": 13,
+          "text": "Ena",
+          "confidence": 0.5202,
+          "box": [
+            [
+              41,
+              687
+            ],
+            [
+              75,
+              687
+            ],
+            [
+              75,
+              703
+            ],
+            [
+              41,
+              703
+            ]
+          ]
+        },
+        {
+          "id": 14,
+          "text": "satese sndaramgroups in, websile",
+          "confidence": 0.2146,
+          "box": [
+            [
+              81,
+              689
+            ],
+            [
+              277,
+              689
+            ],
+            [
+              277,
+              705
+            ],
+            [
+              81,
+              705
+            ]
+          ]
+        },
+        {
+          "id": 15,
+          "text": "W sundaramgroups in",
+          "confidence": 0.5938,
+          "box": [
+            [
+              283,
+              689
+            ],
+            [
+              421,
+              689
+            ],
+            [
+              421,
+              703
+            ],
+            [
+              283,
+              703
+            ]
+          ]
+        },
+        {
+          "id": 16,
+          "text": "Code",
+          "confidence": 1.0,
+          "box": [
+            [
+              160,
+              714
+            ],
+            [
+              226,
+              714
+            ],
+            [
+              226,
+              740
+            ],
+            [
+              160,
+              740
+            ]
+          ]
+        },
+        {
+          "id": 17,
+          "text": "5-14",
+          "confidence": 0.6265,
+          "box": [
+            [
+              242,
+              714
+            ],
+            [
+              300,
+              714
+            ],
+            [
+              300,
+              740
+            ],
+            [
+              242,
+              740
+            ]
+          ]
+        },
+        {
+          "id": 18,
+          "text": "8119022421725425",
+          "confidence": 0.8211,
+          "box": [
+            [
+              90,
+              802
+            ],
+            [
+              358,
+              802
+            ],
+            [
+              358,
+              830
+            ],
+            [
+              90,
+              830
+            ]
+          ]
+        },
+        {
+          "id": 19,
+          "text": "Safety",
+          "confidence": 1.0,
+          "box": [
+            [
+              542,
+              775
+            ],
+            [
+              689,
+              775
+            ],
+            [
+              689,
+              831
+            ],
+            [
+              542,
+              831
+            ]
+          ]
+        },
+        {
+          "id": 20,
+          "text": "Product : A/4 Book=",
+          "confidence": 0.3886,
+          "box": [
+            [
+              60,
+              837
+            ],
+            [
+              305,
+              837
+            ],
+            [
+              305,
+              874
+            ],
+            [
+              60,
+              874
+            ]
+          ]
+        },
+        {
+          "id": 21,
+          "text": "Spiral",
+          "confidence": 1.0,
+          "box": [
+            [
+              315,
+              839
+            ],
+            [
+              403,
+              839
+            ],
+            [
+              403,
+              877
+            ],
+            [
+              315,
+              877
+            ]
+          ]
+        },
+        {
+          "id": 22,
+          "text": "Size",
+          "confidence": 0.5429,
+          "box": [
+            [
+              44,
+              882
+            ],
+            [
+              99,
+              882
+            ],
+            [
+              99,
+              912
+            ],
+            [
+              44,
+              912
+            ]
+          ]
+        },
+        {
+          "id": 23,
+          "text": "21 K 29.7 cm",
+          "confidence": 0.3874,
+          "box": [
+            [
+              108,
+              886
+            ],
+            [
+              244,
+              886
+            ],
+            [
+              244,
+              914
+            ],
+            [
+              108,
+              914
+            ]
+          ]
+        },
+        {
+          "id": 24,
+          "text": "Pages",
+          "confidence": 1.0,
+          "box": [
+            [
+              287,
+              885
+            ],
+            [
+              360,
+              885
+            ],
+            [
+              360,
+              915
+            ],
+            [
+              287,
+              915
+            ]
+          ]
+        },
+        {
+          "id": 25,
+          "text": "400",
+          "confidence": 1.0,
+          "box": [
+            [
+              372,
+              886
+            ],
+            [
+              418,
+              886
+            ],
+            [
+              418,
+              912
+            ],
+            [
+              372,
+              912
+            ]
+          ]
+        },
+        {
+          "id": 26,
+          "text": "MRP:",
+          "confidence": 0.9996,
+          "box": [
+            [
+              95,
+              931
+            ],
+            [
+              220,
+              931
+            ],
+            [
+              220,
+              982
+            ],
+            [
+              95,
+              982
+            ]
+          ]
+        },
+        {
+          "id": 27,
+          "text": "185/-",
+          "confidence": 0.5854,
+          "box": [
+            [
+              255,
+              934
+            ],
+            [
+              367,
+              934
+            ],
+            [
+              367,
+              982
+            ],
+            [
+              255,
+              982
+            ]
+          ]
+        },
+        {
+          "id": 28,
+          "text": "PKG DL",
+          "confidence": 0.5922,
+          "box": [
+            [
+              369,
+              973
+            ],
+            [
+              423,
+              973
+            ],
+            [
+              423,
+              989
+            ],
+            [
+              369,
+              989
+            ]
+          ]
+        },
+        {
+          "id": 29,
+          "text": "(Inclusive of all taxes)",
+          "confidence": 0.9217,
+          "box": [
+            [
+              133,
+              978
+            ],
+            [
+              326,
+              978
+            ],
+            [
+              326,
+              1008
+            ],
+            [
+              133,
+              1008
+            ]
+          ]
+        },
+        {
+          "id": 30,
+          "text": "APR 2020",
+          "confidence": 0.6627,
+          "box": [
+            [
+              363,
+              987
+            ],
+            [
+              429,
+              987
+            ],
+            [
+              429,
+              1003
+            ],
+            [
+              363,
+              1003
+            ]
+          ]
+        },
+        {
+          "id": 31,
+          "text": "Lock",
+          "confidence": 1.0,
+          "box": [
+            [
+              563,
+              971
+            ],
+            [
+              671,
+              971
+            ],
+            [
+              671,
+              1015
+            ],
+            [
+              563,
+              1015
+            ]
+          ]
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mrp: 185/- pkg dl (inclusive of all taxes'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: pages 400",
+          "remarks": "Net quantity 'pages 400' declared."
+        },
+        "mfgDate": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'pkg dl' with date 'apr 2020'",
+          "remarks": "Manufacturing / Packing date is declared."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'manufactured by ... inc ... maharashtra'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Phone: 8369691119",
+          "remarks": "Consumer care phone/helpline found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": []
+    },
+    {
+      "id": "d83d729f-3c1b-4717-8ac2-00c1e2f4e18b",
+      "productName": "nb1",
+      "imagePath": "uploads/0a7e4d9608404396b64bd2471bada75a_nb.jpeg",
+      "scannedAt": "2026-09-20T06:27:58.456505+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "Exptore ThI World Wl To OPEN Up^ New chapILRINLIFE, AND Toexplorc ^ Larocr cenure Manorama Paper Products We are committed to providing high quality Notebook products that 1 are a result of deep understanding of our consumers thoughtful ideas, innovative designs and superior craftsmanship, that have in turn helped us become one of India's leading Notebook Brands_ For India's students these are brilliant times_ With rapidly rising literacy; more schools, new colleges, globally famous IITs and IIMs; and vast spectrum of IT, media, flm, and fashion institutes, Iife is radiant with new epportunities You now have more on the move. So go ahead, gain from  these excellent  timus - Build   your dreams, spread the enthusiasm and make India stronger and shine even brigh; A Premium Product By A4NOTE BOOK Manorama Paper Products Pages: 368 Bhubaneswar Odisha_ With Cover (Tanorama MRP ?:220.00 Inclusive of GST",
+      "detections": [
+        {
+          "id": 1,
+          "text": "Exptore",
+          "confidence": 0.9392,
+          "box": [
+            [
+              313,
+              144
+            ],
+            [
+              542,
+              144
+            ],
+            [
+              542,
+              243
+            ],
+            [
+              313,
+              243
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "text": "ThI World",
+          "confidence": 0.3013,
+          "box": [
+            [
+              415,
+              217
+            ],
+            [
+              489,
+              217
+            ],
+            [
+              489,
+              231
+            ],
+            [
+              415,
+              231
+            ]
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Wl",
+          "confidence": 0.0159,
+          "box": [
+            [
+              310,
+              276
+            ],
+            [
+              332,
+              276
+            ],
+            [
+              332,
+              284
+            ],
+            [
+              310,
+              284
+            ]
+          ]
+        },
+        {
+          "id": 4,
+          "text": "To OPEN Up^ New chapILRINLIFE,",
+          "confidence": 0.0322,
+          "box": [
+            [
+              333,
+              266
+            ],
+            [
+              551,
+              266
+            ],
+            [
+              551,
+              287
+            ],
+            [
+              333,
+              287
+            ]
+          ]
+        },
+        {
+          "id": 5,
+          "text": "AND Toexplorc ^ Larocr cenure",
+          "confidence": 0.0563,
+          "box": [
+            [
+              319,
+              281
+            ],
+            [
+              535,
+              281
+            ],
+            [
+              535,
+              297
+            ],
+            [
+              319,
+              297
+            ]
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Manorama",
+          "confidence": 0.9999,
+          "box": [
+            [
+              399,
+              645
+            ],
+            [
+              485,
+              645
+            ],
+            [
+              485,
+              661
+            ],
+            [
+              399,
+              661
+            ]
+          ]
+        },
+        {
+          "id": 7,
+          "text": "Paper Products",
+          "confidence": 0.9006,
+          "box": [
+            [
+              484,
+              638
+            ],
+            [
+              612,
+              638
+            ],
+            [
+              612,
+              665
+            ],
+            [
+              484,
+              665
+            ]
+          ]
+        },
+        {
+          "id": 8,
+          "text": "We are committed to",
+          "confidence": 0.9733,
+          "box": [
+            [
+              325,
+              667
+            ],
+            [
+              489,
+              667
+            ],
+            [
+              489,
+              685
+            ],
+            [
+              325,
+              685
+            ]
+          ]
+        },
+        {
+          "id": 9,
+          "text": "providing high quality Notebook products that",
+          "confidence": 0.8163,
+          "box": [
+            [
+              487,
+              655
+            ],
+            [
+              854,
+              655
+            ],
+            [
+              854,
+              686
+            ],
+            [
+              487,
+              686
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "text": "1",
+          "confidence": 0.2,
+          "box": [
+            [
+              139,
+              655
+            ],
+            [
+              157,
+              655
+            ],
+            [
+              157,
+              751
+            ],
+            [
+              139,
+              751
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "text": "are a result of deep understanding of our consumers thoughtful ideas, innovative designs",
+          "confidence": 0.9136,
+          "box": [
+            [
+              166,
+              682
+            ],
+            [
+              854,
+              682
+            ],
+            [
+              854,
+              715
+            ],
+            [
+              166,
+              715
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "text": "and superior craftsmanship, that have in",
+          "confidence": 0.8098,
+          "box": [
+            [
+              164,
+              710
+            ],
+            [
+              486,
+              710
+            ],
+            [
+              486,
+              740
+            ],
+            [
+              164,
+              740
+            ]
+          ]
+        },
+        {
+          "id": 13,
+          "text": "turn",
+          "confidence": 0.9987,
+          "box": [
+            [
+              489,
+              715
+            ],
+            [
+              523,
+              715
+            ],
+            [
+              523,
+              729
+            ],
+            [
+              489,
+              729
+            ]
+          ]
+        },
+        {
+          "id": 14,
+          "text": "helped us become",
+          "confidence": 0.979,
+          "box": [
+            [
+              523,
+              707
+            ],
+            [
+              674,
+              707
+            ],
+            [
+              674,
+              733
+            ],
+            [
+              523,
+              733
+            ]
+          ]
+        },
+        {
+          "id": 15,
+          "text": "one of India's leading",
+          "confidence": 0.8375,
+          "box": [
+            [
+              677,
+              707
+            ],
+            [
+              853,
+              707
+            ],
+            [
+              853,
+              727
+            ],
+            [
+              677,
+              727
+            ]
+          ]
+        },
+        {
+          "id": 16,
+          "text": "Notebook Brands_",
+          "confidence": 0.887,
+          "box": [
+            [
+              165,
+              739
+            ],
+            [
+              301,
+              739
+            ],
+            [
+              301,
+              759
+            ],
+            [
+              165,
+              759
+            ]
+          ]
+        },
+        {
+          "id": 17,
+          "text": "For India's students",
+          "confidence": 0.8247,
+          "box": [
+            [
+              531,
+              773
+            ],
+            [
+              665,
+              773
+            ],
+            [
+              665,
+              791
+            ],
+            [
+              531,
+              791
+            ]
+          ]
+        },
+        {
+          "id": 18,
+          "text": "these",
+          "confidence": 0.9997,
+          "box": [
+            [
+              671,
+              773
+            ],
+            [
+              711,
+              773
+            ],
+            [
+              711,
+              789
+            ],
+            [
+              671,
+              789
+            ]
+          ]
+        },
+        {
+          "id": 19,
+          "text": "are brilliant times_",
+          "confidence": 0.9294,
+          "box": [
+            [
+              715,
+              771
+            ],
+            [
+              835,
+              771
+            ],
+            [
+              835,
+              789
+            ],
+            [
+              715,
+              789
+            ]
+          ]
+        },
+        {
+          "id": 20,
+          "text": "With rapidly rising literacy; more schools,",
+          "confidence": 0.6674,
+          "box": [
+            [
+              530,
+              795
+            ],
+            [
+              804,
+              795
+            ],
+            [
+              804,
+              820
+            ],
+            [
+              530,
+              820
+            ]
+          ]
+        },
+        {
+          "id": 21,
+          "text": "new",
+          "confidence": 0.9999,
+          "box": [
+            [
+              809,
+              799
+            ],
+            [
+              841,
+              799
+            ],
+            [
+              841,
+              815
+            ],
+            [
+              809,
+              815
+            ]
+          ]
+        },
+        {
+          "id": 22,
+          "text": "colleges, globally famous IITs and IIMs; and",
+          "confidence": 0.5546,
+          "box": [
+            [
+              530,
+              822
+            ],
+            [
+              828,
+              822
+            ],
+            [
+              828,
+              846
+            ],
+            [
+              530,
+              846
+            ]
+          ]
+        },
+        {
+          "id": 23,
+          "text": "vast spectrum of IT, media, flm, and fashion",
+          "confidence": 0.6266,
+          "box": [
+            [
+              532,
+              848
+            ],
+            [
+              844,
+              848
+            ],
+            [
+              844,
+              872
+            ],
+            [
+              532,
+              872
+            ]
+          ]
+        },
+        {
+          "id": 24,
+          "text": "institutes, Iife is radiant with new epportunities",
+          "confidence": 0.5738,
+          "box": [
+            [
+              528,
+              874
+            ],
+            [
+              842,
+              874
+            ],
+            [
+              842,
+              900
+            ],
+            [
+              528,
+              900
+            ]
+          ]
+        },
+        {
+          "id": 25,
+          "text": "You now have more on the move. So go ahead,",
+          "confidence": 0.6597,
+          "box": [
+            [
+              530,
+              902
+            ],
+            [
+              848,
+              902
+            ],
+            [
+              848,
+              926
+            ],
+            [
+              530,
+              926
+            ]
+          ]
+        },
+        {
+          "id": 26,
+          "text": "gain from  these",
+          "confidence": 0.6142,
+          "box": [
+            [
+              531,
+              933
+            ],
+            [
+              649,
+              933
+            ],
+            [
+              649,
+              953
+            ],
+            [
+              531,
+              953
+            ]
+          ]
+        },
+        {
+          "id": 27,
+          "text": "excellent  timus - Build   your",
+          "confidence": 0.332,
+          "box": [
+            [
+              654,
+              930
+            ],
+            [
+              848,
+              930
+            ],
+            [
+              848,
+              954
+            ],
+            [
+              654,
+              954
+            ]
+          ]
+        },
+        {
+          "id": 28,
+          "text": "dreams, spread the enthusiasm and make India",
+          "confidence": 0.884,
+          "box": [
+            [
+              533,
+              957
+            ],
+            [
+              848,
+              957
+            ],
+            [
+              848,
+              982
+            ],
+            [
+              533,
+              982
+            ]
+          ]
+        },
+        {
+          "id": 29,
+          "text": "stronger and shine even brigh;",
+          "confidence": 0.7247,
+          "box": [
+            [
+              533,
+              986
+            ],
+            [
+              734,
+              986
+            ],
+            [
+              734,
+              1011
+            ],
+            [
+              533,
+              1011
+            ]
+          ]
+        },
+        {
+          "id": 30,
+          "text": "A Premium Product By",
+          "confidence": 0.6929,
+          "box": [
+            [
+              395,
+              1031
+            ],
+            [
+              529,
+              1031
+            ],
+            [
+              529,
+              1047
+            ],
+            [
+              395,
+              1047
+            ]
+          ]
+        },
+        {
+          "id": 31,
+          "text": "A4NOTE BOOK",
+          "confidence": 0.6281,
+          "box": [
+            [
+              690,
+              1026
+            ],
+            [
+              870,
+              1026
+            ],
+            [
+              870,
+              1052
+            ],
+            [
+              690,
+              1052
+            ]
+          ]
+        },
+        {
+          "id": 32,
+          "text": "Manorama Paper Products",
+          "confidence": 0.9847,
+          "box": [
+            [
+              295,
+              1043
+            ],
+            [
+              629,
+              1043
+            ],
+            [
+              629,
+              1082
+            ],
+            [
+              295,
+              1082
+            ]
+          ]
+        },
+        {
+          "id": 33,
+          "text": "Pages:",
+          "confidence": 0.9999,
+          "box": [
+            [
+              683,
+              1057
+            ],
+            [
+              784,
+              1057
+            ],
+            [
+              784,
+              1100
+            ],
+            [
+              683,
+              1100
+            ]
+          ]
+        },
+        {
+          "id": 34,
+          "text": "368",
+          "confidence": 0.9552,
+          "box": [
+            [
+              812,
+              1060
+            ],
+            [
+              864,
+              1060
+            ],
+            [
+              864,
+              1090
+            ],
+            [
+              812,
+              1090
+            ]
+          ]
+        },
+        {
+          "id": 35,
+          "text": "Bhubaneswar",
+          "confidence": 0.9022,
+          "box": [
+            [
+              362,
+              1074
+            ],
+            [
+              480,
+              1074
+            ],
+            [
+              480,
+              1098
+            ],
+            [
+              362,
+              1098
+            ]
+          ]
+        },
+        {
+          "id": 36,
+          "text": "Odisha_",
+          "confidence": 0.5332,
+          "box": [
+            [
+              490,
+              1072
+            ],
+            [
+              554,
+              1072
+            ],
+            [
+              554,
+              1096
+            ],
+            [
+              490,
+              1096
+            ]
+          ]
+        },
+        {
+          "id": 37,
+          "text": "With Cover",
+          "confidence": 0.8966,
+          "box": [
+            [
+              689,
+              1091
+            ],
+            [
+              781,
+              1091
+            ],
+            [
+              781,
+              1111
+            ],
+            [
+              689,
+              1111
+            ]
+          ]
+        },
+        {
+          "id": 38,
+          "text": "(Tanorama",
+          "confidence": 0.32,
+          "box": [
+            [
+              124,
+              1124
+            ],
+            [
+              232,
+              1124
+            ],
+            [
+              232,
+              1148
+            ],
+            [
+              124,
+              1148
+            ]
+          ]
+        },
+        {
+          "id": 39,
+          "text": "MRP ?:220.00",
+          "confidence": 0.7859,
+          "box": [
+            [
+              690,
+              1112
+            ],
+            [
+              884,
+              1112
+            ],
+            [
+              884,
+              1144
+            ],
+            [
+              690,
+              1144
+            ]
+          ]
+        },
+        {
+          "id": 40,
+          "text": "Inclusive of GST",
+          "confidence": 0.8243,
+          "box": [
+            [
+              689,
+              1145
+            ],
+            [
+              789,
+              1145
+            ],
+            [
+              789,
+              1161
+            ],
+            [
+              689,
+              1161
+            ]
+          ]
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mrp ?:220.00 inclusive of gst'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: pages: 368",
+          "remarks": "Net quantity 'pages: 368' declared."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'premium product by ... paper products ... bhubaneswar'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mfgDate",
+        "consumerCare"
+      ]
+    },
+    {
       "id": "f4929bc7-60d2-4447-a155-dbde0b0e1f0c",
       "productName": "scrub pad",
       "imagePath": "uploads/a6ae3a44882a4b6b88b7592a473a37b7_1.png",

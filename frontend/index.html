@@ -17,9 +17,30 @@
         <span class="text-secondary" style="font-size: 0.85rem;">Packaged Commodities Rules, 2011 &#8212; Enforcement Officer Portal</span>
       </div>
     </a>
+    <div class="ms-auto d-flex align-items-center gap-2">
+      <button class="btn btn-sm btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#gemini-settings" aria-expanded="false" title="Configure Gemini Vision">
+        <i class="bi bi-stars"></i> Gemini Vision
+      </button>
+    </div>
   </nav>
 
   <div class="page-wrapper">
+    <!-- ── Optional Gemini Vision Settings Bar ────────────────────────────── -->
+    <div class="collapse mb-3" id="gemini-settings">
+      <div class="card card-body bg-dark border-info">
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+          <div>
+            <div class="fw-semibold text-info"><i class="bi bi-stars"></i> Gemini 3.8 Flash Vision Engine (Optional)</div>
+            <small class="text-secondary">Enables near-100% accuracy on curved, reflective, or folded packaging labels with OCR typo correction.</small>
+          </div>
+          <div class="d-flex align-items-center gap-2" style="min-width: 320px;">
+            <input type="password" id="gemini-api-key" class="form-control form-control-sm" placeholder="Paste Gemini API Key (or leave blank for Local OCR)" />
+            <button class="btn btn-sm btn-info" onclick="saveGeminiKey()">Save</button>
+            <button class="btn btn-sm btn-outline-secondary" onclick="clearGeminiKey()" title="Clear Key">Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ── Stats Cards ───────────────────────────────────────────────────── -->
     <div class="stats-grid">
@@ -83,8 +104,10 @@
           <!-- Actual report content -->
           <div id="report-content">
             <div id="report-product-name" class="fw-bold mb-1 fs-5"></div>
-            <div id="report-timestamp" class="text-muted small mb-2"></div>
-            <div id="report-status-badge" class="mb-3"></div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div id="report-status-badge"></div>
+              <div id="report-engine-badge"></div>
+            </div>
 
             <!-- 4-column Audit Evidence Table -->
             <div class="table-responsive">
