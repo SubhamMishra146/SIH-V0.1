@@ -13,12 +13,11 @@ echo.
 echo  [1/2] Starting local AI backend on http://localhost:5000 ...
 start "SIH Local AI Backend [Port 5000]" /min cmd /c "cd /d "%~dp0backend" && set PYTHONIOENCODING=utf-8 && python app.py"
 
-:: 2. Wait 5 seconds for Flask to initialize
-echo  [2/2] Launching secure public tunnel for mobile/teammate access...
-echo.
-timeout /t 5 /nobreak >nul
+:: 2. Wait until Flask is actually listening on port 5000 before opening browser
+echo  [2/2] Loading AI models & starting server (takes ~10s)...
+powershell -NoProfile -Command "$ready = $false; for ($i=0; $i -lt 40; $i++) { try { $c = New-Object System.Net.Sockets.TcpClient('127.0.0.1', 5000); $c.Close(); $ready = $true; break } catch { Start-Sleep -Milliseconds 600 } }"
 
-:: Automatically open local dashboard in default browser
+:: Open browser the exact moment the server is ready (zero 'refused to connect' errors)
 start http://localhost:5000
 
 echo  ========================================================================
