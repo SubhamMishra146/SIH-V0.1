@@ -129,13 +129,20 @@ function getMatchedRule(text) {
 }
 
 function renderReportCard(scan) {
-  document.getElementById('report-card').style.display = 'block';
-  document.getElementById('report-product-name').innerText = scan.productName;
-  document.getElementById('report-timestamp').innerText = new Date(scan.scannedAt).toLocaleString();
+  const reportCard = document.getElementById('report-card');
+  if (reportCard) reportCard.style.display = 'block';
+
+  const prodName = document.getElementById('report-product-name');
+  if (prodName) prodName.innerText = scan.productName || "Product";
+
+  const timeStamp = document.getElementById('report-timestamp');
+  if (timeStamp) timeStamp.innerText = scan.scannedAt ? new Date(scan.scannedAt).toLocaleString() : '';
 
   const isCompliant = scan.status === "Compliant";
-  document.getElementById('report-status-badge').innerHTML =
-    `<span class="compliance-status-badge ${isCompliant ? 'compliant' : 'non-compliant'}">${scan.status}</span>`;
+  const statusBadge = document.getElementById('report-status-badge');
+  if (statusBadge) {
+    statusBadge.innerHTML = `<span class="compliance-status-badge ${isCompliant ? 'compliant' : 'non-compliant'}">${scan.status}</span>`;
+  }
 
   const engine = scan.engine || "Local OpenCV + EasyOCR";
   const isGemini = engine.includes("Gemini");
