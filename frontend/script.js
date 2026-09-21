@@ -2,22 +2,85 @@
 const API_BASE = "/api";
 let selectedFile = null;
 let currentScan = null;
+let allHistoricalScans = [];
+let historyFilter = 'all';
+
+// ── 3-Page Navigation Controller ────────────────────────────────────────────
+function navigateTo(viewName) {
+  const views = ['scan', 'analytics', 'about'];
+  if (!views.includes(viewName)) viewName = 'scan';
+
+  views.forEach(v => {
+    const el = document.getElementById(`view-${v}`);
+    const btn = document.getElementById(`nav-btn-${v}`);
+    if (el) el.style.display = (v === viewName) ? 'block' : 'none';
+    if (btn) {
+      if (v === viewName) btn.classList.add('active');
+      else btn.classList.remove('active');
+    }
+  });
+
+  // Keep URL hash in sync
+  if (window.location.hash !== `#${viewName}`) {
+    window.history.replaceState(null, '', `#${viewName}`);
+  }
+
+  // Refresh analytics if switching to analytics page
+  if (viewName === 'analytics') {
+    loadHistory();
+  }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+window.addEventListener('hashchange', () => {
+  const hash = window.location.hash.replace('#', '');
+  if (hash) navigateTo(hash);
+});
+
+// ── Global Alert Banner ─────────────────────────────────────────────────────
+function showGlobalAlert(message, type = 'info') {
+  const box = document.getElementById('global-alert-box');
+  const text = document.getElementById('global-alert-text');
+  const icon = document.getElementById('global-alert-icon');
+  if (!box || !text) return;
+
+  text.innerText = message;
+  if (icon) {
+    icon.className = type === 'success' ? 'bi bi-check-circle-fill text-success fs-5' : 'bi bi-info-circle-fill text-warning fs-5';
+  }
+  box.style.display = 'flex';
+  setTimeout(() => dismissGlobalAlert(), 6000);
+}
+
+function dismissGlobalAlert() {
+  const box = document.getElementById('global-alert-box');
+  if (box) box.style.display = 'none';
+}
 
 function updateGeminiBtnState() {
   const btn = document.getElementById('gemini-toggle-btn');
   const key = localStorage.getItem('gemini_api_key');
   if (btn) {
     if (key) {
-      btn.className = "btn btn-sm btn-info fw-semibold";
+      btn.className = "btn btn-sm gemini-btn fw-semibold";
       btn.innerHTML = `<i class="bi bi-stars"></i> Gemini Vision <span class="badge bg-success ms-1">ACTIVE</span>`;
     } else {
-      btn.className = "btn btn-sm btn-outline-info";
+      btn.className = "btn btn-sm gemini-btn";
       btn.innerHTML = `<i class="bi bi-stars"></i> Gemini Vision`;
     }
   }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Initialize view from URL hash if present
+  const hash = window.location.hash.replace('#', '');
+  if (hash && ['scan', 'analytics', 'about'].includes(hash)) {
+    navigateTo(hash);
+  } else {
+    navigateTo('scan');
+  }
+
   loadHistory();
   const savedKey = localStorage.getItem('gemini_api_key');
   if (savedKey && document.getElementById('gemini-api-key')) {
@@ -98,8 +161,14 @@ async function submitScan() {
 
   // Show report card with skeleton
   document.getElementById('report-card').style.display = 'block';
+  const placeholder = document.getElementById('report-placeholder');
+  if (placeholder) placeholder.style.display = 'none';
   document.getElementById('report-skeleton').style.display = 'block';
-  document.getElementById('report-content').style.opacity = '0.2';
+  const content = document.getElementById('report-content');
+  if (content) {
+    content.style.display = 'block';
+    content.style.opacity = '0.2';
+  }
   document.getElementById('detections-section').style.display = 'none';
   document.getElementById('ocr-section').style.display = 'none';
 
@@ -121,6 +190,7 @@ async function submitScan() {
 
     renderReportCard(currentScan);
     loadHistory();
+    showGlobalAlert(`Audit complete for "${productName}". Report generated and saved to registry.`, 'success');
 
     if (currentScan.geminiError && apiKey) {
       console.warn("Gemini Vision notice:", currentScan.geminiError);
@@ -131,9 +201,9 @@ async function submitScan() {
     alert("Scan failed: " + (e.message || "Network error. Please try again."));
   } finally {
     document.getElementById('report-skeleton').style.display = 'none';
-    document.getElementById('report-content').style.opacity = '1';
+    if (content) content.style.opacity = '1';
     document.getElementById('scan-btn').disabled = false;
-    document.getElementById('scan-btn').innerHTML = '<i class="bi bi-search"></i> Run Compliance Check';
+    document.getElementById('scan-btn').innerHTML = '<i class="bi bi-search me-1.5"></i> Run Compliance Check';
   }
 }
 
@@ -167,6 +237,15 @@ function renderReportCard(scan) {
   const reportCard = document.getElementById('report-card');
   if (reportCard) reportCard.style.display = 'block';
 
+  const placeholder = document.getElementById('report-placeholder');
+  if (placeholder) placeholder.style.display = 'none';
+
+  const content = document.getElementById('report-content');
+  if (content) {
+    content.style.display = 'block';
+    content.style.opacity = '1';
+  }
+
   const prodName = document.getElementById('report-product-name');
   if (prodName) prodName.innerText = scan.productName || "Product";
 
@@ -176,7 +255,7 @@ function renderReportCard(scan) {
   const isCompliant = scan.status === "Compliant";
   const statusBadge = document.getElementById('report-status-badge');
   if (statusBadge) {
-    statusBadge.innerHTML = `<span class="compliance-status-badge ${isCompliant ? 'compliant' : 'non-compliant'}">${scan.status}</span>`;
+    statusBadge.innerHTML = `<span class="compliance-status-badge ${isCompliant ? 'compliant' : 'non-compliant'}">${isCompliant ? '<i class="bi bi-check-circle-fill"></i>' : '<i class="bi bi-exclamation-triangle-fill"></i>'} ${scan.status}</span>`;
   }
 
   const engine = scan.engine || "Local OpenCV + EasyOCR";
@@ -184,8 +263,8 @@ function renderReportCard(scan) {
   const engineBadge = document.getElementById('report-engine-badge');
   if (engineBadge) {
     engineBadge.innerHTML = isGemini
-      ? `<span class="badge bg-info text-dark fw-semibold" title="Processed by Gemini 3.8 Flash Vision"><i class="bi bi-stars"></i> ${engine}</span>`
-      : `<span class="badge bg-secondary" title="Processed by on-device EasyOCR"><i class="bi bi-cpu"></i> ${engine}</span>`;
+      ? `<span class="badge badge-lavender-subtle fw-semibold" title="Processed by Gemini 3.8 Flash Vision"><i class="bi bi-stars"></i> ${engine}</span>`
+      : `<span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle" title="Processed by on-device EasyOCR"><i class="bi bi-cpu"></i> ${engine}</span>`;
   }
 
   // Build audit table
@@ -198,10 +277,12 @@ function renderReportCard(scan) {
       <tr>
         <td class="fw-semibold">${names[key] || key}</td>
         <td class="text-center">
-          <span class="badge ${isPassed ? 'bg-success' : 'bg-danger'}">${isPassed ? 'PASS' : 'VIOLATION'}</span>
+          <span class="badge ${isPassed ? 'bg-success-subtle text-success border border-success-subtle' : 'bg-danger-subtle text-danger border border-danger-subtle'} font-monospace">
+            ${isPassed ? '<i class="bi bi-check2"></i> PASS' : '<i class="bi bi-x-lg"></i> VIOLATION'}
+          </span>
         </td>
         <td><code class="evidence-code">${rule.evidenceFound}</code></td>
-        <td class="small">${rule.remarks}</td>
+        <td class="small text-secondary">${rule.remarks}</td>
       </tr>`;
   }
 
@@ -209,7 +290,7 @@ function renderReportCard(scan) {
   document.getElementById('ocr-section').style.display = 'block';
   document.getElementById('ocr-raw-text').innerText = scan.extractedText || "(No text extracted)";
   document.getElementById('ocr-body').style.display = 'block';
-  document.getElementById('ocr-toggle-icon').className = 'bi bi-chevron-up';
+  document.getElementById('ocr-toggle-icon').className = 'bi bi-chevron-up text-secondary';
 
   // Detections table + bounding boxes
   if (scan.detections && scan.detections.length > 0) {
@@ -236,20 +317,20 @@ function buildDetRows(detections) {
   detections.forEach(det => {
     const matchedRule = getMatchedRule(det.text);
     const confPct = Math.round(det.confidence * 100);
-    const confColor = confPct >= 80 ? 'text-success' : confPct >= 50 ? 'text-warning' : 'text-danger';
+    const confColor = confPct >= 80 ? 'text-warning' : confPct >= 50 ? 'text-primary' : 'text-danger';
     const ruleBadge = matchedRule
-      ? `<span class="badge bg-primary" title="${RULE_LABELS[matchedRule]}">${matchedRule}</span>`
+      ? `<span class="badge badge-gold-subtle" title="${RULE_LABELS[matchedRule]}">${matchedRule}</span>`
       : '<span class="text-muted small">—</span>';
 
     const tr = document.createElement('tr');
     tr.dataset.conf = det.confidence;
     tr.innerHTML = `
-      <td class="text-muted small">${det.id}</td>
+      <td class="text-secondary small font-monospace">${det.id}</td>
       <td contenteditable="true" class="editable-cell" spellcheck="false">${det.text}</td>
       <td>
-        <div class="d-flex align-items-center gap-1">
-          <div class="conf-bar-bg"><div class="conf-bar-fill" style="width:${confPct}%;background:${confPct>=80?'#2ea043':confPct>=50?'#e3b341':'#f85149'}"></div></div>
-          <span class="${confColor} small fw-bold">${confPct}%</span>
+        <div class="d-flex align-items-center gap-2">
+          <div class="conf-bar-bg"><div class="conf-bar-fill" style="width:${confPct}%;background:${confPct>=80?'#D4AF37':confPct>=50?'#7048A8':'#e11d48'}"></div></div>
+          <span class="${confColor} small fw-bold font-monospace" style="min-width:32px;">${confPct}%</span>
         </div>
       </td>
       <td>${ruleBadge}</td>`;
@@ -291,35 +372,53 @@ function drawBoundingBoxes(detections) {
       const matchedRule = getMatchedRule(det.text);
       const confPct = det.confidence;
 
-      // Color coding: green=matched rule, blue=generic text, red=low confidence
-      let color;
-      if (confPct < 0.5) color = 'rgba(248,81,73,0.85)';
-      else if (matchedRule) color = 'rgba(46,160,67,0.85)';
-      else color = 'rgba(56,139,253,0.85)';
+      // Color coding: Gold=matched rule, Deep Lavender=generic text, Rose=low confidence
+      let strokeColor, fillColor;
+      if (confPct < 0.5) {
+        strokeColor = '#e11d48';
+        fillColor = 'rgba(225, 29, 72, 0.14)';
+      } else if (matchedRule) {
+        strokeColor = '#D4AF37';
+        fillColor = 'rgba(212, 175, 55, 0.18)';
+      } else {
+        strokeColor = '#7048A8';
+        fillColor = 'rgba(112, 72, 168, 0.16)';
+      }
 
       const box = det.box;
       if (!box || box.length < 4) return;
 
-      ctx.strokeStyle = color;
-      ctx.lineWidth = 2;
+      // Draw box with stroke & soft fill
       ctx.beginPath();
       ctx.moveTo(box[0][0] * scaleX, box[0][1] * scaleY);
       for (let i = 1; i < box.length; i++) {
         ctx.lineTo(box[i][0] * scaleX, box[i][1] * scaleY);
       }
       ctx.closePath();
+      ctx.fillStyle = fillColor;
+      ctx.fill();
+      ctx.strokeStyle = strokeColor;
+      ctx.lineWidth = 1.5;
       ctx.stroke();
 
-      // Label background
-      const label = det.text.length > 18 ? det.text.slice(0, 15) + '…' : det.text;
+      // Label pill
+      const label = det.text.length > 20 ? det.text.slice(0, 18) + '…' : det.text;
       const x = box[0][0] * scaleX;
-      const y = box[0][1] * scaleY - 4;
-      ctx.fillStyle = color;
-      ctx.font = '9px sans-serif';
+      const y = Math.max(12, box[0][1] * scaleY - 3);
+      ctx.font = '600 10px "Plus Jakarta Sans", sans-serif';
       const tw = ctx.measureText(label).width;
-      ctx.fillRect(x, y - 10, tw + 4, 12);
-      ctx.fillStyle = '#fff';
-      ctx.fillText(label, x + 2, y);
+
+      ctx.fillStyle = strokeColor;
+      if (ctx.roundRect) {
+        ctx.beginPath();
+        ctx.roundRect(x, y - 11, tw + 8, 14, 3);
+        ctx.fill();
+      } else {
+        ctx.fillRect(x, y - 11, tw + 8, 14);
+      }
+
+      ctx.fillStyle = '#ffffff';
+      ctx.fillText(label, x + 4, y);
     });
   };
 
@@ -372,35 +471,166 @@ function downloadCSV() {
   a.click();
 }
 
-// ── Scan History ────────────────────────────────────────────────────────────
+// ── Scan History & Clickable Registry ──────────────────────────────────────
 async function loadHistory() {
-  const res = await fetch(`${API_BASE}/scans`);
-  const scans = await res.json();
+  try {
+    const res = await fetch(`${API_BASE}/scans`);
+    allHistoricalScans = await res.json();
+  } catch (e) {
+    console.error("Failed to load history:", e);
+    allHistoricalScans = [];
+  }
 
-  const tbody = document.getElementById('history-tbody');
-  tbody.innerHTML = '';
   let compliant = 0;
-
-  scans.forEach(scan => {
-    if (scan.status === "Compliant") compliant++;
-    tbody.innerHTML += `
-      <tr>
-        <td class="align-middle">${scan.productName}</td>
-        <td class="align-middle">${new Date(scan.scannedAt).toLocaleString()}</td>
-        <td class="align-middle">
-          <span class="badge ${scan.status === 'Compliant' ? 'bg-success' : 'bg-danger'}">${scan.status}</span>
-        </td>
-        <td class="text-end">
-          <button class="btn btn-sm btn-outline-danger" onclick="deleteScan('${scan.id}')" title="Delete">
-            <i class="bi bi-trash"></i>
-          </button>
-        </td>
-      </tr>`;
+  allHistoricalScans.forEach(s => {
+    if (s.status === "Compliant") compliant++;
   });
 
-  document.getElementById('stat-total').innerText = scans.length;
-  document.getElementById('stat-compliant').innerText = compliant;
-  document.getElementById('stat-violations').innerText = scans.length - compliant;
+  const totalEl = document.getElementById('stat-total');
+  const compEl = document.getElementById('stat-compliant');
+  const violEl = document.getElementById('stat-violations');
+
+  if (totalEl) totalEl.innerText = allHistoricalScans.length;
+  if (compEl) compEl.innerText = compliant;
+  if (violEl) violEl.innerText = allHistoricalScans.length - compliant;
+
+  filterHistory();
+}
+
+function setHistoryFilter(status) {
+  historyFilter = status;
+
+  const btnAll = document.getElementById('filter-all-btn');
+  const btnComp = document.getElementById('filter-compliant-btn');
+  const btnViol = document.getElementById('filter-violation-btn');
+
+  if (btnAll) btnAll.classList.toggle('active', status === 'all');
+  if (btnComp) btnComp.classList.toggle('active', status === 'Compliant');
+  if (btnViol) btnViol.classList.toggle('active', status === 'Non-Compliant');
+
+  filterHistory();
+}
+
+function filterHistory() {
+  const query = (document.getElementById('history-search-input')?.value || '').toLowerCase().trim();
+
+  const filtered = allHistoricalScans.filter(scan => {
+    const matchesStatus = (historyFilter === 'all') || (scan.status === historyFilter);
+    const matchesQuery = !query || (scan.productName && scan.productName.toLowerCase().includes(query));
+    return matchesStatus && matchesQuery;
+  });
+
+  renderHistoryRows(filtered);
+}
+
+function renderHistoryRows(scans) {
+  const tbody = document.getElementById('history-tbody');
+  if (!tbody) return;
+  tbody.innerHTML = '';
+
+  if (scans.length === 0) {
+    tbody.innerHTML = `
+      <tr>
+        <td colspan="6" class="text-center text-secondary py-4 small">
+          <i class="bi bi-inbox fs-4 d-block mb-1 text-muted"></i> No matching scan records found
+        </td>
+      </tr>`;
+    return;
+  }
+
+  scans.forEach(scan => {
+    const isCompliant = scan.status === "Compliant";
+    const dateStr = scan.scannedAt ? new Date(scan.scannedAt).toLocaleString() : '—';
+    const isGemini = scan.engine && scan.engine.includes("Gemini");
+
+    const thumbHtml = scan.imagePath
+      ? `<img src="/${scan.imagePath.replace(/^\//, '')}" alt="Label" class="history-thumb" onerror="this.outerHTML='<div class=\\'history-thumb-placeholder\\'><i class=\\'bi bi-image\\'></i></div>'" />`
+      : `<div class="history-thumb-placeholder"><i class="bi bi-upc-scan"></i></div>`;
+
+    const statusBadge = isCompliant
+      ? `<span class="badge bg-success-subtle text-success border border-success-subtle"><i class="bi bi-check2"></i> Compliant</span>`
+      : `<span class="badge bg-danger-subtle text-danger border border-danger-subtle"><i class="bi bi-exclamation-triangle-fill"></i> Non-Compliant</span>`;
+
+    const engineBadge = isGemini
+      ? `<span class="badge badge-lavender-subtle"><i class="bi bi-stars"></i> Gemini</span>`
+      : `<span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle"><i class="bi bi-cpu"></i> Local</span>`;
+
+    const tr = document.createElement('tr');
+    tr.className = 'clickable-row';
+    tr.title = `Click to load inspection report for "${scan.productName || 'Product'}"`;
+    tr.onclick = () => inspectHistoricalScan(scan.id);
+
+    tr.innerHTML = `
+      <td class="align-middle">${thumbHtml}</td>
+      <td class="align-middle">
+        <div class="fw-semibold text-dark">${scan.productName || 'Unknown Product'}</div>
+        <small class="text-secondary d-md-none">${dateStr}</small>
+      </td>
+      <td class="align-middle text-secondary small d-none d-md-table-cell">${dateStr}</td>
+      <td class="align-middle">${statusBadge}</td>
+      <td class="align-middle d-none d-sm-table-cell">${engineBadge}</td>
+      <td class="align-middle text-end" style="white-space:nowrap;">
+        <button class="btn btn-sm btn-outline-lavender me-1.5" onclick="event.stopPropagation(); inspectHistoricalScan('${scan.id}')" title="Inspect Label">
+          <i class="bi bi-eye me-1"></i> Inspect
+        </button>
+        <button class="btn btn-sm btn-outline-danger" onclick="event.stopPropagation(); deleteScan('${scan.id}')" title="Delete">
+          <i class="bi bi-trash"></i>
+        </button>
+      </td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+// ── Inspect Historical Scan (Click-to-Inspect) ──────────────────────────────
+async function inspectHistoricalScan(scanId) {
+  let scan = allHistoricalScans.find(s => s.id === scanId);
+  if (!scan) {
+    try {
+      const res = await fetch(`${API_BASE}/scans/${scanId}`);
+      if (res.ok) scan = await res.json();
+    } catch (e) {
+      console.error("Error fetching single scan:", e);
+    }
+  }
+
+  if (!scan) {
+    alert("Could not load scan details.");
+    return;
+  }
+
+  currentScan = scan;
+
+  // 1. Populate product name in the inspection setup
+  const pInput = document.getElementById('product-name');
+  if (pInput) pInput.value = scan.productName || "";
+
+  // 2. Load the original product image and overlay bounding boxes
+  const previewContainer = document.getElementById('preview-container');
+  const img = document.getElementById('preview-img');
+
+  if (scan.imagePath) {
+    previewContainer.style.display = 'block';
+    img.onload = () => {
+      const canvas = document.getElementById('bbox-canvas');
+      canvas.width = img.offsetWidth;
+      canvas.height = img.offsetHeight;
+      if (scan.detections && scan.detections.length > 0) {
+        drawBoundingBoxes(scan.detections);
+      } else {
+        canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+      }
+    };
+    img.src = `/${scan.imagePath.replace(/^\//, '')}`;
+  } else {
+    previewContainer.style.display = 'none';
+  }
+
+  // 3. Render the compliance report card
+  renderReportCard(scan);
+
+  // 4. Switch to Page 1 (Inspection & Audit)
+  navigateTo('scan');
+  showGlobalAlert(`Loaded historical scan for "${scan.productName || 'Product'}" into Inspection Workspace.`, 'success');
 }
 
 async function deleteScan(id) {
@@ -408,11 +638,16 @@ async function deleteScan(id) {
   try {
     await fetch(`${API_BASE}/scans/${id}`, { method: 'DELETE' });
     if (currentScan && currentScan.id === id) {
-      document.getElementById('report-card').style.display = 'none';
+      const content = document.getElementById('report-content');
+      if (content) content.style.display = 'none';
+      const placeholder = document.getElementById('report-placeholder');
+      if (placeholder) placeholder.style.display = 'block';
       document.getElementById('ocr-section').style.display = 'none';
       document.getElementById('detections-section').style.display = 'none';
+      currentScan = null;
     }
     loadHistory();
+    showGlobalAlert("Scan record deleted successfully.", "info");
   } catch (e) {
     alert("Failed to delete scan.");
   }

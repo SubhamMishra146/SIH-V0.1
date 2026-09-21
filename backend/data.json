@@ -1,237 +1,14 @@
 {
   "scans": [
     {
-      "id": "158a07eb-20f8-422d-92ee-3349ce8d9e79",
-      "productName": "perfume",
+      "id": "14cdd548-9fa1-4577-a157-14d71bce6304",
+      "productName": "scrub pad",
       "engine": "Gemini Vision (gemini-3.5-flash-lite)",
       "geminiError": null,
-      "imagePath": "uploads/3bcf0809312042f790b72b882db2c05a_perfume.jpeg",
-      "scannedAt": "2026-09-20T12:45:41.914830+00:00",
-      "status": "Non-Compliant",
-      "extractedText": "Based on an examination of the provided image of the packaged commodity label, here is the complete and accurate transcription of all text declarations:\n\n---\n\n**Top Banner:**\nWELCOME TO THE FUTURE IT SMELLS AMAZING\n\n**Features / Highlights:**\n* ZINC FORMULA FOR ENHANCED ODOUR PROTECTION\n* GREAT FRAGRANCES FOR ALL OVER THE BODY\n* CITRUS FRAGRANCE\n\n**Directions for Use & Warnings:**\n* **DIRECTIONS:** SHAKE WELL. TWIST THE CAP. HOLD CAN AROUND 15cm AWAY FROM UNDERARM AND BODY. SPRAY DIRECTLY ON SKIN.\n* **WARNINGS:** This can is pressurised. Keep in a cool place away from heat or sunlight. Do not expose to temperatures exceeding 50\u00b0C. Do not puncture or burn can even when empty. Do not spray on any incandescent material. Keep away from sources of ignition - no smoking. Do not spray near eyes or face or on broken/sore skin. If irritation occurs, discontinue use. Intentional misuse by deliberately concentrating and inhaling contents can be harmful or fatal. Keep out of reach of children. Does not contain CFC.\n\n**Ingredients:**\nAlcohol Denat. (99.5% v/v) Content: 40.4% w/w (Ethyl Alcohol & Denatonium Benzoate), Butane, Isobutane, Propane, Perfume, Isopropyl Myristate, Alpha-Isomethyl Ionone, Cinnamal, Citral, Coumarin, Eugenol, Geraniol, Hexyl Cinnamal, Isoeugenol, Limonene, Linalool.\n\n**Regulatory & Environmental Info:**\n* HUL REGN. No. BO-13-000-07-AAACH1004N-22. MINIMUM THICKNESS OF THE PACKAGING IS 300 MICRON.\n* DEODORANT BODYSPRAY.\n\n**Manufacturer & Marketer Details:**\n* **MFG. BY:** ONE ASIA NETWORK INDIA PVT. LTD., C-9 (PART) MIDC AREA, KHAMGAON, DIST. BULDHANA (MAH) - 444 303. M.L. No. MH/103585.\n* **MADE IN INDIA.**\n* **MKTD. BY LIC. USER:** HINDUSTAN UNILEVER LTD. (HUL).\n* **\u00a9 HUL 2019.**\n* REFERS TO NEW PACK.\n\n**Consumer Care Details:**\n* LEVERCARE-QUERY / FEEDBACK, \n* TOLL FREE: 1800-10-22-221, PO BOX 14760, MUMBAI 400 099, LEVER.CARE@UNILEVER.COM\n\n**Pricing, Quantity & Date Info:**\n* **MRP:** \u20b9 (Incl. of all taxes), USP, #MFD., B. No. & @Use Before : See bottom of the can\n* **NET CONTENT:** 150 ml / 96 g\n\n---",
-      "detections": [
-        {
-          "id": 1,
-          "text": "Based on an examination of the provided image of the packaged commodity label, here is the complete and accurate transcription of all text declarations:",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 2,
-          "text": "---",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 3,
-          "text": "**Top Banner:**",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 4,
-          "text": "WELCOME TO THE FUTURE IT SMELLS AMAZING",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 5,
-          "text": "**Features / Highlights:**",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 6,
-          "text": "* ZINC FORMULA FOR ENHANCED ODOUR PROTECTION",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 7,
-          "text": "* GREAT FRAGRANCES FOR ALL OVER THE BODY",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 8,
-          "text": "* CITRUS FRAGRANCE",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 9,
-          "text": "**Directions for Use & Warnings:**",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 10,
-          "text": "* **DIRECTIONS:** SHAKE WELL. TWIST THE CAP. HOLD CAN AROUND 15cm AWAY FROM UNDERARM AND BODY. SPRAY DIRECTLY ON SKIN.",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 11,
-          "text": "* **WARNINGS:** This can is pressurised. Keep in a cool place away from heat or sunlight. Do not expose to temperatures exceeding 50\u00b0C. Do not puncture or burn can even when empty. Do not spray on any incandescent material. Keep away from sources of ignition - no smoking. Do not spray near eyes or face or on broken/sore skin. If irritation occurs, discontinue use. Intentional misuse by deliberately concentrating and inhaling contents can be harmful or fatal. Keep out of reach of children. Does not contain CFC.",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 12,
-          "text": "**Ingredients:**",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 13,
-          "text": "Alcohol Denat. (99.5% v/v) Content: 40.4% w/w (Ethyl Alcohol & Denatonium Benzoate), Butane, Isobutane, Propane, Perfume, Isopropyl Myristate, Alpha-Isomethyl Ionone, Cinnamal, Citral, Coumarin, Eugenol, Geraniol, Hexyl Cinnamal, Isoeugenol, Limonene, Linalool.",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 14,
-          "text": "**Regulatory & Environmental Info:**",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 15,
-          "text": "* HUL REGN. No. BO-13-000-07-AAACH1004N-22. MINIMUM THICKNESS OF THE PACKAGING IS 300 MICRON.",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 16,
-          "text": "* DEODORANT BODYSPRAY.",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 17,
-          "text": "**Manufacturer & Marketer Details:**",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 18,
-          "text": "* **MFG. BY:** ONE ASIA NETWORK INDIA PVT. LTD., C-9 (PART) MIDC AREA, KHAMGAON, DIST. BULDHANA (MAH) - 444 303. M.L. No. MH/103585.",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 19,
-          "text": "* **MADE IN INDIA.**",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 20,
-          "text": "* **MKTD. BY LIC. USER:** HINDUSTAN UNILEVER LTD. (HUL).",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 21,
-          "text": "* **\u00a9 HUL 2019.**",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 22,
-          "text": "* REFERS TO NEW PACK.",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 23,
-          "text": "**Consumer Care Details:**",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 24,
-          "text": "* LEVERCARE-QUERY / FEEDBACK,",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 25,
-          "text": "* TOLL FREE: 1800-10-22-221, PO BOX 14760, MUMBAI 400 099, LEVER.CARE@UNILEVER.COM",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 26,
-          "text": "**Pricing, Quantity & Date Info:**",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 27,
-          "text": "* **MRP:** \u20b9 (Incl. of all taxes), USP, #MFD., B. No. & @Use Before : See bottom of the can",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 28,
-          "text": "* **NET CONTENT:** 150 ml / 96 g",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 29,
-          "text": "---",
-          "confidence": 0.98,
-          "box": []
-        }
-      ],
-      "rules": {
-        "mrp": {
-          "status": "VIOLATION",
-          "evidenceFound": "MRP keyword found but price number not readable",
-          "remarks": "MRP text detected but price value and tax clause not clearly readable by OCR."
-        },
-        "netQuantity": {
-          "status": "PASS",
-          "evidenceFound": "Found: 1004n",
-          "remarks": "Net quantity '1004n' declared in valid units."
-        },
-        "mfgDate": {
-          "status": "PASS",
-          "evidenceFound": "Matched: 'use by' with date '10-22'",
-          "remarks": "Manufacturing / Packing date is declared."
-        },
-        "manufacturerDetails": {
-          "status": "PASS",
-          "evidenceFound": "Matched: 'mfg. by ... inc ... 103585'",
-          "remarks": "Manufacturer / Packer name and address details found."
-        },
-        "consumerCare": {
-          "status": "PASS",
-          "evidenceFound": "Email: lever.care@unilever.com",
-          "remarks": "Consumer care email found."
-        }
-      },
-      "ruleNames": {
-        "mrp": "MRP & Tax Declaration",
-        "netQuantity": "Net Quantity",
-        "mfgDate": "Date of Mfg / Packing",
-        "manufacturerDetails": "Manufacturer / Packer Details",
-        "consumerCare": "Consumer Care Info"
-      },
-      "violations": [
-        "mrp"
-      ]
-    },
-    {
-      "id": "b29fbb26-efcf-4ea0-be36-b5ef2e4474f5",
-      "productName": "1",
-      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
-      "geminiError": null,
-      "imagePath": "uploads/5bce803ec39049b78e747392f752acb5_1.png",
-      "scannedAt": "2026-09-20T12:44:54.080416+00:00",
+      "imagePath": "uploads/1df7a33a43f94766ac966e7a245b1720_1.png",
+      "scannedAt": "2026-09-21T16:28:38.780258+00:00",
       "status": "Compliant",
-      "extractedText": "COMMODITY: SCRUB PAD\nMANUFACTURED ON: 05/2024\nMRP: \u20b9 15.00 (Incl. of all taxes)\nNUMBER OF COMMODITY: 1 N\n\nMANUFACTURED & MARKETED BY:\nFREUDENBERG GALA HOUSEHOLD\nPRODUCT PRIVATE LIMITED, D2\nGALLERIA, B - 902/903/904,\nPLOT NO. 23/24, MINERVA INDUSTRI-\nAL ESTATE, OFF LBS MARG, NEAR\nASHA NAGAR, MULUND (WEST),\nMUMBAI - 400 080, MAHARASHTRA.\n\nIN CASE OF CONSUMER COMPLAINT, CONTACT:\nFREUDENBERG GALA HOUSEHOLD PRODUCT\nPRIVATE LIMITED, ADDRESS SAME AS ABOVE\nCUSTOMER CARE NO.: 1800 222 009\n\nEMAIL:\ncustomercare.india@fhp-ww.com\nwww.galaclean.com",
+      "extractedText": "COMMODITY: SCRUB PAD\nMANUFACTURED ON: 05/2024\nMRP: \u20b9 18.00 15.00 (Incl. of all taxes)\nNUMBER OF COMMODITY: 1 N\n\nMANUFACTURED & MARKETED BY:\nFREUDENBERG GALA HOUSEHOLD\nPRODUCT PRIVATE LIMITED, 02\nGALLERIA, B - 902/903/904,\nPLOT NO. 23/24, MINERVA INDUSTRI-\nAL ESTATE, OFF LBS MARG, NEAR\nASHA NAGAR, MULUND (WEST),\nMUMBAI - 400 080, MAHARASHTRA.\n\nIN CASE OF CONSUMER COMPLAINT, CONTACT:\nFREUDENBERG GALA HOUSEHOLD PRODUCT\nPRIVATE LIMITED, ADDRESS SAME AS ABOVE\nCUSTOMER CARE NO.: 1800 222 009\n\nEMAIL: customercare.india@fhp-ww.com\nwww.galaclean.com\n\nFOLLOW US ON:\nf /GalaHomeCleaning\nX @Gala_Cleaning\nO gala_homecleaning",
       "detections": [
         {
           "id": 1,
@@ -247,7 +24,7 @@
         },
         {
           "id": 3,
-          "text": "MRP: \u20b9 15.00 (Incl. of all taxes)",
+          "text": "MRP: \u20b9 18.00 15.00 (Incl. of all taxes)",
           "confidence": 0.98,
           "box": []
         },
@@ -271,7 +48,7 @@
         },
         {
           "id": 7,
-          "text": "PRODUCT PRIVATE LIMITED, D2",
+          "text": "PRODUCT PRIVATE LIMITED, 02",
           "confidence": 0.98,
           "box": []
         },
@@ -331,19 +108,37 @@
         },
         {
           "id": 17,
-          "text": "EMAIL:",
+          "text": "EMAIL: customercare.india@fhp-ww.com",
           "confidence": 0.98,
           "box": []
         },
         {
           "id": 18,
-          "text": "customercare.india@fhp-ww.com",
+          "text": "www.galaclean.com",
           "confidence": 0.98,
           "box": []
         },
         {
           "id": 19,
-          "text": "www.galaclean.com",
+          "text": "FOLLOW US ON:",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 20,
+          "text": "f /GalaHomeCleaning",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 21,
+          "text": "X @Gala_Cleaning",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 22,
+          "text": "O gala_homecleaning",
           "confidence": 0.98,
           "box": []
         }
@@ -351,7 +146,7 @@
       "rules": {
         "mrp": {
           "status": "PASS",
-          "evidenceFound": "Matched: 'mrp: \u20b9 15.00 (incl. of all taxes'",
+          "evidenceFound": "Matched: 'mrp: \u20b9 18.00 15.00 (incl. of all taxes'",
           "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
         },
         "netQuantity": {
@@ -366,7 +161,7 @@
         },
         "manufacturerDetails": {
           "status": "PASS",
-          "evidenceFound": "Matched: 'marketed by ... inc ... mumbai'",
+          "evidenceFound": "Matched: 'marketed by ... product ... mumbai'",
           "remarks": "Manufacturer / Packer name and address details found."
         },
         "consumerCare": {
@@ -385,961 +180,280 @@
       "violations": []
     },
     {
-      "id": "bbd3f3ef-c672-4700-b3f4-95a7d509b6d8",
-      "productName": "1",
-      "engine": "Local OpenCV + EasyOCR",
-      "geminiError": "All candidate models failed. Last error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-      "imagePath": "uploads/b80dd6a1ef9a4e8b8bc6c83ca3caafbf_1.png",
-      "scannedAt": "2026-09-20T12:41:01.616516+00:00",
-      "status": "Non-Compliant",
-      "extractedText": "Cummodit t:SCRUB MANUFACTURED ON: 05/2024 'One-swipe MRP: 1e015.00 (lnclof alltaxes) Size NUMBER OF CORMODITy: MANUFACTURED 4 MARKETEDET FAEUDENBERG GALA HOUSEHDed PRODUCT PRIVATE UMITED 02 , GALLERIA 902/9036904, PLOT NO,23724,MINERVA INDUSTRI ESTATE, OFF LBS MAAG NEAR IshA MagaA  ESTI MUMBAL 400 0a0  MHARASHTRA : CASE OF COMSUMER COMPLNNT CONtact: Gdla FREUDENBERG GALA HOUSEHOLD PAQDUCT< PRNATE LIMITED ADDRESS SNEE AS ABOVE CUSTOMER CARE ID: T600 222009 MADE IM EMAL: INDIA  customercareindia@mhp-w com WWWgalaclean com Gala; FOLLOW U5 ON: FREUDENBERC L9) /GalaHomeCleariag Theoshnertinares umeaeena @Gala_Cleaning Htctrnn Tueeseoudand FemrhHan Ogala_homcceaniog  Perfect Clean 8 82 8 8 @ 1 [ 1 1 1 h H 3 # I 4 H Ii W Ik Ha Il 1 1",
+      "id": "58a39ba4-d9c9-442a-b017-a0d8ddd735dd",
+      "productName": "Notebook",
+      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
+      "geminiError": null,
+      "imagePath": "uploads/56ec7cb028d64ab7853eccba5509e05c_nb2.jpg",
+      "scannedAt": "2026-09-21T16:06:42.635815+00:00",
+      "status": "Compliant",
+      "extractedText": "SUNDARAM\nSINCE: 1985\n\nManufactured by: SUNDARAM MULTI PAP LIMITED\nPlot No. 33 To 37, Sundaram Industrial Zone, Palghar (W), District - Palghar - 401 404, Maharashtra, India.\nFor Feedback / Complaint Contact our\nCustomer Care Executive address as given above\nCustomer Care No.: +91-22-67602200, (\ud83d\udcde) 8369691119,\nEmail: sales@sundaramgroups.in, website: www.sundaramgroups.in\n\nCode : S-14\n\n8902242 725425\n\nProduct : A/4 Book - Spiral\nSize : 21 x 29.7 cm\nPages : 400\n\nMRP: \u20b9 185/-\n(Inclusive of all taxes)\n\nPKG DT.\nAPR 2026",
       "detections": [
         {
           "id": 1,
-          "text": "Cummodit t:SCRUB",
-          "confidence": 0.0356,
-          "box": [
-            [
-              93,
-              115
-            ],
-            [
-              203,
-              115
-            ],
-            [
-              203,
-              135
-            ],
-            [
-              93,
-              135
-            ]
-          ]
+          "text": "SUNDARAM",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 2,
-          "text": "MANUFACTURED ON: 05/2024",
-          "confidence": 0.7974,
-          "box": [
-            [
-              93,
-              137
-            ],
-            [
-              229,
-              137
-            ],
-            [
-              229,
-              157
-            ],
-            [
-              93,
-              157
-            ]
-          ]
+          "text": "SINCE: 1985",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 3,
-          "text": "'One-swipe",
-          "confidence": 0.6536,
-          "box": [
-            [
-              258,
-              123
-            ],
-            [
-              335,
-              123
-            ],
-            [
-              335,
-              156
-            ],
-            [
-              258,
-              156
-            ]
-          ]
+          "text": "Manufactured by: SUNDARAM MULTI PAP LIMITED",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 4,
-          "text": "MRP:",
-          "confidence": 0.4071,
-          "box": [
-            [
-              93,
-              161
-            ],
-            [
-              121,
-              161
-            ],
-            [
-              121,
-              177
-            ],
-            [
-              93,
-              177
-            ]
-          ]
+          "text": "Plot No. 33 To 37, Sundaram Industrial Zone, Palghar (W), District - Palghar - 401 404, Maharashtra, India.",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 5,
-          "text": "1e015.00 (lnclof alltaxes)",
-          "confidence": 0.0729,
-          "box": [
-            [
-              127,
-              161
-            ],
-            [
-              259,
-              161
-            ],
-            [
-              259,
-              177
-            ],
-            [
-              127,
-              177
-            ]
-          ]
+          "text": "For Feedback / Complaint Contact our",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 6,
-          "text": "Size",
-          "confidence": 0.9999,
-          "box": [
-            [
-              346,
-              148
-            ],
-            [
-              382,
-              148
-            ],
-            [
-              382,
-              172
-            ],
-            [
-              346,
-              172
-            ]
-          ]
+          "text": "Customer Care Executive address as given above",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 7,
-          "text": "NUMBER OF CORMODITy:",
-          "confidence": 0.2755,
-          "box": [
-            [
-              95,
-              181
-            ],
-            [
-              211,
-              181
-            ],
-            [
-              211,
-              199
-            ],
-            [
-              95,
-              199
-            ]
-          ]
+          "text": "Customer Care No.: +91-22-67602200, (\ud83d\udcde) 8369691119,",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 8,
-          "text": "MANUFACTURED 4 MARKETEDET",
-          "confidence": 0.1625,
-          "box": [
-            [
-              93,
-              207
-            ],
-            [
-              239,
-              207
-            ],
-            [
-              239,
-              223
-            ],
-            [
-              93,
-              223
-            ]
-          ]
+          "text": "Email: sales@sundaramgroups.in, website: www.sundaramgroups.in",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 9,
-          "text": "FAEUDENBERG GALA HOUSEHDed",
-          "confidence": 0.5507,
-          "box": [
-            [
-              93,
-              221
-            ],
-            [
-              237,
-              221
-            ],
-            [
-              237,
-              237
-            ],
-            [
-              93,
-              237
-            ]
-          ]
+          "text": "Code : S-14",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 10,
-          "text": "PRODUCT PRIVATE UMITED 02 ,",
-          "confidence": 0.42,
-          "box": [
-            [
-              93,
-              237
-            ],
-            [
-              227,
-              237
-            ],
-            [
-              227,
-              253
-            ],
-            [
-              93,
-              253
-            ]
-          ]
+          "text": "8902242 725425",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 11,
-          "text": "GALLERIA",
-          "confidence": 0.7689,
-          "box": [
-            [
-              95,
-              253
-            ],
-            [
-              141,
-              253
-            ],
-            [
-              141,
-              267
-            ],
-            [
-              95,
-              267
-            ]
-          ]
+          "text": "Product : A/4 Book - Spiral",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 12,
-          "text": "902/9036904,",
-          "confidence": 0.1976,
-          "box": [
-            [
-              153,
-              253
-            ],
-            [
-              211,
-              253
-            ],
-            [
-              211,
-              267
-            ],
-            [
-              153,
-              267
-            ]
-          ]
+          "text": "Size : 21 x 29.7 cm",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 13,
-          "text": "PLOT NO,23724,MINERVA INDUSTRI",
-          "confidence": 0.2461,
-          "box": [
-            [
-              93,
-              267
-            ],
-            [
-              249,
-              267
-            ],
-            [
-              249,
-              283
-            ],
-            [
-              93,
-              283
-            ]
-          ]
+          "text": "Pages : 400",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 14,
-          "text": "ESTATE, OFF LBS MAAG NEAR",
-          "confidence": 0.7735,
-          "box": [
-            [
-              107,
-              283
-            ],
-            [
-              237,
-              283
-            ],
-            [
-              237,
-              299
-            ],
-            [
-              107,
-              299
-            ]
-          ]
+          "text": "MRP: \u20b9 185/-",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 15,
-          "text": "IshA MagaA ",
-          "confidence": 0.0461,
-          "box": [
-            [
-              95,
-              299
-            ],
-            [
-              151,
-              299
-            ],
-            [
-              151,
-              313
-            ],
-            [
-              95,
-              313
-            ]
-          ]
+          "text": "(Inclusive of all taxes)",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 16,
-          "text": "ESTI",
-          "confidence": 0.4816,
-          "box": [
-            [
-              203,
-              299
-            ],
-            [
-              225,
-              299
-            ],
-            [
-              225,
-              315
-            ],
-            [
-              203,
-              315
-            ]
-          ]
+          "text": "PKG DT.",
+          "confidence": 0.98,
+          "box": []
         },
         {
           "id": 17,
-          "text": "MUMBAL",
-          "confidence": 0.4682,
-          "box": [
-            [
-              95,
-              313
-            ],
-            [
-              133,
-              313
-            ],
-            [
-              133,
-              329
-            ],
-            [
-              95,
-              329
-            ]
-          ]
-        },
-        {
-          "id": 18,
-          "text": "400 0a0  MHARASHTRA :",
-          "confidence": 0.1537,
-          "box": [
-            [
-              137,
-              313
-            ],
-            [
-              245,
-              313
-            ],
-            [
-              245,
-              329
-            ],
-            [
-              137,
-              329
-            ]
-          ]
-        },
-        {
-          "id": 19,
-          "text": "CASE OF COMSUMER COMPLNNT CONtact:",
-          "confidence": 0.3247,
-          "box": [
-            [
-              103,
-              335
-            ],
-            [
-              285,
-              335
-            ],
-            [
-              285,
-              353
-            ],
-            [
-              103,
-              353
-            ]
-          ]
-        },
-        {
-          "id": 20,
-          "text": "Gdla",
-          "confidence": 0.2934,
-          "box": [
-            [
-              304,
-              336
-            ],
-            [
-              350,
-              336
-            ],
-            [
-              350,
-              362
-            ],
-            [
-              304,
-              362
-            ]
-          ]
-        },
-        {
-          "id": 21,
-          "text": "FREUDENBERG GALA HOUSEHOLD PAQDUCT<",
-          "confidence": 0.5574,
-          "box": [
-            [
-              93,
-              353
-            ],
-            [
-              275,
-              353
-            ],
-            [
-              275,
-              369
-            ],
-            [
-              93,
-              369
-            ]
-          ]
-        },
-        {
-          "id": 22,
-          "text": "PRNATE LIMITED ADDRESS SNEE AS ABOVE",
-          "confidence": 0.1865,
-          "box": [
-            [
-              93,
-              367
-            ],
-            [
-              279,
-              367
-            ],
-            [
-              279,
-              383
-            ],
-            [
-              93,
-              383
-            ]
-          ]
-        },
-        {
-          "id": 23,
-          "text": "CUSTOMER CARE ID: T600 222009",
-          "confidence": 0.2335,
-          "box": [
-            [
-              93,
-              381
-            ],
-            [
-              243,
-              381
-            ],
-            [
-              243,
-              399
-            ],
-            [
-              93,
-              399
-            ]
-          ]
-        },
-        {
-          "id": 24,
-          "text": "MADE IM",
-          "confidence": 0.7725,
-          "box": [
-            [
-              361,
-              381
-            ],
-            [
-              411,
-              381
-            ],
-            [
-              411,
-              401
-            ],
-            [
-              361,
-              401
-            ]
-          ]
-        },
-        {
-          "id": 25,
-          "text": "EMAL:",
-          "confidence": 0.6613,
-          "box": [
-            [
-              93,
-              407
-            ],
-            [
-              127,
-              407
-            ],
-            [
-              127,
-              423
-            ],
-            [
-              93,
-              423
-            ]
-          ]
-        },
-        {
-          "id": 26,
-          "text": "INDIA ",
-          "confidence": 0.6797,
-          "box": [
-            [
-              360,
-              398
-            ],
-            [
-              414,
-              398
-            ],
-            [
-              414,
-              426
-            ],
-            [
-              360,
-              426
-            ]
-          ]
-        },
-        {
-          "id": 27,
-          "text": "customercareindia@mhp-w com",
-          "confidence": 0.533,
-          "box": [
-            [
-              93,
-              419
-            ],
-            [
-              267,
-              419
-            ],
-            [
-              267,
-              439
-            ],
-            [
-              93,
-              439
-            ]
-          ]
-        },
-        {
-          "id": 28,
-          "text": "WWWgalaclean com",
-          "confidence": 0.7398,
-          "box": [
-            [
-              95,
-              437
-            ],
-            [
-              201,
-              437
-            ],
-            [
-              201,
-              457
-            ],
-            [
-              95,
-              457
-            ]
-          ]
-        },
-        {
-          "id": 29,
-          "text": "Gala;",
-          "confidence": 0.4052,
-          "box": [
-            [
-              296,
-              432
-            ],
-            [
-              340,
-              432
-            ],
-            [
-              340,
-              456
-            ],
-            [
-              296,
-              456
-            ]
-          ]
-        },
-        {
-          "id": 30,
-          "text": "FOLLOW U5 ON:",
-          "confidence": 0.5493,
-          "box": [
-            [
-              93,
-              467
-            ],
-            [
-              161,
-              467
-            ],
-            [
-              161,
-              483
-            ],
-            [
-              93,
-              483
-            ]
-          ]
-        },
-        {
-          "id": 31,
-          "text": "FREUDENBERC",
-          "confidence": 0.9897,
-          "box": [
-            [
-              233,
-              479
-            ],
-            [
-              303,
-              479
-            ],
-            [
-              303,
-              493
-            ],
-            [
-              233,
-              493
-            ]
-          ]
-        },
-        {
-          "id": 32,
-          "text": "L9) /GalaHomeCleariag",
-          "confidence": 0.1959,
-          "box": [
-            [
-              94,
-              483
-            ],
-            [
-              189,
-              483
-            ],
-            [
-              189,
-              503
-            ],
-            [
-              94,
-              503
-            ]
-          ]
-        },
-        {
-          "id": 33,
-          "text": "Theoshnertinares umeaeena",
-          "confidence": 0.0,
-          "box": [
-            [
-              198,
-              500
-            ],
-            [
-              310,
-              500
-            ],
-            [
-              310,
-              508
-            ],
-            [
-              198,
-              508
-            ]
-          ]
-        },
-        {
-          "id": 34,
-          "text": "@Gala_Cleaning",
-          "confidence": 0.8119,
-          "box": [
-            [
-              109,
-              503
-            ],
-            [
-              177,
-              503
-            ],
-            [
-              177,
-              519
-            ],
-            [
-              109,
-              519
-            ]
-          ]
-        },
-        {
-          "id": 35,
-          "text": "Htctrnn",
-          "confidence": 0.0011,
-          "box": [
-            [
-              196,
-              510
-            ],
-            [
-              238,
-              510
-            ],
-            [
-              238,
-              516
-            ],
-            [
-              196,
-              516
-            ]
-          ]
-        },
-        {
-          "id": 36,
-          "text": "Tueeseoudand",
-          "confidence": 0.0085,
-          "box": [
-            [
-              236,
-              508
-            ],
-            [
-              293,
-              508
-            ],
-            [
-              293,
-              520
-            ],
-            [
-              236,
-              520
-            ]
-          ]
-        },
-        {
-          "id": 37,
-          "text": "FemrhHan",
-          "confidence": 0.0003,
-          "box": [
-            [
-              218,
-              518
-            ],
-            [
-              270,
-              518
-            ],
-            [
-              270,
-              526
-            ],
-            [
-              218,
-              526
-            ]
-          ]
-        },
-        {
-          "id": 38,
-          "text": "Ogala_homcceaniog ",
-          "confidence": 0.1849,
-          "box": [
-            [
-              95,
-              521
-            ],
-            [
-              189,
-              521
-            ],
-            [
-              189,
-              537
-            ],
-            [
-              95,
-              537
-            ]
-          ]
-        },
-        {
-          "id": 39,
-          "text": "Perfect",
-          "confidence": 0.8561,
-          "box": [
-            [
-              341,
-              127
-            ],
-            [
-              393,
-              123
-            ],
-            [
-              394,
-              148
-            ],
-            [
-              343,
-              152
-            ]
-          ]
-        },
-        {
-          "id": 40,
-          "text": "Clean",
-          "confidence": 0.6467,
-          "box": [
-            [
-              264,
-              152
-            ],
-            [
-              306,
-              148
-            ],
-            [
-              308,
-              169
-            ],
-            [
-              266,
-              174
-            ]
-          ]
+          "text": "APR 2026",
+          "confidence": 0.98,
+          "box": []
         }
       ],
       "rules": {
         "mrp": {
-          "status": "VIOLATION",
-          "evidenceFound": "Found price: 'mrp: 1'",
-          "remarks": "Found price but MISSING mandatory 'inclusive of all taxes' or 'GST' clause."
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mrp: \u20b9 185/- (inclusive of all taxes'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
         },
         "netQuantity": {
-          "status": "VIOLATION",
-          "evidenceFound": "None detected in scanned label",
-          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+          "status": "PASS",
+          "evidenceFound": "Found: pages : 400",
+          "remarks": "Net quantity 'pages : 400' declared."
         },
         "mfgDate": {
           "status": "PASS",
-          "evidenceFound": "Matched: 'lot' with date '05/2024'",
+          "evidenceFound": "Matched: 'lot' with date 'apr 2026'",
           "remarks": "Manufacturing / Packing date is declared."
         },
         "manufacturerDetails": {
           "status": "PASS",
-          "evidenceFound": "Matched: 'product ... 222009'",
-          "remarks": "Company name and location found (keyword like 'Mfg by' not explicit)."
+          "evidenceFound": "Matched: 'manufactured by ... multi pap ... maharashtra'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Email: sales@sundaramgroups.in | Phone: 8369691119",
+          "remarks": "Both email and phone contact details found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": []
+    },
+    {
+      "id": "210e4d94-783c-4ab9-a795-ac85fa14b1cf",
+      "productName": "pegs",
+      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
+      "geminiError": null,
+      "imagePath": "uploads/7b9d80d41eec4140897b0aea6caa5c64_pegs.jpeg",
+      "scannedAt": "2026-09-21T14:45:45.931838+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "Based on a detailed examination of the packaging label provided, here is the complete and corrected transcription of all text declarations in compliance with Legal Metrology requirements:\n\n**Brand / Product Name:**\n* Mega-Pixel Khushi (The Ultimate Pegs)\n\n**Features / Marketing Text:**\n* It is a Laundry series of fresh colour\n* to imagine delicious fruits\n* Lest hand laundry outside happily\n* Extra Strong, Extra Firm Grip.\n* Heat Resistance colour i.e No fading of colour in sun.\n* Rust proof, Chrome metal spring for no stain cloths.\n\n**Manufacturing & Pricing Details:**\n* **Mfd. by:** SHIVA PLASTIC (INDIA)\n* **M.R.P.:** \u20b9 105/- (Incl. of all taxes)\n* **Contains:** 12 Pcs.\n* **Country of Origin:** Make in India",
+      "detections": [
+        {
+          "id": 1,
+          "text": "Based on a detailed examination of the packaging label provided, here is the complete and corrected transcription of all text declarations in compliance with Legal Metrology requirements:",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 2,
+          "text": "**Brand / Product Name:**",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 3,
+          "text": "* Mega-Pixel Khushi (The Ultimate Pegs)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 4,
+          "text": "**Features / Marketing Text:**",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 5,
+          "text": "* It is a Laundry series of fresh colour",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 6,
+          "text": "* to imagine delicious fruits",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 7,
+          "text": "* Lest hand laundry outside happily",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 8,
+          "text": "* Extra Strong, Extra Firm Grip.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 9,
+          "text": "* Heat Resistance colour i.e No fading of colour in sun.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 10,
+          "text": "* Rust proof, Chrome metal spring for no stain cloths.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 11,
+          "text": "**Manufacturing & Pricing Details:**",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 12,
+          "text": "* **Mfd. by:** SHIVA PLASTIC (INDIA)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 13,
+          "text": "* **M.R.P.:** \u20b9 105/- (Incl. of all taxes)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 14,
+          "text": "* **Contains:** 12 Pcs.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 15,
+          "text": "* **Country of Origin:** Make in India",
+          "confidence": 0.98,
+          "box": []
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'm.r.p.:** \u20b9 105/- (incl. of all taxes'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 12 pcs",
+          "remarks": "Net quantity '12 pcs' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mfd. by ... product ... india'",
+          "remarks": "Manufacturer / Packer name and address details found."
         },
         "consumerCare": {
           "status": "VIOLATION",
-          "evidenceFound": "'Customer Care' keyword found but no phone/email detected",
-          "remarks": "Care keyword present but actual contact info not readable by OCR."
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
         }
       },
       "ruleNames": {
@@ -1350,8 +464,7 @@
         "consumerCare": "Consumer Care Info"
       },
       "violations": [
-        "mrp",
-        "netQuantity",
+        "mfgDate",
         "consumerCare"
       ]
     }

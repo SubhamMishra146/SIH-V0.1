@@ -390,6 +390,14 @@ def get_scans():
     data = read_data()
     return jsonify(data["scans"])
 
+@app.route('/api/scans/<scan_id>', methods=['GET'])
+def get_scan(scan_id):
+    data = read_data()
+    for s in data["scans"]:
+        if s["id"] == scan_id:
+            return jsonify(s)
+    return jsonify({"error": "Scan not found"}), 404
+
 @app.route('/api/scans', methods=['DELETE'])
 def clear_scans():
     write_data({"scans": []})
