@@ -8,7 +8,7 @@
       "imagePath": "uploads/1df7a33a43f94766ac966e7a245b1720_1.png",
       "scannedAt": "2026-09-21T16:28:38.780258+00:00",
       "status": "Compliant",
-      "extractedText": "COMMODITY: SCRUB PAD\nMANUFACTURED ON: 05/2024\nMRP: \u20b9 18.00 15.00 (Incl. of all taxes)\nNUMBER OF COMMODITY: 1 N\n\nMANUFACTURED & MARKETED BY:\nFREUDENBERG GALA HOUSEHOLD\nPRODUCT PRIVATE LIMITED, 02\nGALLERIA, B - 902/903/904,\nPLOT NO. 23/24, MINERVA INDUSTRI-\nAL ESTATE, OFF LBS MARG, NEAR\nASHA NAGAR, MULUND (WEST),\nMUMBAI - 400 080, MAHARASHTRA.\n\nIN CASE OF CONSUMER COMPLAINT, CONTACT:\nFREUDENBERG GALA HOUSEHOLD PRODUCT\nPRIVATE LIMITED, ADDRESS SAME AS ABOVE\nCUSTOMER CARE NO.: 1800 222 009\n\nEMAIL: customercare.india@fhp-ww.com\nwww.galaclean.com\n\nFOLLOW US ON:\nf /GalaHomeCleaning\nX @Gala_Cleaning\nO gala_homecleaning",
+      "extractedText": "COMMODITY: SCRUB PAD\nMANUFACTURED ON: 05/2024\nMRP: ₹ 18.00 15.00 (Incl. of all taxes)\nNUMBER OF COMMODITY: 1 N\n\nMANUFACTURED & MARKETED BY:\nFREUDENBERG GALA HOUSEHOLD\nPRODUCT PRIVATE LIMITED, 02\nGALLERIA, B - 902/903/904,\nPLOT NO. 23/24, MINERVA INDUSTRI-\nAL ESTATE, OFF LBS MARG, NEAR\nASHA NAGAR, MULUND (WEST),\nMUMBAI - 400 080, MAHARASHTRA.\n\nIN CASE OF CONSUMER COMPLAINT, CONTACT:\nFREUDENBERG GALA HOUSEHOLD PRODUCT\nPRIVATE LIMITED, ADDRESS SAME AS ABOVE\nCUSTOMER CARE NO.: 1800 222 009\n\nEMAIL: customercare.india@fhp-ww.com\nwww.galaclean.com\n\nFOLLOW US ON:\nf /GalaHomeCleaning\nX @Gala_Cleaning\nO gala_homecleaning",
       "detections": [
         {
           "id": 1,
@@ -24,7 +24,7 @@
         },
         {
           "id": 3,
-          "text": "MRP: \u20b9 18.00 15.00 (Incl. of all taxes)",
+          "text": "MRP: ₹ 18.00 15.00 (Incl. of all taxes)",
           "confidence": 0.98,
           "box": []
         },
@@ -146,7 +146,7 @@
       "rules": {
         "mrp": {
           "status": "PASS",
-          "evidenceFound": "Matched: 'mrp: \u20b9 18.00 15.00 (incl. of all taxes'",
+          "evidenceFound": "Matched: 'mrp: ₹ 18.00 15.00 (incl. of all taxes'",
           "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
         },
         "netQuantity": {
@@ -187,7 +187,7 @@
       "imagePath": "uploads/56ec7cb028d64ab7853eccba5509e05c_nb2.jpg",
       "scannedAt": "2026-09-21T16:06:42.635815+00:00",
       "status": "Compliant",
-      "extractedText": "SUNDARAM\nSINCE: 1985\n\nManufactured by: SUNDARAM MULTI PAP LIMITED\nPlot No. 33 To 37, Sundaram Industrial Zone, Palghar (W), District - Palghar - 401 404, Maharashtra, India.\nFor Feedback / Complaint Contact our\nCustomer Care Executive address as given above\nCustomer Care No.: +91-22-67602200, (\ud83d\udcde) 8369691119,\nEmail: sales@sundaramgroups.in, website: www.sundaramgroups.in\n\nCode : S-14\n\n8902242 725425\n\nProduct : A/4 Book - Spiral\nSize : 21 x 29.7 cm\nPages : 400\n\nMRP: \u20b9 185/-\n(Inclusive of all taxes)\n\nPKG DT.\nAPR 2026",
+      "extractedText": "SUNDARAM\nSINCE: 1985\n\nManufactured by: SUNDARAM MULTI PAP LIMITED\nPlot No. 33 To 37, Sundaram Industrial Zone, Palghar (W), District - Palghar - 401 404, Maharashtra, India.\nFor Feedback / Complaint Contact our\nCustomer Care Executive address as given above\nCustomer Care No.: +91-22-67602200, (📞) 8369691119,\nEmail: sales@sundaramgroups.in, website: www.sundaramgroups.in\n\nCode : S-14\n\n8902242 725425\n\nProduct : A/4 Book - Spiral\nSize : 21 x 29.7 cm\nPages : 400\n\nMRP: ₹ 185/-\n(Inclusive of all taxes)\n\nPKG DT.\nAPR 2026",
       "detections": [
         {
           "id": 1,
@@ -227,7 +227,7 @@
         },
         {
           "id": 7,
-          "text": "Customer Care No.: +91-22-67602200, (\ud83d\udcde) 8369691119,",
+          "text": "Customer Care No.: +91-22-67602200, (📞) 8369691119,",
           "confidence": 0.98,
           "box": []
         },
@@ -269,7 +269,7 @@
         },
         {
           "id": 14,
-          "text": "MRP: \u20b9 185/-",
+          "text": "MRP: ₹ 185/-",
           "confidence": 0.98,
           "box": []
         },
@@ -295,7 +295,7 @@
       "rules": {
         "mrp": {
           "status": "PASS",
-          "evidenceFound": "Matched: 'mrp: \u20b9 185/- (inclusive of all taxes'",
+          "evidenceFound": "Matched: 'mrp: ₹ 185/- (inclusive of all taxes'",
           "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
         },
         "netQuantity": {
@@ -336,7 +336,7 @@
       "imagePath": "uploads/7b9d80d41eec4140897b0aea6caa5c64_pegs.jpeg",
       "scannedAt": "2026-09-21T14:45:45.931838+00:00",
       "status": "Non-Compliant",
-      "extractedText": "Based on a detailed examination of the packaging label provided, here is the complete and corrected transcription of all text declarations in compliance with Legal Metrology requirements:\n\n**Brand / Product Name:**\n* Mega-Pixel Khushi (The Ultimate Pegs)\n\n**Features / Marketing Text:**\n* It is a Laundry series of fresh colour\n* to imagine delicious fruits\n* Lest hand laundry outside happily\n* Extra Strong, Extra Firm Grip.\n* Heat Resistance colour i.e No fading of colour in sun.\n* Rust proof, Chrome metal spring for no stain cloths.\n\n**Manufacturing & Pricing Details:**\n* **Mfd. by:** SHIVA PLASTIC (INDIA)\n* **M.R.P.:** \u20b9 105/- (Incl. of all taxes)\n* **Contains:** 12 Pcs.\n* **Country of Origin:** Make in India",
+      "extractedText": "Based on a detailed examination of the packaging label provided, here is the complete and corrected transcription of all text declarations in compliance with Legal Metrology requirements:\n\n**Brand / Product Name:**\n* Mega-Pixel Khushi (The Ultimate Pegs)\n\n**Features / Marketing Text:**\n* It is a Laundry series of fresh colour\n* to imagine delicious fruits\n* Lest hand laundry outside happily\n* Extra Strong, Extra Firm Grip.\n* Heat Resistance colour i.e No fading of colour in sun.\n* Rust proof, Chrome metal spring for no stain cloths.\n\n**Manufacturing & Pricing Details:**\n* **Mfd. by:** SHIVA PLASTIC (INDIA)\n* **M.R.P.:** ₹ 105/- (Incl. of all taxes)\n* **Contains:** 12 Pcs.\n* **Country of Origin:** Make in India",
       "detections": [
         {
           "id": 1,
@@ -412,7 +412,7 @@
         },
         {
           "id": 13,
-          "text": "* **M.R.P.:** \u20b9 105/- (Incl. of all taxes)",
+          "text": "* **M.R.P.:** ₹ 105/- (Incl. of all taxes)",
           "confidence": 0.98,
           "box": []
         },
@@ -432,7 +432,7 @@
       "rules": {
         "mrp": {
           "status": "PASS",
-          "evidenceFound": "Matched: 'm.r.p.:** \u20b9 105/- (incl. of all taxes'",
+          "evidenceFound": "Matched: 'm.r.p.:** ₹ 105/- (incl. of all taxes'",
           "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
         },
         "netQuantity": {
@@ -465,6 +465,294 @@
       },
       "violations": [
         "mfgDate",
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "975430a1-2d61-41ff-b814-f134f9b07472",
+      "productName": "MANORAMA NOTEBOOK SAMPLE 1",
+      "imagePath": "uploads/d0c958f4f3ad4ce19851a96d537c235d_WhatsApp Image 2026-09-18 at 13.18.07.jpeg",
+      "scannedAt": "2026-09-19T05:43:14.539035Z",
+      "status": "Non-Compliant",
+      "extractedText": "EExptore ThE World TIMe To OPEn Up ^ New ChaPER IN Life, AND To ExpLORe ^ Larger CENTRE Manorama Paper Products We are committed to providing high quality Notebook products that L are a result of deep understanding of our consumers thoughtful ideas_ innovative designs and superior craftsmanship, that have in turn helped us become one of India's leading Notebook Brands_ For India's students, these are brilliant times. With rapidly rising literacy; more schools, new colleges, globally famous IITs and IIMs; and vast spectrum of IT, media, and fashion institutes, life is radiant with new opportunities. You now have more on Ihe move: So g0 ahead gain   from   these   excellent fimos Build   your dreams, spread the enthusiasm and make India stronger and shine even brigh, A Premium Product By A-4 NOTc BOOK Manorama Paper Products 368 Bhubaneswar Odisha. Pages: With Cover manorama MRP?:220.00 SAVE Inclusive of GST film ,",
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mrp?:220.00 save inclusive of gst'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'premium product by ... paper products ... bhubaneswar'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "netQuantity",
+        "mfgDate",
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "16118407-4a05-4f06-9f1f-2ed10c05d55e",
+      "productName": "PACKAGE DRINKING WATER SAMPLE 1",
+      "imagePath": "uploads/5378b84661fa46b2927c66fd036f7695_metalized-water-bottle-label-500x500.jpg.webp",
+      "scannedAt": "2026-09-19T05:37:36.891830Z",
+      "status": "Non-Compliant",
+      "extractedText": "8guc 9001 The AZlLS Luanous Tremtum VTable Wattr AnIso [ certIfIcO :7015 COMPany L Tulsioaua L #ned Luxurious\" Premittm'\" Table Wattr certsoloc Iobot J01s conp ",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No MRP / price declaration found on the label."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No manufacturer/packer/importer declaration found on the label."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "netQuantity",
+        "mfgDate",
+        "manufacturerDetails",
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "f30d4430-9deb-41dd-9bb4-d8cae4c79393",
+      "productName": "Unknown Product",
+      "imagePath": "uploads/2592569d25064d818d8f26fdfe69b504_metalized-water-bottle-label-500x500.jpg.webp",
+      "scannedAt": "2026-09-19T05:36:43.328447Z",
+      "status": "Non-Compliant",
+      "extractedText": "8guc 9001 The AZlLS Luanous Tremtum VTable Wattr AnIso [ certIfIcO :7015 COMPany L Tulsioaua L #ned Luxurious\" Premittm'\" Table Wattr certsoloc Iobot J01s conp ",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No MRP / price declaration found on the label."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No manufacturer/packer/importer declaration found on the label."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "netQuantity",
+        "mfgDate",
+        "manufacturerDetails",
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "673c080d-e072-4901-bc6e-3510f7a4158f",
+      "productName": "Classic Notebook 400p",
+      "imagePath": "uploads/f68524deb67e4c8a8fd2ec6591b4f248_sample_label.png",
+      "scannedAt": "2026-09-19T05:19:30.270158Z",
+      "status": "Non-Compliant",
+      "extractedText": "PREMIUM QUALITYCLASSIC NOTEBOOK MRP: Rs 185 - (Inclusive ofall taxesi NetOty: 400 Pages Mlg Date: 4\"2024 Manulactured by: Multi Pap Industries Pvt Ltd Plot 45, Industrial Estate, Sivakasi Tamil Nadu-828123 Customer Care: 1800 200 4587 | care@multipapcom",
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'rs 185'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 400 pages",
+          "remarks": "Net quantity '400 pages' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'manufactured by ... inc ... sivakasi'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Phone: 1800 200 4587",
+          "remarks": "Consumer care phone/helpline found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mfgDate"
+      ]
+    },
+    {
+      "id": "51c5f9e3-f181-4c10-9868-fa8743bc4dc7",
+      "productName": "scrub pad",
+      "imagePath": "uploads/2992ae6a370e49dfb91429cce0fb127d_1.png",
+      "scannedAt": "2026-09-18T16:49:29.098344Z",
+      "status": "Non-Compliant",
+      "extractedText": "8 82 8 8 0 1 Ii 1 H # H U 1 1 1 1 h # 4 V6 1 0 1",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No MRP / price declaration found on the label."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No manufacturer/packer/importer declaration found on the label."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "netQuantity",
+        "mfgDate",
+        "manufacturerDetails",
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "ecd9f6d8-3eff-46e9-ba7d-21148d97bdb8",
+      "productName": "scrub pad",
+      "imagePath": "uploads/801fd2960b704ee7884664e03caf8c25_1.png",
+      "scannedAt": "2026-09-18T16:44:06.282116Z",
+      "status": "Non-Compliant",
+      "extractedText": "8 82 8 8 0 1 Ii 1 H # H U 1 1 1 1 h # 4 V6 1 0 1",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No MRP / price declaration found on the label."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No manufacturer/packer/importer declaration found on the label."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "netQuantity",
+        "mfgDate",
+        "manufacturerDetails",
         "consumerCare"
       ]
     }

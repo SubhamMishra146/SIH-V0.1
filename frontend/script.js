@@ -1,5 +1,7 @@
-// Relative API path: automatically works on both localhost:5000 and Render cloud deployment
-const API_BASE = "/api";
+// Relative API path: automatically works on localhost, custom PORT, and Render cloud deployment
+const API_BASE = (window.location.origin && window.location.origin.startsWith("http"))
+  ? `${window.location.origin}/api`
+  : "/api";
 let selectedFile = null;
 let currentScan = null;
 let allHistoricalScans = [];

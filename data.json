@@ -1,0 +1,287 @@
+{
+  "scans": [
+    {
+      "id": "b5137a16-6c40-4251-bc7d-cdb66969eaf0",
+      "productName": "ROOM FRESHENER 2",
+      "imagePath": "uploads/5e9a104da5a04a5c964f77b23cbff92b_20260919_194834.jpg",
+      "scannedAt": "2026-09-21T18:15:08.347820Z",
+      "status": "Non-Compliant",
+      "extractedText": "Goory Qer power pocket Caution Follow the directions for use written on the side of the pack: Avoid contact with eyes and skin: In case of contact; wash with warm water; Do not swallow: Keep out of reach of children; Do not pierce the pack Do not use if the product is damaged or leaking: Do not place the product on any plastic Or treated surface. We decline any responsibility for damages or malfunctions caused by any noncompliance of  directions of usage. Customer experience of longevity  may vary based on weather conditions, room conditions and habituation: Manufactured Godrej Consumer Products Ltd. No. E-5, Maraimalai Nagar Chennai 603209 Godrej Consumer Products Ltd. P,O. Mamring (Via Rangpo) South Sikkim-737132 Marketed byl Registered Address/Consumer Feedback or Complaint Contact: Manager (Consumer Relations), Godrej Consumer Products Ltd, Vikhroli (East) , Mumbai 400079 T:1-800-266-0007 E: care@godrejcp.com Number of Units: SU Bathroom Fragrance Net Weight 50g (1Og X 5 Units) MRP (Incl: of all taxes) USP 20 4 Packed On Individual packs not for sale Best before 2 years from packed on 8llg0 1 0 2 3ll0 1 7 9 7 1 'From the day of opening the sachet by:",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "MRP keyword found but price number not readable",
+          "remarks": "MRP text detected but price value and tax clause not clearly readable by OCR."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 50g",
+          "remarks": "Net quantity '50g' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'marketed by ... product ... chennai'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Email: care@godrejcp.com",
+          "remarks": "Consumer care email found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "mfgDate"
+      ]
+    },
+    {
+      "id": "ec428ee2-5a06-424e-bc62-50bdaecc041d",
+      "productName": "deep work book 2",
+      "imagePath": "uploads/0ed5ce6265ce43d7a952ebda1db4368c_20260920_215156.jpg",
+      "scannedAt": "2026-09-20T16:26:41.456073Z",
+      "status": "Non-Compliant",
+      "extractedText": "WWW.CalNewport.com visi piatkus co.uk 24 hachette ISBN 978-0-3494-1368-6 H india 1 1 FSC www hachetteindia com YORRCVEMENT 0 8399 Uk [8.99 9117 8 0 3 4 911613686/> TAanu For sale only in India, Bangladesh, Nepal, Bhutan, 2 755 Sri Lanka and Pakistan ebook business also avallable",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No MRP / price declaration found on the label."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No manufacturer/packer/importer declaration found on the label."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "netQuantity",
+        "mfgDate",
+        "manufacturerDetails",
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "11b16ba2-6580-4c7b-ad90-19fa848f897b",
+      "productName": "deep work book 1",
+      "imagePath": "uploads/3d7a997c08414a85bda40109a17ca928_20260920_215156.jpg",
+      "scannedAt": "2026-09-20T16:23:22.346088Z",
+      "status": "Non-Compliant",
+      "extractedText": "One of the most valuable skills in our economy is becoming increasingly rare. 'Deep work' is the ability to focus without distraction on a cognitively demanding task. Coined by the author on his popular blog Study Hacks, deep work will make you better at what you do, let you achieve more in less time and provide the sense of true fulfilment that comcs from the mastery of a skill. In short, deep work is like a superpower in our increasingly competitive economy: And yet most people, whether knowledge workers in noisy open-plan offices or creatives struggling to sharpen their vision, have lost the ability to go deep spending their days instead in a frantic blur of email and social media, not even realising there's a better way: A mix of cultural criticism and actionable advice, Deep Work will point the way to anyone seeking focused success in a distracted world. 'Makes a compelling case for cultivating intense focus, and offers immediately actionable steps' Adam M. Grant, author of Originals WWW.CalNewport.com visit piatkus.couk 4 hachette ISBN 978-0-3494-1368-6 H india 1 L FSC www hachetteindia com YORRCVEMENT 8 399 UK [8.99 91l7 8 0 3 4 911413686 > JAnu For sale only in India, Bangladesh, Nepal, Bhutan, W \" Sri Lanka and Pakistan ebook business 4ls0 available",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No MRP / price declaration found on the label."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 1 l",
+          "remarks": "Net quantity '1 l' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No manufacturer/packer/importer declaration found on the label."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "mfgDate",
+        "manufacturerDetails",
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "9d90e6cc-bc4c-48fa-88f8-b1059a1d1d03",
+      "productName": "dettol sanitiser 1",
+      "imagePath": "uploads/c46436dd7da34b2985dd34b038f13909_20260920_214749.jpg",
+      "scannedAt": "2026-09-20T16:19:38.397019Z",
+      "status": "Non-Compliant",
+      "extractedText": "DISIAHCOHOHC SQENBTVRERIZER DETTOL INSTANT HAND SANIIZER Ingredients Akcohol IP Dettol Hand Sanitizer (Denatured) eq toabsolute killss9gbofgerms instantty akohol 72346VN; Water PEGi without watef; PPG-17/6 Copolme Eropvene Gycot Use anytime anywhere: @r;office; Agyates/C10 30AlkyAcryiate Fpodsecckaes youpaaseieaiet Coxspolmerterkdoeperune  {5e53 'Leavesyour E Tefreshed lenediamine Perfume I5often as required Howtouse: Takea Axenbae A brMs nilindHezdare Ungf; thumbnail size drop on palmandmub Pot [eaMasalo= 6305 your hands brsklyuntilz @3 Gauton Keep 219p0371725,2224763341785 EpP awayfrom fire or flame= dhildren Avoid Vilegedrostt TensilBaddi Distict-Solan onaround eyes; ears moutth; MHinmF Kaene8 brokenfimtated skin or largeareasofbcdy In  ADpii n SateBaseicinfomt-i94 aaseofcontactwith eye rinse thoroughlywith Kanetedeyra tonsuneoucaunogoonbd water In @aseofimtation; discontinueuse RedtnConsumer Careat Consutta doctorifimtationper_stsorproduct Redti Rendiser ndplezia DFFGpe Fan6u is swallowed FORETTERVLUSCNI 87u Foor ( Ch405B UayogVihar Phzsel; StorageConditon: Storeina Cool DryPlace Sector20 Gurugam-122016, For MRP (indof 3200698 TolFree Numbec 18001035012 all Kaeata7 Emait ConsumecHeakun_Indiaerbcom^ Mfdy No & Net Vol: 60ml See 5 8l96 5 g981384839 Rs. C0 45* #Fromo Price 01/2 BKA0720U9 12/23 genitalia, use (Tower C Exp: 'pack",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "MRP keyword found but price number not readable",
+          "remarks": "MRP text detected but price value and tax clause not clearly readable by OCR."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 60ml",
+          "remarks": "Net quantity '60ml' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mfd' with date '12/23'",
+          "remarks": "Manufacturing / Packing date is declared."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'product ... 122016'",
+          "remarks": "Company name and location found (keyword like 'Mfg by' not explicit)."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Phone: 18001035012",
+          "remarks": "Consumer care phone/helpline found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp"
+      ]
+    },
+    {
+      "id": "9a86beb0-7373-4df8-bcb8-dfd6caee3d58",
+      "productName": "room fragrance 1",
+      "imagePath": "uploads/0011a3b7c4b84424b0fda2e66e94b11f_20260919_194834.jpg",
+      "scannedAt": "2026-09-19T14:20:31.514518Z",
+      "status": "Non-Compliant",
+      "extractedText": "Goory Qer power pocket Caution Follow the directions for use written on the side of the pack: Avoid contact with eyes and skin: In case of contact; wash with warm water; Do not swallow: Keep out of reach of children; Do not pierce the pack Do not use if the product is damaged or leaking: Do not place the product on any plastic Or treated surface. We decline any responsibility for damages or malfunctions caused by any noncompliance of  directions of usage. Customer experience of longevity  may vary based on weather conditions, room conditions and habituation: Manufactured Godrej Consumer Products Ltd. No. E-5, Maraimalai Nagar Chennai 603209 Godrej Consumer Products Ltd. P,O. Mamring (Via Rangpo) South Sikkim-737132 Marketed byl Registered Address/Consumer Feedback or Complaint Contact: Manager (Consumer Relations), Godrej Consumer Products Ltd, Vikhroli (East) , Mumbai 400079 T:1-800-266-0007 E: care@godrejcp.com Number of Units: SU Bathroom Fragrance Net Weight 50g (1Og X 5 Units) MRP (Incl: of all taxes) USP 20 4 Packed On Individual packs not for sale Best before 2 years from packed on 8llg0 1 0 2 3ll0 1 7 9 7 1 'From the day of opening the sachet by:",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "MRP keyword found but price number not readable",
+          "remarks": "MRP text detected but price value and tax clause not clearly readable by OCR."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 50g",
+          "remarks": "Net quantity '50g' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'marketed by ... product ... chennai'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Email: care@godrejcp.com",
+          "remarks": "Consumer care email found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "mfgDate"
+      ]
+    },
+    {
+      "id": "fe005189-a9ea-41cd-9fa3-3e5d458f597f",
+      "productName": "packaged drinking water 1",
+      "imagePath": "uploads/196b7a6657474044b2b3f22051c9d2f9_20260919_194223.jpg",
+      "scannedAt": "2026-09-19T14:17:04.913567Z",
+      "status": "Non-Compliant",
+      "extractedText": "s n  2 3 OLc 2 D 2 Se U Ji 46 002 U 3 t 8 5 Z 4 e 10,# I T  0 UPHEST mit ES f Ic 1 Vd  Eral EET# B  aues 'hndev M { ' D 3 E Se Sm4  E 6 1 2 2 U (",
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No MRP / price declaration found on the label."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No manufacturer/packer/importer declaration found on the label."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "netQuantity",
+        "mfgDate",
+        "manufacturerDetails",
+        "consumerCare"
+      ]
+    }
+  ]
+}
