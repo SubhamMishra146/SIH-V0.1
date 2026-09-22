@@ -1,6 +1,7 @@
 {
   "scans": [
     {
+<<<<<<< HEAD
       "id": "5e875616-1b8a-459a-a2a5-3d2aa742915e",
       "productName": "notebook",
       "engine": "Local OpenCV + EasyOCR",
@@ -1261,11 +1262,43 @@
             [
               726,
               128
+=======
+      "id": "a6e56317-033b-49ec-b311-be856b996ad7",
+      "productName": "Water Bottle Packaged Commodity",
+      "engine": "Local OpenCV + EasyOCR",
+      "geminiError": null,
+      "imagePath": "uploads/506a45eed51c4ce69be29e68a3b1a1a8_WhatsApp Image 2026-09-18 at 13.18.07.jpeg",
+      "scannedAt": "2026-09-22T19:23:15.896929+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "Exptore The World TOOPEN Up A NeW ChaRTER In LiFey AND T6 ExpLore ^ Laroer centre Manorama Paper Products We are committed to providing high quality Notebook products that 1 are a result of deep understanding of our consumers thoughtful ideas_ innovative designs and superior craftsmanship, that have in turn helped us become one of India's leading Notebook Brands: For India's students, these are brilliant times: With rapidly rising literacy; more schools, new colleges, globally famous IlTs and IIMs; and vast spectrum of IT, media, film, and fashion institutes, Iife is radiant with new opportunities. You now have more on the move. So go ahead, gain from  these excellent timos Build your dreams, spread the enthusiasm and make India stronger and shine even brigh t A Premium Product By A4NOTz BOOK Manorama Paper Products 368 Bhubaneswar Odisha. Pages: With Cover [Tanoramal GO MRP?:220.00 SAVE Inclusive of GST",
+      "detections": [
+        {
+          "id": 1,
+          "text": "Exptore",
+          "confidence": 0.9836,
+          "box": [
+            [
+              403,
+              179
+            ],
+            [
+              678,
+              179
+            ],
+            [
+              678,
+              293
+            ],
+            [
+              403,
+              293
+>>>>>>> b999676 (check on sample item; working fine)
             ]
           ]
         },
         {
           "id": 2,
+<<<<<<< HEAD
           "text": "BHAMPOO",
           "confidence": 0.3279,
           "box": [
@@ -1352,11 +1385,31 @@
             ],
             [
               691,
+=======
+          "text": "The World",
+          "confidence": 0.2833,
+          "box": [
+            [
+              517,
+              269
+            ],
+            [
+              609,
+              269
+            ],
+            [
+              609,
+              289
+            ],
+            [
+              517,
+>>>>>>> b999676 (check on sample item; working fine)
               289
             ]
           ]
         },
         {
+<<<<<<< HEAD
           "id": 6,
           "text": "Wl",
           "confidence": 0.0676,
@@ -2894,10 +2947,32 @@
             [
               702,
               338
+=======
+          "id": 3,
+          "text": "TOOPEN Up A NeW",
+          "confidence": 0.1901,
+          "box": [
+            [
+              419,
+              338
+            ],
+            [
+              561,
+              338
+            ],
+            [
+              561,
+              357
+            ],
+            [
+              419,
+              357
+>>>>>>> b999676 (check on sample item; working fine)
             ]
           ]
         },
         {
+<<<<<<< HEAD
           "id": 73,
           "text": "therepy:",
           "confidence": 0.6936,
@@ -2917,10 +2992,32 @@
             [
               716,
               603
+=======
+          "id": 4,
+          "text": "ChaRTER In LiFey",
+          "confidence": 0.0317,
+          "box": [
+            [
+              559,
+              330
+            ],
+            [
+              692,
+              330
+            ],
+            [
+              692,
+              356
+            ],
+            [
+              559,
+              356
+>>>>>>> b999676 (check on sample item; working fine)
             ]
           ]
         },
         {
+<<<<<<< HEAD
           "id": 74,
           "text": "Eplry 5",
           "confidence": 0.0842,
@@ -2940,10 +3037,216 @@
             [
               407,
               980
+=======
+          "id": 5,
+          "text": "AND T6 ExpLore ^ Laroer centre",
+          "confidence": 0.0909,
+          "box": [
+            [
+              401,
+              351
+            ],
+            [
+              667,
+              351
+            ],
+            [
+              667,
+              371
+            ],
+            [
+              401,
+              371
             ]
           ]
         },
         {
+          "id": 6,
+          "text": "Manorama Paper Products",
+          "confidence": 0.9994,
+          "box": [
+            [
+              496,
+              798
+            ],
+            [
+              764,
+              798
+            ],
+            [
+              764,
+              826
+            ],
+            [
+              496,
+              826
+            ]
+          ]
+        },
+        {
+          "id": 7,
+          "text": "We are committed to providing high quality Notebook products that",
+          "confidence": 0.7761,
+          "box": [
+            [
+              403,
+              820
+            ],
+            [
+              1067,
+              820
+            ],
+            [
+              1067,
+              857
+            ],
+            [
+              403,
+              857
+            ]
+          ]
+        },
+        {
+          "id": 8,
+          "text": "1",
+          "confidence": 0.1055,
+          "box": [
+            [
+              167,
+              812
+            ],
+            [
+              203,
+              812
+            ],
+            [
+              203,
+              940
+            ],
+            [
+              167,
+              940
+            ]
+          ]
+        },
+        {
+          "id": 9,
+          "text": "are a result of deep understanding of our consumers thoughtful ideas_",
+          "confidence": 0.8106,
+          "box": [
+            [
+              205,
+              853
+            ],
+            [
+              873,
+              853
+            ],
+            [
+              873,
+              893
+            ],
+            [
+              205,
+              893
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "text": "innovative designs",
+          "confidence": 0.7523,
+          "box": [
+            [
+              878,
+              852
+            ],
+            [
+              1066,
+              852
+            ],
+            [
+              1066,
+              880
+            ],
+            [
+              878,
+              880
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "text": "and superior craftsmanship, that have in turn helped us become one of India's leading",
+          "confidence": 0.8797,
+          "box": [
+            [
+              203,
+              883
+            ],
+            [
+              1069,
+              883
+            ],
+            [
+              1069,
+              925
+            ],
+            [
+              203,
+              925
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "text": "Notebook Brands:",
+          "confidence": 0.7926,
+          "box": [
+            [
+              206,
+              920
+            ],
+            [
+              382,
+              920
+            ],
+            [
+              382,
+              950
+            ],
+            [
+              206,
+              950
+            ]
+          ]
+        },
+        {
+          "id": 13,
+          "text": "For India's students, these are brilliant times:",
+          "confidence": 0.7494,
+          "box": [
+            [
+              660,
+              962
+            ],
+            [
+              1050,
+              962
+            ],
+            [
+              1050,
+              988
+            ],
+            [
+              660,
+              988
+>>>>>>> b999676 (check on sample item; working fine)
+            ]
+          ]
+        },
+        {
+<<<<<<< HEAD
           "id": 75,
           "text": "'Quanbty:",
           "confidence": 0.0386,
@@ -3754,11 +4057,518 @@
           "text": "GO green",
           "confidence": 0.98,
           "box": []
+=======
+          "id": 14,
+          "text": "With rapidly rising literacy; more schools, new",
+          "confidence": 0.6481,
+          "box": [
+            [
+              662,
+              994
+            ],
+            [
+              1052,
+              994
+            ],
+            [
+              1052,
+              1022
+            ],
+            [
+              662,
+              1022
+            ]
+          ]
+        },
+        {
+          "id": 15,
+          "text": "colleges, globally famous IlTs and IIMs; and",
+          "confidence": 0.6312,
+          "box": [
+            [
+              662,
+              1026
+            ],
+            [
+              1034,
+              1026
+            ],
+            [
+              1034,
+              1056
+            ],
+            [
+              662,
+              1056
+            ]
+          ]
+        },
+        {
+          "id": 16,
+          "text": "vast spectrum of IT, media, film, and fashion",
+          "confidence": 0.6964,
+          "box": [
+            [
+              662,
+              1060
+            ],
+            [
+              1054,
+              1060
+            ],
+            [
+              1054,
+              1090
+            ],
+            [
+              662,
+              1090
+            ]
+          ]
+        },
+        {
+          "id": 17,
+          "text": "institutes, Iife is radiant with new opportunities.",
+          "confidence": 0.5306,
+          "box": [
+            [
+              661,
+              1093
+            ],
+            [
+              1052,
+              1093
+            ],
+            [
+              1052,
+              1122
+            ],
+            [
+              661,
+              1122
+            ]
+          ]
+        },
+        {
+          "id": 18,
+          "text": "You now have more on the move. So go ahead,",
+          "confidence": 0.8576,
+          "box": [
+            [
+              664,
+              1128
+            ],
+            [
+              1054,
+              1128
+            ],
+            [
+              1054,
+              1156
+            ],
+            [
+              664,
+              1156
+            ]
+          ]
+        },
+        {
+          "id": 19,
+          "text": "gain from  these excellent timos",
+          "confidence": 0.5553,
+          "box": [
+            [
+              664,
+              1164
+            ],
+            [
+              954,
+              1164
+            ],
+            [
+              954,
+              1190
+            ],
+            [
+              664,
+              1190
+            ]
+          ]
+        },
+        {
+          "id": 20,
+          "text": "Build your",
+          "confidence": 0.6677,
+          "box": [
+            [
+              962,
+              1164
+            ],
+            [
+              1060,
+              1164
+            ],
+            [
+              1060,
+              1190
+            ],
+            [
+              962,
+              1190
+            ]
+          ]
+        },
+        {
+          "id": 21,
+          "text": "dreams, spread the enthusiasm and make India",
+          "confidence": 0.9719,
+          "box": [
+            [
+              666,
+              1196
+            ],
+            [
+              1060,
+              1196
+            ],
+            [
+              1060,
+              1225
+            ],
+            [
+              666,
+              1225
+            ]
+          ]
+        },
+        {
+          "id": 22,
+          "text": "stronger and shine even brigh t",
+          "confidence": 0.3867,
+          "box": [
+            [
+              666,
+              1231
+            ],
+            [
+              923,
+              1231
+            ],
+            [
+              923,
+              1259
+            ],
+            [
+              666,
+              1259
+            ]
+          ]
+        },
+        {
+          "id": 23,
+          "text": "A Premium Product By",
+          "confidence": 0.9943,
+          "box": [
+            [
+              490,
+              1284
+            ],
+            [
+              660,
+              1284
+            ],
+            [
+              660,
+              1308
+            ],
+            [
+              490,
+              1308
+            ]
+          ]
+        },
+        {
+          "id": 24,
+          "text": "A4NOTz BOOK",
+          "confidence": 0.4166,
+          "box": [
+            [
+              864,
+              1284
+            ],
+            [
+              1090,
+              1284
+            ],
+            [
+              1090,
+              1316
+            ],
+            [
+              864,
+              1316
+            ]
+          ]
+        },
+        {
+          "id": 25,
+          "text": "Manorama Paper Products",
+          "confidence": 0.8467,
+          "box": [
+            [
+              371,
+              1305
+            ],
+            [
+              785,
+              1305
+            ],
+            [
+              785,
+              1348
+            ],
+            [
+              371,
+              1348
+            ]
+          ]
+        },
+        {
+          "id": 26,
+          "text": "368",
+          "confidence": 1.0,
+          "box": [
+            [
+              1017,
+              1323
+            ],
+            [
+              1079,
+              1323
+            ],
+            [
+              1079,
+              1359
+            ],
+            [
+              1017,
+              1359
+            ]
+          ]
+        },
+        {
+          "id": 27,
+          "text": "Bhubaneswar",
+          "confidence": 1.0,
+          "box": [
+            [
+              454,
+              1342
+            ],
+            [
+              600,
+              1342
+            ],
+            [
+              600,
+              1370
+            ],
+            [
+              454,
+              1370
+            ]
+          ]
+        },
+        {
+          "id": 28,
+          "text": "Odisha.",
+          "confidence": 0.5428,
+          "box": [
+            [
+              612,
+              1340
+            ],
+            [
+              694,
+              1340
+            ],
+            [
+              694,
+              1370
+            ],
+            [
+              612,
+              1370
+            ]
+          ]
+        },
+        {
+          "id": 29,
+          "text": "Pages:",
+          "confidence": 0.9999,
+          "box": [
+            [
+              855,
+              1322
+            ],
+            [
+              977,
+              1322
+            ],
+            [
+              977,
+              1374
+            ],
+            [
+              855,
+              1374
+            ]
+          ]
+        },
+        {
+          "id": 30,
+          "text": "With Cover",
+          "confidence": 0.9999,
+          "box": [
+            [
+              862,
+              1364
+            ],
+            [
+              976,
+              1364
+            ],
+            [
+              976,
+              1390
+            ],
+            [
+              862,
+              1390
+            ]
+          ]
+        },
+        {
+          "id": 31,
+          "text": "[Tanoramal",
+          "confidence": 0.2668,
+          "box": [
+            [
+              155,
+              1402
+            ],
+            [
+              289,
+              1402
+            ],
+            [
+              289,
+              1438
+            ],
+            [
+              155,
+              1438
+            ]
+          ]
+        },
+        {
+          "id": 32,
+          "text": "GO",
+          "confidence": 0.4719,
+          "box": [
+            [
+              636,
+              1394
+            ],
+            [
+              678,
+              1394
+            ],
+            [
+              678,
+              1420
+            ],
+            [
+              636,
+              1420
+            ]
+          ]
+        },
+        {
+          "id": 33,
+          "text": "MRP?:220.00",
+          "confidence": 0.6814,
+          "box": [
+            [
+              861,
+              1388
+            ],
+            [
+              1105,
+              1388
+            ],
+            [
+              1105,
+              1429
+            ],
+            [
+              861,
+              1429
+            ]
+          ]
+        },
+        {
+          "id": 34,
+          "text": "SAVE",
+          "confidence": 0.5693,
+          "box": [
+            [
+              379,
+              1429
+            ],
+            [
+              411,
+              1429
+            ],
+            [
+              411,
+              1445
+            ],
+            [
+              379,
+              1445
+            ]
+          ]
+        },
+        {
+          "id": 35,
+          "text": "Inclusive of GST",
+          "confidence": 0.655,
+          "box": [
+            [
+              860,
+              1426
+            ],
+            [
+              986,
+              1426
+            ],
+            [
+              986,
+              1450
+            ],
+            [
+              860,
+              1450
+            ]
+          ]
+>>>>>>> b999676 (check on sample item; working fine)
         }
       ],
       "rules": {
         "mrp": {
           "status": "PASS",
+<<<<<<< HEAD
           "evidenceFound": "Matched: 'm.r.p. \u20b9: 220.00 inclusive of gst'",
           "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
         },
@@ -3766,6 +4576,15 @@
           "status": "PASS",
           "evidenceFound": "Found: pages: 368",
           "remarks": "Net quantity 'pages: 368' declared."
+=======
+          "evidenceFound": "Matched: 'mrp?:220.00 save inclusive of gst'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+>>>>>>> b999676 (check on sample item; working fine)
         },
         "mfgDate": {
           "status": "VIOLATION",
@@ -3791,11 +4610,274 @@
         "consumerCare": "Consumer Care Info"
       },
       "violations": [
+<<<<<<< HEAD
+=======
+        "netQuantity",
+>>>>>>> b999676 (check on sample item; working fine)
         "mfgDate",
         "consumerCare"
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "156bace2-7ed5-4bc5-b63e-afd12cda99e9",
+      "productName": "Classic Notebook 400 Pages",
+      "engine": "Local OpenCV + EasyOCR",
+      "geminiError": null,
+      "imagePath": "uploads/7fd20bf1f42549de91183c348ad75372_sample_notebook_label.png",
+      "scannedAt": "2026-09-22T19:23:05.266309+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "PREMIUM QUALITYCLASSIC NOTEBOOK MRP Rs 185 - (Inclusive ofall taxesi NetOty: 400 Pages Mlg Date:04/*2024 Manulactured by: Multi Pap Industries Pvt Ltd Plot 45, Industrial Estate, Sivakasi Tamil Nadu-828123 Customer Care: 1800 200 4567 cale  @multipapcom",
+      "detections": [
+        {
+          "id": 1,
+          "text": "PREMIUM QUALITYCLASSIC NOTEBOOK",
+          "confidence": 0.7199,
+          "box": [
+            [
+              39,
+              39
+            ],
+            [
+              231,
+              39
+            ],
+            [
+              231,
+              53
+            ],
+            [
+              39,
+              53
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "text": "MRP Rs 185 - (Inclusive ofall taxesi",
+          "confidence": 0.6703,
+          "box": [
+            [
+              39,
+              91
+            ],
+            [
+              205,
+              91
+            ],
+            [
+              205,
+              103
+            ],
+            [
+              39,
+              103
+            ]
+          ]
+        },
+        {
+          "id": 3,
+          "text": "NetOty: 400 Pages",
+          "confidence": 0.621,
+          "box": [
+            [
+              39,
+              139
+            ],
+            [
+              129,
+              139
+            ],
+            [
+              129,
+              155
+            ],
+            [
+              39,
+              155
+            ]
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Mlg Date:04/*2024",
+          "confidence": 0.4548,
+          "box": [
+            [
+              39,
+              191
+            ],
+            [
+              127,
+              191
+            ],
+            [
+              127,
+              205
+            ],
+            [
+              39,
+              205
+            ]
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Manulactured by: Multi Pap Industries Pvt Ltd",
+          "confidence": 0.8582,
+          "box": [
+            [
+              39,
+              241
+            ],
+            [
+              253,
+              241
+            ],
+            [
+              253,
+              255
+            ],
+            [
+              39,
+              255
+            ]
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Plot 45, Industrial Estate, Sivakasi Tamil Nadu-828123",
+          "confidence": 0.6222,
+          "box": [
+            [
+              39,
+              291
+            ],
+            [
+              293,
+              291
+            ],
+            [
+              293,
+              303
+            ],
+            [
+              39,
+              303
+            ]
+          ]
+        },
+        {
+          "id": 7,
+          "text": "Customer Care: 1800 200 4567",
+          "confidence": 0.7559,
+          "box": [
+            [
+              39,
+              339
+            ],
+            [
+              183,
+              339
+            ],
+            [
+              183,
+              353
+            ],
+            [
+              39,
+              353
+            ]
+          ]
+        },
+        {
+          "id": 8,
+          "text": "cale ",
+          "confidence": 0.2224,
+          "box": [
+            [
+              189,
+              341
+            ],
+            [
+              213,
+              341
+            ],
+            [
+              213,
+              353
+            ],
+            [
+              189,
+              353
+            ]
+          ]
+        },
+        {
+          "id": 9,
+          "text": "@multipapcom",
+          "confidence": 0.9375,
+          "box": [
+            [
+              210,
+              339
+            ],
+            [
+              285,
+              339
+            ],
+            [
+              285,
+              356
+            ],
+            [
+              210,
+              356
+            ]
+          ]
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'rs 185'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 400 pages",
+          "remarks": "Net quantity '400 pages' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'manufactured by ... multi pap ... sivakasi'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Phone: 1800 200 4567",
+          "remarks": "Consumer care phone/helpline found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mfgDate"
+      ]
+    },
+    {
+>>>>>>> b999676 (check on sample item; working fine)
       "id": "14cdd548-9fa1-4577-a157-14d71bce6304",
       "productName": "scrub pad",
       "engine": "Gemini Vision (gemini-3.5-flash-lite)",
@@ -3975,6 +5057,298 @@
       "violations": []
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "58a39ba4-d9c9-442a-b017-a0d8ddd735dd",
+      "productName": "Notebook",
+      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
+      "geminiError": null,
+      "imagePath": "uploads/56ec7cb028d64ab7853eccba5509e05c_nb2.jpg",
+      "scannedAt": "2026-09-21T16:06:42.635815+00:00",
+      "status": "Compliant",
+      "extractedText": "SUNDARAM\nSINCE: 1985\n\nManufactured by: SUNDARAM MULTI PAP LIMITED\nPlot No. 33 To 37, Sundaram Industrial Zone, Palghar (W), District - Palghar - 401 404, Maharashtra, India.\nFor Feedback / Complaint Contact our\nCustomer Care Executive address as given above\nCustomer Care No.: +91-22-67602200, (\ud83d\udcde) 8369691119,\nEmail: sales@sundaramgroups.in, website: www.sundaramgroups.in\n\nCode : S-14\n\n8902242 725425\n\nProduct : A/4 Book - Spiral\nSize : 21 x 29.7 cm\nPages : 400\n\nMRP: \u20b9 185/-\n(Inclusive of all taxes)\n\nPKG DT.\nAPR 2026",
+      "detections": [
+        {
+          "id": 1,
+          "text": "SUNDARAM",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 2,
+          "text": "SINCE: 1985",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 3,
+          "text": "Manufactured by: SUNDARAM MULTI PAP LIMITED",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 4,
+          "text": "Plot No. 33 To 37, Sundaram Industrial Zone, Palghar (W), District - Palghar - 401 404, Maharashtra, India.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 5,
+          "text": "For Feedback / Complaint Contact our",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 6,
+          "text": "Customer Care Executive address as given above",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 7,
+          "text": "Customer Care No.: +91-22-67602200, (\ud83d\udcde) 8369691119,",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 8,
+          "text": "Email: sales@sundaramgroups.in, website: www.sundaramgroups.in",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 9,
+          "text": "Code : S-14",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 10,
+          "text": "8902242 725425",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 11,
+          "text": "Product : A/4 Book - Spiral",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 12,
+          "text": "Size : 21 x 29.7 cm",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 13,
+          "text": "Pages : 400",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 14,
+          "text": "MRP: \u20b9 185/-",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 15,
+          "text": "(Inclusive of all taxes)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 16,
+          "text": "PKG DT.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 17,
+          "text": "APR 2026",
+          "confidence": 0.98,
+          "box": []
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mrp: \u20b9 185/- (inclusive of all taxes'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: pages : 400",
+          "remarks": "Net quantity 'pages : 400' declared."
+        },
+        "mfgDate": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'lot' with date 'apr 2026'",
+          "remarks": "Manufacturing / Packing date is declared."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'manufactured by ... multi pap ... maharashtra'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Email: sales@sundaramgroups.in | Phone: 8369691119",
+          "remarks": "Both email and phone contact details found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": []
+    },
+    {
+      "id": "210e4d94-783c-4ab9-a795-ac85fa14b1cf",
+      "productName": "pegs",
+      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
+      "geminiError": null,
+      "imagePath": "uploads/7b9d80d41eec4140897b0aea6caa5c64_pegs.jpeg",
+      "scannedAt": "2026-09-21T14:45:45.931838+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "Based on a detailed examination of the packaging label provided, here is the complete and corrected transcription of all text declarations in compliance with Legal Metrology requirements:\n\n**Brand / Product Name:**\n* Mega-Pixel Khushi (The Ultimate Pegs)\n\n**Features / Marketing Text:**\n* It is a Laundry series of fresh colour\n* to imagine delicious fruits\n* Lest hand laundry outside happily\n* Extra Strong, Extra Firm Grip.\n* Heat Resistance colour i.e No fading of colour in sun.\n* Rust proof, Chrome metal spring for no stain cloths.\n\n**Manufacturing & Pricing Details:**\n* **Mfd. by:** SHIVA PLASTIC (INDIA)\n* **M.R.P.:** \u20b9 105/- (Incl. of all taxes)\n* **Contains:** 12 Pcs.\n* **Country of Origin:** Make in India",
+      "detections": [
+        {
+          "id": 1,
+          "text": "Based on a detailed examination of the packaging label provided, here is the complete and corrected transcription of all text declarations in compliance with Legal Metrology requirements:",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 2,
+          "text": "**Brand / Product Name:**",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 3,
+          "text": "* Mega-Pixel Khushi (The Ultimate Pegs)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 4,
+          "text": "**Features / Marketing Text:**",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 5,
+          "text": "* It is a Laundry series of fresh colour",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 6,
+          "text": "* to imagine delicious fruits",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 7,
+          "text": "* Lest hand laundry outside happily",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 8,
+          "text": "* Extra Strong, Extra Firm Grip.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 9,
+          "text": "* Heat Resistance colour i.e No fading of colour in sun.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 10,
+          "text": "* Rust proof, Chrome metal spring for no stain cloths.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 11,
+          "text": "**Manufacturing & Pricing Details:**",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 12,
+          "text": "* **Mfd. by:** SHIVA PLASTIC (INDIA)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 13,
+          "text": "* **M.R.P.:** \u20b9 105/- (Incl. of all taxes)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 14,
+          "text": "* **Contains:** 12 Pcs.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 15,
+          "text": "* **Country of Origin:** Make in India",
+          "confidence": 0.98,
+          "box": []
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'm.r.p.:** \u20b9 105/- (incl. of all taxes'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 12 pcs",
+          "remarks": "Net quantity '12 pcs' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mfd. by ... product ... india'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mfgDate",
+        "consumerCare"
+      ]
+    },
+    {
+>>>>>>> b999676 (check on sample item; working fine)
       "id": "975430a1-2d61-41ff-b814-f134f9b07472",
       "productName": "MANORAMA NOTEBOOK SAMPLE 1",
       "imagePath": "uploads/d0c958f4f3ad4ce19851a96d537c235d_WhatsApp Image 2026-09-18 at 13.18.07.jpeg",
