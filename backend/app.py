@@ -436,6 +436,13 @@ def delete_scan(scan_id):
 
 
 if __name__ == '__main__':
+    import socket
     port = int(os.environ.get("PORT", 5000))
+    if "PORT" not in os.environ:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex(('127.0.0.1', port)) == 0:
+                print(f"[Port Check] Port {port} is in use (e.g. macOS AirPlay), falling back to 5001...")
+                port = 5001
     print(f"Starting server on http://localhost:{port}")
     app.run(host="0.0.0.0", port=port, debug=True)
+
