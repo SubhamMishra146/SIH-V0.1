@@ -30,7 +30,12 @@ def ocr_clean(text):
     # 2. Convert to lowercase for easier matching
     cleaned = cleaned.lower()
 
-    # 3. Fix common OCR misspellings (Tesseract letter-swaps)
+    # 3. Strip common markdown formatting (asterisks, hashes, backticks, tildes)
+    #    so markdown symbols like **Pages:** or * **MRP:** don't break field-value regexes
+    cleaned = re.sub(r'[*#`~]', ' ', cleaned)
+    cleaned = re.sub(r'\s+', ' ', cleaned)
+
+    # 4. Fix common OCR misspellings (Tesseract letter-swaps)
     ocr_fixes = {
         "laxes": "taxes",           # t -> l swap
         "iaxes": "taxes",           # t -> i swap
@@ -52,10 +57,10 @@ def ocr_clean(text):
     for wrong, right in ocr_fixes.items():
         cleaned = cleaned.replace(wrong, right)
 
-    # 4. Fix "Dy" / "dy" -> "by" when preceded by manufactur/pack/market
+    # 5. Fix "Dy" / "dy" -> "by" when preceded by manufactur/pack/market
     cleaned = re.sub(r'(manufactur\w*|pack\w*|market\w*)\s+dy\b', r'\1 by', cleaned)
 
-    # 5. Fix broken emails: collapse spaces around @ and before .com/.in/.org
+    # 6. Fix broken emails: collapse spaces around @ and before .com/.in/.org
     cleaned = re.sub(r'\s*@\s*', '@', cleaned)
     cleaned = re.sub(r'\s*\.\s*(com|in|org|net|edu|co)\b', r'.\1', cleaned)
 
@@ -83,7 +88,7 @@ def check_mrp(cleaned, original):
     # Also try standalone rs/₹ with number if MRP keyword not found
     if not price_match:
         price_match = re.search(
-            r'((?:rs\.?|₹)\s*[:\-]?\s*(\d+(?:[.,]\d{1,2})?\s*(?:/\-?)?))',
+            r'((?:rs\.?|₹)[^a-z0-9]{0,10}?(\d+(?:[.,]\d{1,2})?\s*(?:/\-?)?))',
             cleaned
         )
 
@@ -129,19 +134,19 @@ def check_mrp(cleaned, original):
 def check_net_quantity(cleaned, original):
     """
     Supports two formats, with or without colons/punctuation:
-      - Unit before number:  "Pages 400", "Pages: 368", "Net Wt: 500g"
-      - Number before unit:  "500g", "368 pages", "1 litre"
+      - Unit before number:  "Pages 400", "Pages: 368", "Net Wt: 500g", "Qty: 100"
+      - Number before unit:  "500g", "368 pages", "1 litre", "400 N"
     """
 
-    # Format 1: Unit keyword then optional colon then number
+    # Format 1: Unit keyword then optional punctuation/spacing then number
     unit_before = re.search(
-        r'((?:number\s*of\s*commodity|pages|page|pgs|leaves|sheets|pcs|pieces|units|nos|net\s*wt\.?|net\s*quantity|net\s*qty|net\s*content)\s*[:\-]?\s*(\d+[\.,]?\d*)\s*(?:n|pcs|units|nos)?)',
+        r'((?:number\s*of\s*commodity|pages|page|pgs|leaves|sheets|pcs|pieces|units|nos|net\s*wt\.?|net\s*quantity|net\s*qty|net\s*content|quantity|qty|count)\b[^a-z0-9]{0,15}?(\d+[\.,]?\d*)\s*(?:n|pcs|pieces|units|nos|pages|leaves|sheets|g|gm|gms|kg|ml|l)?)',
         cleaned
     )
 
     # Format 2: Number then unit (including standard statutory count symbol 'N')
     num_before = re.search(
-        r'((\d+[\.,]?\d*)\s*(g|gm|gms|gram|grams|kg|kgs|mg|ml|mls|l|ltr|litre|liter|litres|liters|pcs|pieces|pages|page|pgs|leaves|sheets|units|nos|n)\b)',
+        r'((\d+[\.,]?\d*)\s*[^a-z0-9]{0,10}?\s*(g|gm|gms|gram|grams|kg|kgs|mg|ml|mls|l|ltr|litre|liter|litres|liters|pcs|pieces|pages|page|pgs|leaves|sheets|units|nos|n)\b)',
         cleaned
     )
 
@@ -178,7 +183,7 @@ def check_mfg_date(cleaned, original):
 
     # Date keyword (tolerant: "pkg dt", "pkg dl", "mfg", "batch", etc.)
     keyword_match = re.search(
-        r'(mfg\.?d?\.?|mfd\.?|pkd\.?|pkg\s*d[tl]\.?|packed|pack\s*date|batch|b\.?\s*no\.?|lot|best\s*before|exp\.?\s*date|use\s*by|date\s*of)',
+        r'\b(mfg\.?d?\.?|mfd\.?|pkd\.?|pkg\s*d[tl]\.?|packed|pack\s*date|batch|b\.?\s*no\.?|lot|best\s*before|exp\.?\s*date|use\s*by|date\s*of)\b',
         cleaned
     )
 
@@ -351,15 +356,22 @@ def run_compliance_check(text):
     """Run all 5 Legal Metrology rules against the OCR text."""
 
     # ── Debug: print raw text to terminal ──
-    print("=" * 60)
-    print("=== RAW OCR TEXT ===")
-    print(text)
+    try:
+        print("=" * 60)
+        print("=== RAW OCR TEXT ===")
+        print(text)
+    except UnicodeEncodeError:
+        print(text.encode('ascii', errors='replace').decode('ascii'))
 
     # ── Step 1: Clean OCR errors ──
     cleaned = ocr_clean(text)
-    print("=== CLEANED TEXT ===")
-    print(cleaned)
-    print("=" * 60)
+    try:
+        print("=== CLEANED TEXT ===")
+        print(cleaned)
+        print("=" * 60)
+    except UnicodeEncodeError:
+        print(cleaned.encode('ascii', errors='replace').decode('ascii'))
+        print("=" * 60)
 
     # ── Step 2: Run all rules (pass both cleaned and original) ──
     rules = {
@@ -372,7 +384,10 @@ def run_compliance_check(text):
 
     # ── Debug: log each result ──
     for key, result in rules.items():
-        print(f"  [{result['status']}] {RULE_NAMES[key]}: {result['evidenceFound']}")
+        try:
+            print(f"  [{result['status']}] {RULE_NAMES[key]}: {result['evidenceFound']}")
+        except UnicodeEncodeError:
+            print(f"  [{result['status']}] {RULE_NAMES[key]}: {result['evidenceFound'].encode('ascii', errors='replace').decode('ascii')}")
     print("=" * 60)
 
     violations = [k for k, v in rules.items() if v["status"] == "VIOLATION"]

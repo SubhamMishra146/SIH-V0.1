@@ -1,6 +1,3801 @@
 {
   "scans": [
     {
+      "id": "5e875616-1b8a-459a-a2a5-3d2aa742915e",
+      "productName": "notebook",
+      "engine": "Local OpenCV + EasyOCR",
+      "geminiError": "All candidate models failed. Last error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "imagePath": "uploads/62052cb4d4654e62a94704ff15660d9b_nb2.jpg",
+      "scannedAt": "2026-09-22T14:56:01.875963+00:00",
+      "status": "Compliant",
+      "extractedText": "undaram SINCE: 1985 Manutacured Dy SUNDARAM MULTI PAP LIMITED Pa No 33 T0 37 , Sundaram Industnal Zone; Papnar (WDsta Palghar 401 404 Maharashtra. India: Fo Feedbad_ Complaint Contact our Cuslome Care Executive address as given above Cusoma Care No_+91-22-67602200 0) 8369691119, Ena sasasndaramgroups in; website  sundaramgroups in Code 5-14 8119022421725425 Safety Product : AI4 Book = Spiral Size 21 * 29.7 cm Pages 400 MRP: 185/- PKG DL (Inclusive of all laxes) ApR 2020 Lock",
+      "detections": [
+        {
+          "id": 1,
+          "text": "undaram",
+          "confidence": 0.7156,
+          "box": [
+            [
+              172,
+              505
+            ],
+            [
+              319,
+              505
+            ],
+            [
+              319,
+              543
+            ],
+            [
+              172,
+              543
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "text": "SINCE: 1985",
+          "confidence": 0.8754,
+          "box": [
+            [
+              158,
+              566
+            ],
+            [
+              296,
+              566
+            ],
+            [
+              296,
+              592
+            ],
+            [
+              158,
+              592
+            ]
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Manutacured Dy",
+          "confidence": 0.5457,
+          "box": [
+            [
+              37,
+              603
+            ],
+            [
+              139,
+              603
+            ],
+            [
+              139,
+              619
+            ],
+            [
+              37,
+              619
+            ]
+          ]
+        },
+        {
+          "id": 4,
+          "text": "SUNDARAM MULTI PAP LIMITED",
+          "confidence": 0.6911,
+          "box": [
+            [
+              143,
+              594
+            ],
+            [
+              424,
+              594
+            ],
+            [
+              424,
+              620
+            ],
+            [
+              143,
+              620
+            ]
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Pa No 33 T0 37 , Sundaram Industnal Zone;",
+          "confidence": 0.3733,
+          "box": [
+            [
+              107,
+              619
+            ],
+            [
+              353,
+              619
+            ],
+            [
+              353,
+              635
+            ],
+            [
+              107,
+              635
+            ]
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Papnar (WDsta",
+          "confidence": 0.2084,
+          "box": [
+            [
+              64,
+              632
+            ],
+            [
+              175,
+              632
+            ],
+            [
+              175,
+              652
+            ],
+            [
+              64,
+              652
+            ]
+          ]
+        },
+        {
+          "id": 7,
+          "text": "Palghar",
+          "confidence": 0.9516,
+          "box": [
+            [
+              181,
+              635
+            ],
+            [
+              229,
+              635
+            ],
+            [
+              229,
+              651
+            ],
+            [
+              181,
+              651
+            ]
+          ]
+        },
+        {
+          "id": 8,
+          "text": "401 404",
+          "confidence": 0.6125,
+          "box": [
+            [
+              233,
+              633
+            ],
+            [
+              281,
+              633
+            ],
+            [
+              281,
+              647
+            ],
+            [
+              233,
+              647
+            ]
+          ]
+        },
+        {
+          "id": 9,
+          "text": "Maharashtra. India:",
+          "confidence": 0.5922,
+          "box": [
+            [
+              285,
+              633
+            ],
+            [
+              395,
+              633
+            ],
+            [
+              395,
+              647
+            ],
+            [
+              285,
+              647
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "text": "Fo Feedbad_",
+          "confidence": 0.2147,
+          "box": [
+            [
+              125,
+              647
+            ],
+            [
+              205,
+              647
+            ],
+            [
+              205,
+              661
+            ],
+            [
+              125,
+              661
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "text": "Complaint Contact our",
+          "confidence": 0.9238,
+          "box": [
+            [
+              211,
+              647
+            ],
+            [
+              335,
+              647
+            ],
+            [
+              335,
+              663
+            ],
+            [
+              211,
+              663
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "text": "Cuslome Care Executive address as given above",
+          "confidence": 0.3017,
+          "box": [
+            [
+              93,
+              661
+            ],
+            [
+              367,
+              661
+            ],
+            [
+              367,
+              677
+            ],
+            [
+              93,
+              677
+            ]
+          ]
+        },
+        {
+          "id": 13,
+          "text": "Cusoma Care No_+91-22-67602200",
+          "confidence": 0.2951,
+          "box": [
+            [
+              77,
+              673
+            ],
+            [
+              285,
+              673
+            ],
+            [
+              285,
+              689
+            ],
+            [
+              77,
+              689
+            ]
+          ]
+        },
+        {
+          "id": 14,
+          "text": "0) 8369691119,",
+          "confidence": 0.6788,
+          "box": [
+            [
+              293,
+              673
+            ],
+            [
+              381,
+              673
+            ],
+            [
+              381,
+              689
+            ],
+            [
+              293,
+              689
+            ]
+          ]
+        },
+        {
+          "id": 15,
+          "text": "Ena",
+          "confidence": 0.6901,
+          "box": [
+            [
+              41,
+              687
+            ],
+            [
+              75,
+              687
+            ],
+            [
+              75,
+              703
+            ],
+            [
+              41,
+              703
+            ]
+          ]
+        },
+        {
+          "id": 16,
+          "text": "sasasndaramgroups in; website",
+          "confidence": 0.3268,
+          "box": [
+            [
+              81,
+              689
+            ],
+            [
+              277,
+              689
+            ],
+            [
+              277,
+              705
+            ],
+            [
+              81,
+              705
+            ]
+          ]
+        },
+        {
+          "id": 17,
+          "text": "",
+          "confidence": 0.0,
+          "box": [
+            [
+              284,
+              692
+            ],
+            [
+              312,
+              692
+            ],
+            [
+              312,
+              698
+            ],
+            [
+              284,
+              698
+            ]
+          ]
+        },
+        {
+          "id": 18,
+          "text": "sundaramgroups in",
+          "confidence": 0.9432,
+          "box": [
+            [
+              311,
+              689
+            ],
+            [
+              421,
+              689
+            ],
+            [
+              421,
+              703
+            ],
+            [
+              311,
+              703
+            ]
+          ]
+        },
+        {
+          "id": 19,
+          "text": "Code",
+          "confidence": 0.9985,
+          "box": [
+            [
+              160,
+              714
+            ],
+            [
+              228,
+              714
+            ],
+            [
+              228,
+              742
+            ],
+            [
+              160,
+              742
+            ]
+          ]
+        },
+        {
+          "id": 20,
+          "text": "5-14",
+          "confidence": 0.7139,
+          "box": [
+            [
+              242,
+              714
+            ],
+            [
+              300,
+              714
+            ],
+            [
+              300,
+              740
+            ],
+            [
+              242,
+              740
+            ]
+          ]
+        },
+        {
+          "id": 21,
+          "text": "8119022421725425",
+          "confidence": 0.7586,
+          "box": [
+            [
+              90,
+              802
+            ],
+            [
+              358,
+              802
+            ],
+            [
+              358,
+              830
+            ],
+            [
+              90,
+              830
+            ]
+          ]
+        },
+        {
+          "id": 22,
+          "text": "Safety",
+          "confidence": 0.7929,
+          "box": [
+            [
+              542,
+              775
+            ],
+            [
+              689,
+              775
+            ],
+            [
+              689,
+              831
+            ],
+            [
+              542,
+              831
+            ]
+          ]
+        },
+        {
+          "id": 23,
+          "text": "Product : AI4 Book =",
+          "confidence": 0.4197,
+          "box": [
+            [
+              60,
+              837
+            ],
+            [
+              305,
+              837
+            ],
+            [
+              305,
+              874
+            ],
+            [
+              60,
+              874
+            ]
+          ]
+        },
+        {
+          "id": 24,
+          "text": "Spiral",
+          "confidence": 1.0,
+          "box": [
+            [
+              315,
+              839
+            ],
+            [
+              403,
+              839
+            ],
+            [
+              403,
+              877
+            ],
+            [
+              315,
+              877
+            ]
+          ]
+        },
+        {
+          "id": 25,
+          "text": "Size",
+          "confidence": 0.9903,
+          "box": [
+            [
+              44,
+              883
+            ],
+            [
+              99,
+              883
+            ],
+            [
+              99,
+              912
+            ],
+            [
+              44,
+              912
+            ]
+          ]
+        },
+        {
+          "id": 26,
+          "text": "21 * 29.7 cm",
+          "confidence": 0.3497,
+          "box": [
+            [
+              108,
+              886
+            ],
+            [
+              244,
+              886
+            ],
+            [
+              244,
+              914
+            ],
+            [
+              108,
+              914
+            ]
+          ]
+        },
+        {
+          "id": 27,
+          "text": "Pages",
+          "confidence": 1.0,
+          "box": [
+            [
+              287,
+              885
+            ],
+            [
+              360,
+              885
+            ],
+            [
+              360,
+              915
+            ],
+            [
+              287,
+              915
+            ]
+          ]
+        },
+        {
+          "id": 28,
+          "text": "400",
+          "confidence": 1.0,
+          "box": [
+            [
+              372,
+              886
+            ],
+            [
+              418,
+              886
+            ],
+            [
+              418,
+              912
+            ],
+            [
+              372,
+              912
+            ]
+          ]
+        },
+        {
+          "id": 29,
+          "text": "MRP:",
+          "confidence": 0.9999,
+          "box": [
+            [
+              94,
+              930
+            ],
+            [
+              221,
+              930
+            ],
+            [
+              221,
+              983
+            ],
+            [
+              94,
+              983
+            ]
+          ]
+        },
+        {
+          "id": 30,
+          "text": "185/-",
+          "confidence": 0.7858,
+          "box": [
+            [
+              254,
+              936
+            ],
+            [
+              368,
+              936
+            ],
+            [
+              368,
+              984
+            ],
+            [
+              254,
+              984
+            ]
+          ]
+        },
+        {
+          "id": 31,
+          "text": "PKG DL",
+          "confidence": 0.9796,
+          "box": [
+            [
+              369,
+              973
+            ],
+            [
+              423,
+              973
+            ],
+            [
+              423,
+              989
+            ],
+            [
+              369,
+              989
+            ]
+          ]
+        },
+        {
+          "id": 32,
+          "text": "(Inclusive of all laxes)",
+          "confidence": 0.6138,
+          "box": [
+            [
+              133,
+              978
+            ],
+            [
+              328,
+              978
+            ],
+            [
+              328,
+              1008
+            ],
+            [
+              133,
+              1008
+            ]
+          ]
+        },
+        {
+          "id": 33,
+          "text": "ApR 2020",
+          "confidence": 0.4566,
+          "box": [
+            [
+              363,
+              989
+            ],
+            [
+              429,
+              989
+            ],
+            [
+              429,
+              1003
+            ],
+            [
+              363,
+              1003
+            ]
+          ]
+        },
+        {
+          "id": 34,
+          "text": "Lock",
+          "confidence": 1.0,
+          "box": [
+            [
+              563,
+              973
+            ],
+            [
+              671,
+              973
+            ],
+            [
+              671,
+              1015
+            ],
+            [
+              563,
+              1015
+            ]
+          ]
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mrp: 185/- pkg dl (inclusive of all taxes'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: pages 400",
+          "remarks": "Net quantity 'pages 400' declared."
+        },
+        "mfgDate": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'pkg dl' with date 'apr 2020'",
+          "remarks": "Manufacturing / Packing date is declared."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'manufactured by ... multi pap ... maharashtra'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Phone: 8369691119",
+          "remarks": "Consumer care phone/helpline found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": []
+    },
+    {
+      "id": "47036be4-e898-4c64-9522-415c34e4e2b9",
+      "productName": "notebook",
+      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
+      "geminiError": null,
+      "imagePath": "uploads/d40eaeda5e6042efab354208fe1b7a89_nb2.jpg",
+      "scannedAt": "2026-09-22T14:33:17.376693+00:00",
+      "status": "Compliant",
+      "extractedText": "Based on the examination of the package label provided in the image, here are the extracted declarations:\n\n* **Brand / Trademark:** Sundaram (SINCE: 1985)\n* **Manufacturer:** SUNDARAM MULTI PAP LIMITED\n* **Address:** Plot No. 33 To 37, Sundaram Industrial Zone, Palghar (W), District - Palghar - 401 404, Maharashtra, India.\n* **Product Code:** S-14\n* **Barcode:** 8 902242 725425\n* **Product Description:** A/4 Book - Spiral\n* **Size:** 21 x 29.7 cm\n* **Pages:** 400\n* **MRP:** \u20b9 185/- (Inclusive of all taxes)\n* **PKG DT:** APR 2026\n* **Customer Care Details:**\n  * **Customer Care No.:** +91-22-67602200, 8369691119\n  * **Email:** sales@sundaramgroups.in\n  * **Website:** www.sundaramgroups.in",
+      "detections": [
+        {
+          "id": 1,
+          "text": "Based on the examination of the package label provided in the image, here are the extracted declarations:",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 2,
+          "text": "* **Brand / Trademark:** Sundaram (SINCE: 1985)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 3,
+          "text": "* **Manufacturer:** SUNDARAM MULTI PAP LIMITED",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 4,
+          "text": "* **Address:** Plot No. 33 To 37, Sundaram Industrial Zone, Palghar (W), District - Palghar - 401 404, Maharashtra, India.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 5,
+          "text": "* **Product Code:** S-14",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 6,
+          "text": "* **Barcode:** 8 902242 725425",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 7,
+          "text": "* **Product Description:** A/4 Book - Spiral",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 8,
+          "text": "* **Size:** 21 x 29.7 cm",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 9,
+          "text": "* **Pages:** 400",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 10,
+          "text": "* **MRP:** \u20b9 185/- (Inclusive of all taxes)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 11,
+          "text": "* **PKG DT:** APR 2026",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 12,
+          "text": "* **Customer Care Details:**",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 13,
+          "text": "* **Customer Care No.:** +91-22-67602200, 8369691119",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 14,
+          "text": "* **Email:** sales@sundaramgroups.in",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 15,
+          "text": "* **Website:** www.sundaramgroups.in",
+          "confidence": 0.98,
+          "box": []
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mrp: \u20b9 185/- (inclusive of all taxes'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: pages: 400",
+          "remarks": "Net quantity 'pages: 400' declared."
+        },
+        "mfgDate": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'pkg dt' with date 'apr 2026'",
+          "remarks": "Manufacturing / Packing date is declared."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'multi pap ... maharashtra'",
+          "remarks": "Company name and location found (keyword like 'Mfg by' not explicit)."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Email: sales@sundaramgroups.in | Phone: 8369691119",
+          "remarks": "Both email and phone contact details found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": []
+    },
+    {
+      "id": "5cc5bf7a-cf72-44f2-89a5-83870c9a9165",
+      "productName": "shampoo",
+      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
+      "geminiError": null,
+      "imagePath": "uploads/bb97084dddf54605971045ed8cb3ceee_shampoo.jpeg",
+      "scannedAt": "2026-09-22T14:15:49.719671+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "KETOCONAZOLE AND ZINC PYRITHIONE SHAMPOO\nSCALPE\n\nComposition\nKetoconazole I.P. 2% w/w\nZinc Pyrithione (ZPTO) 1% w/w\n(as dispersion)\nin a conditioning base q.s.\nColour: Carmoisine\n\nHow to use: Wet hair and scalp and apply sufficient shampoo to produce enough lather. Massage for one minute and rinse with warm water. Repeat procedure for additional 3 minutes. Rinse with warm water and dry hair. Use once in three days for four weeks followed by once weekly as maintenance therapy.\n\nSHAKE WELL BEFORE USE\nSTORE IN A WELL CLOSED CONTAINER NOT EXCEEDING 30\u00b0C. DO NOT FREEZE.\nCAUTION: KEEP OUT OF EYES. IF CONTACT OCCURS, RINSE THOROUGHLY WITH WATER. DISCONTINUE IF SIGNS OF IRRITATION OR INFLAMMATION DEVELOP.\nKEEP OUT OF REACH OF CHILDREN.\nFOR EXTERNAL USE ONLY NOT FOR ORAL USE\n\nBatch No.:\nMfg. Date: 11260082 JAN.26\nExpiry Date: DEC.27\nMax. Retail Price \u20b9: 344.40\n(Incl. of all taxes)\nNet Quantity: 75 ml\n\nCPCB PWM Regn. No.\nBO-10-000-09-AAMCC0758N-25\nMfg. Lic. No.: MNB/09/732\nManufactured in India by:\n6 Glenmark\nPharmaceuticals Ltd.\nUnit III, Village Bhettanwala,\nP.O. Rajpura, Nalagarh,\nDistt. Solan (H.P.) - 174101.\nRegistered Trade Mark\n\nMarketed by:\n6 Glenmark\nConsumer Care Ltd.\nGlenmark House,\nB.D. Sawant Marg, Andheri East,\nMumbai - 400 099, Maharashtra.",
+      "detections": [
+        {
+          "id": 1,
+          "text": "KETOCONAZOLE AND ZINC PYRITHIONE SHAMPOO",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 2,
+          "text": "SCALPE",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 3,
+          "text": "Composition",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 4,
+          "text": "Ketoconazole I.P. 2% w/w",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 5,
+          "text": "Zinc Pyrithione (ZPTO) 1% w/w",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 6,
+          "text": "(as dispersion)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 7,
+          "text": "in a conditioning base q.s.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 8,
+          "text": "Colour: Carmoisine",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 9,
+          "text": "How to use: Wet hair and scalp and apply sufficient shampoo to produce enough lather. Massage for one minute and rinse with warm water. Repeat procedure for additional 3 minutes. Rinse with warm water and dry hair. Use once in three days for four weeks followed by once weekly as maintenance therapy.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 10,
+          "text": "SHAKE WELL BEFORE USE",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 11,
+          "text": "STORE IN A WELL CLOSED CONTAINER NOT EXCEEDING 30\u00b0C. DO NOT FREEZE.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 12,
+          "text": "CAUTION: KEEP OUT OF EYES. IF CONTACT OCCURS, RINSE THOROUGHLY WITH WATER. DISCONTINUE IF SIGNS OF IRRITATION OR INFLAMMATION DEVELOP.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 13,
+          "text": "KEEP OUT OF REACH OF CHILDREN.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 14,
+          "text": "FOR EXTERNAL USE ONLY NOT FOR ORAL USE",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 15,
+          "text": "Batch No.:",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 16,
+          "text": "Mfg. Date: 11260082 JAN.26",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 17,
+          "text": "Expiry Date: DEC.27",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 18,
+          "text": "Max. Retail Price \u20b9: 344.40",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 19,
+          "text": "(Incl. of all taxes)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 20,
+          "text": "Net Quantity: 75 ml",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 21,
+          "text": "CPCB PWM Regn. No.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 22,
+          "text": "BO-10-000-09-AAMCC0758N-25",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 23,
+          "text": "Mfg. Lic. No.: MNB/09/732",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 24,
+          "text": "Manufactured in India by:",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 25,
+          "text": "6 Glenmark",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 26,
+          "text": "Pharmaceuticals Ltd.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 27,
+          "text": "Unit III, Village Bhettanwala,",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 28,
+          "text": "P.O. Rajpura, Nalagarh,",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 29,
+          "text": "Distt. Solan (H.P.) - 174101.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 30,
+          "text": "Registered Trade Mark",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 31,
+          "text": "Marketed by:",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 32,
+          "text": "6 Glenmark",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 33,
+          "text": "Consumer Care Ltd.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 34,
+          "text": "Glenmark House,",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 35,
+          "text": "B.D. Sawant Marg, Andheri East,",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 36,
+          "text": "Mumbai - 400 099, Maharashtra.",
+          "confidence": 0.98,
+          "box": []
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: '\u20b9: 344.40'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: net quantity: 75",
+          "remarks": "Net quantity 'net quantity: 75' declared."
+        },
+        "mfgDate": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'batch' with date 'jan.26'",
+          "remarks": "Manufacturing / Packing date is declared."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mfg ... india'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "'Customer Care' keyword found but no phone/email detected",
+          "remarks": "Care keyword present but actual contact info not readable by OCR."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "9351eb02-5afa-4d05-94d2-67965208ee0e",
+      "productName": "shmapoo",
+      "engine": "Local OpenCV + EasyOCR",
+      "geminiError": "All candidate models failed. Last error: [Errno 11001] getaddrinfo failed",
+      "imagePath": "uploads/63301b9d11a74bbd9dca84d4669bc276_shampoo.jpeg",
+      "scannedAt": "2026-09-22T05:47:15.834112+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "ANd BHAMPOO toreadhon Voatnatole P Wl 6 Fore IZPT0) 1 %Wla Ios Bepery renaiicning basp 9 $ Leleur Cormoisine Jou5\" Mel hoir ond scolp end Opply Sulagiehk shempoo to produce enough Tue | Message totone mtnute and rinse #mnh naler | Repeat procedure for bun tonel 3 mlnutes / Rinse with warm Waler end dry halr | Use once In Inree Dors tor four weeks followed Dy once Keekly 05 maintenante ShARE Well BEFORE USE  STORE INAWELL CLOSEO CONTAINER NOT Exceeding 30*c  DO NOT FREZZE Cauton: LEEP QUT Of Eyes If CONTAcT OccuRS RINSE ThoROUGHLY With WATER disconTINUE IF ScNS Of irrtatiON Or INFLAMMATION OEVELOP KEEP OUT Of REAcH Of CHILDREN. Lor ExTeRNAL USE ONly NoT Tor ORAL USI] Boidh Mo Mig Oote; 11260032 Dab JAN.26 Mu Retet Price DEC.27 Und etel Tares] Nat 344.40 Ism 8040 PNM ! Vo roable Dad \"MMccuTSOX-25 Mlg Uc No . 18s dencobu MNb/o9naz Us menadot G B 6utacWar 8 MotnirjLj\" Imt Lid 8 Glenmaek Pd eretanatla  conld Cus[y G Ert Fock bt Ia Mpid4r I Stott Mun Ketu Huad dusi uheohazole  ZIN PYAHTHIONE SCALPL Ioni therepy: Eplry 5 'Quanbty: (Pco  Regn Istrg pcte Monulecicred Injis 'Glenmark eaormocevucald araa Oa Sn FE Mttttt Fad Iucte ",
+      "detections": [
+        {
+          "id": 1,
+          "text": "ANd",
+          "confidence": 0.5536,
+          "box": [
+            [
+              726,
+              77
+            ],
+            [
+              797,
+              77
+            ],
+            [
+              797,
+              128
+            ],
+            [
+              726,
+              128
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "text": "BHAMPOO",
+          "confidence": 0.3279,
+          "box": [
+            [
+              691,
+              118
+            ],
+            [
+              840,
+              118
+            ],
+            [
+              840,
+              186
+            ],
+            [
+              691,
+              186
+            ]
+          ]
+        },
+        {
+          "id": 3,
+          "text": "toreadhon",
+          "confidence": 0.1173,
+          "box": [
+            [
+              632,
+              243
+            ],
+            [
+              721,
+              243
+            ],
+            [
+              721,
+              274
+            ],
+            [
+              632,
+              274
+            ]
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Voatnatole",
+          "confidence": 0.0401,
+          "box": [
+            [
+              597,
+              271
+            ],
+            [
+              685,
+              271
+            ],
+            [
+              685,
+              299
+            ],
+            [
+              597,
+              299
+            ]
+          ]
+        },
+        {
+          "id": 5,
+          "text": "P",
+          "confidence": 0.6214,
+          "box": [
+            [
+              691,
+              269
+            ],
+            [
+              719,
+              269
+            ],
+            [
+              719,
+              289
+            ],
+            [
+              691,
+              289
+            ]
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Wl",
+          "confidence": 0.0676,
+          "box": [
+            [
+              739,
+              273
+            ],
+            [
+              771,
+              273
+            ],
+            [
+              771,
+              291
+            ],
+            [
+              739,
+              291
+            ]
+          ]
+        },
+        {
+          "id": 7,
+          "text": "6",
+          "confidence": 0.1076,
+          "box": [
+            [
+              241,
+              209
+            ],
+            [
+              331,
+              209
+            ],
+            [
+              331,
+              373
+            ],
+            [
+              241,
+              373
+            ]
+          ]
+        },
+        {
+          "id": 8,
+          "text": "Fore IZPT0) 1 %Wla",
+          "confidence": 0.0587,
+          "box": [
+            [
+              616,
+              288
+            ],
+            [
+              796,
+              288
+            ],
+            [
+              796,
+              318
+            ],
+            [
+              616,
+              318
+            ]
+          ]
+        },
+        {
+          "id": 9,
+          "text": "Ios Bepery",
+          "confidence": 0.064,
+          "box": [
+            [
+              624,
+              316
+            ],
+            [
+              708,
+              316
+            ],
+            [
+              708,
+              340
+            ],
+            [
+              624,
+              340
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "text": "renaiicning basp 9 $",
+          "confidence": 0.0696,
+          "box": [
+            [
+              616,
+              336
+            ],
+            [
+              772,
+              336
+            ],
+            [
+              772,
+              364
+            ],
+            [
+              616,
+              364
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "text": "Leleur Cormoisine",
+          "confidence": 0.5397,
+          "box": [
+            [
+              606,
+              361
+            ],
+            [
+              749,
+              361
+            ],
+            [
+              749,
+              388
+            ],
+            [
+              606,
+              388
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "text": "Jou5\" Mel hoir ond scolp end Opply",
+          "confidence": 0.0175,
+          "box": [
+            [
+              564,
+              398
+            ],
+            [
+              834,
+              398
+            ],
+            [
+              834,
+              430
+            ],
+            [
+              564,
+              430
+            ]
+          ]
+        },
+        {
+          "id": 13,
+          "text": "Sulagiehk shempoo to produce enough",
+          "confidence": 0.0412,
+          "box": [
+            [
+              540,
+              422
+            ],
+            [
+              823,
+              422
+            ],
+            [
+              823,
+              455
+            ],
+            [
+              540,
+              455
+            ]
+          ]
+        },
+        {
+          "id": 14,
+          "text": "Tue | Message totone mtnute and rinse",
+          "confidence": 0.1201,
+          "box": [
+            [
+              526,
+              448
+            ],
+            [
+              837,
+              448
+            ],
+            [
+              837,
+              479
+            ],
+            [
+              526,
+              479
+            ]
+          ]
+        },
+        {
+          "id": 15,
+          "text": "#mnh naler | Repeat procedure for",
+          "confidence": 0.1244,
+          "box": [
+            [
+              528,
+              471
+            ],
+            [
+              828,
+              471
+            ],
+            [
+              828,
+              503
+            ],
+            [
+              528,
+              503
+            ]
+          ]
+        },
+        {
+          "id": 16,
+          "text": "bun tonel 3 mlnutes / Rinse with warm",
+          "confidence": 0.1279,
+          "box": [
+            [
+              526,
+              498
+            ],
+            [
+              822,
+              498
+            ],
+            [
+              822,
+              528
+            ],
+            [
+              526,
+              528
+            ]
+          ]
+        },
+        {
+          "id": 17,
+          "text": "Waler end dry halr |",
+          "confidence": 0.0796,
+          "box": [
+            [
+              524,
+              526
+            ],
+            [
+              674,
+              526
+            ],
+            [
+              674,
+              554
+            ],
+            [
+              524,
+              554
+            ]
+          ]
+        },
+        {
+          "id": 18,
+          "text": "Use once In Inree",
+          "confidence": 0.5987,
+          "box": [
+            [
+              682,
+              526
+            ],
+            [
+              822,
+              526
+            ],
+            [
+              822,
+              554
+            ],
+            [
+              682,
+              554
+            ]
+          ]
+        },
+        {
+          "id": 19,
+          "text": "Dors tor four weeks followed Dy once",
+          "confidence": 0.2242,
+          "box": [
+            [
+              528,
+              550
+            ],
+            [
+              813,
+              550
+            ],
+            [
+              813,
+              582
+            ],
+            [
+              528,
+              582
+            ]
+          ]
+        },
+        {
+          "id": 20,
+          "text": "Keekly 05 maintenante",
+          "confidence": 0.1586,
+          "box": [
+            [
+              540,
+              578
+            ],
+            [
+              722,
+              578
+            ],
+            [
+              722,
+              606
+            ],
+            [
+              540,
+              606
+            ]
+          ]
+        },
+        {
+          "id": 21,
+          "text": "ShARE Well BEFORE USE ",
+          "confidence": 0.3953,
+          "box": [
+            [
+              558,
+              618
+            ],
+            [
+              768,
+              618
+            ],
+            [
+              768,
+              648
+            ],
+            [
+              558,
+              648
+            ]
+          ]
+        },
+        {
+          "id": 22,
+          "text": "STORE INAWELL CLOSEO CONTAINER NOT",
+          "confidence": 0.404,
+          "box": [
+            [
+              493,
+              641
+            ],
+            [
+              839,
+              641
+            ],
+            [
+              839,
+              679
+            ],
+            [
+              493,
+              679
+            ]
+          ]
+        },
+        {
+          "id": 23,
+          "text": "Exceeding 30*c  DO NOT FREZZE",
+          "confidence": 0.105,
+          "box": [
+            [
+              522,
+              670
+            ],
+            [
+              798,
+              670
+            ],
+            [
+              798,
+              702
+            ],
+            [
+              522,
+              702
+            ]
+          ]
+        },
+        {
+          "id": 24,
+          "text": "Cauton: LEEP QUT Of Eyes If CONTAcT OccuRS",
+          "confidence": 0.0227,
+          "box": [
+            [
+              457,
+              693
+            ],
+            [
+              867,
+              693
+            ],
+            [
+              867,
+              733
+            ],
+            [
+              457,
+              733
+            ]
+          ]
+        },
+        {
+          "id": 25,
+          "text": "RINSE ThoROUGHLY With WATER disconTINUE IF",
+          "confidence": 0.1209,
+          "box": [
+            [
+              455,
+              717
+            ],
+            [
+              869,
+              717
+            ],
+            [
+              869,
+              759
+            ],
+            [
+              455,
+              759
+            ]
+          ]
+        },
+        {
+          "id": 26,
+          "text": "ScNS Of irrtatiON Or INFLAMMATION OEVELOP",
+          "confidence": 0.1585,
+          "box": [
+            [
+              451,
+              745
+            ],
+            [
+              871,
+              745
+            ],
+            [
+              871,
+              785
+            ],
+            [
+              451,
+              785
+            ]
+          ]
+        },
+        {
+          "id": 27,
+          "text": "KEEP OUT Of REAcH Of CHILDREN.",
+          "confidence": 0.1388,
+          "box": [
+            [
+              507,
+              773
+            ],
+            [
+              803,
+              773
+            ],
+            [
+              803,
+              811
+            ],
+            [
+              507,
+              811
+            ]
+          ]
+        },
+        {
+          "id": 28,
+          "text": "Lor ExTeRNAL USE ONly NoT Tor ORAL USI]",
+          "confidence": 0.0194,
+          "box": [
+            [
+              461,
+              809
+            ],
+            [
+              851,
+              809
+            ],
+            [
+              851,
+              847
+            ],
+            [
+              461,
+              847
+            ]
+          ]
+        },
+        {
+          "id": 29,
+          "text": "Boidh Mo",
+          "confidence": 0.2886,
+          "box": [
+            [
+              418,
+              854
+            ],
+            [
+              498,
+              854
+            ],
+            [
+              498,
+              886
+            ],
+            [
+              418,
+              886
+            ]
+          ]
+        },
+        {
+          "id": 30,
+          "text": "Mig Oote;",
+          "confidence": 0.0913,
+          "box": [
+            [
+              415,
+              903
+            ],
+            [
+              503,
+              903
+            ],
+            [
+              503,
+              939
+            ],
+            [
+              415,
+              939
+            ]
+          ]
+        },
+        {
+          "id": 31,
+          "text": "11260032",
+          "confidence": 0.6837,
+          "box": [
+            [
+              651,
+              887
+            ],
+            [
+              880,
+              887
+            ],
+            [
+              880,
+              950
+            ],
+            [
+              651,
+              950
+            ]
+          ]
+        },
+        {
+          "id": 32,
+          "text": "Dab",
+          "confidence": 0.1115,
+          "box": [
+            [
+              462,
+              952
+            ],
+            [
+              508,
+              952
+            ],
+            [
+              508,
+              984
+            ],
+            [
+              462,
+              984
+            ]
+          ]
+        },
+        {
+          "id": 33,
+          "text": "JAN.26",
+          "confidence": 0.8893,
+          "box": [
+            [
+              706,
+              931
+            ],
+            [
+              878,
+              931
+            ],
+            [
+              878,
+              982
+            ],
+            [
+              706,
+              982
+            ]
+          ]
+        },
+        {
+          "id": 34,
+          "text": "Mu Retet Price",
+          "confidence": 0.0934,
+          "box": [
+            [
+              405,
+              997
+            ],
+            [
+              548,
+              997
+            ],
+            [
+              548,
+              1037
+            ],
+            [
+              405,
+              1037
+            ]
+          ]
+        },
+        {
+          "id": 35,
+          "text": "DEC.27",
+          "confidence": 0.984,
+          "box": [
+            [
+              706,
+              973
+            ],
+            [
+              884,
+              973
+            ],
+            [
+              884,
+              1035
+            ],
+            [
+              706,
+              1035
+            ]
+          ]
+        },
+        {
+          "id": 36,
+          "text": "Und etel Tares]",
+          "confidence": 0.1385,
+          "box": [
+            [
+              401,
+              1023
+            ],
+            [
+              550,
+              1023
+            ],
+            [
+              550,
+              1063
+            ],
+            [
+              401,
+              1063
+            ]
+          ]
+        },
+        {
+          "id": 37,
+          "text": "Nat",
+          "confidence": 0.2636,
+          "box": [
+            [
+              396,
+              1078
+            ],
+            [
+              436,
+              1078
+            ],
+            [
+              436,
+              1110
+            ],
+            [
+              396,
+              1110
+            ]
+          ]
+        },
+        {
+          "id": 38,
+          "text": "344.40",
+          "confidence": 0.9999,
+          "box": [
+            [
+              709,
+              1065
+            ],
+            [
+              884,
+              1065
+            ],
+            [
+              884,
+              1114
+            ],
+            [
+              709,
+              1114
+            ]
+          ]
+        },
+        {
+          "id": 39,
+          "text": "Ism",
+          "confidence": 0.1818,
+          "box": [
+            [
+              544,
+              1094
+            ],
+            [
+              604,
+              1094
+            ],
+            [
+              604,
+              1124
+            ],
+            [
+              544,
+              1124
+            ]
+          ]
+        },
+        {
+          "id": 40,
+          "text": "8040 PNM !",
+          "confidence": 0.0411,
+          "box": [
+            [
+              384,
+              1148
+            ],
+            [
+              490,
+              1148
+            ],
+            [
+              490,
+              1205
+            ],
+            [
+              384,
+              1205
+            ]
+          ]
+        },
+        {
+          "id": 41,
+          "text": "Vo",
+          "confidence": 0.1473,
+          "box": [
+            [
+              538,
+              1162
+            ],
+            [
+              570,
+              1162
+            ],
+            [
+              570,
+              1190
+            ],
+            [
+              538,
+              1190
+            ]
+          ]
+        },
+        {
+          "id": 42,
+          "text": "roable",
+          "confidence": 0.0219,
+          "box": [
+            [
+              701,
+              1165
+            ],
+            [
+              853,
+              1165
+            ],
+            [
+              853,
+              1202
+            ],
+            [
+              701,
+              1202
+            ]
+          ]
+        },
+        {
+          "id": 43,
+          "text": "Dad",
+          "confidence": 0.5588,
+          "box": [
+            [
+              442,
+              1178
+            ],
+            [
+              484,
+              1178
+            ],
+            [
+              484,
+              1210
+            ],
+            [
+              442,
+              1210
+            ]
+          ]
+        },
+        {
+          "id": 44,
+          "text": "\"MMccuTSOX-25",
+          "confidence": 0.0647,
+          "box": [
+            [
+              509,
+              1184
+            ],
+            [
+              678,
+              1184
+            ],
+            [
+              678,
+              1226
+            ],
+            [
+              509,
+              1226
+            ]
+          ]
+        },
+        {
+          "id": 45,
+          "text": "Mlg Uc No .",
+          "confidence": 0.1266,
+          "box": [
+            [
+              383,
+              1207
+            ],
+            [
+              497,
+              1207
+            ],
+            [
+              497,
+              1249
+            ],
+            [
+              383,
+              1249
+            ]
+          ]
+        },
+        {
+          "id": 46,
+          "text": "18s dencobu",
+          "confidence": 0.0055,
+          "box": [
+            [
+              780,
+              1201
+            ],
+            [
+              941,
+              1201
+            ],
+            [
+              941,
+              1234
+            ],
+            [
+              780,
+              1234
+            ]
+          ]
+        },
+        {
+          "id": 47,
+          "text": "MNb/o9naz",
+          "confidence": 0.1554,
+          "box": [
+            [
+              493,
+              1220
+            ],
+            [
+              618,
+              1220
+            ],
+            [
+              618,
+              1264
+            ],
+            [
+              493,
+              1264
+            ]
+          ]
+        },
+        {
+          "id": 48,
+          "text": "Us menadot",
+          "confidence": 0.0172,
+          "box": [
+            [
+              704,
+              1240
+            ],
+            [
+              880,
+              1240
+            ],
+            [
+              880,
+              1268
+            ],
+            [
+              704,
+              1268
+            ]
+          ]
+        },
+        {
+          "id": 49,
+          "text": "G",
+          "confidence": 0.2156,
+          "box": [
+            [
+              914,
+              1238
+            ],
+            [
+              938,
+              1238
+            ],
+            [
+              938,
+              1262
+            ],
+            [
+              914,
+              1262
+            ]
+          ]
+        },
+        {
+          "id": 50,
+          "text": "B",
+          "confidence": 0.0098,
+          "box": [
+            [
+              576,
+              1274
+            ],
+            [
+              604,
+              1274
+            ],
+            [
+              604,
+              1298
+            ],
+            [
+              576,
+              1298
+            ]
+          ]
+        },
+        {
+          "id": 51,
+          "text": "6utacWar",
+          "confidence": 0.0013,
+          "box": [
+            [
+              707,
+              1262
+            ],
+            [
+              930,
+              1262
+            ],
+            [
+              930,
+              1301
+            ],
+            [
+              707,
+              1301
+            ]
+          ]
+        },
+        {
+          "id": 52,
+          "text": "8",
+          "confidence": 0.2101,
+          "box": [
+            [
+              377,
+              1279
+            ],
+            [
+              419,
+              1279
+            ],
+            [
+              419,
+              1325
+            ],
+            [
+              377,
+              1325
+            ]
+          ]
+        },
+        {
+          "id": 53,
+          "text": "MotnirjLj\"",
+          "confidence": 0.0042,
+          "box": [
+            [
+              696,
+              1312
+            ],
+            [
+              816,
+              1312
+            ],
+            [
+              816,
+              1340
+            ],
+            [
+              696,
+              1340
+            ]
+          ]
+        },
+        {
+          "id": 54,
+          "text": "Imt",
+          "confidence": 0.2007,
+          "box": [
+            [
+              373,
+              1344
+            ],
+            [
+              445,
+              1344
+            ],
+            [
+              445,
+              1383
+            ],
+            [
+              373,
+              1383
+            ]
+          ]
+        },
+        {
+          "id": 55,
+          "text": "Lid",
+          "confidence": 0.4287,
+          "box": [
+            [
+              536,
+              1342
+            ],
+            [
+              578,
+              1342
+            ],
+            [
+              578,
+              1368
+            ],
+            [
+              536,
+              1368
+            ]
+          ]
+        },
+        {
+          "id": 56,
+          "text": "8 Glenmaek",
+          "confidence": 0.5434,
+          "box": [
+            [
+              692,
+              1336
+            ],
+            [
+              883,
+              1336
+            ],
+            [
+              883,
+              1386
+            ],
+            [
+              692,
+              1386
+            ]
+          ]
+        },
+        {
+          "id": 57,
+          "text": "Pd",
+          "confidence": 0.2068,
+          "box": [
+            [
+              374,
+              1370
+            ],
+            [
+              408,
+              1370
+            ],
+            [
+              408,
+              1402
+            ],
+            [
+              374,
+              1402
+            ]
+          ]
+        },
+        {
+          "id": 58,
+          "text": "eretanatla ",
+          "confidence": 0.0279,
+          "box": [
+            [
+              497,
+              1363
+            ],
+            [
+              616,
+              1363
+            ],
+            [
+              616,
+              1404
+            ],
+            [
+              497,
+              1404
+            ]
+          ]
+        },
+        {
+          "id": 59,
+          "text": "conld Cus[y",
+          "confidence": 0.0016,
+          "box": [
+            [
+              692,
+              1374
+            ],
+            [
+              872,
+              1374
+            ],
+            [
+              872,
+              1404
+            ],
+            [
+              692,
+              1404
+            ]
+          ]
+        },
+        {
+          "id": 60,
+          "text": "G Ert Fock",
+          "confidence": 0.0073,
+          "box": [
+            [
+              692,
+              1406
+            ],
+            [
+              842,
+              1406
+            ],
+            [
+              842,
+              1434
+            ],
+            [
+              692,
+              1434
+            ]
+          ]
+        },
+        {
+          "id": 61,
+          "text": "bt",
+          "confidence": 0.539,
+          "box": [
+            [
+              912,
+              1411
+            ],
+            [
+              957,
+              1411
+            ],
+            [
+              957,
+              1440
+            ],
+            [
+              912,
+              1440
+            ]
+          ]
+        },
+        {
+          "id": 62,
+          "text": "Ia",
+          "confidence": 0.0081,
+          "box": [
+            [
+              391,
+              1429
+            ],
+            [
+              437,
+              1429
+            ],
+            [
+              437,
+              1471
+            ],
+            [
+              391,
+              1471
+            ]
+          ]
+        },
+        {
+          "id": 63,
+          "text": "Mpid4r",
+          "confidence": 0.0113,
+          "box": [
+            [
+              463,
+              1415
+            ],
+            [
+              588,
+              1415
+            ],
+            [
+              588,
+              1459
+            ],
+            [
+              463,
+              1459
+            ]
+          ]
+        },
+        {
+          "id": 64,
+          "text": "I Stott Mun",
+          "confidence": 0.0246,
+          "box": [
+            [
+              690,
+              1430
+            ],
+            [
+              850,
+              1430
+            ],
+            [
+              850,
+              1460
+            ],
+            [
+              690,
+              1460
+            ]
+          ]
+        },
+        {
+          "id": 65,
+          "text": "Ketu",
+          "confidence": 0.066,
+          "box": [
+            [
+              536,
+              1456
+            ],
+            [
+              588,
+              1456
+            ],
+            [
+              588,
+              1482
+            ],
+            [
+              536,
+              1482
+            ]
+          ]
+        },
+        {
+          "id": 66,
+          "text": "Huad",
+          "confidence": 0.0291,
+          "box": [
+            [
+              688,
+              1462
+            ],
+            [
+              764,
+              1462
+            ],
+            [
+              764,
+              1488
+            ],
+            [
+              688,
+              1488
+            ]
+          ]
+        },
+        {
+          "id": 67,
+          "text": "dusi",
+          "confidence": 0.0374,
+          "box": [
+            [
+              776,
+              1454
+            ],
+            [
+              854,
+              1454
+            ],
+            [
+              854,
+              1482
+            ],
+            [
+              776,
+              1482
+            ]
+          ]
+        },
+        {
+          "id": 68,
+          "text": "uheohazole",
+          "confidence": 0.0306,
+          "box": [
+            [
+              553,
+              104
+            ],
+            [
+              728,
+              73
+            ],
+            [
+              736,
+              123
+            ],
+            [
+              561,
+              155
+            ]
+          ]
+        },
+        {
+          "id": 69,
+          "text": " ZIN",
+          "confidence": 0.1876,
+          "box": [
+            [
+              793,
+              81
+            ],
+            [
+              860,
+              99
+            ],
+            [
+              846,
+              144
+            ],
+            [
+              780,
+              126
+            ]
+          ]
+        },
+        {
+          "id": 70,
+          "text": "PYAHTHIONE",
+          "confidence": 0.1782,
+          "box": [
+            [
+              556,
+              147
+            ],
+            [
+              697,
+              123
+            ],
+            [
+              704,
+              175
+            ],
+            [
+              562,
+              198
+            ]
+          ]
+        },
+        {
+          "id": 71,
+          "text": "SCALPL",
+          "confidence": 0.2568,
+          "box": [
+            [
+              633,
+              189
+            ],
+            [
+              726,
+              182
+            ],
+            [
+              727,
+              219
+            ],
+            [
+              634,
+              226
+            ]
+          ]
+        },
+        {
+          "id": 72,
+          "text": "Ioni",
+          "confidence": 0.1141,
+          "box": [
+            [
+              700,
+              316
+            ],
+            [
+              732,
+              312
+            ],
+            [
+              734,
+              334
+            ],
+            [
+              702,
+              338
+            ]
+          ]
+        },
+        {
+          "id": 73,
+          "text": "therepy:",
+          "confidence": 0.6936,
+          "box": [
+            [
+              721,
+              575
+            ],
+            [
+              792,
+              584
+            ],
+            [
+              787,
+              612
+            ],
+            [
+              716,
+              603
+            ]
+          ]
+        },
+        {
+          "id": 74,
+          "text": "Eplry 5",
+          "confidence": 0.0842,
+          "box": [
+            [
+              412,
+              946
+            ],
+            [
+              471,
+              954
+            ],
+            [
+              466,
+              988
+            ],
+            [
+              407,
+              980
+            ]
+          ]
+        },
+        {
+          "id": 75,
+          "text": "'Quanbty:",
+          "confidence": 0.0386,
+          "box": [
+            [
+              430,
+              1076
+            ],
+            [
+              514,
+              1086
+            ],
+            [
+              507,
+              1122
+            ],
+            [
+              423,
+              1112
+            ]
+          ]
+        },
+        {
+          "id": 76,
+          "text": "(Pco ",
+          "confidence": 0.0609,
+          "box": [
+            [
+              390,
+              1140
+            ],
+            [
+              445,
+              1148
+            ],
+            [
+              440,
+              1180
+            ],
+            [
+              385,
+              1173
+            ]
+          ]
+        },
+        {
+          "id": 77,
+          "text": "Regn",
+          "confidence": 0.1098,
+          "box": [
+            [
+              484,
+              1152
+            ],
+            [
+              541,
+              1165
+            ],
+            [
+              534,
+              1193
+            ],
+            [
+              477,
+              1180
+            ]
+          ]
+        },
+        {
+          "id": 78,
+          "text": "Istrg",
+          "confidence": 0.1037,
+          "box": [
+            [
+              719,
+              1199
+            ],
+            [
+              791,
+              1210
+            ],
+            [
+              786,
+              1244
+            ],
+            [
+              713,
+              1234
+            ]
+          ]
+        },
+        {
+          "id": 79,
+          "text": "pcte",
+          "confidence": 0.21,
+          "box": [
+            [
+              872,
+              1241
+            ],
+            [
+              917,
+              1235
+            ],
+            [
+              920,
+              1262
+            ],
+            [
+              876,
+              1268
+            ]
+          ]
+        },
+        {
+          "id": 80,
+          "text": "Monulecicred",
+          "confidence": 0.1139,
+          "box": [
+            [
+              382,
+              1245
+            ],
+            [
+              506,
+              1265
+            ],
+            [
+              500,
+              1294
+            ],
+            [
+              376,
+              1274
+            ]
+          ]
+        },
+        {
+          "id": 81,
+          "text": "Injis",
+          "confidence": 0.1173,
+          "box": [
+            [
+              525,
+              1263
+            ],
+            [
+              579,
+              1275
+            ],
+            [
+              572,
+              1301
+            ],
+            [
+              518,
+              1289
+            ]
+          ]
+        },
+        {
+          "id": 82,
+          "text": "'Glenmark",
+          "confidence": 0.5166,
+          "box": [
+            [
+              416,
+              1280
+            ],
+            [
+              585,
+              1305
+            ],
+            [
+              576,
+              1347
+            ],
+            [
+              408,
+              1323
+            ]
+          ]
+        },
+        {
+          "id": 83,
+          "text": "eaormocevucald",
+          "confidence": 0.0092,
+          "box": [
+            [
+              377,
+              1314
+            ],
+            [
+              540,
+              1344
+            ],
+            [
+              534,
+              1370
+            ],
+            [
+              371,
+              1341
+            ]
+          ]
+        },
+        {
+          "id": 84,
+          "text": "araa",
+          "confidence": 0.0013,
+          "box": [
+            [
+              408,
+              1373
+            ],
+            [
+              482,
+              1394
+            ],
+            [
+              474,
+              1420
+            ],
+            [
+              400,
+              1399
+            ]
+          ]
+        },
+        {
+          "id": 85,
+          "text": "Oa",
+          "confidence": 0.0391,
+          "box": [
+            [
+              373,
+              1395
+            ],
+            [
+              421,
+              1404
+            ],
+            [
+              414,
+              1432
+            ],
+            [
+              367,
+              1422
+            ]
+          ]
+        },
+        {
+          "id": 86,
+          "text": "Sn",
+          "confidence": 0.2005,
+          "box": [
+            [
+              417,
+              1405
+            ],
+            [
+              473,
+              1415
+            ],
+            [
+              467,
+              1442
+            ],
+            [
+              412,
+              1431
+            ]
+          ]
+        },
+        {
+          "id": 87,
+          "text": "FE",
+          "confidence": 0.005,
+          "box": [
+            [
+              848,
+              1422
+            ],
+            [
+              919,
+              1416
+            ],
+            [
+              920,
+              1444
+            ],
+            [
+              849,
+              1449
+            ]
+          ]
+        },
+        {
+          "id": 88,
+          "text": "Mttttt",
+          "confidence": 0.0342,
+          "box": [
+            [
+              848,
+              1450
+            ],
+            [
+              957,
+              1434
+            ],
+            [
+              960,
+              1460
+            ],
+            [
+              852,
+              1476
+            ]
+          ]
+        },
+        {
+          "id": 89,
+          "text": "Fad",
+          "confidence": 0.0114,
+          "box": [
+            [
+              428,
+              1435
+            ],
+            [
+              491,
+              1448
+            ],
+            [
+              484,
+              1475
+            ],
+            [
+              422,
+              1463
+            ]
+          ]
+        },
+        {
+          "id": 90,
+          "text": "Iucte ",
+          "confidence": 0.0373,
+          "box": [
+            [
+              485,
+              1444
+            ],
+            [
+              544,
+              1454
+            ],
+            [
+              538,
+              1483
+            ],
+            [
+              479,
+              1473
+            ]
+          ]
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No MRP / price declaration found on the label."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "PASS",
+          "evidenceFound": "Date found: 'jan.26'",
+          "remarks": "Date value found but keyword (Mfg/Pkd) not clearly detected. Accepting date."
+        },
+        "manufacturerDetails": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No manufacturer/packer/importer declaration found on the label."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "netQuantity",
+        "manufacturerDetails",
+        "consumerCare"
+      ]
+    },
+    {
+      "id": "54688e78-6405-4274-87e0-4ace021298b2",
+      "productName": "perfume",
+      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
+      "geminiError": null,
+      "imagePath": "uploads/9525f37650d64be6ac9f8f01dc251491_perfume.jpeg",
+      "scannedAt": "2026-09-22T03:25:14.223377+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "WELCOME TO THE FUTURE IT SMELLS AMAZING\nZINC FORMULA FOR ENHANCED ODOUR PROTECTION\nGREAT FRAGRANCES FOR ALL OVER THE BODY\nING CITRUS FRAGRANCE\n\nDIRECTIONS: SHAKE WELL. TWIST THE CAP. HOLD CAN 15cm AWAY FROM UNDERARM AND BODY. SPRAY DIRECTLY ON SKIN.\n\nWARNING: This can is pressurised. Keep in a cool place away from heat or sunlight. Do not expose to temperatures exceeding 50\u00b0C. Do not puncture or burn can even when empty. Do not spray on any incandescent material. Keep away from sources of ignition - no smoking. Do not spray near eyes or face or on broken/sore skin. If irritation occurs, discontinue use. Intentional misuse by deliberately concentrating and inhaling contents can be harmful or fatal. Take critically if taken internally. Use in well ventilated places, avoid prolonged spraying. Keep out of reach of children. Does not contain CFC.\n\nINGREDIENTS: Alcohol Denat. (99.5% v/v) Content: 40.4% w/w (Denatured Ethyl Alcohol & Denatonium Benzoate), Butane, Isobutane, Propane, Perfume, Isopropyl Myristate, Alpha-Isomethyl Ionone, Cinnamal, Citral, Coumarin, Eugenol, Geraniol, Hexyl Cinnamal, Isoeugenol, Limonene, Linalool.\nHUL REGN. No. BO-13-000-07-AAACH1004N-22. MINIMUM THICKNESS OF THE PACKAGING IS 300 MICRON.\n\nDEODORANT BODYSPRAY.\n\nMFG. BY ONE ASIA NETWORK INDIA PVT. LTD., C-9 (PART) MIDC AREA, KHAMGAON, DIST. BULDHANA (MAH) - 444 303. LIC. No. MH/103585. MADE IN INDIA. MKTD. BY LIC. USER AIM: HINDUSTAN UNILEVER LTD. (HUL). \u00a9 HUL 2019.\nREFERS TO NEW PACK.\n\nLEVERCARE-QUERY / FEEDBACK,\nTOLL FREE: 1800-10-22-221, PO BOX 14760,\nMUMBAI 400 099, LEVER.CARE@UNILEVER.COM\n*MRP \u20b9 (Incl. of all taxes), USP, #MFD., B. No. & @Use Before : See bottom of the can\n\nNET CONTENT: 150 ml / 96 g",
+      "detections": [
+        {
+          "id": 1,
+          "text": "WELCOME TO THE FUTURE IT SMELLS AMAZING",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 2,
+          "text": "ZINC FORMULA FOR ENHANCED ODOUR PROTECTION",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 3,
+          "text": "GREAT FRAGRANCES FOR ALL OVER THE BODY",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 4,
+          "text": "ING CITRUS FRAGRANCE",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 5,
+          "text": "DIRECTIONS: SHAKE WELL. TWIST THE CAP. HOLD CAN 15cm AWAY FROM UNDERARM AND BODY. SPRAY DIRECTLY ON SKIN.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 6,
+          "text": "WARNING: This can is pressurised. Keep in a cool place away from heat or sunlight. Do not expose to temperatures exceeding 50\u00b0C. Do not puncture or burn can even when empty. Do not spray on any incandescent material. Keep away from sources of ignition - no smoking. Do not spray near eyes or face or on broken/sore skin. If irritation occurs, discontinue use. Intentional misuse by deliberately concentrating and inhaling contents can be harmful or fatal. Take critically if taken internally. Use in well ventilated places, avoid prolonged spraying. Keep out of reach of children. Does not contain CFC.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 7,
+          "text": "INGREDIENTS: Alcohol Denat. (99.5% v/v) Content: 40.4% w/w (Denatured Ethyl Alcohol & Denatonium Benzoate), Butane, Isobutane, Propane, Perfume, Isopropyl Myristate, Alpha-Isomethyl Ionone, Cinnamal, Citral, Coumarin, Eugenol, Geraniol, Hexyl Cinnamal, Isoeugenol, Limonene, Linalool.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 8,
+          "text": "HUL REGN. No. BO-13-000-07-AAACH1004N-22. MINIMUM THICKNESS OF THE PACKAGING IS 300 MICRON.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 9,
+          "text": "DEODORANT BODYSPRAY.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 10,
+          "text": "MFG. BY ONE ASIA NETWORK INDIA PVT. LTD., C-9 (PART) MIDC AREA, KHAMGAON, DIST. BULDHANA (MAH) - 444 303. LIC. No. MH/103585. MADE IN INDIA. MKTD. BY LIC. USER AIM: HINDUSTAN UNILEVER LTD. (HUL). \u00a9 HUL 2019.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 11,
+          "text": "REFERS TO NEW PACK.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 12,
+          "text": "LEVERCARE-QUERY / FEEDBACK,",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 13,
+          "text": "TOLL FREE: 1800-10-22-221, PO BOX 14760,",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 14,
+          "text": "MUMBAI 400 099, LEVER.CARE@UNILEVER.COM",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 15,
+          "text": "*MRP \u20b9 (Incl. of all taxes), USP, #MFD., B. No. & @Use Before : See bottom of the can",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 16,
+          "text": "NET CONTENT: 150 ml / 96 g",
+          "confidence": 0.98,
+          "box": []
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "MRP keyword found but price number not readable",
+          "remarks": "MRP text detected but price value and tax clause not clearly readable by OCR."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: net content: 150",
+          "remarks": "Net quantity 'net content: 150' declared."
+        },
+        "mfgDate": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'use by' with date '10-22'",
+          "remarks": "Manufacturing / Packing date is declared."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mfg. by ... pvt. ltd ... india'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Email: lever.care@unilever.com",
+          "remarks": "Consumer care email found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp"
+      ]
+    },
+    {
+      "id": "44797e87-2823-4301-aea8-9ca6e6c3d6bb",
+      "productName": "notebook",
+      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
+      "geminiError": null,
+      "imagePath": "uploads/09b0b7ee3dc8445d9e17381cad85974d_nb2.jpg",
+      "scannedAt": "2026-09-22T03:22:24.671996+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "Based on the image provided, here is the complete transcription of all the text declarations on the label:\n\n* **Brand / Company Name:** Sundaram (SINCE: 1985)\n* **Manufacturer:** SUNDARAM MULTI PAP LIMITED\n* **Address:** Plot No. 33 To 37, Sundaram Industrial Zone, Palghar (W), District - Palghar - 401 404, Maharashtra, India.\n* **Customer Care Contact:** \n  * Customer Care No.: +91-22-67602200, (\u2706) 8369691119\n  * Email: sales@sundaramgroups.in\n  * Website: www.sundaramgroups.in\n* **Product Code:** S-14\n* **Barcode:** 8 902242 725425\n* **Product Name:** A/4 Book - Spiral\n* **Size:** 21 x 29.7 cm\n* **Pages:** 400\n* **MRP:** \u20b9 185/- (Inclusive of all taxes)\n* **Package Date (PKG DT.):** APR 2026\n* **Additional Feature:** Safety Lock",
+      "detections": [
+        {
+          "id": 1,
+          "text": "Based on the image provided, here is the complete transcription of all the text declarations on the label:",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 2,
+          "text": "* **Brand / Company Name:** Sundaram (SINCE: 1985)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 3,
+          "text": "* **Manufacturer:** SUNDARAM MULTI PAP LIMITED",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 4,
+          "text": "* **Address:** Plot No. 33 To 37, Sundaram Industrial Zone, Palghar (W), District - Palghar - 401 404, Maharashtra, India.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 5,
+          "text": "* **Customer Care Contact:**",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 6,
+          "text": "* Customer Care No.: +91-22-67602200, (\u2706) 8369691119",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 7,
+          "text": "* Email: sales@sundaramgroups.in",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 8,
+          "text": "* Website: www.sundaramgroups.in",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 9,
+          "text": "* **Product Code:** S-14",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 10,
+          "text": "* **Barcode:** 8 902242 725425",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 11,
+          "text": "* **Product Name:** A/4 Book - Spiral",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 12,
+          "text": "* **Size:** 21 x 29.7 cm",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 13,
+          "text": "* **Pages:** 400",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 14,
+          "text": "* **MRP:** \u20b9 185/- (Inclusive of all taxes)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 15,
+          "text": "* **Package Date (PKG DT.):** APR 2026",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 16,
+          "text": "* **Additional Feature:** Safety Lock",
+          "confidence": 0.98,
+          "box": []
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mrp:** \u20b9 185/- (inclusive of all taxes'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No Net Quantity with valid unit (g, kg, ml, l, pcs, pages, sheets) detected."
+        },
+        "mfgDate": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'lot' with date 'apr 2026'",
+          "remarks": "Manufacturing / Packing date is declared."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'multi pap ... maharashtra'",
+          "remarks": "Company name and location found (keyword like 'Mfg by' not explicit)."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Email: sales@sundaramgroups.in | Phone: 8369691119",
+          "remarks": "Both email and phone contact details found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "netQuantity"
+      ]
+    },
+    {
+      "id": "a8033c41-d086-43e1-a240-e986b38f81fe",
+      "productName": "nb",
+      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
+      "geminiError": null,
+      "imagePath": "uploads/e2d9b692be39449c8b3111b57b81b210_nb.jpeg",
+      "scannedAt": "2026-09-21T19:29:46.904458+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "Explore THE WORLD\nTIME TO OPEN UP A NEW CHAPTER IN LIFE, AND TO EXPLORE A LARGER CENTRE.\n\nManorama Paper Products\nWe are committed to providing high quality Notebook products that are a result of deep understanding of our consumers thoughtful ideas, innovative designs and superior craftsmanship, that have in turn helped us become one of India's leading Notebook Brands.\n\nFor India's students, these are brilliant times. With rapidly rising literacy, more schools, new colleges, globally famous IITs and IIMs, and a vast spectrum of IT, media, film, and fashion institutes, life is radiant with new opportunities. You now have more on the move. So go ahead, gain from these excellent times. Build your dreams, spread the enthusiasm and make India stronger and shine even brighter.\n\nA Premium Product By\nManorama Paper Products\nBhubaneswar - Odisha.\n\nA-4 NOTE BOOK\nPages: 368\nWith Cover\nM.R.P. \u20b9: 220.00\nInclusive of GST\n\nSAVE THE WORLD\nReduce - Recycle - Reuse\nSave Future\nGO green",
+      "detections": [
+        {
+          "id": 1,
+          "text": "Explore THE WORLD",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 2,
+          "text": "TIME TO OPEN UP A NEW CHAPTER IN LIFE, AND TO EXPLORE A LARGER CENTRE.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 3,
+          "text": "Manorama Paper Products",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 4,
+          "text": "We are committed to providing high quality Notebook products that are a result of deep understanding of our consumers thoughtful ideas, innovative designs and superior craftsmanship, that have in turn helped us become one of India's leading Notebook Brands.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 5,
+          "text": "For India's students, these are brilliant times. With rapidly rising literacy, more schools, new colleges, globally famous IITs and IIMs, and a vast spectrum of IT, media, film, and fashion institutes, life is radiant with new opportunities. You now have more on the move. So go ahead, gain from these excellent times. Build your dreams, spread the enthusiasm and make India stronger and shine even brighter.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 6,
+          "text": "A Premium Product By",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 7,
+          "text": "Manorama Paper Products",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 8,
+          "text": "Bhubaneswar - Odisha.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 9,
+          "text": "A-4 NOTE BOOK",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 10,
+          "text": "Pages: 368",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 11,
+          "text": "With Cover",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 12,
+          "text": "M.R.P. \u20b9: 220.00",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 13,
+          "text": "Inclusive of GST",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 14,
+          "text": "SAVE THE WORLD",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 15,
+          "text": "Reduce - Recycle - Reuse",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 16,
+          "text": "Save Future",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 17,
+          "text": "GO green",
+          "confidence": 0.98,
+          "box": []
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'm.r.p. \u20b9: 220.00 inclusive of gst'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: pages: 368",
+          "remarks": "Net quantity 'pages: 368' declared."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'premium product by ... paper products ... india'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No consumer care contact (email or phone number) found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mfgDate",
+        "consumerCare"
+      ]
+    },
+    {
       "id": "14cdd548-9fa1-4577-a157-14d71bce6304",
       "productName": "scrub pad",
       "engine": "Gemini Vision (gemini-3.5-flash-lite)",
@@ -8,7 +3803,7 @@
       "imagePath": "uploads/1df7a33a43f94766ac966e7a245b1720_1.png",
       "scannedAt": "2026-09-21T16:28:38.780258+00:00",
       "status": "Compliant",
-      "extractedText": "COMMODITY: SCRUB PAD\nMANUFACTURED ON: 05/2024\nMRP: ₹ 18.00 15.00 (Incl. of all taxes)\nNUMBER OF COMMODITY: 1 N\n\nMANUFACTURED & MARKETED BY:\nFREUDENBERG GALA HOUSEHOLD\nPRODUCT PRIVATE LIMITED, 02\nGALLERIA, B - 902/903/904,\nPLOT NO. 23/24, MINERVA INDUSTRI-\nAL ESTATE, OFF LBS MARG, NEAR\nASHA NAGAR, MULUND (WEST),\nMUMBAI - 400 080, MAHARASHTRA.\n\nIN CASE OF CONSUMER COMPLAINT, CONTACT:\nFREUDENBERG GALA HOUSEHOLD PRODUCT\nPRIVATE LIMITED, ADDRESS SAME AS ABOVE\nCUSTOMER CARE NO.: 1800 222 009\n\nEMAIL: customercare.india@fhp-ww.com\nwww.galaclean.com\n\nFOLLOW US ON:\nf /GalaHomeCleaning\nX @Gala_Cleaning\nO gala_homecleaning",
+      "extractedText": "COMMODITY: SCRUB PAD\nMANUFACTURED ON: 05/2024\nMRP: \u20b9 18.00 15.00 (Incl. of all taxes)\nNUMBER OF COMMODITY: 1 N\n\nMANUFACTURED & MARKETED BY:\nFREUDENBERG GALA HOUSEHOLD\nPRODUCT PRIVATE LIMITED, 02\nGALLERIA, B - 902/903/904,\nPLOT NO. 23/24, MINERVA INDUSTRI-\nAL ESTATE, OFF LBS MARG, NEAR\nASHA NAGAR, MULUND (WEST),\nMUMBAI - 400 080, MAHARASHTRA.\n\nIN CASE OF CONSUMER COMPLAINT, CONTACT:\nFREUDENBERG GALA HOUSEHOLD PRODUCT\nPRIVATE LIMITED, ADDRESS SAME AS ABOVE\nCUSTOMER CARE NO.: 1800 222 009\n\nEMAIL: customercare.india@fhp-ww.com\nwww.galaclean.com\n\nFOLLOW US ON:\nf /GalaHomeCleaning\nX @Gala_Cleaning\nO gala_homecleaning",
       "detections": [
         {
           "id": 1,
@@ -24,7 +3819,7 @@
         },
         {
           "id": 3,
-          "text": "MRP: ₹ 18.00 15.00 (Incl. of all taxes)",
+          "text": "MRP: \u20b9 18.00 15.00 (Incl. of all taxes)",
           "confidence": 0.98,
           "box": []
         },
@@ -146,7 +3941,7 @@
       "rules": {
         "mrp": {
           "status": "PASS",
-          "evidenceFound": "Matched: 'mrp: ₹ 18.00 15.00 (incl. of all taxes'",
+          "evidenceFound": "Matched: 'mrp: \u20b9 18.00 15.00 (incl. of all taxes'",
           "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
         },
         "netQuantity": {
@@ -178,295 +3973,6 @@
         "consumerCare": "Consumer Care Info"
       },
       "violations": []
-    },
-    {
-      "id": "58a39ba4-d9c9-442a-b017-a0d8ddd735dd",
-      "productName": "Notebook",
-      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
-      "geminiError": null,
-      "imagePath": "uploads/56ec7cb028d64ab7853eccba5509e05c_nb2.jpg",
-      "scannedAt": "2026-09-21T16:06:42.635815+00:00",
-      "status": "Compliant",
-      "extractedText": "SUNDARAM\nSINCE: 1985\n\nManufactured by: SUNDARAM MULTI PAP LIMITED\nPlot No. 33 To 37, Sundaram Industrial Zone, Palghar (W), District - Palghar - 401 404, Maharashtra, India.\nFor Feedback / Complaint Contact our\nCustomer Care Executive address as given above\nCustomer Care No.: +91-22-67602200, (📞) 8369691119,\nEmail: sales@sundaramgroups.in, website: www.sundaramgroups.in\n\nCode : S-14\n\n8902242 725425\n\nProduct : A/4 Book - Spiral\nSize : 21 x 29.7 cm\nPages : 400\n\nMRP: ₹ 185/-\n(Inclusive of all taxes)\n\nPKG DT.\nAPR 2026",
-      "detections": [
-        {
-          "id": 1,
-          "text": "SUNDARAM",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 2,
-          "text": "SINCE: 1985",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 3,
-          "text": "Manufactured by: SUNDARAM MULTI PAP LIMITED",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 4,
-          "text": "Plot No. 33 To 37, Sundaram Industrial Zone, Palghar (W), District - Palghar - 401 404, Maharashtra, India.",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 5,
-          "text": "For Feedback / Complaint Contact our",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 6,
-          "text": "Customer Care Executive address as given above",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 7,
-          "text": "Customer Care No.: +91-22-67602200, (📞) 8369691119,",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 8,
-          "text": "Email: sales@sundaramgroups.in, website: www.sundaramgroups.in",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 9,
-          "text": "Code : S-14",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 10,
-          "text": "8902242 725425",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 11,
-          "text": "Product : A/4 Book - Spiral",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 12,
-          "text": "Size : 21 x 29.7 cm",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 13,
-          "text": "Pages : 400",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 14,
-          "text": "MRP: ₹ 185/-",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 15,
-          "text": "(Inclusive of all taxes)",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 16,
-          "text": "PKG DT.",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 17,
-          "text": "APR 2026",
-          "confidence": 0.98,
-          "box": []
-        }
-      ],
-      "rules": {
-        "mrp": {
-          "status": "PASS",
-          "evidenceFound": "Matched: 'mrp: ₹ 185/- (inclusive of all taxes'",
-          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
-        },
-        "netQuantity": {
-          "status": "PASS",
-          "evidenceFound": "Found: pages : 400",
-          "remarks": "Net quantity 'pages : 400' declared."
-        },
-        "mfgDate": {
-          "status": "PASS",
-          "evidenceFound": "Matched: 'lot' with date 'apr 2026'",
-          "remarks": "Manufacturing / Packing date is declared."
-        },
-        "manufacturerDetails": {
-          "status": "PASS",
-          "evidenceFound": "Matched: 'manufactured by ... multi pap ... maharashtra'",
-          "remarks": "Manufacturer / Packer name and address details found."
-        },
-        "consumerCare": {
-          "status": "PASS",
-          "evidenceFound": "Email: sales@sundaramgroups.in | Phone: 8369691119",
-          "remarks": "Both email and phone contact details found."
-        }
-      },
-      "ruleNames": {
-        "mrp": "MRP & Tax Declaration",
-        "netQuantity": "Net Quantity",
-        "mfgDate": "Date of Mfg / Packing",
-        "manufacturerDetails": "Manufacturer / Packer Details",
-        "consumerCare": "Consumer Care Info"
-      },
-      "violations": []
-    },
-    {
-      "id": "210e4d94-783c-4ab9-a795-ac85fa14b1cf",
-      "productName": "pegs",
-      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
-      "geminiError": null,
-      "imagePath": "uploads/7b9d80d41eec4140897b0aea6caa5c64_pegs.jpeg",
-      "scannedAt": "2026-09-21T14:45:45.931838+00:00",
-      "status": "Non-Compliant",
-      "extractedText": "Based on a detailed examination of the packaging label provided, here is the complete and corrected transcription of all text declarations in compliance with Legal Metrology requirements:\n\n**Brand / Product Name:**\n* Mega-Pixel Khushi (The Ultimate Pegs)\n\n**Features / Marketing Text:**\n* It is a Laundry series of fresh colour\n* to imagine delicious fruits\n* Lest hand laundry outside happily\n* Extra Strong, Extra Firm Grip.\n* Heat Resistance colour i.e No fading of colour in sun.\n* Rust proof, Chrome metal spring for no stain cloths.\n\n**Manufacturing & Pricing Details:**\n* **Mfd. by:** SHIVA PLASTIC (INDIA)\n* **M.R.P.:** ₹ 105/- (Incl. of all taxes)\n* **Contains:** 12 Pcs.\n* **Country of Origin:** Make in India",
-      "detections": [
-        {
-          "id": 1,
-          "text": "Based on a detailed examination of the packaging label provided, here is the complete and corrected transcription of all text declarations in compliance with Legal Metrology requirements:",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 2,
-          "text": "**Brand / Product Name:**",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 3,
-          "text": "* Mega-Pixel Khushi (The Ultimate Pegs)",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 4,
-          "text": "**Features / Marketing Text:**",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 5,
-          "text": "* It is a Laundry series of fresh colour",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 6,
-          "text": "* to imagine delicious fruits",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 7,
-          "text": "* Lest hand laundry outside happily",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 8,
-          "text": "* Extra Strong, Extra Firm Grip.",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 9,
-          "text": "* Heat Resistance colour i.e No fading of colour in sun.",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 10,
-          "text": "* Rust proof, Chrome metal spring for no stain cloths.",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 11,
-          "text": "**Manufacturing & Pricing Details:**",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 12,
-          "text": "* **Mfd. by:** SHIVA PLASTIC (INDIA)",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 13,
-          "text": "* **M.R.P.:** ₹ 105/- (Incl. of all taxes)",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 14,
-          "text": "* **Contains:** 12 Pcs.",
-          "confidence": 0.98,
-          "box": []
-        },
-        {
-          "id": 15,
-          "text": "* **Country of Origin:** Make in India",
-          "confidence": 0.98,
-          "box": []
-        }
-      ],
-      "rules": {
-        "mrp": {
-          "status": "PASS",
-          "evidenceFound": "Matched: 'm.r.p.:** ₹ 105/- (incl. of all taxes'",
-          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
-        },
-        "netQuantity": {
-          "status": "PASS",
-          "evidenceFound": "Found: 12 pcs",
-          "remarks": "Net quantity '12 pcs' declared in valid units."
-        },
-        "mfgDate": {
-          "status": "VIOLATION",
-          "evidenceFound": "None detected in scanned label",
-          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
-        },
-        "manufacturerDetails": {
-          "status": "PASS",
-          "evidenceFound": "Matched: 'mfd. by ... product ... india'",
-          "remarks": "Manufacturer / Packer name and address details found."
-        },
-        "consumerCare": {
-          "status": "VIOLATION",
-          "evidenceFound": "None detected in scanned label",
-          "remarks": "No consumer care contact (email or phone number) found."
-        }
-      },
-      "ruleNames": {
-        "mrp": "MRP & Tax Declaration",
-        "netQuantity": "Net Quantity",
-        "mfgDate": "Date of Mfg / Packing",
-        "manufacturerDetails": "Manufacturer / Packer Details",
-        "consumerCare": "Consumer Care Info"
-      },
-      "violations": [
-        "mfgDate",
-        "consumerCare"
-      ]
     },
     {
       "id": "975430a1-2d61-41ff-b814-f134f9b07472",

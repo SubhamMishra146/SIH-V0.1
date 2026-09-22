@@ -53,6 +53,22 @@
     </div>
   </nav>
 
+  <!-- Statutory Sub-Header Context Banner -->
+  <div class="statutory-banner">
+    <div class="container-fluid max-w-7xl px-3 px-lg-4 d-flex flex-wrap align-items-center justify-content-between gap-2 text-xs">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-shield-check text-amber-300"></i>
+        <span class="fw-semibold text-white">Statutory Enforcement Engine:</span>
+        <span class="text-purple-200">Enforcing Rule 6 (Mandatory Declarations), Rule 9 (Font Height Minimums), &amp; Unit Sale Price Norms.</span>
+      </div>
+      <div class="d-flex align-items-center gap-3 text-purple-200" style="font-size: 0.72rem;">
+        <span>Authority: <strong class="text-white">DoCA (Govt. of India)</strong></span>
+        <span class="d-none d-sm-inline">•</span>
+        <span class="d-none d-sm-inline">Gazette Ref: <strong class="text-amber-300 font-monospace">GSR 779(E) / PCR 2011</strong></span>
+      </div>
+    </div>
+  </div>
+
   <div class="page-wrapper">
     <!-- Global Alert / Toast Notification -->
     <div id="global-alert-box" class="alert global-alert alert-dismissible fade show mb-4" style="display:none;" role="alert">
@@ -117,14 +133,25 @@
 
             <!-- Image preview with bounding box canvas overlay -->
             <div id="preview-container" style="display:none; position:relative; margin-top:14px;">
-              <div class="preview-wrapper">
+              <div class="preview-camera-header d-flex align-items-center justify-content-between px-3 py-1.5">
+                <span class="font-monospace"><i class="bi bi-camera me-1 text-secondary"></i> CAM_01: INSPECTION_CANVAS</span>
+                <span class="badge bg-emerald-600 text-white" style="font-size: 0.68rem; font-weight: 700;"><i class="bi bi-check-circle-fill me-1"></i> Active Overlay</span>
+              </div>
+              <div class="preview-wrapper" style="border-radius: 0;">
                 <img id="preview-img" src="" alt="Label Preview" />
                 <canvas id="bbox-canvas"></canvas>
               </div>
+              <div class="preview-legend d-flex flex-wrap gap-2.5 p-2 font-monospace">
+                <span class="d-flex align-items-center gap-1"><span class="legend-dot" style="background:#E11D48;"></span> MRP/USP</span>
+                <span class="d-flex align-items-center gap-1"><span class="legend-dot" style="background:#7048A8;"></span> Net Qty</span>
+                <span class="d-flex align-items-center gap-1"><span class="legend-dot" style="background:#0D9488;"></span> Mfg Date</span>
+                <span class="d-flex align-items-center gap-1"><span class="legend-dot" style="background:#D97706;"></span> Care Info</span>
+                <span class="d-flex align-items-center gap-1"><span class="legend-dot" style="background:#2563EB;"></span> Manufacturer</span>
+              </div>
             </div>
 
-            <button id="scan-btn" class="btn btn-primary modern-btn-primary mt-3 w-100" onclick="submitScan()" disabled>
-              <i class="bi bi-search me-1.5"></i> Run Compliance Check
+            <button id="scan-btn" class="btn btn-primary modern-btn-primary gold-sheen mt-3 w-100" onclick="submitScan()" disabled>
+              <i class="bi bi-search me-1.5"></i> Run Compliance Check <i class="bi bi-arrow-right ms-1"></i>
             </button>
           </div>
         </div>
@@ -168,11 +195,35 @@
 
             <!-- Actual report content -->
             <div id="report-content" style="display:none;">
-              <div id="report-product-name" class="fw-bold mb-1 fs-5 text-dark"></div>
-              <div id="report-timestamp" class="text-secondary small mb-3"></div>
-              <div class="d-flex align-items-center gap-2 mb-3">
-                <div id="report-status-badge"></div>
-                <div id="report-engine-badge"></div>
+              <div class="d-flex align-items-start justify-content-between flex-wrap gap-2 mb-2">
+                <div>
+                  <div id="report-product-name" class="fw-bold mb-1 fs-5 text-dark"></div>
+                  <div id="report-timestamp" class="text-secondary small"></div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <div id="report-status-badge"></div>
+                  <div id="report-engine-badge"></div>
+                </div>
+              </div>
+
+              <!-- Summary KPI Pills -->
+              <div class="report-summary-pills mb-3">
+                <div class="kpi-pill kpi-pill-purple">
+                  <span class="kpi-label">Mandatory Checks</span>
+                  <span class="kpi-value">5 Checks</span>
+                </div>
+                <div class="kpi-pill kpi-pill-emerald">
+                  <span class="kpi-label"><i class="bi bi-check-circle-fill me-1"></i> Verified</span>
+                  <span class="kpi-value" id="kpi-passed-count">—</span>
+                </div>
+                <div class="kpi-pill kpi-pill-rose">
+                  <span class="kpi-label"><i class="bi bi-exclamation-triangle-fill me-1"></i> Violations</span>
+                  <span class="kpi-value" id="kpi-failed-count">—</span>
+                </div>
+                <div class="kpi-pill kpi-pill-gold ms-auto">
+                  <span class="kpi-label">Statutory Standard</span>
+                  <span class="kpi-value">PCR 2011</span>
+                </div>
               </div>
 
               <!-- 4-column Audit Evidence Table -->
@@ -273,23 +324,39 @@
       <div class="stats-grid">
         <div class="stat-card">
           <div class="stat-icon blue"><i class="bi bi-upc-scan"></i></div>
-          <div class="stat-info">
-            <div class="stat-label">Total Scans</div>
+          <div class="stat-info flex-grow-1">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="stat-label">Total Scans</div>
+              <span class="badge bg-lavender-subtle text-purple-900 border border-purple-200" style="font-size:0.68rem;"><i class="bi bi-arrow-up text-success"></i> 100% Extracted</span>
+            </div>
             <h3 id="stat-total">0</h3>
+            <small class="text-secondary" style="font-size:0.72rem;">FMCG, Food &amp; Commodities</small>
           </div>
         </div>
         <div class="stat-card">
           <div class="stat-icon green"><i class="bi bi-check-circle-fill"></i></div>
-          <div class="stat-info">
-            <div class="stat-label">Compliant Products</div>
+          <div class="stat-info flex-grow-1">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="stat-label">Compliant Products</div>
+              <span class="badge bg-success-subtle text-success border border-success-subtle" style="font-size:0.68rem;">SLA Target: ≥ 85%</span>
+            </div>
             <h3 id="stat-compliant">0</h3>
+            <div class="sla-progress mt-1.5"><div class="sla-bar" style="width: 75%;"></div></div>
           </div>
         </div>
         <div class="stat-card">
           <div class="stat-icon red"><i class="bi bi-exclamation-triangle-fill"></i></div>
-          <div class="stat-info">
-            <div class="stat-label">Violations Detected</div>
+          <div class="stat-info flex-grow-1">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="stat-label">Violations Detected</div>
+              <span class="badge bg-danger-subtle text-danger border border-danger-subtle" style="font-size:0.68rem;">Action Required</span>
+            </div>
             <h3 id="stat-violations">0</h3>
+            <div class="d-flex flex-wrap gap-1 mt-1">
+              <span class="badge bg-danger-subtle text-danger" style="font-size:0.62rem;">Rule 6(1)(e) MRP</span>
+              <span class="badge bg-danger-subtle text-danger" style="font-size:0.62rem;">Rule 6(1)(d) Date</span>
+              <span class="badge bg-danger-subtle text-danger" style="font-size:0.62rem;">Rule 6(1)(f) Care</span>
+            </div>
           </div>
         </div>
       </div>
@@ -575,31 +642,50 @@
 
       <!-- Section 3: Technical Pipeline -->
       <div class="card p-4">
-        <div class="d-flex align-items-center gap-2 mb-2">
-          <i class="bi bi-cpu fs-4" style="color: var(--gold-primary);"></i>
-          <h5 class="fw-bold mb-0" style="color: var(--text-primary);">Automated Vision &amp; Inspection Engine Architecture</h5>
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-cpu fs-4" style="color: var(--gold-primary);"></i>
+            <h5 class="fw-bold mb-0" style="color: var(--text-primary);">Automated Vision &amp; Inspection Engine Architecture</h5>
+          </div>
+          <span class="badge badge-subtle">4-Stage Pipeline</span>
         </div>
         <p class="text-secondary small mb-3">
-          The Legal Metrology Compliance Checker utilizes a hybrid dual-engine architecture to evaluate packaging labels with forensic precision:
+          The Legal Metrology Compliance Checker executes a hybrid dual-engine pipeline to evaluate packaging labels with forensic precision:
         </p>
         <div class="row g-3">
-          <div class="col-md-6">
-            <div class="p-3 rounded border" style="background: var(--bg-surface-elevated); border-color: var(--border-subtle) !important;">
-              <div class="fw-bold mb-1" style="color: var(--lavender-dark);">
-                <i class="bi bi-stars" style="color: var(--gold-bright);"></i> Multimodal Gemini 3.8 Flash Vision Engine
-              </div>
-              <p class="small text-secondary mb-0">
-                Processes curved, reflective, crumpled, or foil-wrapped packaging with context-aware OCR. Naturally corrects character swaps, distorted fonts, and multi-lingual noise.
+          <div class="col-md-3">
+            <div class="pipeline-step-card h-100 p-3 text-center">
+              <div class="pipeline-step-num mb-2">1</div>
+              <h6 class="fw-bold text-dark mb-1" style="font-size:0.86rem;">OpenCV CLAHE Normalization</h6>
+              <p class="text-secondary small mb-0" style="font-size:0.75rem;">
+                Contrast-limited adaptive histogram equalization to enhance low-contrast micro-print, shadows, and curved packaging.
               </p>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="p-3 rounded border" style="background: var(--bg-surface-elevated); border-color: var(--border-subtle) !important;">
-              <div class="fw-bold mb-1" style="color: var(--lavender-dark);">
-                <i class="bi bi-hdd-network" style="color: var(--lavender-primary);"></i> High-Res Local OpenCV CLAHE + EasyOCR
-              </div>
-              <p class="small text-secondary mb-0">
-                100% offline fallback executing multi-angle rotations (0°, 90°, 180°, 270°) with Contrast Limited Adaptive Histogram Equalization (CLAHE) at 2048px resolution for fine print.
+          <div class="col-md-3">
+            <div class="pipeline-step-card h-100 p-3 text-center">
+              <div class="pipeline-step-num mb-2">2</div>
+              <h6 class="fw-bold text-dark mb-1" style="font-size:0.86rem;">Hybrid Vision OCR</h6>
+              <p class="text-secondary small mb-0" style="font-size:0.75rem;">
+                Gemini 3.8 Flash Vision + 2048px EasyOCR to extract bilingual text, numerical values, and token coordinates.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="pipeline-step-card h-100 p-3 text-center">
+              <div class="pipeline-step-num mb-2">3</div>
+              <h6 class="fw-bold text-dark mb-1" style="font-size:0.86rem;">Statutory Rule Engine</h6>
+              <p class="text-secondary small mb-0" style="font-size:0.75rem;">
+                Regex &amp; heuristic evaluation for MRP tax clauses, SI metric units, MM/YYYY date formats, and corporate PIN codes.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="pipeline-step-card h-100 p-3 text-center">
+              <div class="pipeline-step-num mb-2">4</div>
+              <h6 class="fw-bold text-dark mb-1" style="font-size:0.86rem;">Notice &amp; Evidence Export</h6>
+              <p class="text-secondary small mb-0" style="font-size:0.75rem;">
+                Automated Section 36(1) violation notice preparation, JSON audit log, and high-resolution bounding box rendering.
               </p>
             </div>
           </div>

@@ -34,7 +34,7 @@ echo  ========================================================================
 echo.
 
 :: Start the public tunnel
-"%~dp0cloudflared.exe" tunnel --url http://localhost:5000
+"%~dp0cloudflared.exe" tunnel --protocol http2 --edge-ip-version 4 --url http://localhost:5000
 
 echo.
 echo  [Tunnel Stopped] Press any key to exit...

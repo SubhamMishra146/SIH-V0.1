@@ -269,12 +269,18 @@ function renderReportCard(scan) {
       : `<span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle" title="Processed by on-device EasyOCR"><i class="bi bi-cpu"></i> ${engine}</span>`;
   }
 
-  // Build audit table
+  // Build audit table and calculate KPI metrics
   const tbody = document.getElementById('audit-tbody');
   tbody.innerHTML = '';
   const names = scan.ruleNames || RULE_LABELS;
+  let passedCount = 0;
+  let failedCount = 0;
+
   for (const [key, rule] of Object.entries(scan.rules)) {
     const isPassed = rule.status === "PASS";
+    if (isPassed) passedCount++;
+    else failedCount++;
+
     tbody.innerHTML += `
       <tr>
         <td class="fw-semibold">${names[key] || key}</td>
@@ -287,6 +293,11 @@ function renderReportCard(scan) {
         <td class="small text-secondary">${rule.remarks}</td>
       </tr>`;
   }
+
+  const kpiPassed = document.getElementById('kpi-passed-count');
+  if (kpiPassed) kpiPassed.innerText = `${passedCount} Passed`;
+  const kpiFailed = document.getElementById('kpi-failed-count');
+  if (kpiFailed) kpiFailed.innerText = `${failedCount} Violations`;
 
   // Raw OCR box
   document.getElementById('ocr-section').style.display = 'block';
