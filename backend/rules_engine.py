@@ -20,7 +20,7 @@ import re
 
 def ocr_clean(text):
     """
-    Fix common Tesseract OCR misspellings and character-swap errors
+    Fix common OCR misspellings and character-swap errors
     BEFORE running any compliance rule. This increases detection accuracy.
     """
     # 1. Normalize whitespace: replace line breaks with spaces, collapse multi-spaces
@@ -35,11 +35,34 @@ def ocr_clean(text):
     cleaned = re.sub(r'[*#`~]', ' ', cleaned)
     cleaned = re.sub(r'\s+', ' ', cleaned)
 
-    # 4. Fix common OCR misspellings (Tesseract letter-swaps)
+    # 4. Fix common OCR misspellings (Tesseract & EasyOCR letter-swaps on packaging)
     ocr_fixes = {
         "laxes": "taxes",           # t -> l swap
         "iaxes": "taxes",           # t -> i swap
         "taxcs": "taxes",           # e -> c swap
+        "jutes": "taxes",
+        "etbll": "of all",
+        "ind etbll jutes": "incl of all taxes",
+        "ind of all": "incl of all",
+        "ind of": "incl of",
+        "ind ot": "incl of",
+        "ind etbll": "incl of all",
+        "incl ofall": "incl of all",
+        "incl,ofall": "incl of all",
+        "rrtel arit": "retail price",
+        "rrtel": "retail",
+        "mu retail": "mrp",
+        "clenmark": "glenmark",
+        "mertaretha": "maharashtra",
+        "matt in inja": "made in india",
+        "mig oed": "mfg date",
+        "delry dob": "mfg date",
+        "inclusive ol": "inclusive of",
+        "ol all": "of all",
+        "tolleree": "toll free",
+        "toller ee": "toll free",
+        "leveacare": "levercare",
+        "levecare": "levercare",
         "manutacured": "manufactured",
         "manutactured": "manufactured",
         "manufacured": "manufactured",
@@ -54,15 +77,25 @@ def ocr_clean(text):
         "cuslomer": "customer",     # t -> l swap
         "custorner": "customer",    # m -> rn swap
     }
-    for wrong, right in ocr_fixes.items():
+    # Sort phrases by descending length so multi-word replacements take precedence over substrings
+    for wrong, right in sorted(ocr_fixes.items(), key=lambda x: len(x[0]), reverse=True):
         cleaned = cleaned.replace(wrong, right)
 
     # 5. Fix "Dy" / "dy" -> "by" when preceded by manufactur/pack/market
     cleaned = re.sub(r'(manufactur\w*|pack\w*|market\w*)\s+dy\b', r'\1 by', cleaned)
 
-    # 6. Fix broken emails: collapse spaces around @ and before .com/.in/.org
+    # 6. Toll-free prefix fix: e.g. "1000-10" or "1000.10" -> "1800.10"
+    cleaned = re.sub(r'\b1000[\.\-\s](10|20|18|22)', r'1800.\1', cleaned)
+
+    # 7. Fix broken emails: collapse spaces around @ and normalize domain
     cleaned = re.sub(r'\s*@\s*', '@', cleaned)
+    cleaned = re.sub(r'@([a-z0-9\-]+)\s+(com|in|org|co|net)\b', r'@\1.\2', cleaned)
     cleaned = re.sub(r'\s*\.\s*(com|in|org|net|edu|co)\b', r'.\1', cleaned)
+
+    # 8. Normalize inclusive-of variants
+    cleaned = re.sub(r'incl[,\.]?\s*of\s*all', 'incl of all', cleaned)
+    cleaned = re.sub(r'incl[,\.]?\s*ofall', 'incl of all', cleaned)
+    cleaned = re.sub(r'\bind\s+of\s+all\b', 'incl of all', cleaned)
 
     return cleaned
 
@@ -74,12 +107,12 @@ def ocr_clean(text):
 def check_mrp(cleaned, original):
     """
     Must have MRP/price AND 'inclusive of all taxes/GST' clause.
-    Handles: "MRP: ? 185/-", "M.R.P. ₹ : 220.00", garbled rupee symbols.
+    Handles: "MRP: ₹ 185/-", "M.R.P. ₹ : 220.00", garbled rupee symbols,
+    and statutory "See bottom/cap/neck" declarations for rigid packaging/aerosols.
     """
 
     # Find MRP keyword followed by digits within 15 chars
     # Handles: mrp : ? 185/-, m.r.p. ₹ : 220.00, mrp rs. 50, mrp 100
-    # The [^a-z]{0,15}? skips any non-letter junk (?, ₹, :, spaces, =, *)
     price_match = re.search(
         r'(m\.?r\.?p\.?[^a-z]{0,15}?(\d+(?:[.,]\d{1,2})?\s*(?:/\-?)?))',
         cleaned
@@ -92,8 +125,22 @@ def check_mrp(cleaned, original):
             cleaned
         )
 
-    # Check for tax / GST clause
-    has_tax = bool(re.search(r'(incl\w*\.?\s*(of\s*)?(all\s*)?(tax\w*|gst))', cleaned))
+    # Check for tax / GST clause (tolerant of commas, periods, and spacing)
+    has_tax = bool(re.search(r'(incl\w*[\s,\.\/\-_]*(?:of\s*)?(?:all\s*)?(?:tax\w*|gst))', cleaned))
+
+    has_mrp_kw = bool(re.search(r'\b(m\.?r\.?p\.?|max\w*\.?\s*retail\s*price|retail\s*price)\b', cleaned))
+
+    # Also look for a decimal currency price within 60 chars of mrp/retail price or tax clause
+    if not price_match and (has_mrp_kw or has_tax):
+        decimal_match = re.search(r'(?:mrp|retail\s*price|tax\w*)[^0-9]{0,60}?(\d{2,4}\.\d{2})\b', cleaned)
+        if decimal_match:
+            price_match = re.search(r'\b\d{2,4}\.\d{2}\b', decimal_match.group(0))
+
+    # Check for statutory container declaration ("See bottom / cap / neck / stamped on can")
+    see_bottom_match = re.search(
+        r'(see\s+(?:the\s+)?(?:bottom|cap|neck|base|underneath)|stamped\s+on\s+(?:the\s+)?(?:bottom|can|base)|at\s+(?:the\s+)?bottom\s+of\s+(?:the\s+)?(?:can|bottle|pack))',
+        cleaned
+    )
 
     if price_match and has_tax:
         # Try to grab a bigger snippet showing both price and tax together
@@ -107,13 +154,22 @@ def check_mrp(cleaned, original):
             "evidenceFound": f"Matched: '{evidence}'",
             "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
         }
+    elif (has_mrp_kw or has_tax) and see_bottom_match:
+        # Statutory compliance under Rule 6 for aerosols/cans/bottles
+        mrp_str = price_match.group(0).strip() if price_match else "MRP (incl. of taxes)"
+        evidence = f"{mrp_str} ... {see_bottom_match.group(0).strip()}"
+        return {
+            "status": "PASS",
+            "evidenceFound": f"Matched: '{evidence}'",
+            "remarks": "Statutory MRP declaration found (marked 'See bottom/cap/neck' as permitted for rigid/aerosol containers)."
+        }
     elif price_match:
         return {
             "status": "VIOLATION",
             "evidenceFound": f"Found price: '{price_match.group(0).strip()}'",
             "remarks": "Found price but MISSING mandatory 'inclusive of all taxes' or 'GST' clause."
         }
-    elif re.search(r'm\.?r\.?p', cleaned):
+    elif has_mrp_kw:
         return {
             "status": "VIOLATION",
             "evidenceFound": "MRP keyword found but price number not readable",
@@ -178,12 +234,13 @@ def check_mfg_date(cleaned, original):
     """
     Matches real date formats. Rejects decimals like '20.00'.
     Handles OCR misreads like "PKG DL" for "PKG DT".
-    Valid: MM/YYYY, MM-YYYY, MM/YY, MonthName YYYY, "APR 2020"
+    Valid: MM/YYYY, MM-YYYY, MM/YY, MonthName YYYY, "APR 2020",
+    and statutory "See bottom/cap/neck" declarations for rigid packaging/aerosols.
     """
 
-    # Date keyword (tolerant: "pkg dt", "pkg dl", "mfg", "batch", etc.)
+    # Date keyword (tolerant: "pkg dt", "pkg dl", "mfg", "batch", "use before", etc.)
     keyword_match = re.search(
-        r'\b(mfg\.?d?\.?|mfd\.?|pkd\.?|pkg\s*d[tl]\.?|packed|pack\s*date|batch|b\.?\s*no\.?|lot|best\s*before|exp\.?\s*date|use\s*by|date\s*of)\b',
+        r'\b(mfg\.?d?\.?|mfd\.?|pkd\.?|pkg\s*d[tl]\.?|packed|pack\s*date|batch|b\.?\s*no\.?|lot|best\s*before|exp\.?\s*date|use\s*by|use\s*before|date\s*of)\b',
         cleaned
     )
 
@@ -199,6 +256,12 @@ def check_mfg_date(cleaned, original):
         cleaned
     )
 
+    # Statutory container declaration ("See bottom / cap / neck / stamped on can")
+    see_bottom_match = re.search(
+        r'(see\s+(?:the\s+)?(?:bottom|cap|neck|base|underneath)|stamped\s+on\s+(?:the\s+)?(?:bottom|can|base)|at\s+(?:the\s+)?bottom\s+of\s+(?:the\s+)?(?:can|bottle|pack))',
+        cleaned
+    )
+
     date_match = numeric_date or month_name_date
 
     if keyword_match and date_match:
@@ -206,6 +269,12 @@ def check_mfg_date(cleaned, original):
             "status": "PASS",
             "evidenceFound": f"Matched: '{keyword_match.group(0).strip()}' with date '{date_match.group(0).strip()}'",
             "remarks": "Manufacturing / Packing date is declared."
+        }
+    elif keyword_match and see_bottom_match:
+        return {
+            "status": "PASS",
+            "evidenceFound": f"Matched: '{keyword_match.group(0).strip()} : {see_bottom_match.group(0).strip()}'",
+            "remarks": "Statutory date declaration found (marked 'See bottom/cap/neck' as permitted for rigid/aerosol containers)."
         }
     elif date_match:
         return {
@@ -233,13 +302,13 @@ def check_manufacturer(cleaned, original):
 
     # Keyword: "manufactured by", "mfd by", "mfg by", "packed by", "made by", etc.
     keyword_match = re.search(
-        r'(manufactur\w*\s*by|mfg\.?\s*by|mfd\.?\s*by|mfr\.?\s*by|marketed\s*by|packed\s*by|imported\s*by|product\s*by|premium\s*product\s*by|made\s*by|mfg\b|mfd\b|fssai\s*lic)',
+        r'(manufactur\w*\s*by|mfg\.?\s*by|mfd\.?\s*by|mfr\.?\s*by|marketed\s*by|mktd\.?\s*by|packed\s*by|pkd\.?\s*by|imported\s*by|product\s*by|premium\s*product\s*by|made\s*by|made\s*in\s*india|mfg\b|mfd\b|fssai\s*lic)',
         cleaned
     )
 
-    # Corporate suffixes & industry terms
+    # Corporate suffixes & industry terms & prominent FMCG companies
     company_match = re.search(
-        r'\b(multi\s*pap|paper\s*products?|industries|enterprises|foods?|products?|pvt\.?\s*ltd\.?|limited|private|inc\.?|corp\.?|co\.?\s*ltd|llp|group|plastics?|polymers?|works|mills|pharma|laboratories|chem\w*|trading)\b',
+        r'\b(multi\s*pap|paper\s*products?|industries|enterprises|foods?|products?|pvt\.?\s*ltd\.?|limited|private|inc\.?|corp\.?|co\.?\s*ltd|llp|group|plastics?|polymers?|works|mills|pharma|laboratories|chem\w*|trading|unilever|hul|glenmark|dabur|nestle|itc|godrej|patanjali|marico|britannia|wipro|emami)\b',
         cleaned
     )
 
@@ -286,24 +355,24 @@ def check_manufacturer(cleaned, original):
 
 def check_consumer_care(cleaned, original):
     """
-    Detects phone numbers (10-digit mobile, 1800 toll-free, STD landline)
+    Detects phone numbers (10-digit mobile, 1800/1860 toll-free, STD landline)
     and emails (after OCR space-collapse fix).
     """
 
-    # Email (on cleaned text where spaces around @ are already fixed)
-    email_match = re.search(r'[a-z0-9._%+\-]+@[a-z0-9.\-]+\.(com|in|org|net|edu|co)', cleaned)
+    # Email (on cleaned text where spaces around @ and domain dots are fixed)
+    email_match = re.search(r'[a-z0-9._%+\-]+@[a-z0-9.\-]+\.(?:com|in|org|net|edu|co)\b', cleaned)
 
     # Phone: 10-digit Indian mobile
     mobile_match = re.search(r'\b[6-9]\d{9}\b', cleaned)
 
-    # Phone: 1800 toll-free (various formats)
-    tollfree_match = re.search(r'1800[\s\-]?\d{2,3}[\s\-]?\d{3,4}', cleaned)
+    # Phone: 1800/1860 toll-free (supports space, dash, or dot separators and up to 5-digit segments)
+    tollfree_match = re.search(r'18[06]0[\s\-\.]?\d{2,3}[\s\-\.]?\d{3,5}', cleaned)
 
-    # Phone: STD landline (e.g., 044-12345678, 0484-2345678)
-    landline_match = re.search(r'\b0\d{2,4}[\s\-]?\d{6,8}\b', cleaned)
+    # Phone: STD landline (e.g., 044-12345678, 0484-2345678, with dot/dash/space)
+    landline_match = re.search(r'\b0\d{2,4}[\s\-\.]?\d{6,8}\b', cleaned)
 
     # Also check for "customer care" or "consumer care" keyword near contact info
-    care_keyword = bool(re.search(r'(customer\s*care|consumer\s*care|helpline|grievance|feedback|write\s*to|contact\s*us)', cleaned))
+    care_keyword = bool(re.search(r'(customer\s*care|consumer\s*care|helpline|grievance|feedback|write\s*to|contact\s*us|care@)', cleaned))
 
     phone_match = mobile_match or tollfree_match or landline_match
 

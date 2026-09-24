@@ -1622,6 +1622,4618 @@
         "manufacturerDetails",
         "consumerCare"
       ]
+    },
+    {
+      "id": "b96c18ea-620e-478c-9f73-839d9c4dcb5a",
+      "productName": "notebook",
+      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
+      "geminiError": null,
+      "imagePath": "uploads/fb56813b17374b7d8a517091c8e4e1cd_nb2.jpg",
+      "scannedAt": "2026-09-24T13:18:17.565180+00:00",
+      "status": "Compliant",
+      "extractedText": "R\n\nSUNDARAM\n\nSINCE: 1985\n\nManufactured by: SUNDARAM MULTI PAP LIMITED\nPlot No. 33 To 37, Sundaram Industrial Zone,\nPalghar (W), District - Palghar - 401 404, Maharashtra, India.\nFor Feedback / Complaint Contact our\nCustomer Care Executive address as given above\nCustomer Care No.: +91-22-67602200, (\u2706) 8369691119,\nEmail: sales@sundaramgroups.in, website: www.sundaramgroups.in\n\nCode : S-14\n\n8902242 725425\n\nProduct: A/4 Book - Spiral\n\nSize: 21 x 29.7 cm\n\nPages: 400\n\nMRP: \u20b9 185/-\n(Inclusive of all taxes)\n\nPKG DT.\nAPR 2026",
+      "detections": [
+        {
+          "id": 1,
+          "text": "R",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 2,
+          "text": "SUNDARAM",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 3,
+          "text": "SINCE: 1985",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 4,
+          "text": "Manufactured by: SUNDARAM MULTI PAP LIMITED",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 5,
+          "text": "Plot No. 33 To 37, Sundaram Industrial Zone,",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 6,
+          "text": "Palghar (W), District - Palghar - 401 404, Maharashtra, India.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 7,
+          "text": "For Feedback / Complaint Contact our",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 8,
+          "text": "Customer Care Executive address as given above",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 9,
+          "text": "Customer Care No.: +91-22-67602200, (\u2706) 8369691119,",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 10,
+          "text": "Email: sales@sundaramgroups.in, website: www.sundaramgroups.in",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 11,
+          "text": "Code : S-14",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 12,
+          "text": "8902242 725425",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 13,
+          "text": "Product: A/4 Book - Spiral",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 14,
+          "text": "Size: 21 x 29.7 cm",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 15,
+          "text": "Pages: 400",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 16,
+          "text": "MRP: \u20b9 185/-",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 17,
+          "text": "(Inclusive of all taxes)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 18,
+          "text": "PKG DT.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 19,
+          "text": "APR 2026",
+          "confidence": 0.98,
+          "box": []
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mrp: \u20b9 185/- (inclusive of all taxes'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: pages: 400",
+          "remarks": "Net quantity 'pages: 400' declared."
+        },
+        "mfgDate": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'pkg dt' with date 'apr 2026'",
+          "remarks": "Manufacturing / Packing date is declared."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'manufactured by ... multi pap ... maharashtra'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Email: sales@sundaramgroups.in | Phone: 8369691119",
+          "remarks": "Both email and phone contact details found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": []
+    },
+    {
+      "id": "6fd7e142-33cd-4a34-8445-fd1d7946fec9",
+      "productName": "aerpocket",
+      "engine": "Local OpenCV + EasyOCR",
+      "geminiError": "All candidate models failed. Last error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "imagePath": "uploads/978da40b2a0e41ae86000a57c6cfaec8_AERPOCKET.jpeg",
+      "scannedAt": "2026-09-24T13:16:45.353328+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "aer power pocket Caution Follow the directions for use written on the side of the pack Avoid contact with eyes and skin In case of contact; wash with warm water: Do not swallow: Keep out of reach of children not pierce the pack: Do not use if the product is damaged or leaking: Do not place the product on any plastic or   treated surface_ We  decline any responsibility for damages or malfunctions caused by any noncompliance of directions of usage Customer experience of longevity may vary based on weather conditions, room conditions and habituation: Manufactured by: Godrej Consumer Products Ltd: No: E-5, Maraimalai Nagar Chennai 603209 Godrej Consumer Products Ltd. P.O: Mamring (Via Rangpo) South Sikkim-737132 Marketed byl Registered Address/Consumer Feedback or Complaint Contact: Manager (Consumer Relations), Godrej Consumer Products Ltd; Vikhroli (East), Mumbai 400079 T:1-800-266-0007 E: care@godrejcp.com Number of Units: SU Bathroom Fragrance Net Weight (10g X 5 Units) MRP (Incl: of all taxes) USP Packed On # 6 50/9 42/2024 Individual packs not for sale Best before ? years from packed on 81190 1 023110 17 97 \"From the day of opening the sachet Do 50g",
+      "detections": [
+        {
+          "id": 1,
+          "text": "aer",
+          "confidence": 0.7643,
+          "box": [
+            [
+              255,
+              61
+            ],
+            [
+              382,
+              61
+            ],
+            [
+              382,
+              126
+            ],
+            [
+              255,
+              126
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "text": "power",
+          "confidence": 0.9996,
+          "box": [
+            [
+              258,
+              120
+            ],
+            [
+              367,
+              120
+            ],
+            [
+              367,
+              157
+            ],
+            [
+              258,
+              157
+            ]
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pocket",
+          "confidence": 0.9682,
+          "box": [
+            [
+              255,
+              143
+            ],
+            [
+              368,
+              143
+            ],
+            [
+              368,
+              184
+            ],
+            [
+              255,
+              184
+            ]
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Caution",
+          "confidence": 0.7065,
+          "box": [
+            [
+              59,
+              183
+            ],
+            [
+              139,
+              183
+            ],
+            [
+              139,
+              203
+            ],
+            [
+              59,
+              203
+            ]
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Follow the directions for use written on the side of the",
+          "confidence": 0.6955,
+          "box": [
+            [
+              58,
+              200
+            ],
+            [
+              544,
+              200
+            ],
+            [
+              544,
+              228
+            ],
+            [
+              58,
+              228
+            ]
+          ]
+        },
+        {
+          "id": 6,
+          "text": "pack Avoid contact with eyes and skin In case of contact;",
+          "confidence": 0.6547,
+          "box": [
+            [
+              55,
+              219
+            ],
+            [
+              544,
+              219
+            ],
+            [
+              544,
+              251
+            ],
+            [
+              55,
+              251
+            ]
+          ]
+        },
+        {
+          "id": 7,
+          "text": "wash with warm water: Do not swallow: Keep out of reach",
+          "confidence": 0.6298,
+          "box": [
+            [
+              58,
+              242
+            ],
+            [
+              546,
+              242
+            ],
+            [
+              546,
+              270
+            ],
+            [
+              58,
+              270
+            ]
+          ]
+        },
+        {
+          "id": 8,
+          "text": "of children",
+          "confidence": 0.9939,
+          "box": [
+            [
+              57,
+              269
+            ],
+            [
+              157,
+              269
+            ],
+            [
+              157,
+              289
+            ],
+            [
+              57,
+              289
+            ]
+          ]
+        },
+        {
+          "id": 9,
+          "text": "not pierce the pack: Do not use",
+          "confidence": 0.7657,
+          "box": [
+            [
+              196,
+              266
+            ],
+            [
+              492,
+              266
+            ],
+            [
+              492,
+              290
+            ],
+            [
+              196,
+              290
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "text": "if the",
+          "confidence": 0.6124,
+          "box": [
+            [
+              497,
+              263
+            ],
+            [
+              545,
+              263
+            ],
+            [
+              545,
+              283
+            ],
+            [
+              497,
+              283
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "text": "product is damaged or leaking: Do not place the product",
+          "confidence": 0.5873,
+          "box": [
+            [
+              56,
+              281
+            ],
+            [
+              546,
+              281
+            ],
+            [
+              546,
+              313
+            ],
+            [
+              56,
+              313
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "text": "on",
+          "confidence": 0.9966,
+          "box": [
+            [
+              59,
+              315
+            ],
+            [
+              85,
+              315
+            ],
+            [
+              85,
+              331
+            ],
+            [
+              59,
+              331
+            ]
+          ]
+        },
+        {
+          "id": 13,
+          "text": "any",
+          "confidence": 1.0,
+          "box": [
+            [
+              93,
+              313
+            ],
+            [
+              129,
+              313
+            ],
+            [
+              129,
+              333
+            ],
+            [
+              93,
+              333
+            ]
+          ]
+        },
+        {
+          "id": 14,
+          "text": "plastic",
+          "confidence": 0.9999,
+          "box": [
+            [
+              145,
+              307
+            ],
+            [
+              208,
+              307
+            ],
+            [
+              208,
+              332
+            ],
+            [
+              145,
+              332
+            ]
+          ]
+        },
+        {
+          "id": 15,
+          "text": "or   treated surface_",
+          "confidence": 0.526,
+          "box": [
+            [
+              215,
+              309
+            ],
+            [
+              385,
+              309
+            ],
+            [
+              385,
+              329
+            ],
+            [
+              215,
+              329
+            ]
+          ]
+        },
+        {
+          "id": 16,
+          "text": "We  decline",
+          "confidence": 0.7474,
+          "box": [
+            [
+              396,
+              302
+            ],
+            [
+              504,
+              302
+            ],
+            [
+              504,
+              328
+            ],
+            [
+              396,
+              328
+            ]
+          ]
+        },
+        {
+          "id": 17,
+          "text": "any",
+          "confidence": 0.9841,
+          "box": [
+            [
+              511,
+              309
+            ],
+            [
+              545,
+              309
+            ],
+            [
+              545,
+              325
+            ],
+            [
+              511,
+              325
+            ]
+          ]
+        },
+        {
+          "id": 18,
+          "text": "responsibility for damages or malfunctions caused by",
+          "confidence": 0.9337,
+          "box": [
+            [
+              55,
+              324
+            ],
+            [
+              544,
+              324
+            ],
+            [
+              544,
+              355
+            ],
+            [
+              55,
+              355
+            ]
+          ]
+        },
+        {
+          "id": 19,
+          "text": "any noncompliance of directions",
+          "confidence": 0.8225,
+          "box": [
+            [
+              58,
+              347
+            ],
+            [
+              357,
+              347
+            ],
+            [
+              357,
+              374
+            ],
+            [
+              58,
+              374
+            ]
+          ]
+        },
+        {
+          "id": 20,
+          "text": "of usage",
+          "confidence": 0.9904,
+          "box": [
+            [
+              363,
+              349
+            ],
+            [
+              445,
+              349
+            ],
+            [
+              445,
+              369
+            ],
+            [
+              363,
+              369
+            ]
+          ]
+        },
+        {
+          "id": 21,
+          "text": "Customer",
+          "confidence": 1.0,
+          "box": [
+            [
+              453,
+              347
+            ],
+            [
+              545,
+              347
+            ],
+            [
+              545,
+              367
+            ],
+            [
+              453,
+              367
+            ]
+          ]
+        },
+        {
+          "id": 22,
+          "text": "experience of longevity may vary",
+          "confidence": 0.5294,
+          "box": [
+            [
+              55,
+              368
+            ],
+            [
+              368,
+              368
+            ],
+            [
+              368,
+              395
+            ],
+            [
+              55,
+              395
+            ]
+          ]
+        },
+        {
+          "id": 23,
+          "text": "based",
+          "confidence": 1.0,
+          "box": [
+            [
+              373,
+              369
+            ],
+            [
+              431,
+              369
+            ],
+            [
+              431,
+              387
+            ],
+            [
+              373,
+              387
+            ]
+          ]
+        },
+        {
+          "id": 24,
+          "text": "on",
+          "confidence": 0.9941,
+          "box": [
+            [
+              437,
+              371
+            ],
+            [
+              463,
+              371
+            ],
+            [
+              463,
+              387
+            ],
+            [
+              437,
+              387
+            ]
+          ]
+        },
+        {
+          "id": 25,
+          "text": "weather",
+          "confidence": 0.9999,
+          "box": [
+            [
+              467,
+              362
+            ],
+            [
+              546,
+              362
+            ],
+            [
+              546,
+              389
+            ],
+            [
+              467,
+              389
+            ]
+          ]
+        },
+        {
+          "id": 26,
+          "text": "conditions, room conditions and habituation:",
+          "confidence": 0.7761,
+          "box": [
+            [
+              56,
+              385
+            ],
+            [
+              442,
+              385
+            ],
+            [
+              442,
+              414
+            ],
+            [
+              56,
+              414
+            ]
+          ]
+        },
+        {
+          "id": 27,
+          "text": "Manufactured by:",
+          "confidence": 0.9182,
+          "box": [
+            [
+              58,
+              436
+            ],
+            [
+              236,
+              436
+            ],
+            [
+              236,
+              460
+            ],
+            [
+              58,
+              460
+            ]
+          ]
+        },
+        {
+          "id": 28,
+          "text": "Godrej Consumer Products Ltd: No: E-5, Maraimalai Nagar",
+          "confidence": 0.6746,
+          "box": [
+            [
+              56,
+              452
+            ],
+            [
+              560,
+              452
+            ],
+            [
+              560,
+              482
+            ],
+            [
+              56,
+              482
+            ]
+          ]
+        },
+        {
+          "id": 29,
+          "text": "Chennai",
+          "confidence": 0.9293,
+          "box": [
+            [
+              56,
+              478
+            ],
+            [
+              136,
+              478
+            ],
+            [
+              136,
+              502
+            ],
+            [
+              56,
+              502
+            ]
+          ]
+        },
+        {
+          "id": 30,
+          "text": "603209",
+          "confidence": 0.9944,
+          "box": [
+            [
+              146,
+              476
+            ],
+            [
+              222,
+              476
+            ],
+            [
+              222,
+              500
+            ],
+            [
+              146,
+              500
+            ]
+          ]
+        },
+        {
+          "id": 31,
+          "text": "Godrej Consumer Products Ltd. P.O:",
+          "confidence": 0.4338,
+          "box": [
+            [
+              56,
+              500
+            ],
+            [
+              372,
+              500
+            ],
+            [
+              372,
+              528
+            ],
+            [
+              56,
+              528
+            ]
+          ]
+        },
+        {
+          "id": 32,
+          "text": "Mamring (Via Rangpo)",
+          "confidence": 0.8819,
+          "box": [
+            [
+              384,
+              498
+            ],
+            [
+              580,
+              498
+            ],
+            [
+              580,
+              524
+            ],
+            [
+              384,
+              524
+            ]
+          ]
+        },
+        {
+          "id": 33,
+          "text": "South Sikkim-737132",
+          "confidence": 0.9535,
+          "box": [
+            [
+              56,
+              522
+            ],
+            [
+              244,
+              522
+            ],
+            [
+              244,
+              548
+            ],
+            [
+              56,
+              548
+            ]
+          ]
+        },
+        {
+          "id": 34,
+          "text": "Marketed",
+          "confidence": 1.0,
+          "box": [
+            [
+              55,
+              562
+            ],
+            [
+              158,
+              562
+            ],
+            [
+              158,
+              588
+            ],
+            [
+              55,
+              588
+            ]
+          ]
+        },
+        {
+          "id": 35,
+          "text": "byl",
+          "confidence": 0.9749,
+          "box": [
+            [
+              173,
+              565
+            ],
+            [
+              209,
+              565
+            ],
+            [
+              209,
+              585
+            ],
+            [
+              173,
+              585
+            ]
+          ]
+        },
+        {
+          "id": 36,
+          "text": "Registered",
+          "confidence": 0.8512,
+          "box": [
+            [
+              224,
+              560
+            ],
+            [
+              336,
+              560
+            ],
+            [
+              336,
+              586
+            ],
+            [
+              224,
+              586
+            ]
+          ]
+        },
+        {
+          "id": 37,
+          "text": "Address/Consumer",
+          "confidence": 0.9951,
+          "box": [
+            [
+              349,
+              554
+            ],
+            [
+              544,
+              554
+            ],
+            [
+              544,
+              581
+            ],
+            [
+              349,
+              581
+            ]
+          ]
+        },
+        {
+          "id": 38,
+          "text": "Feedback or Complaint Contact:",
+          "confidence": 0.9541,
+          "box": [
+            [
+              54,
+              580
+            ],
+            [
+              378,
+              580
+            ],
+            [
+              378,
+              608
+            ],
+            [
+              54,
+              608
+            ]
+          ]
+        },
+        {
+          "id": 39,
+          "text": "Manager",
+          "confidence": 0.9999,
+          "box": [
+            [
+              54,
+              608
+            ],
+            [
+              142,
+              608
+            ],
+            [
+              142,
+              632
+            ],
+            [
+              54,
+              632
+            ]
+          ]
+        },
+        {
+          "id": 40,
+          "text": "(Consumer",
+          "confidence": 0.9999,
+          "box": [
+            [
+              150,
+              604
+            ],
+            [
+              256,
+              604
+            ],
+            [
+              256,
+              628
+            ],
+            [
+              150,
+              628
+            ]
+          ]
+        },
+        {
+          "id": 41,
+          "text": "Relations),",
+          "confidence": 0.775,
+          "box": [
+            [
+              267,
+              603
+            ],
+            [
+              361,
+              603
+            ],
+            [
+              361,
+              623
+            ],
+            [
+              267,
+              623
+            ]
+          ]
+        },
+        {
+          "id": 42,
+          "text": "Godrej",
+          "confidence": 0.7108,
+          "box": [
+            [
+              373,
+              601
+            ],
+            [
+              437,
+              601
+            ],
+            [
+              437,
+              621
+            ],
+            [
+              373,
+              621
+            ]
+          ]
+        },
+        {
+          "id": 43,
+          "text": "Consumer",
+          "confidence": 0.7728,
+          "box": [
+            [
+              447,
+              598
+            ],
+            [
+              543,
+              598
+            ],
+            [
+              543,
+              618
+            ],
+            [
+              447,
+              618
+            ]
+          ]
+        },
+        {
+          "id": 44,
+          "text": "Products Ltd; Vikhroli (East), Mumbai",
+          "confidence": 0.4244,
+          "box": [
+            [
+              54,
+              618
+            ],
+            [
+              380,
+              618
+            ],
+            [
+              380,
+              650
+            ],
+            [
+              54,
+              650
+            ]
+          ]
+        },
+        {
+          "id": 45,
+          "text": "400079",
+          "confidence": 1.0,
+          "box": [
+            [
+              388,
+              618
+            ],
+            [
+              462,
+              618
+            ],
+            [
+              462,
+              642
+            ],
+            [
+              388,
+              642
+            ]
+          ]
+        },
+        {
+          "id": 46,
+          "text": "T:1-800-266-0007",
+          "confidence": 0.8798,
+          "box": [
+            [
+              54,
+              643
+            ],
+            [
+              226,
+              643
+            ],
+            [
+              226,
+              672
+            ],
+            [
+              54,
+              672
+            ]
+          ]
+        },
+        {
+          "id": 47,
+          "text": "E: care@godrejcp.com",
+          "confidence": 0.6745,
+          "box": [
+            [
+              232,
+              640
+            ],
+            [
+              434,
+              640
+            ],
+            [
+              434,
+              670
+            ],
+            [
+              232,
+              670
+            ]
+          ]
+        },
+        {
+          "id": 48,
+          "text": "Number of Units: SU Bathroom Fragrance",
+          "confidence": 0.965,
+          "box": [
+            [
+              53,
+              684
+            ],
+            [
+              468,
+              684
+            ],
+            [
+              468,
+              716
+            ],
+            [
+              53,
+              716
+            ]
+          ]
+        },
+        {
+          "id": 49,
+          "text": "Net Weight",
+          "confidence": 0.9999,
+          "box": [
+            [
+              52,
+              724
+            ],
+            [
+              172,
+              724
+            ],
+            [
+              172,
+              750
+            ],
+            [
+              52,
+              750
+            ]
+          ]
+        },
+        {
+          "id": 50,
+          "text": "(10g X 5 Units)",
+          "confidence": 0.6461,
+          "box": [
+            [
+              259,
+              707
+            ],
+            [
+              503,
+              707
+            ],
+            [
+              503,
+              749
+            ],
+            [
+              259,
+              749
+            ]
+          ]
+        },
+        {
+          "id": 51,
+          "text": "MRP (Incl: of all taxes)",
+          "confidence": 0.518,
+          "box": [
+            [
+              54,
+              754
+            ],
+            [
+              244,
+              754
+            ],
+            [
+              244,
+              780
+            ],
+            [
+              54,
+              780
+            ]
+          ]
+        },
+        {
+          "id": 52,
+          "text": "USP",
+          "confidence": 0.9998,
+          "box": [
+            [
+              53,
+              781
+            ],
+            [
+              95,
+              781
+            ],
+            [
+              95,
+              801
+            ],
+            [
+              53,
+              801
+            ]
+          ]
+        },
+        {
+          "id": 53,
+          "text": "Packed On",
+          "confidence": 0.9663,
+          "box": [
+            [
+              52,
+              800
+            ],
+            [
+              156,
+              800
+            ],
+            [
+              156,
+              824
+            ],
+            [
+              52,
+              824
+            ]
+          ]
+        },
+        {
+          "id": 54,
+          "text": "# 6",
+          "confidence": 0.5217,
+          "box": [
+            [
+              287,
+              795
+            ],
+            [
+              335,
+              795
+            ],
+            [
+              335,
+              815
+            ],
+            [
+              287,
+              815
+            ]
+          ]
+        },
+        {
+          "id": 55,
+          "text": "50/9",
+          "confidence": 0.4734,
+          "box": [
+            [
+              346,
+              790
+            ],
+            [
+              428,
+              790
+            ],
+            [
+              428,
+              814
+            ],
+            [
+              346,
+              814
+            ]
+          ]
+        },
+        {
+          "id": 56,
+          "text": "42/2024",
+          "confidence": 0.7698,
+          "box": [
+            [
+              443,
+              786
+            ],
+            [
+              576,
+              786
+            ],
+            [
+              576,
+              814
+            ],
+            [
+              443,
+              814
+            ]
+          ]
+        },
+        {
+          "id": 57,
+          "text": "Individual packs not for sale",
+          "confidence": 0.9436,
+          "box": [
+            [
+              52,
+              818
+            ],
+            [
+              298,
+              818
+            ],
+            [
+              298,
+              844
+            ],
+            [
+              52,
+              844
+            ]
+          ]
+        },
+        {
+          "id": 58,
+          "text": "Best before ? years from packed on",
+          "confidence": 0.7195,
+          "box": [
+            [
+              52,
+              831
+            ],
+            [
+              418,
+              831
+            ],
+            [
+              418,
+              864
+            ],
+            [
+              52,
+              864
+            ]
+          ]
+        },
+        {
+          "id": 59,
+          "text": "81190 1 023110 17 97",
+          "confidence": 0.3956,
+          "box": [
+            [
+              63,
+              947
+            ],
+            [
+              217,
+              947
+            ],
+            [
+              217,
+              965
+            ],
+            [
+              63,
+              965
+            ]
+          ]
+        },
+        {
+          "id": 60,
+          "text": "\"From the day of opening the sachet",
+          "confidence": 0.786,
+          "box": [
+            [
+              258,
+              934
+            ],
+            [
+              566,
+              934
+            ],
+            [
+              566,
+              962
+            ],
+            [
+              258,
+              962
+            ]
+          ]
+        },
+        {
+          "id": 61,
+          "text": "Do",
+          "confidence": 0.9788,
+          "box": [
+            [
+              167,
+              268
+            ],
+            [
+              196,
+              272
+            ],
+            [
+              193,
+              290
+            ],
+            [
+              164,
+              285
+            ]
+          ]
+        },
+        {
+          "id": 62,
+          "text": "50g",
+          "confidence": 0.4841,
+          "box": [
+            [
+              188,
+              707
+            ],
+            [
+              260,
+              718
+            ],
+            [
+              252,
+              755
+            ],
+            [
+              181,
+              744
+            ]
+          ]
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "MRP keyword found but price number not readable",
+          "remarks": "MRP text detected but price value and tax clause not clearly readable by OCR."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 10g",
+          "remarks": "Net quantity '10g' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'manufactured by ... product ... chennai'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Email: care@godrejcp.com",
+          "remarks": "Consumer care email found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "mfgDate"
+      ]
+    },
+    {
+      "id": "53bafe12-47ce-42f2-840a-51b54ee89a30",
+      "productName": "aerpocket",
+      "engine": "Local OpenCV + EasyOCR",
+      "geminiError": "All candidate models failed. Last error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "imagePath": "uploads/27260ffbf4c5485fa7a25fd23ab1b980_AERPOCKET.jpeg",
+      "scannedAt": "2026-09-24T13:08:59.380169+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "aer power pocket Caution Follow the directions for use written on the side of the pack Avoid contact with eyes and skin In case of contact; wash with warm water: Do not swallow: Keep out of reach of children not pierce the pack: Do not use if the product is damaged or leaking: Do not place the product on any plastic or   treated surface_ We  decline any responsibility for damages or malfunctions caused by any noncompliance of directions of usage Customer experience of longevity may vary based on weather conditions, room conditions and habituation: Manufactured by: Godrej Consumer Products Ltd: No: E-5, Maraimalai Nagar Chennai 603209 Godrej Consumer Products Ltd. P.O: Mamring (Via Rangpo) South Sikkim-737132 Marketed byl Registered Address/Consumer Feedback or Complaint Contact: Manager (Consumer Relations), Godrej Consumer Products Ltd; Vikhroli (East), Mumbai 400079 T:1-800-266-0007 E: care@godrejcp.com Number of Units: SU Bathroom Fragrance Net Weight (10g X 5 Units) MRP (Incl: of all taxes) USP Packed On # 6 50/9 42/2024 Individual packs not for sale Best before ? years from packed on 81190 1 023110 17 97 \"From the day of opening the sachet Do 50g",
+      "detections": [
+        {
+          "id": 1,
+          "text": "aer",
+          "confidence": 0.7643,
+          "box": [
+            [
+              255,
+              61
+            ],
+            [
+              382,
+              61
+            ],
+            [
+              382,
+              126
+            ],
+            [
+              255,
+              126
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "text": "power",
+          "confidence": 0.9996,
+          "box": [
+            [
+              258,
+              120
+            ],
+            [
+              367,
+              120
+            ],
+            [
+              367,
+              157
+            ],
+            [
+              258,
+              157
+            ]
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pocket",
+          "confidence": 0.9682,
+          "box": [
+            [
+              255,
+              143
+            ],
+            [
+              368,
+              143
+            ],
+            [
+              368,
+              184
+            ],
+            [
+              255,
+              184
+            ]
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Caution",
+          "confidence": 0.7065,
+          "box": [
+            [
+              59,
+              183
+            ],
+            [
+              139,
+              183
+            ],
+            [
+              139,
+              203
+            ],
+            [
+              59,
+              203
+            ]
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Follow the directions for use written on the side of the",
+          "confidence": 0.6955,
+          "box": [
+            [
+              58,
+              200
+            ],
+            [
+              544,
+              200
+            ],
+            [
+              544,
+              228
+            ],
+            [
+              58,
+              228
+            ]
+          ]
+        },
+        {
+          "id": 6,
+          "text": "pack Avoid contact with eyes and skin In case of contact;",
+          "confidence": 0.6547,
+          "box": [
+            [
+              55,
+              219
+            ],
+            [
+              544,
+              219
+            ],
+            [
+              544,
+              251
+            ],
+            [
+              55,
+              251
+            ]
+          ]
+        },
+        {
+          "id": 7,
+          "text": "wash with warm water: Do not swallow: Keep out of reach",
+          "confidence": 0.6298,
+          "box": [
+            [
+              58,
+              242
+            ],
+            [
+              546,
+              242
+            ],
+            [
+              546,
+              270
+            ],
+            [
+              58,
+              270
+            ]
+          ]
+        },
+        {
+          "id": 8,
+          "text": "of children",
+          "confidence": 0.9939,
+          "box": [
+            [
+              57,
+              269
+            ],
+            [
+              157,
+              269
+            ],
+            [
+              157,
+              289
+            ],
+            [
+              57,
+              289
+            ]
+          ]
+        },
+        {
+          "id": 9,
+          "text": "not pierce the pack: Do not use",
+          "confidence": 0.7657,
+          "box": [
+            [
+              196,
+              266
+            ],
+            [
+              492,
+              266
+            ],
+            [
+              492,
+              290
+            ],
+            [
+              196,
+              290
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "text": "if the",
+          "confidence": 0.6124,
+          "box": [
+            [
+              497,
+              263
+            ],
+            [
+              545,
+              263
+            ],
+            [
+              545,
+              283
+            ],
+            [
+              497,
+              283
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "text": "product is damaged or leaking: Do not place the product",
+          "confidence": 0.5873,
+          "box": [
+            [
+              56,
+              281
+            ],
+            [
+              546,
+              281
+            ],
+            [
+              546,
+              313
+            ],
+            [
+              56,
+              313
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "text": "on",
+          "confidence": 0.9966,
+          "box": [
+            [
+              59,
+              315
+            ],
+            [
+              85,
+              315
+            ],
+            [
+              85,
+              331
+            ],
+            [
+              59,
+              331
+            ]
+          ]
+        },
+        {
+          "id": 13,
+          "text": "any",
+          "confidence": 1.0,
+          "box": [
+            [
+              93,
+              313
+            ],
+            [
+              129,
+              313
+            ],
+            [
+              129,
+              333
+            ],
+            [
+              93,
+              333
+            ]
+          ]
+        },
+        {
+          "id": 14,
+          "text": "plastic",
+          "confidence": 0.9999,
+          "box": [
+            [
+              145,
+              307
+            ],
+            [
+              208,
+              307
+            ],
+            [
+              208,
+              332
+            ],
+            [
+              145,
+              332
+            ]
+          ]
+        },
+        {
+          "id": 15,
+          "text": "or   treated surface_",
+          "confidence": 0.526,
+          "box": [
+            [
+              215,
+              309
+            ],
+            [
+              385,
+              309
+            ],
+            [
+              385,
+              329
+            ],
+            [
+              215,
+              329
+            ]
+          ]
+        },
+        {
+          "id": 16,
+          "text": "We  decline",
+          "confidence": 0.7474,
+          "box": [
+            [
+              396,
+              302
+            ],
+            [
+              504,
+              302
+            ],
+            [
+              504,
+              328
+            ],
+            [
+              396,
+              328
+            ]
+          ]
+        },
+        {
+          "id": 17,
+          "text": "any",
+          "confidence": 0.9841,
+          "box": [
+            [
+              511,
+              309
+            ],
+            [
+              545,
+              309
+            ],
+            [
+              545,
+              325
+            ],
+            [
+              511,
+              325
+            ]
+          ]
+        },
+        {
+          "id": 18,
+          "text": "responsibility for damages or malfunctions caused by",
+          "confidence": 0.9337,
+          "box": [
+            [
+              55,
+              324
+            ],
+            [
+              544,
+              324
+            ],
+            [
+              544,
+              355
+            ],
+            [
+              55,
+              355
+            ]
+          ]
+        },
+        {
+          "id": 19,
+          "text": "any noncompliance of directions",
+          "confidence": 0.8225,
+          "box": [
+            [
+              58,
+              347
+            ],
+            [
+              357,
+              347
+            ],
+            [
+              357,
+              374
+            ],
+            [
+              58,
+              374
+            ]
+          ]
+        },
+        {
+          "id": 20,
+          "text": "of usage",
+          "confidence": 0.9904,
+          "box": [
+            [
+              363,
+              349
+            ],
+            [
+              445,
+              349
+            ],
+            [
+              445,
+              369
+            ],
+            [
+              363,
+              369
+            ]
+          ]
+        },
+        {
+          "id": 21,
+          "text": "Customer",
+          "confidence": 1.0,
+          "box": [
+            [
+              453,
+              347
+            ],
+            [
+              545,
+              347
+            ],
+            [
+              545,
+              367
+            ],
+            [
+              453,
+              367
+            ]
+          ]
+        },
+        {
+          "id": 22,
+          "text": "experience of longevity may vary",
+          "confidence": 0.5294,
+          "box": [
+            [
+              55,
+              368
+            ],
+            [
+              368,
+              368
+            ],
+            [
+              368,
+              395
+            ],
+            [
+              55,
+              395
+            ]
+          ]
+        },
+        {
+          "id": 23,
+          "text": "based",
+          "confidence": 1.0,
+          "box": [
+            [
+              373,
+              369
+            ],
+            [
+              431,
+              369
+            ],
+            [
+              431,
+              387
+            ],
+            [
+              373,
+              387
+            ]
+          ]
+        },
+        {
+          "id": 24,
+          "text": "on",
+          "confidence": 0.9941,
+          "box": [
+            [
+              437,
+              371
+            ],
+            [
+              463,
+              371
+            ],
+            [
+              463,
+              387
+            ],
+            [
+              437,
+              387
+            ]
+          ]
+        },
+        {
+          "id": 25,
+          "text": "weather",
+          "confidence": 0.9999,
+          "box": [
+            [
+              467,
+              362
+            ],
+            [
+              546,
+              362
+            ],
+            [
+              546,
+              389
+            ],
+            [
+              467,
+              389
+            ]
+          ]
+        },
+        {
+          "id": 26,
+          "text": "conditions, room conditions and habituation:",
+          "confidence": 0.7761,
+          "box": [
+            [
+              56,
+              385
+            ],
+            [
+              442,
+              385
+            ],
+            [
+              442,
+              414
+            ],
+            [
+              56,
+              414
+            ]
+          ]
+        },
+        {
+          "id": 27,
+          "text": "Manufactured by:",
+          "confidence": 0.9182,
+          "box": [
+            [
+              58,
+              436
+            ],
+            [
+              236,
+              436
+            ],
+            [
+              236,
+              460
+            ],
+            [
+              58,
+              460
+            ]
+          ]
+        },
+        {
+          "id": 28,
+          "text": "Godrej Consumer Products Ltd: No: E-5, Maraimalai Nagar",
+          "confidence": 0.6746,
+          "box": [
+            [
+              56,
+              452
+            ],
+            [
+              560,
+              452
+            ],
+            [
+              560,
+              482
+            ],
+            [
+              56,
+              482
+            ]
+          ]
+        },
+        {
+          "id": 29,
+          "text": "Chennai",
+          "confidence": 0.9293,
+          "box": [
+            [
+              56,
+              478
+            ],
+            [
+              136,
+              478
+            ],
+            [
+              136,
+              502
+            ],
+            [
+              56,
+              502
+            ]
+          ]
+        },
+        {
+          "id": 30,
+          "text": "603209",
+          "confidence": 0.9944,
+          "box": [
+            [
+              146,
+              476
+            ],
+            [
+              222,
+              476
+            ],
+            [
+              222,
+              500
+            ],
+            [
+              146,
+              500
+            ]
+          ]
+        },
+        {
+          "id": 31,
+          "text": "Godrej Consumer Products Ltd. P.O:",
+          "confidence": 0.4338,
+          "box": [
+            [
+              56,
+              500
+            ],
+            [
+              372,
+              500
+            ],
+            [
+              372,
+              528
+            ],
+            [
+              56,
+              528
+            ]
+          ]
+        },
+        {
+          "id": 32,
+          "text": "Mamring (Via Rangpo)",
+          "confidence": 0.8819,
+          "box": [
+            [
+              384,
+              498
+            ],
+            [
+              580,
+              498
+            ],
+            [
+              580,
+              524
+            ],
+            [
+              384,
+              524
+            ]
+          ]
+        },
+        {
+          "id": 33,
+          "text": "South Sikkim-737132",
+          "confidence": 0.9535,
+          "box": [
+            [
+              56,
+              522
+            ],
+            [
+              244,
+              522
+            ],
+            [
+              244,
+              548
+            ],
+            [
+              56,
+              548
+            ]
+          ]
+        },
+        {
+          "id": 34,
+          "text": "Marketed",
+          "confidence": 1.0,
+          "box": [
+            [
+              55,
+              562
+            ],
+            [
+              158,
+              562
+            ],
+            [
+              158,
+              588
+            ],
+            [
+              55,
+              588
+            ]
+          ]
+        },
+        {
+          "id": 35,
+          "text": "byl",
+          "confidence": 0.9749,
+          "box": [
+            [
+              173,
+              565
+            ],
+            [
+              209,
+              565
+            ],
+            [
+              209,
+              585
+            ],
+            [
+              173,
+              585
+            ]
+          ]
+        },
+        {
+          "id": 36,
+          "text": "Registered",
+          "confidence": 0.8512,
+          "box": [
+            [
+              224,
+              560
+            ],
+            [
+              336,
+              560
+            ],
+            [
+              336,
+              586
+            ],
+            [
+              224,
+              586
+            ]
+          ]
+        },
+        {
+          "id": 37,
+          "text": "Address/Consumer",
+          "confidence": 0.9951,
+          "box": [
+            [
+              349,
+              554
+            ],
+            [
+              544,
+              554
+            ],
+            [
+              544,
+              581
+            ],
+            [
+              349,
+              581
+            ]
+          ]
+        },
+        {
+          "id": 38,
+          "text": "Feedback or Complaint Contact:",
+          "confidence": 0.9541,
+          "box": [
+            [
+              54,
+              580
+            ],
+            [
+              378,
+              580
+            ],
+            [
+              378,
+              608
+            ],
+            [
+              54,
+              608
+            ]
+          ]
+        },
+        {
+          "id": 39,
+          "text": "Manager",
+          "confidence": 0.9999,
+          "box": [
+            [
+              54,
+              608
+            ],
+            [
+              142,
+              608
+            ],
+            [
+              142,
+              632
+            ],
+            [
+              54,
+              632
+            ]
+          ]
+        },
+        {
+          "id": 40,
+          "text": "(Consumer",
+          "confidence": 0.9999,
+          "box": [
+            [
+              150,
+              604
+            ],
+            [
+              256,
+              604
+            ],
+            [
+              256,
+              628
+            ],
+            [
+              150,
+              628
+            ]
+          ]
+        },
+        {
+          "id": 41,
+          "text": "Relations),",
+          "confidence": 0.775,
+          "box": [
+            [
+              267,
+              603
+            ],
+            [
+              361,
+              603
+            ],
+            [
+              361,
+              623
+            ],
+            [
+              267,
+              623
+            ]
+          ]
+        },
+        {
+          "id": 42,
+          "text": "Godrej",
+          "confidence": 0.7108,
+          "box": [
+            [
+              373,
+              601
+            ],
+            [
+              437,
+              601
+            ],
+            [
+              437,
+              621
+            ],
+            [
+              373,
+              621
+            ]
+          ]
+        },
+        {
+          "id": 43,
+          "text": "Consumer",
+          "confidence": 0.7728,
+          "box": [
+            [
+              447,
+              598
+            ],
+            [
+              543,
+              598
+            ],
+            [
+              543,
+              618
+            ],
+            [
+              447,
+              618
+            ]
+          ]
+        },
+        {
+          "id": 44,
+          "text": "Products Ltd; Vikhroli (East), Mumbai",
+          "confidence": 0.4244,
+          "box": [
+            [
+              54,
+              618
+            ],
+            [
+              380,
+              618
+            ],
+            [
+              380,
+              650
+            ],
+            [
+              54,
+              650
+            ]
+          ]
+        },
+        {
+          "id": 45,
+          "text": "400079",
+          "confidence": 1.0,
+          "box": [
+            [
+              388,
+              618
+            ],
+            [
+              462,
+              618
+            ],
+            [
+              462,
+              642
+            ],
+            [
+              388,
+              642
+            ]
+          ]
+        },
+        {
+          "id": 46,
+          "text": "T:1-800-266-0007",
+          "confidence": 0.8798,
+          "box": [
+            [
+              54,
+              643
+            ],
+            [
+              226,
+              643
+            ],
+            [
+              226,
+              672
+            ],
+            [
+              54,
+              672
+            ]
+          ]
+        },
+        {
+          "id": 47,
+          "text": "E: care@godrejcp.com",
+          "confidence": 0.6745,
+          "box": [
+            [
+              232,
+              640
+            ],
+            [
+              434,
+              640
+            ],
+            [
+              434,
+              670
+            ],
+            [
+              232,
+              670
+            ]
+          ]
+        },
+        {
+          "id": 48,
+          "text": "Number of Units: SU Bathroom Fragrance",
+          "confidence": 0.965,
+          "box": [
+            [
+              53,
+              684
+            ],
+            [
+              468,
+              684
+            ],
+            [
+              468,
+              716
+            ],
+            [
+              53,
+              716
+            ]
+          ]
+        },
+        {
+          "id": 49,
+          "text": "Net Weight",
+          "confidence": 0.9999,
+          "box": [
+            [
+              52,
+              724
+            ],
+            [
+              172,
+              724
+            ],
+            [
+              172,
+              750
+            ],
+            [
+              52,
+              750
+            ]
+          ]
+        },
+        {
+          "id": 50,
+          "text": "(10g X 5 Units)",
+          "confidence": 0.6461,
+          "box": [
+            [
+              259,
+              707
+            ],
+            [
+              503,
+              707
+            ],
+            [
+              503,
+              749
+            ],
+            [
+              259,
+              749
+            ]
+          ]
+        },
+        {
+          "id": 51,
+          "text": "MRP (Incl: of all taxes)",
+          "confidence": 0.518,
+          "box": [
+            [
+              54,
+              754
+            ],
+            [
+              244,
+              754
+            ],
+            [
+              244,
+              780
+            ],
+            [
+              54,
+              780
+            ]
+          ]
+        },
+        {
+          "id": 52,
+          "text": "USP",
+          "confidence": 0.9998,
+          "box": [
+            [
+              53,
+              781
+            ],
+            [
+              95,
+              781
+            ],
+            [
+              95,
+              801
+            ],
+            [
+              53,
+              801
+            ]
+          ]
+        },
+        {
+          "id": 53,
+          "text": "Packed On",
+          "confidence": 0.9663,
+          "box": [
+            [
+              52,
+              800
+            ],
+            [
+              156,
+              800
+            ],
+            [
+              156,
+              824
+            ],
+            [
+              52,
+              824
+            ]
+          ]
+        },
+        {
+          "id": 54,
+          "text": "# 6",
+          "confidence": 0.5217,
+          "box": [
+            [
+              287,
+              795
+            ],
+            [
+              335,
+              795
+            ],
+            [
+              335,
+              815
+            ],
+            [
+              287,
+              815
+            ]
+          ]
+        },
+        {
+          "id": 55,
+          "text": "50/9",
+          "confidence": 0.4734,
+          "box": [
+            [
+              346,
+              790
+            ],
+            [
+              428,
+              790
+            ],
+            [
+              428,
+              814
+            ],
+            [
+              346,
+              814
+            ]
+          ]
+        },
+        {
+          "id": 56,
+          "text": "42/2024",
+          "confidence": 0.7698,
+          "box": [
+            [
+              443,
+              786
+            ],
+            [
+              576,
+              786
+            ],
+            [
+              576,
+              814
+            ],
+            [
+              443,
+              814
+            ]
+          ]
+        },
+        {
+          "id": 57,
+          "text": "Individual packs not for sale",
+          "confidence": 0.9436,
+          "box": [
+            [
+              52,
+              818
+            ],
+            [
+              298,
+              818
+            ],
+            [
+              298,
+              844
+            ],
+            [
+              52,
+              844
+            ]
+          ]
+        },
+        {
+          "id": 58,
+          "text": "Best before ? years from packed on",
+          "confidence": 0.7195,
+          "box": [
+            [
+              52,
+              831
+            ],
+            [
+              418,
+              831
+            ],
+            [
+              418,
+              864
+            ],
+            [
+              52,
+              864
+            ]
+          ]
+        },
+        {
+          "id": 59,
+          "text": "81190 1 023110 17 97",
+          "confidence": 0.3956,
+          "box": [
+            [
+              63,
+              947
+            ],
+            [
+              217,
+              947
+            ],
+            [
+              217,
+              965
+            ],
+            [
+              63,
+              965
+            ]
+          ]
+        },
+        {
+          "id": 60,
+          "text": "\"From the day of opening the sachet",
+          "confidence": 0.786,
+          "box": [
+            [
+              258,
+              934
+            ],
+            [
+              566,
+              934
+            ],
+            [
+              566,
+              962
+            ],
+            [
+              258,
+              962
+            ]
+          ]
+        },
+        {
+          "id": 61,
+          "text": "Do",
+          "confidence": 0.9788,
+          "box": [
+            [
+              167,
+              268
+            ],
+            [
+              196,
+              272
+            ],
+            [
+              193,
+              290
+            ],
+            [
+              164,
+              285
+            ]
+          ]
+        },
+        {
+          "id": 62,
+          "text": "50g",
+          "confidence": 0.4841,
+          "box": [
+            [
+              188,
+              707
+            ],
+            [
+              260,
+              718
+            ],
+            [
+              252,
+              755
+            ],
+            [
+              181,
+              744
+            ]
+          ]
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "MRP keyword found but price number not readable",
+          "remarks": "MRP text detected but price value and tax clause not clearly readable by OCR."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: 10g",
+          "remarks": "Net quantity '10g' declared in valid units."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'manufactured by ... product ... chennai'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Email: care@godrejcp.com",
+          "remarks": "Consumer care email found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "mfgDate"
+      ]
+    },
+    {
+      "id": "2a5f9397-3a35-45d9-a80d-a62058f2cd7e",
+      "productName": "aerpocket",
+      "engine": "Local OpenCV + EasyOCR",
+      "geminiError": "All candidate models failed. Last error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "imagePath": "uploads/d780590412b94969b4b2df0b33ed8ee8_AERPOCKET.jpeg",
+      "scannedAt": "2026-09-24T12:57:04.024652+00:00",
+      "status": "Non-Compliant",
+      "extractedText": "Oer power pocket Caution Follow the directions for use written on the side of the pack Avoid contact with eyes and skin In case of contact; wash with warm water: Do not swallow: Keep out ofreach of  children: Do not pierce the pack Do not use if the product iS damaged or leaking: Do not place the product on any plastic or   treated surface. We decline any responsibility for damages or malfunctions caused by any noncompliance of directions of usage Customer experience of longevity may vary based on weather conditions, room conditions and habituation: Manufactured by: Godrej Consumer Products Ltd: No. E-5, Maraimalai Nagar Chennai 603209 Godrej Consumer Products Ltd  P.O. Mamring (Via Rangpo) South Sikkim-737132 Marketed byl Registered Address/Consumer Feedback or Complaint Contact: Manager (Consumer Relations), Godrej Consumer Products Ltd: Vikhroli (East) , Mumbai 400079 T: 1-800-266-0007 E: care@godrejcp.com Number of Units: 5U Bathroom Fragrance Net Weight 50g (10g X 5 Units) MRP (Incl: of all taxes) USP 50/9 1222024 Packed On Individual packs not for sale Best before ? years from packed on 8ll90 1 0 2 3llo 1797 \"From the day of opening the sachet",
+      "detections": [
+        {
+          "id": 1,
+          "text": "Oer",
+          "confidence": 0.2914,
+          "box": [
+            [
+              318,
+              78
+            ],
+            [
+              475,
+              78
+            ],
+            [
+              475,
+              153
+            ],
+            [
+              318,
+              153
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "text": "power",
+          "confidence": 0.9717,
+          "box": [
+            [
+              322,
+              147
+            ],
+            [
+              457,
+              147
+            ],
+            [
+              457,
+              197
+            ],
+            [
+              322,
+              197
+            ]
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pocket",
+          "confidence": 1.0,
+          "box": [
+            [
+              321,
+              182
+            ],
+            [
+              456,
+              182
+            ],
+            [
+              456,
+              226
+            ],
+            [
+              321,
+              226
+            ]
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Caution",
+          "confidence": 0.9319,
+          "box": [
+            [
+              72,
+              228
+            ],
+            [
+              174,
+              228
+            ],
+            [
+              174,
+              254
+            ],
+            [
+              72,
+              254
+            ]
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Follow the directions for use written on the side of the",
+          "confidence": 0.9574,
+          "box": [
+            [
+              72,
+              252
+            ],
+            [
+              678,
+              252
+            ],
+            [
+              678,
+              284
+            ],
+            [
+              72,
+              284
+            ]
+          ]
+        },
+        {
+          "id": 6,
+          "text": "pack Avoid contact with eyes and skin In case of contact;",
+          "confidence": 0.6064,
+          "box": [
+            [
+              69,
+              274
+            ],
+            [
+              683,
+              274
+            ],
+            [
+              683,
+              314
+            ],
+            [
+              69,
+              314
+            ]
+          ]
+        },
+        {
+          "id": 7,
+          "text": "wash with warm water: Do not swallow: Keep out ofreach",
+          "confidence": 0.772,
+          "box": [
+            [
+              71,
+              301
+            ],
+            [
+              683,
+              301
+            ],
+            [
+              683,
+              337
+            ],
+            [
+              71,
+              337
+            ]
+          ]
+        },
+        {
+          "id": 8,
+          "text": "of  children: Do",
+          "confidence": 0.3197,
+          "box": [
+            [
+              72,
+              336
+            ],
+            [
+              242,
+              336
+            ],
+            [
+              242,
+              362
+            ],
+            [
+              72,
+              362
+            ]
+          ]
+        },
+        {
+          "id": 9,
+          "text": "not pierce the pack Do not use if the",
+          "confidence": 0.8002,
+          "box": [
+            [
+              248,
+              330
+            ],
+            [
+              682,
+              330
+            ],
+            [
+              682,
+              362
+            ],
+            [
+              248,
+              362
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "text": "product iS damaged or leaking: Do not place the product",
+          "confidence": 0.5951,
+          "box": [
+            [
+              70,
+              352
+            ],
+            [
+              684,
+              352
+            ],
+            [
+              684,
+              391
+            ],
+            [
+              70,
+              391
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "text": "on",
+          "confidence": 0.9778,
+          "box": [
+            [
+              73,
+              391
+            ],
+            [
+              107,
+              391
+            ],
+            [
+              107,
+              411
+            ],
+            [
+              73,
+              411
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "text": "any",
+          "confidence": 0.9999,
+          "box": [
+            [
+              116,
+              390
+            ],
+            [
+              160,
+              390
+            ],
+            [
+              160,
+              416
+            ],
+            [
+              116,
+              416
+            ]
+          ]
+        },
+        {
+          "id": 13,
+          "text": "plastic",
+          "confidence": 0.8406,
+          "box": [
+            [
+              182,
+              388
+            ],
+            [
+              260,
+              388
+            ],
+            [
+              260,
+              414
+            ],
+            [
+              182,
+              414
+            ]
+          ]
+        },
+        {
+          "id": 14,
+          "text": "or   treated",
+          "confidence": 0.478,
+          "box": [
+            [
+              266,
+              386
+            ],
+            [
+              388,
+              386
+            ],
+            [
+              388,
+              412
+            ],
+            [
+              266,
+              412
+            ]
+          ]
+        },
+        {
+          "id": 15,
+          "text": "surface.",
+          "confidence": 0.6129,
+          "box": [
+            [
+              396,
+              386
+            ],
+            [
+              486,
+              386
+            ],
+            [
+              486,
+              410
+            ],
+            [
+              396,
+              410
+            ]
+          ]
+        },
+        {
+          "id": 16,
+          "text": "We",
+          "confidence": 1.0,
+          "box": [
+            [
+              496,
+              384
+            ],
+            [
+              538,
+              384
+            ],
+            [
+              538,
+              408
+            ],
+            [
+              496,
+              408
+            ]
+          ]
+        },
+        {
+          "id": 17,
+          "text": "decline",
+          "confidence": 1.0,
+          "box": [
+            [
+              546,
+              382
+            ],
+            [
+              628,
+              382
+            ],
+            [
+              628,
+              408
+            ],
+            [
+              546,
+              408
+            ]
+          ]
+        },
+        {
+          "id": 18,
+          "text": "any",
+          "confidence": 1.0,
+          "box": [
+            [
+              636,
+              384
+            ],
+            [
+              680,
+              384
+            ],
+            [
+              680,
+              408
+            ],
+            [
+              636,
+              408
+            ]
+          ]
+        },
+        {
+          "id": 19,
+          "text": "responsibility for damages",
+          "confidence": 0.6578,
+          "box": [
+            [
+              70,
+              411
+            ],
+            [
+              372,
+              411
+            ],
+            [
+              372,
+              440
+            ],
+            [
+              70,
+              440
+            ]
+          ]
+        },
+        {
+          "id": 20,
+          "text": "or malfunctions caused by",
+          "confidence": 0.8003,
+          "box": [
+            [
+              378,
+              406
+            ],
+            [
+              682,
+              406
+            ],
+            [
+              682,
+              436
+            ],
+            [
+              378,
+              436
+            ]
+          ]
+        },
+        {
+          "id": 21,
+          "text": "any noncompliance of directions of usage",
+          "confidence": 0.7913,
+          "box": [
+            [
+              72,
+              436
+            ],
+            [
+              556,
+              436
+            ],
+            [
+              556,
+              468
+            ],
+            [
+              72,
+              468
+            ]
+          ]
+        },
+        {
+          "id": 22,
+          "text": "Customer",
+          "confidence": 0.9922,
+          "box": [
+            [
+              566,
+              432
+            ],
+            [
+              682,
+              432
+            ],
+            [
+              682,
+              458
+            ],
+            [
+              566,
+              458
+            ]
+          ]
+        },
+        {
+          "id": 23,
+          "text": "experience",
+          "confidence": 0.9999,
+          "box": [
+            [
+              71,
+              462
+            ],
+            [
+              200,
+              462
+            ],
+            [
+              200,
+              493
+            ],
+            [
+              71,
+              493
+            ]
+          ]
+        },
+        {
+          "id": 24,
+          "text": "of longevity",
+          "confidence": 0.7682,
+          "box": [
+            [
+              208,
+              464
+            ],
+            [
+              344,
+              464
+            ],
+            [
+              344,
+              490
+            ],
+            [
+              208,
+              490
+            ]
+          ]
+        },
+        {
+          "id": 25,
+          "text": "may",
+          "confidence": 0.9999,
+          "box": [
+            [
+              350,
+              464
+            ],
+            [
+              402,
+              464
+            ],
+            [
+              402,
+              488
+            ],
+            [
+              350,
+              488
+            ]
+          ]
+        },
+        {
+          "id": 26,
+          "text": "vary",
+          "confidence": 0.9915,
+          "box": [
+            [
+              408,
+              464
+            ],
+            [
+              458,
+              464
+            ],
+            [
+              458,
+              488
+            ],
+            [
+              408,
+              488
+            ]
+          ]
+        },
+        {
+          "id": 27,
+          "text": "based",
+          "confidence": 0.9227,
+          "box": [
+            [
+              464,
+              460
+            ],
+            [
+              538,
+              460
+            ],
+            [
+              538,
+              484
+            ],
+            [
+              464,
+              484
+            ]
+          ]
+        },
+        {
+          "id": 28,
+          "text": "on weather",
+          "confidence": 0.9202,
+          "box": [
+            [
+              544,
+              454
+            ],
+            [
+              682,
+              454
+            ],
+            [
+              682,
+              484
+            ],
+            [
+              544,
+              484
+            ]
+          ]
+        },
+        {
+          "id": 29,
+          "text": "conditions, room conditions and habituation:",
+          "confidence": 0.7288,
+          "box": [
+            [
+              71,
+              484
+            ],
+            [
+              552,
+              484
+            ],
+            [
+              552,
+              516
+            ],
+            [
+              71,
+              516
+            ]
+          ]
+        },
+        {
+          "id": 30,
+          "text": "Manufactured by:",
+          "confidence": 0.8953,
+          "box": [
+            [
+              71,
+              545
+            ],
+            [
+              294,
+              545
+            ],
+            [
+              294,
+              575
+            ],
+            [
+              71,
+              575
+            ]
+          ]
+        },
+        {
+          "id": 31,
+          "text": "Godrej Consumer Products Ltd: No. E-5, Maraimalai Nagar",
+          "confidence": 0.7329,
+          "box": [
+            [
+              71,
+              564
+            ],
+            [
+              699,
+              564
+            ],
+            [
+              699,
+              601
+            ],
+            [
+              71,
+              601
+            ]
+          ]
+        },
+        {
+          "id": 32,
+          "text": "Chennai",
+          "confidence": 0.9999,
+          "box": [
+            [
+              72,
+              600
+            ],
+            [
+              170,
+              600
+            ],
+            [
+              170,
+              626
+            ],
+            [
+              72,
+              626
+            ]
+          ]
+        },
+        {
+          "id": 33,
+          "text": "603209",
+          "confidence": 0.6935,
+          "box": [
+            [
+              184,
+              598
+            ],
+            [
+              276,
+              598
+            ],
+            [
+              276,
+              624
+            ],
+            [
+              184,
+              624
+            ]
+          ]
+        },
+        {
+          "id": 34,
+          "text": "Godrej Consumer Products Ltd  P.O.",
+          "confidence": 0.5863,
+          "box": [
+            [
+              72,
+              626
+            ],
+            [
+              464,
+              626
+            ],
+            [
+              464,
+              658
+            ],
+            [
+              72,
+              658
+            ]
+          ]
+        },
+        {
+          "id": 35,
+          "text": "Mamring (Via Rangpo)",
+          "confidence": 0.8687,
+          "box": [
+            [
+              480,
+              624
+            ],
+            [
+              724,
+              624
+            ],
+            [
+              724,
+              652
+            ],
+            [
+              480,
+              652
+            ]
+          ]
+        },
+        {
+          "id": 36,
+          "text": "South Sikkim-737132",
+          "confidence": 0.9609,
+          "box": [
+            [
+              70,
+              656
+            ],
+            [
+              304,
+              656
+            ],
+            [
+              304,
+              684
+            ],
+            [
+              70,
+              684
+            ]
+          ]
+        },
+        {
+          "id": 37,
+          "text": "Marketed",
+          "confidence": 0.9903,
+          "box": [
+            [
+              69,
+              705
+            ],
+            [
+              196,
+              705
+            ],
+            [
+              196,
+              734
+            ],
+            [
+              69,
+              734
+            ]
+          ]
+        },
+        {
+          "id": 38,
+          "text": "byl",
+          "confidence": 0.9975,
+          "box": [
+            [
+              214,
+              706
+            ],
+            [
+              260,
+              706
+            ],
+            [
+              260,
+              732
+            ],
+            [
+              214,
+              732
+            ]
+          ]
+        },
+        {
+          "id": 39,
+          "text": "Registered",
+          "confidence": 0.9068,
+          "box": [
+            [
+              280,
+              702
+            ],
+            [
+              418,
+              702
+            ],
+            [
+              418,
+              730
+            ],
+            [
+              280,
+              730
+            ]
+          ]
+        },
+        {
+          "id": 40,
+          "text": "Address/Consumer",
+          "confidence": 0.9843,
+          "box": [
+            [
+              439,
+              695
+            ],
+            [
+              678,
+              695
+            ],
+            [
+              678,
+              725
+            ],
+            [
+              439,
+              725
+            ]
+          ]
+        },
+        {
+          "id": 41,
+          "text": "Feedback or Complaint Contact:",
+          "confidence": 0.9668,
+          "box": [
+            [
+              66,
+              724
+            ],
+            [
+              473,
+              724
+            ],
+            [
+              473,
+              762
+            ],
+            [
+              66,
+              762
+            ]
+          ]
+        },
+        {
+          "id": 42,
+          "text": "Manager",
+          "confidence": 1.0,
+          "box": [
+            [
+              70,
+              762
+            ],
+            [
+              176,
+              762
+            ],
+            [
+              176,
+              788
+            ],
+            [
+              70,
+              788
+            ]
+          ]
+        },
+        {
+          "id": 43,
+          "text": "(Consumer",
+          "confidence": 0.8374,
+          "box": [
+            [
+              190,
+              758
+            ],
+            [
+              320,
+              758
+            ],
+            [
+              320,
+              784
+            ],
+            [
+              190,
+              784
+            ]
+          ]
+        },
+        {
+          "id": 44,
+          "text": "Relations),",
+          "confidence": 0.9113,
+          "box": [
+            [
+              334,
+              754
+            ],
+            [
+              452,
+              754
+            ],
+            [
+              452,
+              780
+            ],
+            [
+              334,
+              780
+            ]
+          ]
+        },
+        {
+          "id": 45,
+          "text": "Godrej",
+          "confidence": 0.9998,
+          "box": [
+            [
+              466,
+              750
+            ],
+            [
+              546,
+              750
+            ],
+            [
+              546,
+              776
+            ],
+            [
+              466,
+              776
+            ]
+          ]
+        },
+        {
+          "id": 46,
+          "text": "Consumer",
+          "confidence": 0.9351,
+          "box": [
+            [
+              558,
+              748
+            ],
+            [
+              678,
+              748
+            ],
+            [
+              678,
+              774
+            ],
+            [
+              558,
+              774
+            ]
+          ]
+        },
+        {
+          "id": 47,
+          "text": "Products Ltd: Vikhroli (East) , Mumbai",
+          "confidence": 0.9092,
+          "box": [
+            [
+              67,
+              777
+            ],
+            [
+              473,
+              777
+            ],
+            [
+              473,
+              813
+            ],
+            [
+              67,
+              813
+            ]
+          ]
+        },
+        {
+          "id": 48,
+          "text": "400079",
+          "confidence": 0.87,
+          "box": [
+            [
+              486,
+              774
+            ],
+            [
+              576,
+              774
+            ],
+            [
+              576,
+              800
+            ],
+            [
+              486,
+              800
+            ]
+          ]
+        },
+        {
+          "id": 49,
+          "text": "T:",
+          "confidence": 0.8985,
+          "box": [
+            [
+              68,
+              814
+            ],
+            [
+              94,
+              814
+            ],
+            [
+              94,
+              838
+            ],
+            [
+              68,
+              838
+            ]
+          ]
+        },
+        {
+          "id": 50,
+          "text": "1-800-266-0007",
+          "confidence": 0.8757,
+          "box": [
+            [
+              92,
+              805
+            ],
+            [
+              283,
+              805
+            ],
+            [
+              283,
+              841
+            ],
+            [
+              92,
+              841
+            ]
+          ]
+        },
+        {
+          "id": 51,
+          "text": "E: care@godrejcp.com",
+          "confidence": 0.9013,
+          "box": [
+            [
+              290,
+              804
+            ],
+            [
+              540,
+              804
+            ],
+            [
+              540,
+              834
+            ],
+            [
+              290,
+              834
+            ]
+          ]
+        },
+        {
+          "id": 52,
+          "text": "Number of Units: 5U Bathroom Fragrance",
+          "confidence": 0.6217,
+          "box": [
+            [
+              67,
+              857
+            ],
+            [
+              585,
+              857
+            ],
+            [
+              585,
+              893
+            ],
+            [
+              67,
+              893
+            ]
+          ]
+        },
+        {
+          "id": 53,
+          "text": "Net Weight",
+          "confidence": 0.9094,
+          "box": [
+            [
+              66,
+              905
+            ],
+            [
+              212,
+              905
+            ],
+            [
+              212,
+              937
+            ],
+            [
+              66,
+              937
+            ]
+          ]
+        },
+        {
+          "id": 54,
+          "text": "50g (10g X 5 Units)",
+          "confidence": 0.7318,
+          "box": [
+            [
+              227,
+              881
+            ],
+            [
+              629,
+              881
+            ],
+            [
+              629,
+              941
+            ],
+            [
+              227,
+              941
+            ]
+          ]
+        },
+        {
+          "id": 55,
+          "text": "MRP (Incl: of all taxes)",
+          "confidence": 0.8717,
+          "box": [
+            [
+              67,
+              944
+            ],
+            [
+              306,
+              944
+            ],
+            [
+              306,
+              975
+            ],
+            [
+              67,
+              975
+            ]
+          ]
+        },
+        {
+          "id": 56,
+          "text": "USP",
+          "confidence": 0.9997,
+          "box": [
+            [
+              66,
+              976
+            ],
+            [
+              120,
+              976
+            ],
+            [
+              120,
+              1002
+            ],
+            [
+              66,
+              1002
+            ]
+          ]
+        },
+        {
+          "id": 57,
+          "text": "50/9",
+          "confidence": 0.5145,
+          "box": [
+            [
+              438,
+              992
+            ],
+            [
+              532,
+              992
+            ],
+            [
+              532,
+              1016
+            ],
+            [
+              438,
+              1016
+            ]
+          ]
+        },
+        {
+          "id": 58,
+          "text": "1222024",
+          "confidence": 0.4619,
+          "box": [
+            [
+              556,
+              988
+            ],
+            [
+              718,
+              988
+            ],
+            [
+              718,
+              1014
+            ],
+            [
+              556,
+              1014
+            ]
+          ]
+        },
+        {
+          "id": 59,
+          "text": "Packed On",
+          "confidence": 0.7504,
+          "box": [
+            [
+              66,
+              1000
+            ],
+            [
+              194,
+              1000
+            ],
+            [
+              194,
+              1028
+            ],
+            [
+              66,
+              1028
+            ]
+          ]
+        },
+        {
+          "id": 60,
+          "text": "Individual packs not for sale",
+          "confidence": 0.9889,
+          "box": [
+            [
+              64,
+              1022
+            ],
+            [
+              370,
+              1022
+            ],
+            [
+              370,
+              1055
+            ],
+            [
+              64,
+              1055
+            ]
+          ]
+        },
+        {
+          "id": 61,
+          "text": "Best before ? years from packed on",
+          "confidence": 0.5708,
+          "box": [
+            [
+              67,
+              1039
+            ],
+            [
+              521,
+              1039
+            ],
+            [
+              521,
+              1079
+            ],
+            [
+              67,
+              1079
+            ]
+          ]
+        },
+        {
+          "id": 62,
+          "text": "8ll90 1 0 2 3llo 1797",
+          "confidence": 0.2108,
+          "box": [
+            [
+              75,
+              1178
+            ],
+            [
+              272,
+              1178
+            ],
+            [
+              272,
+              1207
+            ],
+            [
+              75,
+              1207
+            ]
+          ]
+        },
+        {
+          "id": 63,
+          "text": "\"From the day of opening the sachet",
+          "confidence": 0.6445,
+          "box": [
+            [
+              323,
+              1167
+            ],
+            [
+              707,
+              1167
+            ],
+            [
+              707,
+              1203
+            ],
+            [
+              323,
+              1203
+            ]
+          ]
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "VIOLATION",
+          "evidenceFound": "MRP keyword found but price number not readable",
+          "remarks": "MRP text detected but price value and tax clause not clearly readable by OCR."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: units: 5",
+          "remarks": "Net quantity 'units: 5' declared."
+        },
+        "mfgDate": {
+          "status": "VIOLATION",
+          "evidenceFound": "None detected in scanned label",
+          "remarks": "No valid manufacturing/packing date (MM/YYYY or Month YYYY) found."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'manufactured by ... product ... chennai'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Email: care@godrejcp.com",
+          "remarks": "Consumer care email found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": [
+        "mrp",
+        "mfgDate"
+      ]
     }
   ]
 }

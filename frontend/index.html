@@ -91,12 +91,14 @@
               Enables high accuracy on curved, reflective, or folded packaging labels with automatic OCR typo correction.
             </p>
           </div>
-          <div class="d-flex align-items-center gap-2" style="min-width: 320px;">
-            <input type="password" id="gemini-api-key" class="form-control form-control-sm modern-input" placeholder="Paste Gemini API Key (or leave blank for Local OCR)" />
+          <div class="d-flex align-items-center gap-2 flex-wrap" style="min-width: 340px;">
+            <input type="password" id="gemini-api-key" class="form-control form-control-sm modern-input" placeholder="Paste Gemini API Key" style="min-width: 180px; flex: 1;" />
             <button class="btn btn-sm fw-semibold px-3 text-white" style="background: var(--gold-primary);" onclick="saveGeminiKey()">Save</button>
+            <button id="gemini-test-btn" class="btn btn-sm btn-outline-primary fw-semibold" onclick="testGeminiConnection()"><i class="bi bi-broadcast"></i> Test</button>
             <button class="btn btn-sm btn-outline-secondary" onclick="clearGeminiKey()" title="Clear Key">Clear</button>
           </div>
         </div>
+        <div id="gemini-test-status" class="small mt-2 font-monospace" style="display:none;"></div>
       </div>
     </div>
 

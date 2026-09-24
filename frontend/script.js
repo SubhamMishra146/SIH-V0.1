@@ -103,23 +103,92 @@ function toggleGeminiSettings() {
   }
 }
 
-function saveGeminiKey() {
+async function saveGeminiKey() {
   const key = document.getElementById('gemini-api-key').value.trim();
   if (key) {
     localStorage.setItem('gemini_api_key', key);
     updateGeminiBtnState();
-    alert('Gemini API Key saved! Scans will now use Gemini 3.8 Flash Vision.');
-    toggleGeminiSettings();
+    try {
+      await fetch(`${API_BASE}/gemini/save-key`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ apiKey: key })
+      });
+    } catch (err) {
+      console.warn("Could not persist key to server env:", err);
+    }
+    showGlobalAlert('Gemini API Key saved and active! Ready for presentation.', 'success');
   }
 }
 
-function clearGeminiKey() {
+async function clearGeminiKey() {
   localStorage.removeItem('gemini_api_key');
   if (document.getElementById('gemini-api-key')) {
     document.getElementById('gemini-api-key').value = '';
   }
+  const statusEl = document.getElementById('gemini-test-status');
+  if (statusEl) statusEl.style.display = 'none';
   updateGeminiBtnState();
-  alert('Gemini API Key cleared. Scans will use local OpenCV + EasyOCR.');
+  try {
+    await fetch(`${API_BASE}/gemini/save-key`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ apiKey: '' })
+    });
+  } catch (e) {}
+  showGlobalAlert('Gemini API Key cleared. Scans will use local OpenCV + EasyOCR.', 'info');
+}
+
+async function testGeminiConnection() {
+  const key = document.getElementById('gemini-api-key')?.value.trim() || localStorage.getItem('gemini_api_key') || '';
+  const statusEl = document.getElementById('gemini-test-status');
+  const btn = document.getElementById('gemini-test-btn');
+  if (!key) {
+    showGlobalAlert('Please paste or save a Gemini API key first.', 'warning');
+    return;
+  }
+
+  if (btn) {
+    btn.disabled = true;
+    btn.innerHTML = `<span class="spinner-border spinner-border-sm me-1"></span> Testing...`;
+  }
+  if (statusEl) {
+    statusEl.style.display = 'block';
+    statusEl.className = 'small mt-2 font-monospace text-secondary';
+    statusEl.innerHTML = `<i class="bi bi-hourglass-split"></i> Testing connection to Gemini API...`;
+  }
+
+  try {
+    const res = await fetch(`${API_BASE}/gemini/test`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ apiKey: key })
+    });
+    const data = await res.json();
+    if (data.success) {
+      if (statusEl) {
+        statusEl.className = 'small mt-2 font-monospace text-success fw-bold';
+        statusEl.innerHTML = `<i class="bi bi-check-circle-fill"></i> ${data.message}`;
+      }
+      showGlobalAlert(`Gemini Verified: Connected to ${data.model} (${data.latency})`, 'success');
+    } else {
+      if (statusEl) {
+        statusEl.className = 'small mt-2 font-monospace text-danger';
+        statusEl.innerHTML = `<i class="bi bi-x-circle-fill"></i> Error: ${data.error || 'Connection failed'}`;
+      }
+      showGlobalAlert(`Gemini test: ${data.error || 'Connection check failed'}`, 'warning');
+    }
+  } catch (err) {
+    if (statusEl) {
+      statusEl.className = 'small mt-2 font-monospace text-danger';
+      statusEl.innerHTML = `<i class="bi bi-x-circle-fill"></i> Network error: ${err.message}`;
+    }
+  } finally {
+    if (btn) {
+      btn.disabled = false;
+      btn.innerHTML = `<i class="bi bi-broadcast"></i> Test`;
+    }
+  }
 }
 
 // ── Drag-and-drop support ───────────────────────────────────────────────────
@@ -196,7 +265,7 @@ async function submitScan() {
 
     if (currentScan.geminiError && apiKey) {
       console.warn("Gemini Vision notice:", currentScan.geminiError);
-      alert("Gemini Vision Notice: Could not connect to Gemini (" + currentScan.geminiError + ").\n\nFell back to Local OpenCV + EasyOCR.");
+      showGlobalAlert("Cloud vision notice: " + (currentScan.geminiError.length > 120 ? currentScan.geminiError.substring(0, 120) + "..." : currentScan.geminiError) + " (Fell back to local OCR)", "warning");
     }
   } catch (e) {
     console.error("Scan error", e);
