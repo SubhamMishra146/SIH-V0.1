@@ -166,11 +166,22 @@ async function testGeminiConnection() {
     });
     const data = await res.json();
     if (data.success) {
+      // Auto-save verified key to localStorage and server environment
+      localStorage.setItem('gemini_api_key', key);
+      updateGeminiBtnState();
+      try {
+        await fetch(`${API_BASE}/gemini/save-key`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ apiKey: key })
+        });
+      } catch (e) {}
+
       if (statusEl) {
         statusEl.className = 'small mt-2 font-monospace text-success fw-bold';
-        statusEl.innerHTML = `<i class="bi bi-check-circle-fill"></i> ${data.message}`;
+        statusEl.innerHTML = `<i class="bi bi-check-circle-fill"></i> ${data.message} <span class="badge bg-success ms-2">ACTIVE</span>`;
       }
-      showGlobalAlert(`Gemini Verified: Connected to ${data.model} (${data.latency})`, 'success');
+      showGlobalAlert(`Gemini Verified & Activated: Connected to ${data.model} (${data.latency})`, 'success');
     } else {
       if (statusEl) {
         statusEl.className = 'small mt-2 font-monospace text-danger';

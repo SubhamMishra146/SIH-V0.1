@@ -33,8 +33,9 @@ CORS(app, origins="*")
 # High-res packaging uploads (up to 25 MB)
 app.config['MAX_CONTENT_LENGTH'] = 25 * 1024 * 1024
 
-DATA_FILE = 'data.json'
-UPLOAD_FOLDER = 'uploads'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_FILE = os.path.join(BASE_DIR, 'data.json')
+UPLOAD_FOLDER = os.path.join(BASE_DIR, 'uploads')
 
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
@@ -132,8 +133,11 @@ def analyze_with_gemini_vision(image_path, api_key=None):
 
         candidate_models = [
             'gemini-3.5-flash-lite',
+            'gemini-2.5-flash',
+            'gemini-2.5-flash-lite',
             'gemini-3.6-flash',
             'gemini-flash-latest',
+            'gemini-2.0-flash',
             'gemini-3.5-flash'
         ]
         response = None
@@ -141,20 +145,29 @@ def analyze_with_gemini_vision(image_path, api_key=None):
         last_err = None
 
         for model_name in candidate_models:
-            try:
-                print(f"[Gemini Vision] Trying model '{model_name}'...")
-                response = client.models.generate_content(
-                    model=model_name,
-                    contents=[pil_img, prompt]
-                )
-                if response and response.text:
-                    used_model = model_name
-                    print(f"[Gemini Vision] Model '{model_name}' succeeded!")
-                    break
-            except Exception as err:
-                print(f"[Gemini Vision] Model '{model_name}' failed: {err}")
-                last_err = err
-                continue
+            for attempt in range(2):
+                try:
+                    print(f"[Gemini Vision] Trying model '{model_name}' (attempt {attempt + 1})...", flush=True)
+                    response = client.models.generate_content(
+                        model=model_name,
+                        contents=[pil_img, prompt]
+                    )
+                    if response and response.text:
+                        used_model = model_name
+                        print(f"[Gemini Vision] Model '{model_name}' succeeded!", flush=True)
+                        break
+                except Exception as err:
+                    err_str = str(err)
+                    print(f"[Gemini Vision] Model '{model_name}' attempt {attempt + 1} failed: {err}", flush=True)
+                    last_err = err
+                    if "503" in err_str or "UNAVAILABLE" in err_str:
+                        # Temporary Google server demand spike: wait 0.8s and retry or fall through to next candidate
+                        time.sleep(0.8)
+                        continue
+                    else:
+                        break
+            if used_model:
+                break
 
         if not response or not response.text:
             return None, f"All candidate models failed. Last error: {last_err}"
@@ -492,8 +505,11 @@ def test_gemini():
         client = genai.Client(api_key=key)
         candidate_models = [
             'gemini-3.5-flash-lite',
+            'gemini-2.5-flash',
+            'gemini-2.5-flash-lite',
             'gemini-3.6-flash',
             'gemini-flash-latest',
+            'gemini-2.0-flash',
             'gemini-3.5-flash'
         ]
         tested_model = None
