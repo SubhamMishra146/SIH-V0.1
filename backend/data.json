@@ -1,6 +1,191 @@
 {
   "scans": [
     {
+      "id": "9141a1c3-01d7-4528-b44f-f05c4ead55fe",
+      "productName": "Dettol Sanitiser ",
+      "engine": "Gemini Vision (gemini-3.5-flash-lite)",
+      "geminiError": null,
+      "imagePath": "uploads/1486a3e9a2ad4fdb946e8d1a062c42d6_20260920_214749.jpg",
+      "scannedAt": "2026-09-24T15:33:31.704117+00:00",
+      "status": "Compliant",
+      "extractedText": "ALCOHOL (DENATURED)\nDISINFECTANT HAND SANITIZER\nDETTOL INSTANT HAND SANITIZER\n\n**Ingredients:** Alcohol IP (Denatured) eq. to absolute alcohol 72.34% v/v, Water, PEG/PPG-17/6 Copolymer, Propylene Glycol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tetrahydroxypropylethylenediamine, Perfume.\n\n**Dettol Hand Sanitizer:**\nKills 99.9% of germs instantly, without water.\nUse anytime, anywhere: car, office, handbag, picnics, nappy change, travel, sports etc. Leaves your hands refreshed. Use as often as required.\n**How to use:** Take a thumbnail size drop on your palm and rub your hands briskly until dry.\n**Caution:** Keep away from fire or flame and children. Avoid use on/around eyes, ears, mouth, genitalia, broken/irritated skin or large areas of body. In case of contact with eye, rinse thoroughly with water. In case of irritation, discontinue use. Consult a doctor if irritation persists or product is swallowed.\n**FOR EXTERNAL USE ONLY.**\n**Storage Condition:** Store in a Cool, Dry Place.\n\n**Made in India.**\n**Mfd. by:** M/s Allkind Healthcare, Unit-II, Plot No. 114-A, Khasra Nos. 2214/2036/1785, 2219/2037/1785, 2224/2038/1785, EPIP, Phase-II, Village & Post Thana, Tehsil-Baddi, District-Solan (Himachal Pradesh), PIN-173205.\n**Mfg. Lic. No.:** MNB/21/1133, State Excise Lic. in Form L-19A.\n\n**Marketed by/For Consumer Complaints contact:**\nReckitt Benckiser Consumer Care at:\nReckitt Benckiser (India) Pvt. Ltd., DLF Cyber Park, 6th & 7th Floor (Tower C), 405 B, Udyog Vihar Phase III, Sector 20, Gurugram-122016.\nToll Free Number: 18001035012\nEmail: ConsumerHealth_India@rb.com\n\n**Net Vol.:** 60ml\n\n**MRP (incl. of all taxes):** Rs. 60 45* *Promo Price\n**Mfd., Batch No. & Exp.:** 01/22 BKA072009 12/23\n\n8 901396 387039 >",
+      "detections": [
+        {
+          "id": 1,
+          "text": "ALCOHOL (DENATURED)",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 2,
+          "text": "DISINFECTANT HAND SANITIZER",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 3,
+          "text": "DETTOL INSTANT HAND SANITIZER",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 4,
+          "text": "**Ingredients:** Alcohol IP (Denatured) eq. to absolute alcohol 72.34% v/v, Water, PEG/PPG-17/6 Copolymer, Propylene Glycol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tetrahydroxypropylethylenediamine, Perfume.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 5,
+          "text": "**Dettol Hand Sanitizer:**",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 6,
+          "text": "Kills 99.9% of germs instantly, without water.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 7,
+          "text": "Use anytime, anywhere: car, office, handbag, picnics, nappy change, travel, sports etc. Leaves your hands refreshed. Use as often as required.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 8,
+          "text": "**How to use:** Take a thumbnail size drop on your palm and rub your hands briskly until dry.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 9,
+          "text": "**Caution:** Keep away from fire or flame and children. Avoid use on/around eyes, ears, mouth, genitalia, broken/irritated skin or large areas of body. In case of contact with eye, rinse thoroughly with water. In case of irritation, discontinue use. Consult a doctor if irritation persists or product is swallowed.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 10,
+          "text": "**FOR EXTERNAL USE ONLY.**",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 11,
+          "text": "**Storage Condition:** Store in a Cool, Dry Place.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 12,
+          "text": "**Made in India.**",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 13,
+          "text": "**Mfd. by:** M/s Allkind Healthcare, Unit-II, Plot No. 114-A, Khasra Nos. 2214/2036/1785, 2219/2037/1785, 2224/2038/1785, EPIP, Phase-II, Village & Post Thana, Tehsil-Baddi, District-Solan (Himachal Pradesh), PIN-173205.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 14,
+          "text": "**Mfg. Lic. No.:** MNB/21/1133, State Excise Lic. in Form L-19A.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 15,
+          "text": "**Marketed by/For Consumer Complaints contact:**",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 16,
+          "text": "Reckitt Benckiser Consumer Care at:",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 17,
+          "text": "Reckitt Benckiser (India) Pvt. Ltd., DLF Cyber Park, 6th & 7th Floor (Tower C), 405 B, Udyog Vihar Phase III, Sector 20, Gurugram-122016.",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 18,
+          "text": "Toll Free Number: 18001035012",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 19,
+          "text": "Email: ConsumerHealth_India@rb.com",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 20,
+          "text": "**Net Vol.:** 60ml",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 21,
+          "text": "**MRP (incl. of all taxes):** Rs. 60 45* *Promo Price",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 22,
+          "text": "**Mfd., Batch No. & Exp.:** 01/22 BKA072009 12/23",
+          "confidence": 0.98,
+          "box": []
+        },
+        {
+          "id": 23,
+          "text": "8 901396 387039 >",
+          "confidence": 0.98,
+          "box": []
+        }
+      ],
+      "rules": {
+        "mrp": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'rs. 60'",
+          "remarks": "MRP with inclusive-of-all-taxes/GST clause found."
+        },
+        "netQuantity": {
+          "status": "PASS",
+          "evidenceFound": "Found: nos. 2214",
+          "remarks": "Net quantity 'nos. 2214' declared."
+        },
+        "mfgDate": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'mfd' with date '01/22'",
+          "remarks": "Manufacturing / Packing date is declared."
+        },
+        "manufacturerDetails": {
+          "status": "PASS",
+          "evidenceFound": "Matched: 'made in india ... product ... india'",
+          "remarks": "Manufacturer / Packer name and address details found."
+        },
+        "consumerCare": {
+          "status": "PASS",
+          "evidenceFound": "Email: consumerhealth_india@rb.com | Phone: 18001035012",
+          "remarks": "Both email and phone contact details found."
+        }
+      },
+      "ruleNames": {
+        "mrp": "MRP & Tax Declaration",
+        "netQuantity": "Net Quantity",
+        "mfgDate": "Date of Mfg / Packing",
+        "manufacturerDetails": "Manufacturer / Packer Details",
+        "consumerCare": "Consumer Care Info"
+      },
+      "violations": []
+    },
+    {
       "id": "49762ae6-0e53-4796-a2ee-9b3959f38539",
       "productName": "aerpocket",
       "engine": "Local OpenCV + EasyOCR",
